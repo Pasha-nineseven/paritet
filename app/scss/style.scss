@@ -1,0 +1,70 @@
+// Core variables and mixins
+
+@import "components/vars";
+
+@import "bootstrap/normalize";
+@import "bootstrap/grid";
+
+@import "components/body";
+
+
+
+// a[href^="http://maps.google.com/maps"]{display:none !important}
+// a[href^="https://maps.google.com/maps"]{display:none !important}
+// .gmnoprint a, .gmnoprint span, .gm-style-cc {
+//     display:none;
+// }
+// .gmnoprint div {
+//     background:none !important;
+// }
+
+
+@import "components/header";
+
+
+.layout{
+	// display: table;
+	// table-layout: fixed;
+ //  	height: 100%;
+ //  	width: 100%;
+  	flex: 1 0 auto;
+}
+
+
+
+// .wrapper{
+// 	display: table-row;
+// 	height: 100%;
+// }
+.container-fluid{
+	max-width: 1346px;
+	// padding: 0;
+	position: relative;
+	width: 100%;
+}
+
+
+// .page-content{
+// 	display: table-cell;
+// 	height: 100%;
+// }
+
+
+
+
+
+
+
+@import "components/workarea";
+
+@import "components/footer";
+
+
+
+
+@import "components/media";
+
+
+
+
+
