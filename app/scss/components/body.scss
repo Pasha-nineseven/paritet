@@ -40,9 +40,9 @@ a{
 	transition: color 0.3s linear;
 	text-decoration: none;
 	&:not([class]){
-		color: #058ACD;
+		color: $alt-color;
 		&:hover{
-			color: #056493;
+			color: #0B4DCE;
 		}
 	}
 }
@@ -56,7 +56,7 @@ body {
 	font-size: $default-size-font;
 	font-family: $default-font;
 	color: $base-color;
-	font-weight: 300;
+	font-weight: normal;
 	display: flex;
   	flex-direction: column;
 }
@@ -69,10 +69,10 @@ textarea,input {
 }
 
 
-::-webkit-input-placeholder {color:#a5a8ab;transition:all 0.3s ease;}
-::-moz-placeholder          {color:#a5a8ab;transition:all 0.3s ease;}
-:-moz-placeholder           {color:#a5a8ab;transition:all 0.3s ease;}
-:-ms-input-placeholder      {color:#a5a8ab;transition:all 0.3s ease;}
+::-webkit-input-placeholder {color:#343532;transition:all 0.3s ease;}
+::-moz-placeholder          {color:#343532;transition:all 0.3s ease;}
+:-moz-placeholder           {color:#343532;transition:all 0.3s ease;}
+:-ms-input-placeholder      {color:#343532;transition:all 0.3s ease;}
 
 
 

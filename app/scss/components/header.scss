@@ -1,4 +1,46 @@
 .page-header{
-
+	padding: 14px 0;
+	background: #fff;
+	border-bottom: 2px solid #E5E5E5;
 }
 
+.page-header__wrap{
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+}
+.logo{
+	width: 216px;
+	height: 51px;
+	background: url(../img/svg/logo.svg) no-repeat;
+}
+
+
+.top{
+	background: #FFFFFF;
+	font-size: 12px;
+	border-bottom: 2px solid #E5E5E5;
+}
+.top__wrap{
+	display: flex;
+	justify-content:space-between;
+}
+.top__nav{
+	display: flex;
+	margin-left: -13px;
+}
+
+.top__link{
+	color: $alt-color;
+	transition:all 0.3s ease;
+	padding: 12px 17px;
+	&:hover{
+		color: #343532;
+		background: #F0F2F5;
+	}
+	&.active{
+		color: #343532;
+		background: #F0F2F5;
+		pointer-events: none;
+	}
+}
