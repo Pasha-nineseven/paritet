@@ -3,4 +3,163 @@
 	background: #343532;
 	padding: 40px 0 0 0;
 	color: #fff;
+	position: relative;
+	&:after {
+	    content: '';
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+	    width: 0;
+	    height: 0;
+	    border-top: 75px solid #fff;
+	    border-left: 75px solid transparent;
+	}
+}
+
+
+.bottom{
+	border-top: 1px solid rgba(255,255,255,0.1);
+	padding: 16px 0;
+	font-size: 16px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.bottom__info{
+	color: #999A98;
+}
+
+
+
+
+
+.page-footer__wrap{
+	display: flex;
+	    justify-content: space-between;
+	    padding-bottom: 60px;
+}
+
+.page-footer-menu__link{
+	font-size: 16px;
+	line-height: 19px;
+	color: #FFFFFF;
+	opacity: 0.5;
+	display: block;
+	margin-bottom: 16px;
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+.page-footer-menu{
+	display: flex;
+	flex:1;
+}
+
+.page-footer-menu-contact{
+	width: 330px;
+}
+.page-footer-menu__item{
+	flex:1;
+}
+.page-footer-menu__title{
+	color: #fff;
+	display: block;
+	font-family: 'golosbold';
+	margin-bottom: 16px;
+}
+
+
+
+
+.page-footer-menu-contact__item{
+	margin-bottom: 40px;
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+
+.socials{
+	display: flex;
+}
+
+.socials__link{
+	border: 2px solid rgba(255,255,255,0.1);
+	border-radius: 4px;
+	width: 32px;
+	height: 32px;
+	margin-right: 24px;
+	&:last-child{
+		margin-right: 0;
+	}
+	&.fb{
+		background: url(../img/svg/fb.svg) center no-repeat;
+	}
+	&.vk{
+		background: url(../img/svg/vk.svg) center no-repeat;
+	}
+	&.inst{
+		background: url(../img/svg/inst.svg) center no-repeat;
+	}
+	&.you{
+		background: url(../img/svg/you.svg) center no-repeat;
+	}
+}
+.mobile{
+	display: flex;
+}
+.mobile__link{
+	margin-right: 16px;
+	img{
+		display: block;
+	}
+	&:last-child{
+		margin-right: 0;
+	}
+}
+
+
+.call{
+	display: flex;
+}
+.call__item{
+
+    margin-right: 18px;
+  
+	&:last-child{
+		margin-right: 0;
+	}
+}
+.call-link{
+	font-size: 24px;
+	position: relative;
+	  display: flex;
+	align-items: center;
+	color: #fff;
+	&:before{
+		content: "";
+		display: inline-block;
+		width: 11px;
+		height: 21px;
+		background: url(../img/svg/call.svg) no-repeat;
+		    margin-right: 8px;
+	}
+}
+.call-btn{
+	display: inline-block;
+	font-size: 12px;
+	color: #fff;
+	border:1px solid #fff;
+	border-radius: 4px;
+	padding: 7px 9px;
+}
+.call-btn--order{
+	border:1px solid #0083CA;
+}
+
+.page-footer-menu-box{
+	select{
+		color: #000;
+		width: 100%;
+		display: none;
+	}
 }

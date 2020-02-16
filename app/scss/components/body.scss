@@ -60,6 +60,9 @@ body {
 	display: flex;
   	flex-direction: column;
 }
+body.fixed {
+    overflow: hidden;
+}
 
 textarea,input {
 	box-shadow: none;
