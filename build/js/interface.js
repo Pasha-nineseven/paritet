@@ -4,11 +4,11 @@ $(document).ready(function() {
 	//TOP-MENU
     $("body").on("click", ".js-page-header-more__link", function(e){
         e.preventDefault();
-        $('.page-header-more__list').slideToggle(170);
+        $('.page-header-more__list').fadeToggle(170);
     });
     $("body").on("click", ".js-page-header-more__close", function(e){
         e.preventDefault();
-        $('.page-header-more__list').slideUp(170);
+        $('.page-header-more__list').fadeOut(170);
     });
 	
 	//ACCORDEON
@@ -30,6 +30,18 @@ $(document).ready(function() {
         ],
     });
 
+
+    //PAGE-SEARCH
+    $("body").on("click", ".js-page-header-search__link", function(e){
+        e.preventDefault();
+        $('.page-header-search__toggle').fadeToggle(170);
+        $(this).toggleClass('active');
+    });
+    $("body").on("click", ".js-page-header-search__close", function(e){
+        e.preventDefault();
+        $('.page-header-search__toggle').fadeOut(170);
+        $(".js-page-header-search__link").removeClass('active');
+    });
 
 
 

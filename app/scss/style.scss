@@ -424,6 +424,7 @@ span.breadcrumbs__item{
 	    left: 25px;
     top: 11px;
 	font-size: 32px; 
+	color: #000;
 }
 
 
@@ -473,7 +474,10 @@ span.breadcrumbs__item{
 	}
 }
 .input-wrap--phone{
-	max-width: 485px;
+	//max-width: 485px;
+	input[type="tel"]{
+		width: 75%;
+	}
 }
 
 .input-label{
@@ -486,7 +490,8 @@ span.breadcrumbs__item{
 		font-size: 24px;
 		    top: 10px;
 	}
-	input[type="text"]{
+	input[type="text"],
+	input[type="tel"]{
 		padding-left: 85px;
 	}
 }
