@@ -42,6 +42,11 @@
 
 .layout--grey{
 	background: #E5E5E5;
+	&+.page-footer{
+		&:after {
+		    border-top: 75px solid #E5E5E5;
+		}
+	}
 }
 .layout--aside{
 	.breadcrumbs{
@@ -53,7 +58,7 @@
 			content: "";
 			display: block;
 			width: 100%;
-			height: 100%;
+			    height: calc(100% + 5px);
 			position: absolute;
 			right: calc(100% - 258px);
 			top: 0;
@@ -62,6 +67,7 @@
 	}
 
 	.content{
+		padding: 42px 20px 40px 80px;
 		&:after{
 			content: "";
 			display: block;
@@ -541,6 +547,65 @@ span.breadcrumbs__item{
 
 .dnone{
 	display: none;
+}
+.page-links{
+	margin-bottom: 40px;
+}
+.page-links-year{
+	display: flex;
+	flex-wrap:wrap;
+	min-width: 100%;
+	border-bottom: 2px solid #F0F2F5;
+	margin-bottom: 16px;
+}
+.page-links-year__link{
+	color: #343532;
+    font-size: 16px;
+    line-height: 1.2;
+    padding: 8px 16px;
+    border-bottom: 2px solid #F0F2F5;
+    margin-bottom: -2px;
+    transition:all 0.3s ease;
+	&.active{
+		background: #F0F2F5;
+		font-family: 'golosbold';
+		border-bottom: 2px solid #0083CA;
+		pointer-events:none;
+	}
+	&:hover{
+		background: #F0F2F5;
+		// font-family: 'golosbold';
+		border-bottom: 2px solid #0083CA;
+	}
+}
+.page-links-month{
+	display: flex;
+	flex-wrap:wrap;
+	border: 2px solid #F0F2F5;
+}
+.page-links-month__link{
+	color: #2C4295;
+	font-size: 12px;
+	line-height: 1.2;
+	    padding: 8px 12px;
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	transition:all 0.3s ease;
+	&:first-child{
+		border-left: 2px solid #fff;
+	}
+	&:last-child{
+		border-right: 2px solid #fff;
+	}
+	&.active{
+		background: #F0F2F5;
+		color: #343532;
+		pointer-events:none;
+	}
+	&:hover{
+		background: #F0F2F5;
+		color: #343532;
+	}
 }
 
 @import "components/footer";
