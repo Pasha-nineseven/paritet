@@ -103,6 +103,9 @@
 	// padding: 0;
 	position: relative;
 	width: 100%;
+	.container-fluid{
+		padding: 0;
+	}
 }
 
 
@@ -610,7 +613,7 @@ span.breadcrumbs__item{
 
 @import "components/footer";
 
-
+@import "pages/index";
 
 
 @import "components/media";

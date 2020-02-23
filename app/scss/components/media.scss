@@ -4,11 +4,83 @@
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 0) {
-
+	
 }
 
 
 //MEDIA
+@media screen and (max-width: 1480px){
+	.index-info__slider{
+		padding: 0 80px;
+		.slick-next {
+		    right: 0;
+		}
+		.slick-prev {
+		    left: 0;
+		}
+	}
+	.index-offers__slider{
+		.slick-next {
+		    right: 15px;
+		}
+		.slick-prev {
+		    left: 0;
+		}
+	}
+}
+
+@media screen and (max-width: 1320px){
+	.money {
+	    padding: 40px 15px;
+	}
+	.index-offers__info {
+	    padding: 20px 20px 90px 20px;
+	}
+	.index-offers__links {
+	    bottom: 27px;
+	    padding: 0 20px;
+	}
+	.index-offers__title {
+	    font-size: 24px;
+	    margin-bottom: 15px;
+	}
+	.index-offers-more__txt {
+	    font-size: 20px;
+	    line-height: 22px;
+	}
+	.index-offers__links .btn {
+	    padding: 6px 8px;
+	    font-size: 14px;
+	}
+	.index-offers__links .btn-more {
+	    padding: 4px 8px;
+	    font-size: 14px;
+	}
+	.top-slider__inner {
+	    padding: 77px 0 288px 20px;
+	}
+}
+
+@media screen and (max-width: 1280px){
+	.index-news__item {
+	    padding: 0 40px 20px;
+	    &:last-child{
+			padding-right: 0;
+		}
+		&:first-child{
+			padding-left: 0;
+		}
+	}
+	.top-slider-list__item {
+	    margin-right: 20px;
+	    font-size: 20px;
+	    line-height: 22px;
+	    &:last-child{
+	    	margin-right: 0;
+	    }
+	}
+}
+
 @media screen and (max-width: 1200px){
 	.breadcrumbs__wrap,
 	.content{
@@ -19,6 +91,31 @@
 	}
 	.layout--aside .breadcrumbs__wrap {
 	    padding-left: 265px;
+	}
+	.index-info__col--lg .index-info__img:before {
+	    width: 100%;
+	}
+	.index-info__col--lg .index-info__in {
+	    padding: 165px 40px 50px 50px;
+	}
+	.courses-table td {
+	    font-size: 20px;
+	    line-height: 22px;
+	    padding: 8px 2px;
+	}
+	.tabs-top{
+		font-size: 18px;
+	}
+	.coverter__item input[type="text"]{
+		font-size: 18px;
+	}
+	.coverter__item select{
+		font-size: 18px;
+	}
+	.coverter__item .select-wrap {
+	    width: 80px;
+	    right: 18px;
+	    top: 4px;
 	}
 }
 
@@ -38,6 +135,98 @@
 		    padding-left: 15px;
 		    padding-right: 0;
 		}
+	}
+	.app__txt{
+		font-size: 14px;
+		    line-height: 18px;
+	}
+	.app__info{
+		width: 100%;
+	}
+	.app__link{
+		max-width:50%;
+		padding-right: 10px;
+		margin-right: 0;
+		height: 40px;
+	}
+	.index-links {
+	    padding: 40px 0 80px;
+	}
+	.index-links__title {
+	    font-size: 24px;
+	    line-height: 26px;
+	    margin-bottom: 20px;
+	}
+	.money__item {
+	    padding-right: 30px;
+	}
+	.money__wrap{
+		margin-right: -30px;
+	}
+	.income__txt {
+	    font-size: 18px;
+	    line-height: 20px;
+	}
+	.income input[type="text"] {
+		width: 145px;
+		background: rgba(255, 255, 255, 0.2);
+		border: 0;
+		color: #fff;
+		font-size: 20px;
+		padding: 7px 7px 7px 15px;
+	}
+	.money-term__btn {
+	    font-size: 20px;
+	    line-height: 22px;
+	    padding: 11px 8px;
+	}
+	.money__title {
+	    font-size: 18px;
+	    line-height: 20px;
+	}
+	.slider-count input[type="text"]{
+		font-size: 20px;
+	}
+	.money-term__item {
+	    font-size: 20px;
+	    height: 42px;
+	}
+	.money-term {
+	    margin-bottom: 50px;
+	}
+	.income {
+	    padding-top: 22px;
+	}
+	.money__top .tabs li {
+	    font-size: 20px;
+	    line-height: 22px;
+	}
+	.index-offers__top{
+		margin-bottom: 20px;
+	}
+	.index-offers__link {
+	    font-size: 24px;
+	    line-height: 28px;
+	}
+	.index-offers__link:after {
+	    font-size: 18px;
+	    line-height: 22px;
+	    margin: 0px 8px;
+	    top: -4px;
+	}
+	.main-slider-preview {
+	    padding: 60px 30px 40px 50px;
+	}
+	.top-slider-preview {
+	    width: 240px;
+	}
+	.top-slider-controls {
+	    right: 50px;
+	    width: 240px;
+	}
+	.top-slider-line{
+		width: 240px;
+		left: -50px;
 	}
 }
 
@@ -64,6 +253,90 @@
 		.page-header-more__item{
 			font-size: 14px;
 		}
+	}
+	.index-info__title {
+	    font-size: 20px;
+	    line-height: 24px;
+	}
+	.index-info__col--lg .index-info__title {
+	    font-size: 20px;
+	    line-height: 24px;
+	}
+	.index-info__in{
+		padding: 20px;
+	}
+	.index-info__col--lg .index-info__in {
+	    padding: 170px 20px 30px 20px;
+	}
+	.index-info-add__item,
+	.index-info__col--lg .index-info-add__item{
+	    margin-right: 20px;
+	    font-size: 18px;
+	    line-height: 22px;
+	    &:last-child{
+	    	margin-right: 0;
+	    }
+	}
+	.index-info__col--lg .index-info__title:after{
+		width: 75px;
+	}
+	.index-info__col {
+	    width: 50%;
+	}
+	.app__img {
+	    width: 40%;
+	    left: 20px;
+	}
+	.app__wrap{
+		padding-left: 45%;
+	}
+	.app{
+		margin-top: 0;
+	}
+	.index-links__item {
+	    width: 50%;
+	    padding-right: 16px;
+	    margin-bottom: 16px;
+	}
+	.courses__item {
+	    padding: 10px;
+	    width: 100%;
+	}
+	.courses__wrap{
+		flex-wrap:wrap;
+	}
+	.money__top {
+	    padding-left: 0;
+	}
+	.index-offers__title {
+	    font-size: 20px;
+	    margin-bottom: 10px;
+	}
+	.index-offers-more__txt {
+	    font-size: 16px;
+	    line-height: 18px;
+	}
+	.index-offers-more__item {
+	    margin-bottom: 10px;
+	    &:last-child{
+	    	margin-bottom: 0;
+	    }
+	}
+	.index-offers__info {
+	    padding: 20px 20px 70px 20px;
+	}
+	.index-offers__links {
+	    bottom: 20px;
+	}
+	.top-slider-list{
+		flex-wrap:wrap;
+	}
+	.top-slider-list__item{
+		margin-bottom: 20px;
+	}
+
+	.top-slider__inner{
+		padding: 40px 280px 150px 20px;
 	}
 }
 
@@ -109,6 +382,16 @@
 	    &:before{
 	    	display: none;
 	    }
+	}
+	.index-offers__link {
+	    font-size: 18px;
+	    line-height: 20px;
+	}
+	.index-offers__link:after {
+	    font-size: 14px;
+	    line-height: 16px;
+	    margin: 0px 3px;
+	    top: -3px;
 	}
 }
 
@@ -290,6 +573,233 @@
 	.layout--grey + .page-footer:after {
 	    border-top: 0;
 	}
+	.index-news__item {
+	    padding: 0 24px 0;
+	    min-width: 209px;
+		display: inline-block;
+		vertical-align: top;
+	    &:last-child{
+			padding-right: 0;
+		}
+		&:first-child{
+			padding-left: 0;
+		}
+	}
+	.index-news__list {
+		overflow-x: auto;
+		width: 100%;
+		max-width: 100%;
+		// display: block;
+		white-space: nowrap;
+	}
+	.index-news__top {
+	    white-space: normal;
+	}
+	.all-news {
+	    font-size: 12px;
+	    top: 0;
+	    &:before{
+	    	display: none;
+	    }
+	}
+	.index-news__title {
+	    align-items: center;
+	    margin-bottom: 25px;
+	}
+	.index-info__wrap{
+		flex-wrap:wrap;
+	}
+	.index-info__col{
+		width: 100%;
+	}
+	.index-info__col.index-info__col--lg{
+		padding-right: 0;
+		margin-bottom: 16px;
+	}
+	.index-info__col--lg .index-info__title{
+		font-family: 'golosregular';
+		text-transform: none;
+	}
+	.index-info__col--lg .index-info__in{
+		padding: 20px;
+	}
+	.index-info__col--lg:before {
+	    border-top: 32px solid #fff;
+	    border-right: 32px solid transparent;
+	}
+	.index-info {
+	    padding: 20px 0;
+	}
+	// .btn-wrap{
+	// 	padding-top: 20px;
+	// }
+	.show-more{
+		display: inline-block;
+	}
+	.index-info__slider {
+	    padding: 0;
+	}
+	.index-info__item{
+		display: none;
+		margin-bottom: 16px;
+		&:first-child{
+			display: block;
+		}
+	}
+	.app__wrap {
+	    padding: 24px 20px 38px 20px;
+	}
+	.app__title {
+	    font-size: 24px;
+	    line-height: 28px;
+	    margin-bottom: 55px;
+	}
+	.app__txt,
+	.app__links{
+	    padding-left: 50%;
+	}
+	.app__txt{
+		margin-bottom: 20px;
+	}
+	.app__img {
+	    width: calc(50% - 40px);
+	    height: 160px;
+	}
+	.courses__title {
+	    font-size: 18px;
+	    line-height: 22px;
+	    margin-bottom: 20px;
+	}
+	.money__wrap{
+		margin-right: 0;
+		flex-wrap:wrap;
+	}
+	.money__item {
+	    padding-right: 0;
+	    width: 100%;
+	    margin-bottom: 20px;
+	    &:last-child{
+	    	margin-bottom: 0;
+	    }
+	}
+	.money__top{
+		flex-wrap:wrap;
+	}
+	.money__top .tabs{
+		margin-left: 0!important;
+	}
+	.money__top h2{
+		width: 100%;
+	}
+	.money__top .tabs li {
+	    font-size: 18px;
+	    line-height: 20px;
+	    padding: 8px 14px !important;
+	}
+	.money__top {
+	    margin-bottom: 20px;
+	}
+	.income{
+		flex-wrap:wrap;
+	}
+	.income__txt{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.income input[type="text"] {
+	    width: 100%;
+	    text-align: right;
+	}
+	.income__input{
+		width: 100%;
+	}
+	.index-offers__info {
+	    padding: 8px 16px 70px 16px;
+	}
+	.index-offers__links {
+	    padding: 0 16px;
+	}
+	.index-offers__links .btn {
+	    margin-right: 5px;
+	}
+	.top-slider__inner {
+	    padding: 40px 20px 85px 20px;
+	}
+	.main-slider-preview{
+		display: none;
+	}
+	.top-slider-preview {
+	    width: 100%;
+	    top: auto;
+	    bottom: 0;
+	    height: auto;
+	}
+	.top-slider-preview__in {
+	    clip-path: none;
+	    position: static;
+	    width: 100%;
+	}
+	.main-next:before{
+		display: none;
+	}
+	.main-prev {
+	    background: url(../img/svg/prev-w.svg) center no-repeat;
+	}
+	.top-slider-controls {
+	    right: 0;
+	    left: 0;
+	    width: 100%;
+	}
+	.pagingInfo {
+	    margin-bottom: 0;
+	    position: absolute;
+	    bottom: 13px;
+	    width: 100%;
+	    padding: 0 45px;
+	}
+	.pagingInfo__current {
+	    color: #fff;
+	}
+	.main-next {
+	    right: 0;
+	}
+	.top-slider-line {
+    	width: calc(100% - 30px);
+	    left: 15px;
+	}
+	.top-slider__title {
+	    max-width: 100%;
+	    font-size: 26px;
+	    line-height: 30px;
+	}
+	.top-slider-list__item {
+	    margin-right: 10px;
+	    font-size: 16px;
+	    line-height: 20px;
+	    &:last-child{
+	    	margin-right: 0;
+	    }
+	}
+	.top-slider__links .btn {
+	    margin-right: 15px;
+	    padding: 5px 9px;
+	    font-size: 14px;
+	}
+	.top-slider__links .btn-more {
+	    padding: 4px 9px;
+	    font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 650px){
+	.index-offers__links .btn {
+	    padding: 6px 2px;
+	    font-size: 12px;
+	}
+	.index-offers__links .btn-more {
+	    padding: 4px 2px;
+	    font-size: 12px;
+	}
 }
 
 @media screen and (max-width: 600px){
@@ -395,13 +905,142 @@
 	}
 
 
-	// .page-footer-menu__list,
-	// .page-footer-menu__title {
-	//   display: none;
-	// }
-	// .page-footer-menu-box{
-	// 	select{
-	// 		display: block;
-	// 	}
-	// }
+	.index-news__title{
+		justify-content: space-between;
+	}
+	.index-news__top{
+		font-size: 14px;
+		line-height: 16px;
+	}
+	.app__link {
+	    max-width: 100%;
+	    padding-right: 0;
+	    margin-right: 0;
+	    height: auto;
+	    max-height: 40px;
+	    width: 100%;
+	    margin-bottom: 20px;
+	    &:last-child{
+	    	margin-bottom: 0;
+	    }
+	}
+	.app__links{
+		flex-wrap:wrap;
+	}
+	.index-links__icon {
+		position: static;
+		height: 95px;
+		display: flex;
+		margin-bottom: 10px;
+		justify-content: center;
+	    img{
+	    	max-width: 100%;
+	    	max-height: 100%;
+	    }
+	}
+	.index-links__title {
+	    margin-bottom: 10px;
+	}
+	.index-links__info{
+		text-align: center;
+	}
+	.index-links__inner {
+	    padding: 16px;
+	}
+	.index-links {
+	    padding: 30px 0;
+	}
+	.index-links__title {
+	    font-size: 18px;
+	    line-height: 20px;
+	}
+	.index-links__txt {
+	    font-size: 14px;
+	    line-height: 1.3;
+	}
+	.layout--index h2{
+		font-size: 20px;
+	}
+	.courses {
+	    padding: 30px 0;
+	}
+	.coverter {
+	    flex-wrap:wrap;
+	    margin-right: 0;
+	}
+	.coverter__item {
+	    width: 100%;
+	    padding-right: 0;
+	    margin-bottom: 5px;
+	}
+	.coverter__item:first-child:after{
+		display: none;
+	}
+	.coverter__item input[type="text"]{
+		padding-right: 92px;
+	}
+	.courses-table td {
+	    font-size: 16px;
+	    line-height: 18px;
+	        padding: 4px 1px;
+	}
+	.coverter__item .select-wrap{
+		right: 5px;
+	}
+	.inquiry-link {
+	    font-size: 12px;
+	    padding-left: 20px;
+	}
+	.tooltip{
+		display: none;
+	}
+	.inquiry-link:before {
+	    width: 16px;
+	    height: 12px;
+	    background-size: contain;
+	}
+	.courses-top__item{
+		display: block;
+		margin-right: 0;
+		width: 100%;
+		margin-bottom: 5px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	.courses-top{
+		flex-wrap:wrap;
+	}
+	.courses__item--covert:after{
+		display: none;
+	}
+	.index-offers {
+	    padding: 30px 0;
+	}
+	.index-offers__links .btn {
+	    padding: 6px 7px;
+	    font-size: 14px;
+	}
+	.index-offers__links .btn-more {
+	    padding: 4px 7px;
+	    font-size: 14px;
+	}
+	.index-news__list,
+	.index-offers__top{
+	    padding-bottom: 10px;
+	}
+	.top-slider-list__item {
+	    margin-right: 0;
+	    width: 50%;
+	}
+}
+
+@media screen and (max-width: 400px){
+	.app__title{
+		margin-bottom: 20px;
+	}
+	.app__img {
+	    width: 130px;
+	    height: 140px;
+	}
 }

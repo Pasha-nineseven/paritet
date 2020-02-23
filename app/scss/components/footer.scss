@@ -205,3 +205,16 @@ a.page-footer-menu__title{
 		display: none;
 	}
 }
+
+.develop{
+	color: #fff;
+	display: flex;
+	align-items:center;
+}
+.develop__link{
+	display: inline-block;
+	width: 89px;
+	height: 27px;
+	background: url(../img/svg/97.svg) no-repeat;
+	margin-left: 5px; 
+}

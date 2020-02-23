@@ -28,10 +28,12 @@ gulp.task('sass', function(){
 gulp.task('scripts', function(){
     return gulp.src([
         'app/libs/jquery/dist/jquery.min.js',
+        'app/libs/jquery-ui/jquery-ui.js',
         'app/libs/modernizr/modernizr.min.js',
         'app/libs/flexibility/flexibility.js',
         'app/libs/fancybox/jquery.fancybox.js',
         'app/libs/slick/slick.min.js',
+        'app/libs/tooltip/tooltipster.bundle.min.js',
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())
@@ -68,7 +70,7 @@ gulp.task('browser-sync', function() {
 
 
 gulp.task('watch', ['browser-sync','css-libs', 'scripts',], function() {
-    gulp.watch(['app/scss/*.scss' , 'app/scss/components/*.scss'], ['sass']); // Наблюдение за sass файлами
+    gulp.watch(['app/scss/*.scss' , 'app/scss/components/*.scss','app/scss/pages/*.scss'],  ['sass']); // Наблюдение за sass файлами
     // Наблюдение за другими типами файлов
     gulp.watch('app/*.html', browserSync.reload);
     gulp.watch('app/js/**/*.js', browserSync.reload);
