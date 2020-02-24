@@ -36,7 +36,7 @@
 .page-footer__wrap{
 	display: flex;
 	    justify-content: space-between;
-	    padding-bottom: 60px;
+	    padding-bottom: 32px;
 }
 
 .page-footer-menu__link{
@@ -97,7 +97,7 @@ a.page-footer-menu__title{
 	width: 32px;
 	height: 32px;
 	margin-right: 24px;
-	transition: background 0.3s ease;
+	transition: all 0.3s ease;
 	&:last-child{
 		margin-right: 0;
 	}
@@ -105,24 +105,28 @@ a.page-footer-menu__title{
 		background: url(../img/svg/fb.svg) center no-repeat;
 		&:hover{
 			background: rgba(255, 255, 255, 0.1) url(../img/svg/fb.svg) center no-repeat; 
+			    border: 2px solid rgba(255, 255, 255, 0);
 		}
 	}
 	&.vk{
 		background: url(../img/svg/vk.svg) center no-repeat;
 		&:hover{
 			background: rgba(255, 255, 255, 0.1) url(../img/svg/vk.svg) center no-repeat; 
+			    border: 2px solid rgba(255, 255, 255, 0);
 		}
 	}
 	&.inst{
 		background: url(../img/svg/inst.svg) center no-repeat;
 		&:hover{
-			background: rgba(255, 255, 255, 0.1) url(../img/svg/inst.svg) center no-repeat; 
+			background: rgba(255, 255, 255, 0.1) url(../img/svg/inst.svg) center no-repeat;
+			    border: 2px solid rgba(255, 255, 255, 0); 
 		}
 	}
 	&.you{
 		background: url(../img/svg/you.svg) center no-repeat;
 		&:hover{
 			background: rgba(255, 255, 255, 0.1) url(../img/svg/you.svg) center no-repeat; 
+			    border: 2px solid rgba(255, 255, 255, 0);
 		}
 	}
 }
@@ -210,6 +214,7 @@ a.page-footer-menu__title{
 	color: #fff;
 	display: flex;
 	align-items:center;
+	margin-top: 17px;
 }
 .develop__link{
 	display: inline-block;
@@ -217,4 +222,12 @@ a.page-footer-menu__title{
 	height: 27px;
 	background: url(../img/svg/97.svg) no-repeat;
 	margin-left: 5px; 
+}
+
+.bottom-add{
+	font-size: 16px;
+	line-height: 19px;
+
+	color: #999A98;
+	padding-top: 8px;
 }

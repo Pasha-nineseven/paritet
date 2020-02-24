@@ -889,8 +889,10 @@ html .ui-button.ui-state-disabled:active,
 html .ui-button.ui-state-disabled:hover {
     border: 0;
     background: url(../img/svg/range.svg) no-repeat;
+    background-size: cover;
     &.ui-state-hover{
     	background: url(../img/svg/range-h.svg) no-repeat;
+    	background-size: cover;
     }
     // &.ui-state-active{
 
@@ -1000,6 +1002,9 @@ html .ui-button.ui-state-disabled:hover {
 
 .index-offers{
 	padding: 64px 0;
+	// .container-fluid{
+	// 	max-width: 100%;
+	// }
 }
 .index-offers__top{
 	margin-bottom: 40px;
@@ -1081,7 +1086,7 @@ html .ui-button.ui-state-disabled:hover {
 }
 
 .index-offers__inner{
-	border: 2px solid #F0F2F5;
+	// border: 2px solid #F0F2F5;
 	height: 100%;
 	// box-shadow: 0px 4px 48px #BDC5D1;
 	box-shadow: 0 20px 17px -19px rgba(0, 0, 0, 0.35);
@@ -1175,9 +1180,9 @@ html .ui-button.ui-state-disabled:hover {
 		transform: translateY(-50%);
 		z-index: 2;
 		transition: opacity 0.3s ease;
-		&:hover{
-			opacity: 0.7;
-		}
+		// &:hover{
+		// 	opacity: 0.7;
+		// }
 	}
 	.slick-prev{
 		left: -88px;
@@ -1323,6 +1328,13 @@ html .ui-button.ui-state-disabled:hover {
 	display: inline-block;
 	background: #0083CA url(../img/svg/prev-w.svg) center no-repeat;
 	cursor: pointer;
+	transition: background 0.3s ease;
+	&:hover{
+		background: #0B4DCE url(../img/svg/prev-w.svg) center no-repeat;
+	}
+	&:active{
+		background: #2C4295 url(../img/svg/prev-w.svg) center no-repeat;
+	}
 }
 .main-next{
 	width: 51px;

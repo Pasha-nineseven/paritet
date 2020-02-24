@@ -703,11 +703,23 @@
 										<div class="money__top">
 											<h2>Подобрать</h2>
 											<ul class="tabs">
-												<li class="tab-link current" data-tab="deposit">депозит</li>
-												<li class="tab-link" data-tab="credit">кредит</li>
+												<li class="tab-link" data-tab="deposit">депозит</li>
+												<li class="tab-link current" data-tab="credit">кредит</li>
 											</ul>
 										</div>
-										<div id="deposit" class="tab-content current">
+										<div id="deposit" class="tab-content">
+											<form action="#" method="post">
+												<div class="money__wrap">
+													<div class="money__item">
+														<div class="money__title">Test</div>
+													</div>
+													<div class="money__item">
+														<div class="money__title">Test</div>
+													</div>
+												</div>
+											</form>
+										</div>
+										<div id="credit" class="tab-content current">
 											<form action="#" method="post">
 												<div class="money__wrap">
 													<div class="money__item">
@@ -723,7 +735,7 @@
 														<div class="income">
 															<div class="income__txt">Минимальный доход в месяц:</div>
 															<div class="income__input">
-																<input type="text" value="10 830 BYN">
+																<input type="text" value="10 830 BYN" disabled>
 															</div>
 														</div>
 													</div>
@@ -748,18 +760,6 @@
 															</a>
 														</div>
 														<input type="submit" value="Подобрать кредит" class="money-term__btn">
-													</div>
-												</div>
-											</form>
-										</div>
-										<div id="credit" class="tab-content">
-											<form action="#" method="post">
-												<div class="money__wrap">
-													<div class="money__item">
-														<div class="money__title">Test</div>
-													</div>
-													<div class="money__item">
-														<div class="money__title">Test</div>
 													</div>
 												</div>
 											</form>
@@ -1189,17 +1189,29 @@
 							</a>
 							<div class="page-footer-menu__list">
 								<a href="#" class="page-footer-menu__link">Новости</a>
-								<a href="#" class="page-footer-menu__link">Реквизиты</a>
-								<a href="#" class="page-footer-menu__link">НБРБ </a>
-								<a href="#" class="page-footer-menu__link">Личный прием</a>
+								<a href="#" class="page-footer-menu__link">Корпоративное управление</a>
 								<a href="#" class="page-footer-menu__link">Раскрытие информации</a>
-								<a href="#" class="page-footer-menu__link">Информация…?</a>
+								<a href="#" class="page-footer-menu__link">Финансовая отчетность</a>
+								<a href="#" class="page-footer-menu__link">Вакансии</a>
+								<a href="#" class="page-footer-menu__link">Закупки</a>
+								<a href="#" class="page-footer-menu__link">Награды</a>
+								<a href="#" class="page-footer-menu__link">Реализация имущества</a>
+								<a href="#" class="page-footer-menu__link">Реквизиты</a>
+								<a href="#" class="page-footer-menu__link">Обязательная информация</a>
+								<a href="#" class="page-footer-menu__link">Личный прием</a>
 							</div>
 						</div>
 						<div class="page-footer-menu__item">
 							<a href="#" class="page-footer-menu__title">
-								Офисы и банкоматы
+								Информация
 							</a>
+							<div class="page-footer-menu__list">
+								<a href="#" class="page-footer-menu__link">Реквизиты</a>
+								<a href="#" class="page-footer-menu__link">НБРБ </a>
+								<a href="#" class="page-footer-menu__link">Личный прием</a>
+								<a href="#" class="page-footer-menu__link">Раскрытие информации</a>
+								<a href="#" class="page-footer-menu__link">Офисы и банкоматы</a>
+							</div>
 						</div>
 					</div>
 					<div class="page-footer-menu-contact">
@@ -1249,11 +1261,14 @@
 				<div class="bottom">
 					<div class="copiright">
 						&copy; 2020 ОАО «Паритетбанк». УНП 100233809
+						<div class="bottom-add">
+							Информация на сайте носит справочный характер и не является публичной офертой
+						</div>
 					</div>
 					<div class="bottom__info">
 						<div class="develop">
 							Разработка сайта:
-							<a href="#" class="develop__link"></a>
+							<a href="https://nineseven.by/" class="develop__link" target="_blank"></a>
 						</div>
 					</div>
 				</div>
