@@ -19,19 +19,11 @@
 		    left: 0;
 		}
 	}
-	.index-offers__slider{
-		.slick-next {
-		    right: 15px;
-		}
-		.slick-prev {
-		    left: 0;
-		}
-	}
 }
 
 @media screen and (max-width: 1320px){
 	.money {
-	    padding: 40px 15px;
+	    padding: 40px 0;
 	}
 	.index-offers__info {
 	    padding: 20px 20px 90px 20px;
@@ -58,6 +50,16 @@
 	}
 	.top-slider__inner {
 	    padding: 77px 0 288px 20px;
+	}
+	.layout--index .container-fluid {
+	    padding: 0 15px;
+	}
+	.layout--index{
+		.page-content{
+			>.container-fluid{
+				padding: 0;
+			}
+		}
 	}
 }
 
@@ -116,6 +118,9 @@
 	    width: 80px;
 	    right: 18px;
 	    top: 4px;
+	}
+	.select__item--term {
+	    padding-right: 0;
 	}
 }
 
@@ -338,6 +343,58 @@
 	.top-slider__inner{
 		padding: 40px 280px 150px 20px;
 	}
+	.news__title {
+	    font-size: 28px;
+	}
+	.select__col:first-child {
+	    padding-right: 20px;
+	}
+	.select{
+		padding: 20px;
+	}
+	.select input[type="submit"] {
+	    padding: 6px 13px;
+	}
+	.deposit--short .deposit__info {
+	    padding: 20px 20px 240px 20px;
+	}
+	.deposit--short .index-offers__links {
+	    padding: 0 20px;
+	    bottom: 215px;
+	}
+	.deposit--short .index-offers__links .btn {
+	    margin-right: 5px;
+	}
+	.deposit--short {
+	    margin-right: 0;
+	}
+	.deposit--short .deposit__item {
+	    width: 100%;
+	    margin-right: 0;
+	        background: #F0F2F5;
+	}
+	.deposit--short .index-offers__links {
+	    padding: 0;
+	    position: static;
+	}
+	.deposit--short .deposit__info {
+	    padding: 20px;
+	   //margin-bottom: 0;
+	}
+	.deposit--short .deposit__img {
+	    clip-path: polygon(44px 0, 100% 0, 100% 100%, 0 100%, 0 44px);
+	    height: 200px;
+	}
+
+	.issue__list{
+		margin-right: -60px;
+	}
+	.issue__item {
+	    padding-right: 60px;
+	    &:after{
+	    	right: 18px;
+	    }
+	}
 }
 
 @media screen and (max-width: 900px){
@@ -392,6 +449,34 @@
 	    line-height: 16px;
 	    margin: 0px 3px;
 	    top: -3px;
+	}
+	.select .checkbox-wrap{
+		flex-wrap:wrap;
+	}
+	.select .checkbox-item {
+	    width: 100%;
+	    padding-right: 0;
+	    margin-bottom: 10px;
+	    &:last-child{
+	    	margin-bottom: 0;
+	    }
+	}
+	.deposit__img {
+	    width: 210px;
+	    min-width: 210px;
+	}
+	.deposit__info{
+		padding-right: 240px;
+	}
+	.deposit__title {
+	    font-size: 24px;
+	    line-height: 28px;
+	    margin-bottom: 20px;
+	}
+	.deposit__txt {
+	    font-size: 16px;
+	    line-height: 1.2;
+	    margin-bottom: 20px;
 	}
 }
 
@@ -462,11 +547,13 @@
 		font-size: 18px;
 	}
 	.input-wrap__txt input[type="text"],
-	.order input[type="text"]{
+	.order input[type="text"],
+	.order input[type="tel"]{
 		padding-left: 70px;
 	}
 	.order input[type="submit"] {
-	    padding: 12px 20px 13px;
+	    padding: 10px 20px 11px;
+	    font-size: 18px;
 	}
 	.order-wrap__txt{
 		padding-right: 20px;
@@ -793,6 +880,40 @@
 		font-size: 12px;
 		line-height: 16px;
 	}
+	.news__title {
+	    font-size: 18px;
+	    line-height: 1.2;
+    	margin-bottom: 15px;
+	}
+	.news__txt {
+	    font-size: 16px;
+	    line-height: 1.2;
+	    margin-bottom: 15px;
+	}
+	.news__item {
+	    margin-bottom: 20px;
+	    padding: 20px;
+	}
+	.paging__next {
+	    font-size: 16px;
+	    line-height: 18px;
+	    padding: 5px;
+	}
+	.paging__item {
+	    font-size: 16px;
+	    padding: 2px 12px;
+	}
+	.deposit__item{
+		margin-bottom: 20px;
+	}
+	.deposit__info {
+	    /* padding-right: 240px; */
+	    padding: 20px 240px 20px 20px;
+	}
+	.docs__title {
+	    font-size: 18px;
+	    line-height: 1.2;
+	}
 }
 
 @media screen and (max-width: 650px){
@@ -803,6 +924,20 @@
 	.index-offers__links .btn-more {
 	    padding: 4px 2px;
 	    font-size: 12px;
+	}
+	.issue__list{
+		margin-right: 0;
+	}
+	.issue__item {
+	    padding-right: 0;
+	    width: 100%;
+	    margin-bottom: 30px;
+	}
+	.issue__title{
+		margin-bottom: 10px;
+	}
+	.issue__item:after{
+		display: none;
 	}
 }
 
@@ -1037,6 +1172,69 @@
 	    margin-right: 0;
 	    width: 50%;
 	}
+	.paging__inner {
+	    margin-bottom: 10px;
+	}
+	.page-links-month .slick-next:before,
+	.page-links-month .slick-prev:before{
+		width: 50px;
+	}
+	.select__wrap{
+		flex-wrap:wrap;
+	}
+	.select__col:first-child {
+	    padding-right: 0;
+	}
+	.deposit__item{
+		flex-wrap:wrap;
+	}
+	.deposit__img {
+	    width: 100%;
+	    min-width: 100%;
+	    position: static;
+	    height: 200px;
+	        clip-path: polygon(44px 0, 100% 0, 100% 100%, 0 100%, 0 44px);
+	}
+	.deposit__info {
+	    padding: 20px;
+	    margin-bottom: 20px;
+	}
+	.select:before {
+	    border-top: 44px solid #fff;
+	    border-left: 44px solid transparent;
+	}
+	.index-offers__slider {
+	    padding: 0 40px 0 16px;
+	}
+	.index-offers__img:before{
+		border-top: 44px solid #F0F2F5;
+    	border-right: 44px solid transparent;
+    	    top: -2px;
+	}
+	.index-offers__links {
+	    flex-wrap: wrap;
+	    position: static;
+	    padding: 0;
+	}
+	.index-offers-more{
+		margin-bottom: 20px;
+	}
+	.index-offers__links .btn{
+		margin-bottom: 10px;
+	}
+	.index-offers__links .btn-more{
+		margin-bottom: 10px;
+	}
+	.index-offers__info{
+		padding-bottom: 10px;
+	}
+	.index-offers__img {
+	    height: 115px;
+	}
+	.docs__item {
+	    padding-right: 0;
+	    width: 100%;
+	}
 }
 
 @media screen and (max-width: 400px){
@@ -1047,4 +1245,5 @@
 	    width: 130px;
 	    height: 140px;
 	}
+	
 }

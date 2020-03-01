@@ -293,9 +293,16 @@ $(document).ready(function() {
             adaptiveHeight: false,
             responsive: [
 			    {
-			      breakpoint: 1000,
+			      breakpoint: 1100,
 			      settings: {
 			        slidesToShow: 2,
+            		slidesToScroll: 1,
+			      }
+			    },
+			    {
+			      breakpoint: 800,
+			      settings: {
+			        slidesToShow: 1,
             		slidesToScroll: 1,
 			      }
 			    },
@@ -309,6 +316,92 @@ $(document).ready(function() {
 			      }
 			    },
 			]
+        });
+
+	};
+
+	//SLIDER MONTH
+	if ($( ".page-links-month" ).length>0) {
+		var $slider_month = $('.page-links-month');
+
+        $slider_month.slick({
+            infinite: false,
+            dots: false,
+            arrows:true,
+            slidesToShow: 11,
+            slidesToScroll: 1,
+            adaptiveHeight: false,
+            responsive: [
+			    {
+			      breakpoint: 1023,
+			      settings: {
+			        slidesToShow: 9,
+            		slidesToScroll: 1,
+			      }
+			    },
+			    {
+			      breakpoint: 700,
+			      settings: {
+			        slidesToShow: 7,
+            		slidesToScroll: 1,
+			      }
+			    },
+			    {
+			      breakpoint: 550,
+			      settings: {
+			        slidesToShow: 3,
+            		slidesToScroll: 1,
+			      }
+			    },
+			    {
+			      breakpoint: 400,
+			      settings: {
+			        slidesToShow: 2,
+            		slidesToScroll: 1,
+			      }
+			    },
+			]
+        });
+
+	};
+
+
+	//SIZE-SLIDER
+	if ($( ".size-slider" ).length>0) {
+		var $slider_size = $('.size-slider');
+
+        $slider_size.slick({
+            infinite: false,
+            dots: true,
+            arrows:true,
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            adaptiveHeight: false,
+   //          responsive: [
+			//     {
+			//       breakpoint: 1100,
+			//       settings: {
+			//         slidesToShow: 2,
+   //          		slidesToScroll: 1,
+			//       }
+			//     },
+			//     {
+			//       breakpoint: 800,
+			//       settings: {
+			//         slidesToShow: 1,
+   //          		slidesToScroll: 1,
+			//       }
+			//     },
+			//     {
+			//       breakpoint: 600,
+			//       settings: {
+			//         slidesToShow: 1,
+   //          		slidesToScroll: 1,
+   //          		dots: false,
+   //          		arrows:false,
+			//       }
+			//     },
+			// ]
         });
 
 	};
@@ -364,5 +457,9 @@ $('body').append(
 		<li><a href="about.html">About</a></li> \
 		<li><a href="index.html">Index</a></li> \
 		<li><a href="test.html">Test</a></li> \
+		<li><a href="news.html">News</a></li> \
+		<li><a href="deposit_list_page_01.html">Deposit1</a></li> \
+		<li><a href="deposit_list_page_02.html">Deposit2</a></li> \
+		<li><a href="deposit_page.html">Deposit-page</a></li> \
 	</ol> \
 </div>');
