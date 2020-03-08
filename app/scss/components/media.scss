@@ -141,6 +141,12 @@
 	.page-tabs__wrap{
 		padding-left: 0;
 	}
+	.other .indent {
+	    padding-left: 119px;
+	}
+	.deposit-top__info {
+	    padding: 0;
+	}
 }
 
 @media screen and (max-width: 1100px){
@@ -251,6 +257,17 @@
 	.top-slider-line{
 		width: 240px;
 		left: -50px;
+	}
+	.size-payment-income {
+	    padding: 120px 20px 40px 20px;
+	    width: 300px;
+	    min-width: 300px;
+	}
+	.size-payment__in {
+	    padding: 30px 20px 30px 30px;
+	}
+	.bid {
+	    padding: 30px;
 	}
 }
 
@@ -454,6 +471,32 @@
 		width: 100%;
 		margin-bottom: 20px;
 	}
+	.size-slider__count {
+	    font-size: 46px;
+	    line-height: 50px;
+	    margin-bottom: 10px;
+	}
+	.bid-next__link {
+	    margin-left: 15px;
+	    font-size: 18px;
+	    padding: 1px 3px;
+	    padding: 10px;
+	}
+	.deposit-top-add__item {
+	    margin-bottom: 10px;
+	    font-size: 18px;
+	}
+	.deposit-top__main h2 {
+    	font-size: 24px;
+	    line-height: 1.2;
+	    margin-bottom: 20px;
+	}
+	.deposit-top__info {
+	    width: calc(65% + 120px);
+	}
+	.deposit-top:before{
+		width: calc(65% + 115px);
+	}
 }
 
 @media screen and (max-width: 900px){
@@ -547,6 +590,7 @@
 	.office-wrap{
 		margin-right: 0;
 	}
+	
 }
 
 @media screen and (max-width: 768px){
@@ -999,6 +1043,29 @@
 	.office-title {
 	    font-size: 24px;
 	}
+	.other .indent {
+	    padding-left: 15px;
+	}
+	.issue__list{
+		flex-wrap:wrap;
+		margin-right: 0;
+	}
+	.issue__item{
+		padding-right: 0;
+		width: 100%;
+		margin-bottom: 20px;
+		text-align: center;
+		&:after{
+			display: none;
+		}
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	.issue__icon {
+	    display: flex;
+	    justify-content: center;
+	}
 
 }
 
@@ -1009,6 +1076,9 @@
 	.card__info {
 	    padding: 20px;
 	    width: 100%;
+	}
+	.bid-select:after{
+		display: none;
 	}
 }
 
@@ -1034,6 +1104,88 @@
 	}
 	.issue__item:after{
 		display: none;
+	}
+	.size-payment__wrap{
+		flex-wrap:wrap;
+	}
+	.size-payment__in{
+		width: 100%;
+		padding: 20px;
+	}
+	.size-payment-income {
+	    padding: 20px;
+	    width: 100%;
+	    min-width: 100%;
+	}
+	.size-payment__wrap:before{
+		display: none;
+	}
+	.deposit-top__info {
+	    width: 100%;
+	    flex-wrap: wrap;
+	}
+	.deposit-top-add {
+	    width: 100%;
+	    min-width: 100%;
+	    position: static;
+	    height: auto;
+	    padding: 0 0 40px;
+	    background: transparent;
+	}
+	.deposit-top__main {
+	    padding: 40px 0;
+	    width: 100%;
+	}
+	.deposit-top:before {
+	    width: 100%;
+	    clip-path: none;
+	}
+	.deposit-top__txt{
+		padding-left: 0;
+	}
+	.deposit-top__btn{
+		margin-left: 0;
+	}
+	.size-slider__count {
+	    font-size: 26px;
+	    line-height: 26px;
+	}
+	.size-slider__time {
+	    font-size: 26px;
+	    line-height: 30px;
+	}
+	.size-slider__time:before {
+	    margin-top: -3px;
+	}
+	.size-payment__title {
+	    font-size: 24px;
+	    line-height: 26px;
+	    margin-bottom: 20px;
+	}
+	.size-payment .slider-count input[type="text"] {
+	    font-size: 18px;
+	}
+	.size-payment .money-term__item {
+	    font-size: 18px;
+	    line-height: 35px;
+	    height: 35px;
+	}
+	.size-payment-income__title {
+	    font-size: 24px;
+	    line-height: 1.2;
+	    margin-bottom: 20px;
+	}
+	.size-payment-income__sum {
+	    font-size: 24px;
+	}
+	.size-slider {
+	    padding-left: 75px;
+	    padding-right: 50px;
+	}
+	.size-slider .slick-arrow {
+	    width: 60px;
+	    height: 45px;
+	    border: 2px solid #F0F2F5;
 	}
 }
 
@@ -1377,6 +1529,41 @@
 	}
 	.map .tabs li{
 	    width: 100%;
+	}
+	.bid-form__list {
+	    flex-wrap: wrap;
+	    margin-right: 0;
+	    margin-bottom: 20px;
+	}
+	.bid-form__item {
+	    width: 100%;
+	    padding-right: 0;
+	    margin-bottom: 20px;
+	    &:last-child{
+	    	margin-bottom: 0;
+	    }
+	}
+	.bid {
+	    padding: 15px;
+	}
+	.bid-next {
+	    justify-content: flex-start;
+	    flex-wrap: wrap;
+	}
+	.bid-next__link {
+	    margin-left: 0;
+	    width: 100%;
+	    text-align: center;
+	    margin-top: 10px;
+	}
+	.bid-select__txt {
+	    line-height: 1.2;
+	    font-size: 14px;
+	}
+	.bid__add {
+	    font-size: 16px;
+	    line-height: 1.2;
+	    margin-bottom: 20px;
 	}
 }
 

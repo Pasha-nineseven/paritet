@@ -371,37 +371,21 @@ $(document).ready(function() {
 		var $slider_size = $('.size-slider');
 
         $slider_size.slick({
-            infinite: false,
+            infinite: true,
             dots: true,
             arrows:true,
             slidesToShow: 2,
             slidesToScroll: 1,
             adaptiveHeight: false,
-   //          responsive: [
-			//     {
-			//       breakpoint: 1100,
-			//       settings: {
-			//         slidesToShow: 2,
-   //          		slidesToScroll: 1,
-			//       }
-			//     },
-			//     {
-			//       breakpoint: 800,
-			//       settings: {
-			//         slidesToShow: 1,
-   //          		slidesToScroll: 1,
-			//       }
-			//     },
-			//     {
-			//       breakpoint: 600,
-			//       settings: {
-			//         slidesToShow: 1,
-   //          		slidesToScroll: 1,
-   //          		dots: false,
-   //          		arrows:false,
-			//       }
-			//     },
-			// ]
+            responsive: [
+			    {
+			      breakpoint: 700,
+			      settings: {
+			        slidesToShow: 1,
+            		slidesToScroll: 1,
+			      }
+			    },
+			]
         });
 
 	};
