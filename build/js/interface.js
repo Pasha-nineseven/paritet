@@ -407,6 +407,64 @@ $(document).ready(function() {
 	};
 
 
+	//SELECT-CUSTOM
+	if ($('.fs').length>0) {
+		setTimeout(function() {
+		 	$('.fs').styler();
+		}, 100)
+		
+	}
+
+
+	//SWITCH-TOGGLE
+    $("body").on("click", ".b-switch__right", function(e){
+        e.preventDefault();
+        $(this).parents('.b-switch').toggleClass('b-switch--checked');
+        if ( $(this).parents('.b-switch').is( ".b-switch--checked" ) ) {
+		    $( ".office-list" ).show();
+		    $( ".map-wrap" ).hide();
+		} else{
+			$( ".office-list" ).hide();
+		    $( ".map-wrap" ).show();
+		}
+    });
+    $("body").on("click", ".b-switch__left", function(e){
+        e.preventDefault();
+        $(this).parents('.b-switch').toggleClass('b-switch--checked');
+        if ( $(this).parents('.b-switch').is( ".b-switch--checked" ) ) {
+		    $( ".office-list" ).show();
+		    $( ".map-wrap" ).hide();
+		} else{
+			$( ".office-list" ).hide();
+		    $( ".map-wrap" ).show();
+		}
+    });
+
+
+
+    //TOP-MENU
+    $("body").on("click", ".js-timetable-link", function(e){
+        e.preventDefault();
+        $(this).toggleClass('active');
+        $(this).next('.timetable-list').slideToggle(170);
+    });
+
+
+    //TABS
+	$(".tab_content").hide();
+	$("ul.tabs li:first").addClass("active").show();
+	$(".tab_content:first").show();
+
+	$("ul.tabs li").click(function() {
+		$("ul.tabs li").removeClass("active");
+		$(this).addClass("active");
+		$(".tab_content").hide();
+		var activeTab = $(this).find("a").attr("href");
+		$(activeTab).fadeIn();
+		return false;
+	});
+
+
 	//SLIDER init
 	index__info__sliderInit();
 
@@ -461,5 +519,7 @@ $('body').append(
 		<li><a href="deposit_list_page_01.html">Deposit1</a></li> \
 		<li><a href="deposit_list_page_02.html">Deposit2</a></li> \
 		<li><a href="deposit_page.html">Deposit-page</a></li> \
+		<li><a href="card.html">Card</a></li> \
+		<li><a href="map-page.html">Map-page</a></li> \
 	</ol> \
 </div>');

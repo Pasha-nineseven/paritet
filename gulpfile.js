@@ -34,6 +34,7 @@ gulp.task('scripts', function(){
         'app/libs/fancybox/jquery.fancybox.js',
         'app/libs/slick/slick.min.js',
         'app/libs/tooltip/tooltipster.bundle.min.js',
+        'app/libs/formstyler/jquery.formstyler.min.js',
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())

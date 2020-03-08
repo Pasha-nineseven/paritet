@@ -735,8 +735,8 @@ span.breadcrumbs__item{
     	background: #0B4DCE;
     	color: #fff;
     }
-    &.active{
-    	background: #2C4295;
+    &:active{
+    	background:  #2C4295;
     }
 }
 .page-links-month-wrap{
@@ -749,6 +749,9 @@ span.breadcrumbs__item{
 @import "pages/news";
 @import "pages/deposit";
 
+
+@import "pages/card";
+@import "pages/map";
 
 @import "components/media";
 
