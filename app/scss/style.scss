@@ -606,7 +606,8 @@ span.breadcrumbs__item{
 		border-bottom: 2px solid #0083CA;
 	}
 }
-.page-links-month{
+.page-links-month,
+.page-links-month-noslide{
 	// display: flex;
 	// flex-wrap:wrap;
 	border: 2px solid #F0F2F5;
@@ -689,7 +690,10 @@ span.breadcrumbs__item{
 	}
 }
 
-
+.page-links-month-noslide{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 
 .paging__wrap{
@@ -742,6 +746,38 @@ span.breadcrumbs__item{
 .page-links-month-wrap{
 	width: 100%
 }
+
+.page-slider{
+	.slick-arrow{
+		display: inline-block;
+		width: 59px;
+		height: 99px;
+		background: #FFFFFF;
+		/* Light blue grey */
+
+		border: 4px solid #F0F2F5;
+		padding: 0;
+		border-radius: 4px;
+		text-indent: -9999em;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 2;
+		transition: opacity 0.3s ease;
+		&:hover{
+			opacity: 0.7;
+		}
+	}
+	.slick-prev{
+		left: -88px;
+		background: #FFFFFF url(../img/svg/prev.svg) center no-repeat;
+	}
+	.slick-next{
+		right: -88px;
+		background: #FFFFFF url(../img/svg/next.svg) center no-repeat;
+	}
+}
+
 
 @import "components/footer";
 

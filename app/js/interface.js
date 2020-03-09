@@ -449,6 +449,24 @@ $(document).ready(function() {
 	});
 
 
+
+	//PAGE-SLIDER
+	if ($( ".page-slider" ).length>0) {
+		var $slider_p = $('.page-slider');
+
+        $slider_p.slick({
+            infinite: false,
+            dots: false,
+            arrows:true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            fade:true,
+            adaptiveHeight: false,
+        });
+
+	};
+
+
 	//SLIDER init
 	index__info__sliderInit();
 

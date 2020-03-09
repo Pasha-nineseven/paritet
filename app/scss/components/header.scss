@@ -271,6 +271,9 @@
 	&:last-child{
 		margin-right: 0;
 	}
+	&.active{
+		color: $hover-color;
+	}
 }
 
 .page-header-more{
@@ -364,7 +367,8 @@
 	width: 33.33%;
 	padding-right: 20px;
 	margin-bottom: 20px;
-	&:hover{
+	&:hover,
+	&.active{
 		color: $hover-color;
 	}
 }

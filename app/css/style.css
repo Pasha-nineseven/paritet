@@ -3876,6 +3876,8 @@ textarea, input {
     color: #0B4DCE; }
   .page-header__link:last-child {
     margin-right: 0; }
+  .page-header__link.active {
+    color: #0B4DCE; }
 
 .page-header-more {
   margin-right: 46px; }
@@ -3961,7 +3963,7 @@ textarea, input {
   width: 33.33%;
   padding-right: 20px;
   margin-bottom: 20px; }
-  .page-header-more__item:hover {
+  .page-header-more__item:hover, .page-header-more__item.active {
     color: #0B4DCE; }
 
 .page-header-more__wrap {
@@ -4695,12 +4697,15 @@ span.breadcrumbs__item {
     background: #F0F2F5;
     border-bottom: 2px solid #0083CA; }
 
-.page-links-month {
+.page-links-month,
+.page-links-month-noslide {
   border: 2px solid #F0F2F5;
   overflow: hidden; }
-  .page-links-month .slick-track {
+  .page-links-month .slick-track,
+  .page-links-month-noslide .slick-track {
     min-width: 100%; }
-  .page-links-month .slick-arrow {
+  .page-links-month .slick-arrow,
+  .page-links-month-noslide .slick-arrow {
     position: absolute;
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -4715,12 +4720,15 @@ span.breadcrumbs__item {
     padding: 0;
     border: 2px solid #F0F2F5;
     text-indent: -9999em; }
-    .page-links-month .slick-arrow.slick-disabled {
+    .page-links-month .slick-arrow.slick-disabled,
+    .page-links-month-noslide .slick-arrow.slick-disabled {
       display: none !important; }
-  .page-links-month .slick-prev {
+  .page-links-month .slick-prev,
+  .page-links-month-noslide .slick-prev {
     left: -2px;
     background: #FFFFFF url(../img/svg/prev.svg) center no-repeat; }
-    .page-links-month .slick-prev:before {
+    .page-links-month .slick-prev:before,
+    .page-links-month-noslide .slick-prev:before {
       content: "";
       display: inline-block;
       width: 116px;
@@ -4732,10 +4740,12 @@ span.breadcrumbs__item {
       background: -webkit-gradient(linear, left top, right top, from(#FFFFFF), to(rgba(255, 255, 255, 0)));
       background: linear-gradient(-270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
       position: absolute; }
-  .page-links-month .slick-next {
+  .page-links-month .slick-next,
+  .page-links-month-noslide .slick-next {
     right: -2px;
     background: #FFFFFF url(../img/svg/next.svg) center no-repeat; }
-    .page-links-month .slick-next:before {
+    .page-links-month .slick-next:before,
+    .page-links-month-noslide .slick-next:before {
       content: "";
       display: inline-block;
       width: 116px;
@@ -4770,6 +4780,15 @@ span.breadcrumbs__item {
   .page-links-month__link:hover {
     background: #F0F2F5;
     color: #343532; }
+
+.page-links-month-noslide {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
 
 .paging__wrap {
   display: -webkit-box;
@@ -4829,6 +4848,35 @@ span.breadcrumbs__item {
 
 .page-links-month-wrap {
   width: 100%; }
+
+.page-slider .slick-arrow {
+  display: inline-block;
+  width: 59px;
+  height: 99px;
+  background: #FFFFFF;
+  /* Light blue grey */
+  border: 4px solid #F0F2F5;
+  padding: 0;
+  border-radius: 4px;
+  text-indent: -9999em;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 2;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease; }
+  .page-slider .slick-arrow:hover {
+    opacity: 0.7; }
+
+.page-slider .slick-prev {
+  left: -88px;
+  background: #FFFFFF url(../img/svg/prev.svg) center no-repeat; }
+
+.page-slider .slick-next {
+  right: -88px;
+  background: #FFFFFF url(../img/svg/next.svg) center no-repeat; }
 
 .page-footer {
   -webkit-flex-shrink: 0;
@@ -8451,7 +8499,13 @@ ymaps[class*="-copyright"] {
     width: calc(65% + 120px); }
   .deposit-top:before {
     width: -webkit-calc(65% + 115px);
-    width: calc(65% + 115px); } }
+    width: calc(65% + 115px); }
+  .page-slider {
+    padding: 0 40px; }
+  .page-slider .slick-prev {
+    left: -30px; }
+  .page-slider .slick-next {
+    right: -30px; } }
 
 @media screen and (max-width: 900px) {
   .logo {
@@ -8895,7 +8949,19 @@ ymaps[class*="-copyright"] {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
-            justify-content: center; } }
+            justify-content: center; }
+  .page-slider {
+    padding: 0 50px; }
+    .page-slider .page-img:before {
+      border-top: 40px solid #fff;
+      border-right: 40px solid transparent; }
+  .page-slider .slick-prev {
+    left: 2px; }
+  .page-slider .slick-next {
+    right: 2px; }
+  .page-slider .slick-arrow {
+    width: 40px;
+    height: 70px; } }
 
 @media screen and (max-width: 700px) {
   .card__item {
