@@ -231,3 +231,25 @@ a.page-footer-menu__title{
 	color: #999A98;
 	padding-top: 8px;
 }
+
+.bottom-download{
+	display: inline-block;
+	font-size: 16px;
+	line-height: 1.2;
+	color: #FFFFFF;
+	border: 1px solid #0083CA;
+	border-radius: 4px;
+	    padding: 12px 17px 12px 61px;
+	position: relative;
+	margin-top: 44px;
+	&:before{
+		content: "";
+		display: inline-block;
+		width: 39px;
+		height: 50px;
+		position: absolute;
+		left: 8px;
+    	top: -14px;
+		background: url(../img/svg/file_icon_b.svg) no-repeat;
+	}
+}

@@ -523,5 +523,6 @@ $('body').append(
 		<li><a href="deposit_page.html">Deposit-page</a></li> \
 		<li><a href="card.html">Card</a></li> \
 		<li><a href="map-page.html">Map-page</a></li> \
+		<li><a href="statements.html">Statements</a></li> \
 	</ol> \
 </div>');
