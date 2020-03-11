@@ -611,9 +611,9 @@ span.breadcrumbs__item{
 	// display: flex;
 	// flex-wrap:wrap;
 	border: 2px solid #F0F2F5;
-	overflow: hidden;
+	//overflow: hidden;
 	.slick-track{
-		min-width: 100%;
+		//min-width: 100%;
 	}
 	.slick-arrow{
 		position: absolute;
@@ -671,7 +671,7 @@ span.breadcrumbs__item{
 	border-top: 2px solid #fff;
 	border-bottom: 2px solid #fff;
 	transition:all 0.3s ease;
-	white-space: nowrap;
+	// white-space: nowrap;
 	text-align: center;
 	&:first-child{
 		border-left: 2px solid #fff;

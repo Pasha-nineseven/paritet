@@ -1,6 +1,10 @@
 $(document).ready(function() {
 	flexibility(document.documentElement);
 
+	if ($("table").length>0) {
+		$("table").wrap("<div class='table-wrap'></div>");
+	}
+
 	//MAIN-SLIDER 
 	if ($('.top-slider').length>0) {
         var time = 5;
@@ -328,7 +332,7 @@ $(document).ready(function() {
             infinite: false,
             dots: false,
             arrows:true,
-            slidesToShow: 11,
+            slidesToShow: 5,
             slidesToScroll: 1,
             adaptiveHeight: false,
             responsive: [

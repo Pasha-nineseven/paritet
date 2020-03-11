@@ -4699,11 +4699,7 @@ span.breadcrumbs__item {
 
 .page-links-month,
 .page-links-month-noslide {
-  border: 2px solid #F0F2F5;
-  overflow: hidden; }
-  .page-links-month .slick-track,
-  .page-links-month-noslide .slick-track {
-    min-width: 100%; }
+  border: 2px solid #F0F2F5; }
   .page-links-month .slick-arrow,
   .page-links-month-noslide .slick-arrow {
     position: absolute;
@@ -4767,7 +4763,6 @@ span.breadcrumbs__item {
   border-bottom: 2px solid #fff;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  white-space: nowrap;
   text-align: center; }
   .page-links-month__link:first-child {
     border-left: 2px solid #fff; }
