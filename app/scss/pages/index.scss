@@ -462,6 +462,7 @@
 
 .courses__wrap{
 	display: flex;
+	flex-wrap:wrap;
 }
 .courses__item{
 	width: 50%;
@@ -504,7 +505,9 @@
 }
 
 
-.tabs{
+.tabs,
+.exchange-tabs,
+.conversion-tabs{
 	margin: 0px!important;
 	padding: 0px;
 	list-style: none;
@@ -512,10 +515,13 @@
 	box-sizing: border-box;
 	border-radius: 4px;
 	padding: 2px;
+	overflow: hidden;
 }
-.tabs li{
+.tabs li,
+.exchange-tabs li,
+.conversion-tabs li{
 	background: none;
-	color: #2C4295;
+	color: #343532;
 	display: inline-block;
 	    padding:0px 13px 2px 13px !important;
 	cursor: pointer;
@@ -526,19 +532,25 @@
 	}
 }
 
-.tabs li.current{
+.tabs li.current,
+.exchange-tabs li.current,
+.conversion-tabs li.current{
 	background: #2C4295;
 	color: #fff;
 }
 
-.tab-content{
+.tab-content,
+.exchange-tab-content,
+.conversion-tab-content{
 	display: none;
 	background: transparent;
 	// padding: 15px;
 	margin-bottom: 26px;
 }
 
-.tab-content.current{
+.tab-content.current,
+.exchange-tab-content.current,
+.conversion-tab-content.current{
 	display: inherit;
 }
 .inquiry-wrap{

@@ -1,0 +1,186 @@
+.exchange{
+	.map-wrap {
+	    height: auto;
+	    padding-bottom: 60px;
+	}
+	.tabs {
+		border:0;
+	    border-bottom: 2px solid #F0F2F5;
+	    border-radius: 0;
+	    padding: 0;
+	}
+	.tabs li{
+	    padding: 4px 15px!important;
+	    margin-bottom: -2px!important;
+	    &:hover{
+	    	color: #0B4DCE;
+	    }
+	}
+	.tabs li.current {
+	    background: #F0F2F5;
+	    color: #343532;
+	    border-bottom: 2px solid #0083CA;
+	}
+	.tab-content.current {
+	    display: block;
+	    visibility: visible;
+	    pointer-events: all;
+	    opacity: 1;
+	    height: auto;
+	}
+
+	.tab-content {
+	    display: block;
+	    visibility: hidden;
+	    pointer-events: none;
+	    opacity: 0;
+	    margin-bottom: 0;
+	    height: 0;
+	}
+	.page-tabs__in{
+		width: 100%;
+	}
+	.map-change{
+		padding-top: 20px;
+	}
+	.map-change-select{
+		width: 50%;
+	    min-width: 50%;
+	    padding-right: 0;
+	    margin-left: 0;
+	    padding-right: 12px;
+	}
+	.branch-change-select{
+		width: 50%;
+		min-width: 50%;
+		padding-left: 12px;
+		.jq-selectbox__select{
+
+			&:before {
+			    content: "";
+			    display: inline-block;
+			    width: 21px;
+			    height: 18px;
+			    position: absolute;
+			    left: 17px;
+			    top: 16px;
+			    background: url(../img/svg/branch.svg) no-repeat;
+			}
+		}
+	}
+	.table-wrap {
+	    margin: 0;
+	}
+	.courses-table{
+		margin-bottom: 0;
+	}
+	.courses-table td {
+	    font-size: 18px;
+	    line-height: 20px;
+	    text-align: right;
+	        padding: 16px 5px;
+	    &:first-child{
+	    	text-align: left;
+	    }
+	}
+	.courses-table th {
+	    text-align: right;
+	    &:first-child{
+	    	text-align: left;
+	    }
+	}
+	.tabs-top{
+		font-size: 18px;
+	}
+	.coverter__item input[type="text"]{
+		font-size: 18px;
+		padding-top: 6px;
+		padding-bottom: 6px;
+	}
+	.coverter__item select{
+		font-size: 18px;
+	}
+	.coverter__item .select-wrap {
+	    height: 35px;
+	    right: 18px;
+	    top: 4px;
+	}
+	.coverter__item .select-wrap:after{
+		top: 16px;
+	}
+	.exchange-tabs li,
+	.conversion-tabs li{
+	    padding: 3px 14px 5px 14px !important;
+	}
+	.courses__title{
+		margin-bottom: 49px;
+	}
+	.courses-table--conversion{
+		th,
+		td{
+			text-align: left;
+		}
+	}
+}
+
+.exchange-search-inner{
+	width: 50%;
+	display: flex;
+	padding-left: 27px;
+}
+
+
+.exchange-search{
+	margin-bottom: 46px;
+	.container-fluid{
+		padding-left: 130px;
+		padding-right: 15px;
+	}
+}
+
+.courses__item--add{
+	padding-top: 0;
+	padding-bottom: 0;
+	border: 0;
+	margin-top: 20px;
+}
+.exchange-add{
+	display: flex;
+	font-size: 16px;
+	flex-wrap:wrap;
+}
+.exchange-date{
+	color: #343532;
+	opacity: 0.5;
+	margin-right: 40px;
+}
+.special{
+	position: relative;
+	padding-left: 27px;
+	color: #2C4295;
+	&:before{
+		content: "";
+		display: inline-block;
+		width: 22px;
+		height: 30px;
+		background: url(../img/svg/special.svg) no-repeat;
+		position: absolute;
+		left: 0;
+		top: 50%;
+		margin-top: -17px;
+	}
+	.tooltip {
+	    background: #F0F2F5 url(../img/svg/question.svg) center no-repeat;
+	}
+}
+
+
+.sep{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #D5D8DB;
+    display: inline-block;
+    margin: 0 6px;
+    position: relative;
+    top: -2px;
+}

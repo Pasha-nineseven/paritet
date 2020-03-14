@@ -275,6 +275,24 @@ $(document).ready(function() {
 
 		$(this).addClass('current');
 		$("#"+tab_id).addClass('current');
+	});
+	$('ul.exchange-tabs li').click(function(){
+		var tab_id = $(this).attr('data-tab');
+
+		$(this).parents('.tabs-wrap').find('ul.exchange-tabs li').removeClass('current');
+		$('.exchange-tab-content').removeClass('current');
+
+		$(this).addClass('current');
+		$("#"+tab_id).addClass('current');
+	});
+	$('ul.conversion-tabs li').click(function(){
+		var tab_id = $(this).attr('data-tab');
+
+		$(this).parents('.tabs-wrap').find('ul.conversion-tabs li').removeClass('current');
+		$('.conversion-tab-content').removeClass('current');
+
+		$(this).addClass('current');
+		$("#"+tab_id).addClass('current');
 	})
 
 	//TOOLTIP
@@ -405,6 +423,15 @@ $(document).ready(function() {
 
 
 	//SWITCH-TOGGLE
+	if ($('.b-switch').length>0) {
+		if ( $('.b-switch').is( ".b-switch--checked" ) ) {
+		    $( ".office-list" ).show();
+		    $( ".map-wrap" ).hide();
+		} else{
+			$( ".office-list" ).hide();
+		    $( ".map-wrap" ).show();
+		}
+	}
     $("body").on("click", ".b-switch__right", function(e){
         e.preventDefault();
         $(this).parents('.b-switch').toggleClass('b-switch--checked');
@@ -528,5 +555,7 @@ $('body').append(
 		<li><a href="card.html">Card</a></li> \
 		<li><a href="map-page.html">Map-page</a></li> \
 		<li><a href="statements.html">Statements</a></li> \
+		<li><a href="exchange.html">Exchange</a></li> \
+		<li><a href="package.html">Package</a></li> \
 	</ol> \
 </div>');

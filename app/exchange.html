@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>test</title>
+		<!-- <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" /> -->
+		<link href="css/libs.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<!--LAYOUT-->
+		<div class="layout layout--map">
+			<div class="top">
+				<div class="container-fluid">
+					<div class="top__wrap">
+						<nav class="top__nav">
+							<a href="#" class="top__link js-top__link--toggle">Частным лицам</a>
+							<a href="#" class="top__link">Для бизнеса</a>
+							<a href="#" class="top__link active">О банке</a>
+						</nav>
+						<div class="top__r">
+							<div class="top-area">
+								<a href="#" class="top-area__toggle js-top-area__toggle">Минск и Минская область</a>
+								<div class="top-area__list">
+									<a href="#" class="top-area__link">Брест и Брестская область</a>
+									<a href="#" class="top-area__link">Витебск и Витебская область</a>
+									<a href="#" class="top-area__link">Гродно и Гродненская область</a>
+									<a href="#" class="top-area__link">Могилев и Могилевская область</a>
+									<a href="#" class="top-area__link">Гомель и Гомельская область</a>
+								</div>
+							</div>
+							<div class="top-offices">
+								<a href="#" class="top-offices__link">Офисы и банкоматы</a>
+							</div>
+							<a href="tel:171" class="top-tel">171</a>
+							<a href="#" class="top-lang">Бел</a>
+							<a href="#" class="top-version"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="menu-mobile__bg"></div>
+			<div class="menu-mobile__bg-sec"></div>
+			<div class="top-menu-mobile">
+				<div class="top-menu__scroll">
+					<div class="top-menu-mobile__list">
+						<a href="#" class="top-menu-mobile__link unactive">Частным лицам</a>
+						<a href="#" class="top-menu-mobile__link">Для бизнеса</a>
+						<a href="#" class="top-menu-mobile__link">О банке</a>
+					</div>
+					
+					<div class="top-menu-add">
+						<a href="#" class="top-menu-add__link js-top-menu-add__more">Минск и минская область</a>
+						<div class="top-menu-more-list">
+							<a href="#" class="top-menu-add__link">Брест и Брестская область</a>
+							<a href="#" class="top-menu-add__link">Витебск и Витебская область</a>
+							<a href="#" class="top-menu-add__link">Гродно и Гродненская область</a>
+							<a href="#" class="top-menu-add__link">Могилев и Могилевская область</a>
+							<a href="#" class="top-menu-add__link">Гомель и Гомельская область</a>
+						</div>
+						<a href="#" class="top-menu-add__link">Офисы и банкоматы</a>
+						<a href="#" class="top-menu-add__link">Бел</a>
+					</div>
+				</div>
+			</div>
+			<div class="top-menu">
+				<a href="#" class="top-menu__close js-top-menu__close"></a>
+				<div class="top-menu__scroll">
+					<div class="top-menu__list">
+						<div class="top-menu__item">
+							<a href="#" class="top-menu__link active">О банке</a>
+						</div>
+						<div class="top-menu__item">
+							<a href="#" class="top-menu__link top-menu__link--submenu js-top-menu__link--submenu"  data-label="korp">Корпоративное управление</a>
+						</div>
+						<div class="top-menu__item">
+							<a href="#" class="top-menu__link">Новости</a>
+						</div>
+						<div class="top-menu__item">
+							<a href="#" class="top-menu__link">Раскрытие информации</a>
+						</div>
+						<div class="top-menu__item">
+							<a href="#" class="top-menu__link top-menu__link--submenu js-top-menu__link--submenu" data-label="finance">Финансовая отчетность</a>
+						</div>
+						<div class="top-menu__item">
+							<a href="#" class="top-menu__link">Вакансии</a>
+						</div>
+						<div class="top-menu__item">
+							<a href="#" class="top-menu__link top-menu__link--submenu js-top-menu__link--submenu" data-label="zak">Закупки</a>
+						</div>
+						<div class="top-menu__item">
+							<a href="#" class="top-menu__link">Награды</a>
+						</div>
+					</div>
+					<div class="top-menu-add">
+						<a href="#" class="top-menu-add__link js-top-menu-add__more">Минск и минская область</a>
+						<div class="top-menu-more-list">
+							<a href="#" class="top-menu-add__link">Брест и Брестская область</a>
+							<a href="#" class="top-menu-add__link">Витебск и Витебская область</a>
+							<a href="#" class="top-menu-add__link">Гродно и Гродненская область</a>
+							<a href="#" class="top-menu-add__link">Могилев и Могилевская область</a>
+							<a href="#" class="top-menu-add__link">Гомель и Гомельская область</a>
+						</div>
+						<a href="#" class="top-menu-add__link">Офисы и банкоматы</a>
+						<a href="#" class="top-menu-add__link">Бел</a>
+					</div>
+				</div>
+				<div class="second-level">
+					<div class="second-level__in">
+						<div id="korp" class="second-level__item dnone">
+							<a href="#" class="back-level js-back-level"></a>
+							<div class="second-level__title">Корпоративное упраление</div>
+							<a href="#" class="second-level__link">
+								Item1
+							</a>
+							<a href="#" class="second-level__link">
+								Item2
+							</a>
+							<a href="#" class="second-level__link">
+								Item3
+							</a>
+						</div>
+						<div id="finance" class="second-level__item dnone">
+							<a href="#" class="back-level js-back-level"></a>
+							<div class="second-level__title">Финансовая отчетность</div>
+							<a href="#" class="second-level__link">
+								Квартальная финансовая отчетность
+							</a>
+							<a href="#" class="second-level__link">
+								Годовая финансовая отчетность
+							</a>
+							<a href="#" class="second-level__link">
+								Нормативы безопасного функционирования банковского холдинга
+							</a>
+						</div>
+						<div id="zak" class="second-level__item dnone">
+							<a href="#" class="back-level js-back-level"></a>
+							<div class="second-level__title">Закупки</div>
+							<a href="#" class="second-level__link">
+								Item1
+							</a>
+							<a href="#" class="second-level__link">
+								Item2
+							</a>
+							<a href="#" class="second-level__link">
+								Item3
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<header class="page-header">
+				<div class="container-fluid">
+					<div class="page-header__wrap">
+						<a href="#" class="logo"></a>
+						<div class="page-header__r">
+							<nav class="page-header__nav">
+								<a href="#" class="page-header__link">О банке</a>
+								<a href="#" class="page-header__link">Реквизиты</a>
+								<a href="#" class="page-header__link">Корпоративное управление</a>
+							</nav>
+							<div class="page-header-more">
+								<a href="#" class="page-header-more__link js-page-header-more__link">Еще</a>
+								<div class="page-header-more__list">
+									<div class="page-header-more__container">
+										<a href="#" class="page-header-more__close js-page-header-more__close"></a>
+										<div class="page-header-more__wrap">
+											<a href="#" class="page-header-more__item">Рассрочка</a>
+											<a href="#" class="page-header-more__item">Памятные монеты</a>
+											<a href="#" class="page-header-more__item">Международные переводы</a>
+											<a href="#" class="page-header-more__item">Обмен валют</a>
+											<a href="#" class="page-header-more__item">Оберег для важного</a>
+											<a href="#" class="page-header-more__item">Облигации</a>
+											<a href="#" class="page-header-more__item">Акции</a>
+											<a href="#" class="page-header-more__item">Проверка подлинности монет</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="page-header-search">
+								<a href="#" class="page-header-search__link js-page-header-search__link">
+									<span class="page-header-search__icon"></span>
+								</a>
+								<div class="page-header-search__toggle">
+									<div class="page-header-search__wrap">
+										<form action="#" method="post">
+											<input type="text">
+											<input type="submit">
+											<a href="#" class="page-header-search__close js-page-header-search__close"></a>
+										</form>
+									</div>
+								</div>
+							</div>
+							<a href="#" class="btn">Интернет-банк</a>
+							<a href="#" class="menu-mobile-link js-menu-mobile-link"></a>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main class="page-content workarea">
+				<div class="breadcrumbs">
+					<div class="container-fluid">
+						<div class="breadcrumbs__wrap">
+							<a href="#" class="breadcrumbs__item">Главная</a>
+							<span class="breadcrumbs__item">Курсы валют</span>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid">
+					<div class="page-wrap">					
+						<div class="content">
+							<div class="page-title">
+								<h1>
+									Курсы валют
+								</h1>
+							</div>
+							<!-- CONTENT-PART -->
+							<div class="exchange">
+								<div class="tabs-wrap">
+									<div class="page-tabs">
+										<div class="page-tabs__wrap">
+											<div class="page-tabs__in">
+												<ul class="tabs">
+											      	<li class="tab-link current" data-tab="tab1">Наличные</li>
+											      	<li class="tab-link" data-tab="tab2">Карточки</li>
+											      	<li class="tab-link" data-tab="tab3">Конверсия</li>
+											      	<li class="tab-link" data-tab="tab4">НБРБ</li>
+											    </ul>
+											</div>
+										</div>
+									</div>
+
+									<div class="exchange-search">
+										<div class="container-fluid">
+											<form action="#" method="post">
+												<div class="map-change">
+													<div class="map-change-wrap">
+														<div class="map-change-search">
+															<input type="search" placeholder="Поиск по адресу">
+														</div>
+														<div class="exchange-search-inner">
+															<div class="map-change-select">
+																<select class="fs">
+																	<option value="Минск">Минск</option>
+																	<option value="Брест">Брест</option>
+																	<option value="Витебск">Витебск</option>
+																	<option value="Гродно">Гродно</option>
+																	<option value="Гомель">Гомель</option>
+																</select>
+															</div>
+															<div class="branch-change-select">
+																<select class="fs">
+																	<option value="ЦБУ №17">ЦБУ №17</option>
+																	<option value="ЦБУ №18">ЦБУ №18</option>
+																	<option value="ЦБУ №19">ЦБУ №19</option>
+																	<option value="ЦБУ №20">ЦБУ №20</option>
+																	<option value="ЦБУ №21">ЦБУ №21</option>
+																</select>
+															</div>
+														</div>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+									
+									<div id="tab1" class="tab-content current">
+										<div class="map-wrap">
+											<div class="container-fluid">
+												<div class="courses__wrap">
+													<div class="courses__item">
+														
+														<div class="courses-table">
+															<div class="table-wrap">
+																<table>
+																	<tr>
+																		<th>Валюта</th>
+																		<th>Покупка</th>
+																		<th>Продажа</th>
+																		<th>НБРБ</th>
+																	</tr>
+																	<tr>
+																		<td><span>1 USD</span></td>
+																		<td><span class="down">2,12</span></td>
+																		<td><span class="down">2,13</span></td>
+																		<td><span class="down">2,12</span></td>
+																	</tr>
+																	<tr>
+																		<td><span>1 EUR</span></td>
+																		<td><span class="down">2,34</span></td>
+																		<td><span class="up">2,34</span></td>
+																		<td><span class="down">2,34</span></td>
+																	</tr>
+																	<tr>
+																		<td><span>100 RUB</span></td>
+																		<td><span class="up">3,39</span></td>
+																		<td><span class="down">3,40</span></td>
+																		<td><span class="down">3,38</span></td>
+																	</tr>
+																	<tr>
+																		<td><span>100 UAH</span></td>
+																		<td><span class="up">8,29</span></td>
+																		<td><span class="down">9,80</span></td>
+																		<td><span class="down">9,82</span></td>
+																	</tr>
+																	<tr>
+																		<td><span>10 PLN</span></td>
+																		<td><span class="up">5,38</span></td>
+																		<td><span class="down">6,50</span></td>
+																		<td><span class="down">6,48</span></td>
+																	</tr>
+																</table>
+															</div>
+														</div>
+													</div>
+													<div class="courses__item courses__item--covert">
+														<div class="courses__title">Конвертер валют</div>
+														<div class="tabs-wrap">
+															<div class="tabs-top">
+																<div class="tabs-top__title">Хочу</div>
+																<ul class="exchange-tabs">
+																	<li class="tab-link current" data-tab="tab-buy">купить</li>
+																	<li class="tab-link" data-tab="tab-sell">продать</li>
+																</ul>
+															</div>
+															<div id="tab-buy" class="exchange-tab-content current">
+																<div class="coverter">
+																	<div class="coverter__item">
+																		<input type="text" value="896 237">
+																		<div class="select-wrap">
+																			<select>
+																				<option value="USD">USD</option>
+																				<option value="BYN">BYN</option>
+																				<option value="RUR">RUR</option>
+																				<option value="EUR">EUR</option>
+																			</select>
+																		</div>	
+																	</div>
+																	<div class="coverter__item">
+																		<input type="text" value="1 910 777,28">
+																		<div class="select-wrap">
+																			<select>
+																				<option value="BYN">BYN</option>
+																				<option value="USD">USD</option>
+																				<option value="RUR">RUR</option>
+																				<option value="EUR">EUR</option>
+																			</select>
+																		</div>	
+																	</div>
+																</div>
+															</div>
+															<div id="tab-sell" class="exchange-tab-content">
+																<div class="coverter">
+																	<div class="coverter__item">
+																		<input type="text" value="1 910 777,28">
+																		<div class="select-wrap">
+																			<select>
+																				<option value="BYN">BYN</option>
+																				<option value="USD">USD</option>
+																				<option value="RUR">RUR</option>
+																				<option value="EUR">EUR</option>
+																			</select>
+																		</div>	
+																	</div>
+																	<div class="coverter__item">
+																		<input type="text" value="896 237">
+																		<div class="select-wrap">
+																			<select>
+																				<option value="USD">USD</option>
+																				<option value="BYN">BYN</option>
+																				<option value="RUR">RUR</option>
+																				<option value="EUR">EUR</option>
+																			</select>
+																		</div>	
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="inquiry-wrap">
+															<a href="#" class="inquiry-link">Запросить сумму в отделении банка</a>
+															<span class="tooltip" title="При условии выбора параметров в первый месяц">?</span>
+														</div>
+													</div>
+													<div class="courses__item courses__item--add">
+														<div class="exchange-add">
+															<div class="exchange-date">31 сентября, 22:00</div>
+															<div class="special">
+																Получить специальный курс
+																<span class="tooltip" title="При условии выбора параметров в первый месяц">?</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div id="tab2" class="tab-content">
+										<div class="map-wrap">
+						      				<div class="container-fluid">
+												Карточки
+											</div>
+										</div>
+					      			</div>
+					      			<div id="tab3" class="tab-content">
+					      				<div class="map-wrap">
+						      				<div class="container-fluid">
+												<div class="courses__wrap">
+													<div class="courses__item">
+														
+														<div class="courses-table courses-table--conversion">
+															<div class="table-wrap">
+																<table>
+																	<tr>
+																		<th>Валюты</th>
+																		<th>Курсы конверсии</th>
+																	</tr>
+																	<tr>
+																		<td>USD <span class="sep">/</span> USD</td>
+																		<td>1.1230</td>
+																	</tr>
+																	<tr>
+																		<td>USD <span class="sep">/</span> EUR</td>
+																		<td>1.1430</td>
+																	</tr>
+																	<tr>
+																		<td>RUB <span class="sep">/</span> USD</td>
+																		<td>72.9980</td>
+																	</tr>
+																	<tr>
+																		<td>USD <span class="sep">/</span> RUB</td>
+																		<td>69.5000</td>
+																	</tr>
+																	<tr>
+																		<td>RUB <span class="sep">/</span> EUR</td>
+																		<td>83.0013</td>
+																	</tr>
+																</table>
+															</div>
+														</div>
+													</div>
+													<div class="courses__item courses__item--covert">
+														<div class="courses__title">Конвертер валют</div>
+														<div class="tabs-wrap">
+															<div class="tabs-top">
+																<div class="tabs-top__title">Хочу</div>
+																<ul class="conversion-tabs">
+																	<li class="tab-link current" data-tab="tab-buy-conv">купить</li>
+																	<li class="tab-link" data-tab="tab-sell-conv">продать</li>
+																</ul>
+															</div>
+															<div id="tab-buy-conv" class="conversion-tab-content current">
+																<div class="coverter">
+																	<div class="coverter__item">
+																		<input type="text" value="896 237">
+																		<div class="select-wrap">
+																			<select>
+																				<option value="USD">USD</option>
+																				<option value="BYN">BYN</option>
+																				<option value="RUR">RUR</option>
+																				<option value="EUR">EUR</option>
+																			</select>
+																		</div>	
+																	</div>
+																	<div class="coverter__item">
+																		<input type="text" value="1 910 777,28">
+																		<div class="select-wrap">
+																			<select>
+																				<option value="BYN">BYN</option>
+																				<option value="USD">USD</option>
+																				<option value="RUR">RUR</option>
+																				<option value="EUR">EUR</option>
+																			</select>
+																		</div>	
+																	</div>
+																</div>
+															</div>
+															<div id="tab-sell-conv" class="conversion-tab-content">
+																<div class="coverter">
+																	<div class="coverter__item">
+																		<input type="text" value="1 910 777,28">
+																		<div class="select-wrap">
+																			<select>
+																				<option value="BYN">BYN</option>
+																				<option value="USD">USD</option>
+																				<option value="RUR">RUR</option>
+																				<option value="EUR">EUR</option>
+																			</select>
+																		</div>	
+																	</div>
+																	<div class="coverter__item">
+																		<input type="text" value="896 237">
+																		<div class="select-wrap">
+																			<select>
+																				<option value="USD">USD</option>
+																				<option value="BYN">BYN</option>
+																				<option value="RUR">RUR</option>
+																				<option value="EUR">EUR</option>
+																			</select>
+																		</div>	
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="inquiry-wrap">
+															<a href="#" class="inquiry-link">Запросить сумму в отделении банка</a>
+															<span class="tooltip" title="При условии выбора параметров в первый месяц">?</span>
+														</div>
+													</div>
+													<div class="courses__item courses__item--add">
+														<div class="exchange-add">
+															<div class="exchange-date">31 сентября, 22:00</div>
+															<div class="special">
+																Получить специальный курс
+																<span class="tooltip" title="При условии выбора параметров в первый месяц">?</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+					      			</div>
+					      			<div id="tab4" class="tab-content">
+					      				<div class="map-wrap">
+						      				<div class="container-fluid">
+												Test 2
+											</div>
+										</div>
+					      			</div>
+							
+								</div>
+							</div>
+							<!--end CONTENT-PART -->
+						</div>
+					</div>
+				</div>
+			</main>
+		</div><!-- END LAYOUT-->
+		<footer class="page-footer">
+			<div class="container-fluid">
+				<div class="page-footer__wrap">
+					<div class="page-footer-menu">
+						<div class="page-footer-menu__item">
+							<a href="#" class="page-footer-menu__title js-page-footer-menu__title">
+								Частным клиентам
+							</a>
+							<div class="page-footer-menu__list">
+								<a href="#" class="page-footer-menu__link">Карточки</a>
+								<a href="#" class="page-footer-menu__link">Кредиты</a>
+								<a href="#" class="page-footer-menu__link">Рассрочка </a>
+								<a href="#" class="page-footer-menu__link">Депозиты</a>
+								<a href="#" class="page-footer-menu__link">Страхование</a>
+								<a href="#" class="page-footer-menu__link">Обмен валют</a>
+								<a href="#" class="page-footer-menu__link">Акции</a>
+								<a href="#" class="page-footer-menu__link">Дополнительные услуги</a>
+								<a href="#" class="page-footer-menu__link">Облигации</a>
+							</div>
+						</div>
+						<div class="page-footer-menu__item">
+							<a href="#" class="page-footer-menu__title js-page-footer-menu__title">
+								О банке
+							</a>
+							<div class="page-footer-menu__list">
+								<a href="#" class="page-footer-menu__link">Новости</a>
+								<a href="#" class="page-footer-menu__link">Корпоративное управление</a>
+								<a href="#" class="page-footer-menu__link">Раскрытие информации</a>
+								<a href="#" class="page-footer-menu__link">Финансовая отчетность</a>
+								<a href="#" class="page-footer-menu__link">Вакансии</a>
+								<a href="#" class="page-footer-menu__link">Закупки</a>
+								<a href="#" class="page-footer-menu__link">Награды</a>
+								<a href="#" class="page-footer-menu__link">Реализация имущества</a>
+								<a href="#" class="page-footer-menu__link">Реквизиты</a>
+								<a href="#" class="page-footer-menu__link">Обязательная информация</a>
+								<a href="#" class="page-footer-menu__link">Личный прием</a>
+							</div>
+						</div>
+						<div class="page-footer-menu__item">
+							<a href="#" class="page-footer-menu__title">
+								Информация
+							</a>
+							<div class="page-footer-menu__list">
+								<a href="#" class="page-footer-menu__link">Реквизиты</a>
+								<a href="#" class="page-footer-menu__link">НБРБ </a>
+								<a href="#" class="page-footer-menu__link">Личный прием</a>
+								<a href="#" class="page-footer-menu__link">Раскрытие информации</a>
+								<a href="#" class="page-footer-menu__link">Офисы и банкоматы</a>
+							</div>
+						</div>
+					</div>
+					<div class="page-footer-menu-contact">
+						<div class="page-footer-menu-contact__item">
+							<div class="page-footer-menu__title">
+								Контакт центр
+							</div>
+							<div class="call">
+								<div class="call__item">
+									<a href="tel:171" class="call-link">171</a>
+								</div>
+								<div class="call__item">
+									<a href="#" class="call-btn call-btn--order">Заказать звонок</a>
+								</div>
+								<div class="call__item">
+									<a href="#" class="call-btn">Оставить отзыв</a>
+								</div>
+							</div>
+						</div>
+						<div class="page-footer-menu-contact__item">
+							<div class="page-footer-menu__title">
+								Мобильное приложение
+							</div>
+							<div class="mobile">
+								<a href="#" class="mobile__link">
+									<img src="img/content/app.png" alt="">
+								</a>
+								<a href="#" class="mobile__link">
+									<img src="img/content/google.png" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="page-footer-menu-contact__item">
+							<div class="page-footer-menu__title">
+								Мы в социальных сетях
+							</div>
+							<div class="socials">
+								<a href="#" class="socials__link fb"></a>
+								<a href="#" class="socials__link vk"></a>
+								<a href="#" class="socials__link inst"></a>
+								<a href="#" class="socials__link you"></a>
+							</div>
+							<a href="img/svg/logo.svg" class="bottom-download" download>Скачать сборник тарифов</a>
+						</div>	
+					
+					</div>
+				</div>
+				<div class="bottom">
+					<div class="copiright">
+						&copy; 2020 ОАО «Паритетбанк». УНП 100233809
+					</div>
+					<div class="bottom__info">
+						Информация на сайте носит справочный характер и не является публичной офертой
+					</div>
+				</div>
+			</div>
+		</footer>
+			
+		
+		<script src="js/libs.min.js"></script>
+		<script src="js/interface.js"></script>
+	</body>
+</html>

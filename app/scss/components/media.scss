@@ -61,6 +61,14 @@
 			}
 		}
 	}
+	.package__top,
+	.package__bottom{
+	    padding: 15px;
+	}
+	.package__price {
+	    font-size: 40px;
+	    line-height: 20px;
+	}
 }
 
 @media screen and (max-width: 1280px){
@@ -132,7 +140,8 @@
 	.page-tabs__in{
 		padding-left: 0;
 	}
-	.map-wrap .container-fluid{
+	.map-wrap .container-fluid,
+	.exchange-search .container-fluid{
 		padding-left: 15px;
 	}
 	.office-list .container-fluid{
@@ -146,6 +155,20 @@
 	}
 	.deposit-top__info {
 	    padding: 0;
+	}
+	.package__list {
+	    margin-right: -140px;
+	    margin-left: 0;
+	}
+	.package__price span {
+	    font-size: 18px;
+	}
+	.package__bottom {
+	    width: calc(100% - 8px);
+	}
+	.package__pos {
+	    font-size: 18px;
+	    line-height: 22px;
 	}
 }
 
@@ -505,6 +528,13 @@
 	}
 	.page-slider .slick-next {
 	    right: -30px;
+	}
+	.package__list {
+	    margin-right: -16px;
+	}
+	.package__item{
+		width: 50%;
+		margin-bottom: 16px;
 	}
 }
 
@@ -1118,6 +1148,22 @@
 	.bottom-download {
 	    margin-top: 25px;
 	}
+	.exchange{
+		.map-change-wrap{
+			flex-wrap:wrap;
+		}
+	}
+	.map-change-search{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.exchange-search-inner{
+		width: 100%;
+		padding-left: 0;
+	}
+	.exchange .courses__title {
+	    margin-bottom: 20px;
+	}
 }
 
 @media screen and (max-width: 700px){
@@ -1615,6 +1661,35 @@
 	    font-size: 16px;
 	    line-height: 1.2;
 	    margin-bottom: 20px;
+	}
+	.exchange .coverter__item .select-wrap {
+	    right: 4px;
+	}
+	.exchange-search-inner{
+		flex-wrap:wrap;
+	}
+	.exchange .map-change-select {
+	    width: 100%;
+	    min-width: 100%;
+	    margin-bottom: 20px;
+	    padding-right: 0;
+	}
+	.exchange .branch-change-select {
+	    width: 100%;
+	    min-width: 100%;
+	    padding-left: 0;
+	}
+	.exchange-date {
+	    margin-right: 0;
+	    width: 100%;
+	    margin-bottom: 20px;
+	}
+	.package__list {
+	    margin-right: 0;
+	}
+	.package__item{
+		width: 100%;
+		padding-right: 0;
 	}
 }
 
