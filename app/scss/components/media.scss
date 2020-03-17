@@ -170,6 +170,9 @@
 	    font-size: 18px;
 	    line-height: 22px;
 	}
+	.another__inner {
+	    padding: 32px 32px 95px 32px;
+	}
 }
 
 @media screen and (max-width: 1100px){
@@ -536,6 +539,24 @@
 		width: 50%;
 		margin-bottom: 16px;
 	}
+	.another__inner {
+	    font-size: 18px;
+	}
+	.package--variants .package__item {
+	    width: 50%;
+	}
+	.service__inner {
+	    padding: 20px 15px 115px;
+	}
+	.service__title {
+	    font-size: 20px;
+	}
+	.bid--salary .bid-form__list{
+		margin-right: -20px;
+	}
+	.bid--salary .bid-form__item {
+	    padding-right: 20px;
+	}
 }
 
 @media screen and (max-width: 900px){
@@ -629,7 +650,17 @@
 	.office-wrap{
 		margin-right: 0;
 	}
-	
+	.service__list{
+		margin-right: 0;
+	}
+	.service__item {
+	    width: 100%;
+	    padding-right: 0;
+	    margin-bottom: 16px;
+	}
+	.service{
+		padding-top: 0;
+	}
 }
 
 @media screen and (max-width: 768px){
@@ -1163,6 +1194,20 @@
 	}
 	.exchange .courses__title {
 	    margin-bottom: 20px;
+	}
+	.package--variants .package__item {
+	    width: 100%;
+	    padding-right: 0;
+	}
+	.bid--salary .bid-form__item {
+	    padding-right: 0;
+	    width: 100%;
+	}
+	.bid--salary .bid-form__list{
+		margin-right: 0;
+	}
+	.bid--salary{
+		margin-bottom: 0;
 	}
 }
 

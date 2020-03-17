@@ -498,6 +498,45 @@ $(document).ready(function() {
 	};
 
 
+	//ANOTHER SLIDER
+	if ($( ".another__slider" ).length>0) {
+		var $slider_off = $('.another__slider');
+
+        $slider_off.slick({
+            infinite: true,
+            dots: false,
+            arrows:true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            adaptiveHeight: false,
+            responsive: [
+            	{
+			      breakpoint: 1280,
+			      settings: {
+			        slidesToShow: 3,
+            		slidesToScroll: 1,
+			      }
+			    },
+			    {
+			      breakpoint: 900,
+			      settings: {
+			        slidesToShow: 2,
+            		slidesToScroll: 1,
+			      }
+			    },
+			    {
+			      breakpoint: 600,
+			      settings: {
+			        slidesToShow: 1,
+            		slidesToScroll: 1,
+			      }
+			    },
+			]
+        });
+
+	};
+
+
 	//SLIDER init
 	index__info__sliderInit();
 
@@ -557,5 +596,6 @@ $('body').append(
 		<li><a href="statements.html">Statements</a></li> \
 		<li><a href="exchange.html">Exchange</a></li> \
 		<li><a href="package.html">Package</a></li> \
+		<li><a href="zarplatnie_kartochki.html">Z_kartochki</a></li> \
 	</ol> \
 </div>');

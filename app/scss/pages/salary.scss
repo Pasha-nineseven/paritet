@@ -1,0 +1,196 @@
+.package--variants{
+	padding: 32px 0;
+	.package__list{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.package__item{
+		width: 33.333%;
+	}
+	.package__bottom .btn-more {
+	    margin-bottom: 7px;
+	}
+}
+
+.cards{
+	font-size: 18px;
+}
+
+.another__slider{
+	padding: 0 80px;
+	.slick-arrow{
+		display: inline-block;
+		width: 59px;
+		height: 99px;
+		background: #FFFFFF;
+		/* Light blue grey */
+
+		border: 4px solid #F0F2F5;
+		padding: 0;
+		border-radius: 4px;
+		text-indent: -9999em;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 2;
+		transition: opacity 0.3s ease;
+		// &:hover{
+		// 	opacity: 0.7;
+		// }
+	}
+	.slick-prev{
+		left: -2px;
+		background: #FFFFFF url(../img/svg/prev.svg) center no-repeat;
+	}
+	.slick-next{
+		right: -2px;
+		background: #FFFFFF url(../img/svg/next.svg) center no-repeat;
+	}
+	.slick-list{
+		margin:0 -8px;
+	}
+	.slick-track{
+		display: flex;
+		min-width: 100%;
+	}
+}
+.another__item{
+	padding: 0 8px;
+	height: auto;
+}
+.another__inner{
+	width: 100%;
+	height: 100%;
+	background: #F0F2F5;
+	border-radius: 4px;
+	font-size: 24px;
+	line-height: 1.3;
+	color: #244EA2;
+	    padding: 32px 110px 120px 32px;
+	display: block;
+	font-family: 'golosbold';
+	position: relative;
+	&:after{
+		content: "";
+		display: inline-block;
+		width: 44px;
+		height: 23px;
+		background: url(../img/svg/union.svg) no-repeat;
+		position: absolute;
+		right: 34px;
+    	bottom: 34px;
+	}
+}
+
+
+.service{
+	margin-bottom: 60px;
+	    padding-top: 35px;
+}
+
+.service__list{
+	display: flex;
+	margin-right: -16px;
+	flex-wrap:wrap;
+}
+.service__item{
+	width: 33.333%;
+	padding-right: 16px;
+}
+.service__inner{
+	width: 100%;
+	height: 100%;
+	border: 4px solid #F0F2F5;
+	padding: 21px 24px 116px;
+	position: relative;
+	font-size: 18px;
+	line-height: 1.5;
+}
+.service__icon{
+	position: absolute;
+	    bottom: 16px;
+	right: 0;
+	img{
+		display: block;
+	}
+}
+.service__title{
+	font-size: 24px;
+	line-height: 1.3;
+	font-family: 'golosbold';
+	    margin-bottom: 16px;
+}
+
+.bid--salary{
+	box-shadow: 0 21px 27px -13px rgba(44, 66, 149, 0.7);
+	padding: 37px 80px 5px 80px;
+	margin-bottom: 40px;
+	.bid-form__list{
+		margin-right: -96px;
+	}
+	.bid-form__item {
+	    padding-right: 96px;
+	    margin-bottom: 24px;
+	}
+	.bid__add {
+	    font-size: 18px;
+	    opacity: 0.5;
+	}
+	.select-wrap{
+		width: 100%;
+		height: 56px;
+		background: #fff;
+		position: relative;
+		    border-radius: 4px;
+		select{
+			background: transparent;
+			border: none;
+			width: 100%;
+			height: 100%;
+			padding: 0 24px;
+			text-align: center;
+			// font-size: 24px;
+			color: #343532;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			text-indent: 1px;
+			text-overflow: '';
+			cursor: pointer;
+			position: relative;
+		}
+		&:after{
+			content: "";
+			display: inline-block;
+			width: 8px;
+			height: 5px;
+			background: url(../img/svg/s-arrow.svg) center no-repeat;
+			position: absolute;
+			right: 14px;
+			top: 50%;
+			margin-top: -2px;
+			z-index: 2;
+			pointer-events: none;
+		}
+	}
+	input[type="checkbox"]:not(:checked) + label,
+	input[type="checkbox"]:checked + label{
+		color: #fff;
+	}
+
+	input[type="checkbox"]:not(:checked) + label,
+	input[type="checkbox"]:checked + label{
+		color: #fff;
+		font-size: 16px;
+	}
+	input[type="checkbox"]:not(:checked) + label:before,
+	input[type="checkbox"]:checked + label:before{
+		border: 2px solid #fff;
+	}
+	input[type="checkbox"]:not(:checked) + label:after,
+	input[type="checkbox"]:checked + label:after {
+	    background: url(../img/svg/check-bl.svg) center no-repeat;
+	}
+	input[type="checkbox"]:checked + label:before{
+		background: #fff;
+	}
+}
