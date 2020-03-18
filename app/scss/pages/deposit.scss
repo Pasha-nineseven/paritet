@@ -65,7 +65,7 @@
 	}
 	.slider-count input[type="text"] {
 	    font-size: 16px;
-	    padding: 6px 10px;
+	        padding: 6px 47px 6px 10px;
 	}
 	input[type="submit"]{
 		font-size: 18px;
@@ -974,3 +974,12 @@ line-height: 29px;
 	align-items:center;
 	justify-content: flex-end;
 }
+
+.slider-count__add{
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    z-index: 3;
+    color: #000;
+    font-size: 16px;
+ }

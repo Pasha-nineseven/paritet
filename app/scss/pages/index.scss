@@ -827,6 +827,14 @@
 .money__item{
 	width: 50%;
 	padding-right: 104px;
+	.slider-count__add {
+	    right: 10px;
+	    top: 10px;
+	    font-size: 32px;
+	}
+	.slider-count input[type="text"] {
+	    padding: 8px 82px 8px 15px;
+	}
 }
 .money__top{
 	margin-bottom: 60px;

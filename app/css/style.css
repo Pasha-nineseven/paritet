@@ -4873,6 +4873,12 @@ span.breadcrumbs__item {
   right: -77px;
   background: #FFFFFF url(../img/svg/next.svg) center no-repeat; }
 
+.ui-slider {
+  z-index: 5; }
+
+#slider-term-input {
+  pointer-events: none; }
+
 .page-footer {
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
@@ -5884,6 +5890,12 @@ a.page-footer-menu__title {
 .money__item {
   width: 50%;
   padding-right: 104px; }
+  .money__item .slider-count__add {
+    right: 10px;
+    top: 10px;
+    font-size: 32px; }
+  .money__item .slider-count input[type="text"] {
+    padding: 8px 82px 8px 15px; }
 
 .money__top {
   margin-bottom: 60px;
@@ -6780,7 +6792,7 @@ html .ui-button.ui-state-disabled:hover {
             justify-content: center; }
   .select .slider-count input[type="text"] {
     font-size: 16px;
-    padding: 6px 10px; }
+    padding: 6px 47px 6px 10px; }
   .select input[type="submit"] {
     font-size: 18px;
     line-height: 22px;
@@ -7619,6 +7631,14 @@ html .ui-button.ui-state-disabled:hover {
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end; }
+
+.slider-count__add {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  z-index: 3;
+  color: #000;
+  font-size: 16px; }
 
 .card {
   margin-bottom: 70px;
@@ -8606,6 +8626,8 @@ ymaps[class*="-copyright"] {
 
 .package-slider-wrap {
   padding: 64px 0; }
+  .package-slider-wrap .container-fluid {
+    padding-left: 130px; }
 
 .package--variants {
   margin: 0;
@@ -8860,7 +8882,8 @@ ymaps[class*="-copyright"] {
 @media screen and (max-width: 1200px) {
   .breadcrumbs__wrap,
   .content {
-    padding-left: 0; }
+    padding-left: 0;
+    padding-right: 0; }
   .layout--aside .content {
     padding: 42px 20px 40px 20px; }
   .layout--aside .breadcrumbs__wrap {
@@ -8912,7 +8935,9 @@ ymaps[class*="-copyright"] {
     font-size: 18px;
     line-height: 22px; }
   .another__inner {
-    padding: 32px 32px 95px 32px; } }
+    padding: 32px 32px 95px 32px; }
+  .package-slider-wrap .container-fluid {
+    padding-left: 15px; } }
 
 @media screen and (max-width: 1100px) {
   .page-header__link,
@@ -9002,7 +9027,11 @@ ymaps[class*="-copyright"] {
   .size-payment__in {
     padding: 30px 20px 30px 30px; }
   .bid {
-    padding: 30px; } }
+    padding: 30px; }
+  .money__item .slider-count__add {
+    font-size: 20px; }
+  .money__item .slider-count input[type="text"] {
+    padding-right: 54px; } }
 
 @media screen and (max-width: 1024px) {
   .content {
@@ -9705,8 +9734,20 @@ ymaps[class*="-copyright"] {
     width: 100%; }
   .bid--salary .bid-form__list {
     margin-right: 0; }
-  .bid--salary {
-    margin-bottom: 0; } }
+  .bid--salary input[type="submit"] {
+    padding: 7px 15px; }
+  .package-slider-wrap {
+    padding: 30px 0; }
+  .service {
+    margin-bottom: 30px; }
+    .service + .package--variants {
+      padding-top: 0; }
+  .package--variants + .issue {
+    margin-top: 0; }
+  .money__item .slider-count__add {
+    font-size: 18px; }
+  .money__item .slider-count input[type="text"] {
+    padding-right: 50px; } }
 
 @media screen and (max-width: 700px) {
   .card__item {

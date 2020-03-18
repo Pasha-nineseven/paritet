@@ -778,6 +778,12 @@ span.breadcrumbs__item{
 	}
 }
 
+.ui-slider{
+	z-index: 5;
+}
+#slider-term-input{
+	pointer-events: none;
+}
 
 @import "components/footer";
 

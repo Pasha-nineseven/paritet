@@ -242,6 +242,48 @@ $(document).ready(function() {
 	});
 
 
+	//только числа
+	(function($) {
+	  $.fn.inputFilter = function(inputFilter) {
+	    return this.on("input keydown keyup mousedown mouseup select contextmenu drop", function() {
+	      if (inputFilter(this.value)) {
+	        this.oldValue = this.value;
+	        this.oldSelectionStart = this.selectionStart;
+	        this.oldSelectionEnd = this.selectionEnd;
+	      } else if (this.hasOwnProperty("oldValue")) {
+	        this.value = this.oldValue;
+	        this.setSelectionRange(this.oldSelectionStart, this.oldSelectionEnd);
+	      } else {
+	        this.value = "";
+	      }
+	    });
+	  };
+	}(jQuery));
+	$("#slider-count-input").inputFilter(function(value) {
+	    return /^\d*$/.test(value);
+	});
+
+
+	//только заданные числа
+	// jQuery.fn.ForceNumericOnly =
+	// function(){
+	//     return this.each(function(){
+	//         $(this).keydown(function(e){
+	//             var key = e.charCode || e.keyCode || 0;
+	//             // allow backspace, tab, delete, enter, arrows, numbers and keypad numbers ONLY
+	//             // home, end, period, and numpad decimal
+	//             return (
+	//                 key == 1 || 
+	//                 key == 3 ||
+	//                 key == 6 ||
+	//                 key == 9 ||
+	//                 key == 12 ||
+	//                 key == 15
+	//         });
+	//     });
+	// };
+	// $("#slider-term-input").ForceNumericOnly();
+
 
 	//more-show
     $("body").on("click", ".js-show-more", function(e){
@@ -261,10 +303,15 @@ $(document).ready(function() {
 	        max: 500000,
 	        step: 1,
 	        slide: function( event, ui ) {
-	            $( "#slider-count-input" ).val( ui.value + " BYN");
+	            $( "#slider-count-input" ).val( ui.value);
 	        },
 		});
+		$("#slider-count-input").keyup(function() {
+		    $(".slider-count-slider").slider("value" , $(this).val())
+		});
 	};
+
+
 
 	//SLIDER TERM
 	if ($( ".slider-term-slider" ).length>0) {
@@ -277,9 +324,12 @@ $(document).ready(function() {
 	        max: sliderValue.length - 1,
 	        //step: 3,
 	        slide: function( event, ui ) {
-	            $( "#slider-term-input" ).val(  sliderValue [ ui.value ]  + " мес.");
+	            $( "#slider-term-input" ).val(  sliderValue [ ui.value ]);
 	            //console.log(sliderValue [ ui.value ])
 	        },
+		});
+		$("#slider-term-input").keyup(function() {
+		    $(".slider-term-slider").slider("value" , $(this).val())
 		});
 	};
 
@@ -573,14 +623,14 @@ $(document).ready(function() {
 			      }
 			    },
 			    {
-			      breakpoint: 900,
+			      breakpoint: 1024,
 			      settings: {
 			        slidesToShow: 2,
             		slidesToScroll: 1,
 			      }
 			    },
 			    {
-			      breakpoint: 600,
+			      breakpoint: 768,
 			      settings: {
 			        slidesToShow: 1,
             		slidesToScroll: 1,

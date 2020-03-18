@@ -95,6 +95,7 @@
 	.breadcrumbs__wrap,
 	.content{
 		padding-left: 0;
+		padding-right: 0;
 	}
 	.layout--aside .content {
 	    padding: 42px 20px 40px 20px;
@@ -172,6 +173,11 @@
 	}
 	.another__inner {
 	    padding: 32px 32px 95px 32px;
+	}
+	.package-slider-wrap{
+		.container-fluid{
+			padding-left: 15px;
+		}
 	}
 }
 
@@ -294,6 +300,12 @@
 	}
 	.bid {
 	    padding: 30px;
+	}
+	.money__item .slider-count__add {
+	    font-size: 20px;
+	}
+	.money__item .slider-count input[type="text"]{
+		padding-right: 54px;
 	}
 }
 
@@ -1206,8 +1218,29 @@
 	.bid--salary .bid-form__list{
 		margin-right: 0;
 	}
-	.bid--salary{
-		margin-bottom: 0;
+	// .bid--salary{
+	// 	margin-bottom: 0;
+	// }
+	.bid--salary input[type="submit"] {
+	    padding: 7px 15px;
+	}
+	.package-slider-wrap {
+	    padding: 30px 0;
+	}
+	.service{
+		margin-bottom: 30px;
+		&+.package--variants{
+			padding-top: 0;
+		}
+	}
+	.package--variants + .issue {
+	    margin-top: 0;
+	}
+	.money__item .slider-count__add {
+	    font-size: 18px;
+	}
+	.money__item .slider-count input[type="text"] {
+	    padding-right: 50px;
 	}
 }
 
