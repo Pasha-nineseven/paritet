@@ -6907,9 +6907,6 @@ html .ui-button.ui-state-disabled:hover {
   .select__item:last-child {
     margin-bottom: 0; }
 
-.select__item--term {
-  padding-right: 50px; }
-
 .select__col:last-child {
   width: 350px;
   min-width: 350px; }

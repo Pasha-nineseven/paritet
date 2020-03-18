@@ -266,6 +266,23 @@ $(document).ready(function() {
 		});
 	};
 
+	//SLIDER TERM
+	if ($( ".slider-term-slider" ).length>0) {
+		var sliderValue = [0, 1, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36];
+		$( ".slider-term-slider" ).slider({
+	    	animate: true,
+	        range: "min",
+	        value: 1,
+	        min: sliderValue[1],
+	        max: sliderValue.length - 1,
+	        //step: 3,
+	        slide: function( event, ui ) {
+	            $( "#slider-term-input" ).val(  sliderValue [ ui.value ]  + " мес.");
+	            //console.log(sliderValue [ ui.value ])
+	        },
+		});
+	};
+
 	//TABS
 	$('ul.tabs li').click(function(){
 		var tab_id = $(this).attr('data-tab');
