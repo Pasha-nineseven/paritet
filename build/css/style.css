@@ -8427,6 +8427,9 @@ ymaps[class*="-copyright"] {
   position: relative;
   top: -2px; }
 
+.package {
+  margin-bottom: 60px; }
+
 .package__list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -8566,7 +8569,46 @@ ymaps[class*="-copyright"] {
     left: 0;
     top: 0; }
 
+.package-slider {
+  padding: 0 80px; }
+  .package-slider .slick-arrow {
+    display: inline-block;
+    width: 59px;
+    height: 99px;
+    background: #FFFFFF;
+    /* Light blue grey */
+    border: 4px solid #F0F2F5;
+    padding: 0;
+    border-radius: 4px;
+    text-indent: -9999em;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    z-index: 2;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease; }
+  .package-slider .slick-prev {
+    left: -2px;
+    background: #FFFFFF url(../img/svg/prev.svg) center no-repeat; }
+  .package-slider .slick-next {
+    right: -2px;
+    background: #FFFFFF url(../img/svg/next.svg) center no-repeat; }
+  .package-slider .slick-track {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    min-width: 100%; }
+  .package-slider .package__item {
+    height: auto; }
+
+.package-slider-wrap {
+  padding: 64px 0; }
+
 .package--variants {
+  margin: 0;
   padding: 32px 0; }
   .package--variants .package__list {
     margin-left: 0;
@@ -8575,6 +8617,8 @@ ymaps[class*="-copyright"] {
     width: 33.333%; }
   .package--variants .package__bottom .btn-more {
     margin-bottom: 7px; }
+  .package--variants + .issue {
+    margin-top: 30px; }
 
 .cards {
   font-size: 18px; }
@@ -8740,6 +8784,23 @@ ymaps[class*="-copyright"] {
     background: url(../img/svg/check-bl.svg) center no-repeat; }
   .bid--salary input[type="checkbox"]:checked + label:before {
     background: #fff; }
+  .bid--salary .checkbox-item {
+    display: block;
+    width: 100%; }
+  .bid--salary .bid-submit {
+    padding-top: 40px; }
+  .bid--salary input[type="submit"] {
+    background: #2C4295;
+    border-radius: 4px;
+    padding: 12px 24px;
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+    border: 0;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .bid--salary input[type="submit"]:hover {
+      background: #0B4DCE; }
 
 @media screen and (max-width: 1480px) {
   .index-info__slider {

@@ -29,6 +29,7 @@ gulp.task('scripts', function(){
     return gulp.src([
         'app/libs/jquery/dist/jquery.min.js',
         'app/libs/jquery-ui/jquery-ui.js',
+        'app/libs/jquery-ui/ui-touch-punch.js',
         'app/libs/modernizr/modernizr.min.js',
         'app/libs/flexibility/flexibility.js',
         'app/libs/fancybox/jquery.fancybox.js',
