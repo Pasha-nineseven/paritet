@@ -8722,7 +8722,8 @@ ymaps[class*="-copyright"] {
 
 .service__item {
   width: 33.333%;
-  padding-right: 16px; }
+  padding-right: 16px;
+  margin-bottom: 16px; }
 
 .service__inner {
   width: 100%;
@@ -9747,7 +9748,13 @@ ymaps[class*="-copyright"] {
   .money__item .slider-count__add {
     font-size: 18px; }
   .money__item .slider-count input[type="text"] {
-    padding-right: 50px; } }
+    padding-right: 50px; }
+  .package-slider {
+    padding: 0 60px 0 15px; }
+    .package-slider .slick-list {
+      overflow: visible; }
+  .package-slider .package__item {
+    padding-right: 10px; } }
 
 @media screen and (max-width: 700px) {
   .card__item {
