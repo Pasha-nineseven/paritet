@@ -639,8 +639,15 @@ $(document).ready(function() {
 			    },
 			]
         });
-
 	};
+
+	//deposit-currency-val
+	if ($('.currency-radio').length>0) {
+		$('.currency-radio [type="radio"]').on('change', function() {
+	        var currencyVal = $(this).next('label').text();
+			$('.currency-val').text(currencyVal.toUpperCase());
+	    });
+	}
 
 
 	//SLIDER init
