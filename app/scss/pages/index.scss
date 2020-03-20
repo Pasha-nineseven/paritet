@@ -1715,3 +1715,10 @@ html .ui-button.ui-state-disabled:hover {
 	line-height: 14px;
 	margin-bottom: 5px;
 }
+
+.index-offer-content{
+	display: none;
+	&.active{
+		display: block;
+	}
+}

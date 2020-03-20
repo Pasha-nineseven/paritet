@@ -656,6 +656,22 @@ $(document).ready(function() {
 });
 
 
+$(function() {
+  	$('.index-offers__link').click(function(e) {
+  		e.preventDefault();
+	    // Check for active
+	    $('.index-offers__link').removeClass('active');
+	    $(this).addClass('active');
+
+	    // Display active tab
+	    let currentTab = $(this).attr('href');
+	    $('.index-offer-content').removeClass('active');
+	    $(currentTab).addClass('active');
+	    $('.index-offers__slider').slick("slickSetOption", "draggable", true, true);  
+  	});
+});
+
+
 
 
 $(window).resize(function () {
