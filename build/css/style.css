@@ -3585,7 +3585,8 @@ textarea, input {
   padding: 14px 0;
   background: #fff;
   border-bottom: 2px solid #F0F2F5;
-  position: relative; }
+  position: relative;
+  z-index: 9; }
   .page-header .container-fluid {
     position: static; }
 
@@ -6847,6 +6848,11 @@ html .ui-button.ui-state-disabled:hover {
     margin-right: 25px; }
     .deposit__item .index-offers-more__item:last-child {
       margin-right: 0; }
+  .deposit__item.noimage .deposit__info {
+    padding-bottom: 32px; }
+  .deposit__item.noimage .index-offers__links {
+    position: static;
+    padding: 0; }
 
 .deposit__img {
   width: 268px;
@@ -6906,6 +6912,11 @@ html .ui-button.ui-state-disabled:hover {
             flex-wrap: wrap;
     margin-right: 16px;
     background: transparent; }
+    .deposit--short .deposit__item.noimage .deposit__info {
+      padding-bottom: 32px; }
+    .deposit--short .deposit__item.noimage .index-offers__links {
+      position: static;
+      padding: 0; }
   .deposit--short .index-offers__links {
     position: absolute;
     padding: 0 40px;
@@ -8402,11 +8413,26 @@ ymaps[class*="-copyright"] {
   border: 0;
   border-bottom: 2px solid #F0F2F5;
   border-radius: 0;
-  padding: 0; }
+  padding: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
 
 .exchange .tabs li {
   padding: 4px 15px !important;
-  margin-bottom: -2px !important; }
+  margin-bottom: -2px !important;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
   .exchange .tabs li:hover {
     color: #0B4DCE; }
 
@@ -8432,6 +8458,11 @@ ymaps[class*="-copyright"] {
 
 .exchange .page-tabs__in {
   width: 100%; }
+
+.exchange .tab-link__icon {
+  margin-right: 5px; }
+  .exchange .tab-link__icon img {
+    display: block; }
 
 .exchange .map-change {
   padding-top: 20px; }
@@ -8515,7 +8546,9 @@ ymaps[class*="-copyright"] {
   padding-left: 27px; }
 
 .exchange-search {
-  margin-bottom: 46px; }
+  margin-bottom: 46px;
+  position: relative;
+  z-index: 1; }
   .exchange-search .container-fluid {
     padding-left: 130px;
     padding-right: 15px; }
@@ -8557,6 +8590,8 @@ ymaps[class*="-copyright"] {
     margin-top: -17px; }
   .special .tooltip {
     background: #F0F2F5 url(../img/svg/question.svg) center no-repeat; }
+  .special:hover {
+    color: #0B4DCE; }
 
 .sep {
   font-size: 18px;
@@ -8566,6 +8601,16 @@ ymaps[class*="-copyright"] {
   margin: 0 6px;
   position: relative;
   top: -2px; }
+
+.currency-has-icon {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .package {
   margin-bottom: 60px; }

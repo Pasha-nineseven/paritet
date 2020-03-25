@@ -8,10 +8,14 @@
 	    border-bottom: 2px solid #F0F2F5;
 	    border-radius: 0;
 	    padding: 0;
+	        display: flex;
+    	flex-wrap: wrap;
 	}
 	.tabs li{
 	    padding: 4px 15px!important;
 	    margin-bottom: -2px!important;
+	    display: inline-flex;
+	    align-items: center;
 	    &:hover{
 	    	color: #0B4DCE;
 	    }
@@ -39,6 +43,12 @@
 	}
 	.page-tabs__in{
 		width: 100%;
+	}
+	.tab-link__icon{
+		margin-right: 5px;
+		img{
+			display: block;
+		}
 	}
 	.map-change{
 		padding-top: 20px;
@@ -132,6 +142,8 @@
 
 .exchange-search{
 	margin-bottom: 46px;
+	position: relative;
+	z-index: 1;
 	.container-fluid{
 		padding-left: 130px;
 		padding-right: 15px;
@@ -172,6 +184,9 @@
 	.tooltip {
 	    background: #F0F2F5 url(../img/svg/question.svg) center no-repeat;
 	}
+	&:hover {
+	    color: #0B4DCE;
+	}
 }
 
 
@@ -183,4 +198,8 @@
     margin: 0 6px;
     position: relative;
     top: -2px;
+}
+.currency-has-icon{
+	display: inline-flex;
+	align-items:center;
 }

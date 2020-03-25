@@ -114,6 +114,15 @@
     		margin-right: 0;
     	}
     }
+    &.noimage{
+    	.deposit__info{
+    		padding-bottom: 32px;
+    	}
+    	.index-offers__links {
+		    position: static;
+		    padding: 0;
+		}
+    }
 }
 
 .deposit__img{
@@ -172,6 +181,15 @@
 		flex-wrap:wrap;
 		margin-right: 16px;
 		background: transparent;
+		&.noimage{
+			.deposit__info{
+				padding-bottom: 32px;
+			}
+			.index-offers__links {
+			    position: static;
+			    padding: 0;
+			}
+		}
 	}
 	.index-offers__links{
 		position: absolute;

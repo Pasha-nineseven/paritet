@@ -521,6 +521,17 @@ $(document).ready(function() {
 		    $( ".map-wrap" ).show();
 		}
     });
+    $("body").on("click", ".b-switch__block", function(e){
+        e.preventDefault();
+        $(this).parents('.b-switch').toggleClass('b-switch--checked');
+        if ( $(this).parents('.b-switch').is( ".b-switch--checked" ) ) {
+		    $( ".office-list" ).show();
+		    $( ".map-wrap" ).hide();
+		} else{
+			$( ".office-list" ).hide();
+		    $( ".map-wrap" ).show();
+		}
+    });
 
 
 
