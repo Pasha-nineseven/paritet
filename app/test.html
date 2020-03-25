@@ -579,7 +579,7 @@
 									<a href="tel:171" class="call-link">171</a>
 								</div>
 								<div class="call__item">
-									<a href="#" class="call-btn call-btn--order">Заказать звонок</a>
+									<a href="#call" class="call-btn call-btn--order js-popup-inline">Заказать звонок</a>
 								</div>
 								<div class="call__item">
 									<a href="#" class="call-btn">Оставить отзыв</a>
@@ -624,6 +624,37 @@
 				</div>
 			</div>
 		</footer>
+
+		<!-- POPUP -->
+		<div id="call" class="popup dnone">
+			<h3>Заказать звонок</h3>
+			<form action="#" method="post">
+				<div class="input-wrap input-wrap--necessary">
+					<div class="input-label">Укажите имя</div>
+					<input type="text" placeholder="Имя">
+				</div>
+				<div class="input-wrap input-wrap--necessary">
+					<div class="input-label">Укажите телефон</div>
+					<input type="text" placeholder="Телефон">
+				</div>
+				<div class="input-wrap input-wrap--necessary">
+					<div class="input-label">Укажите email</div>
+					<input type="text" placeholder="Ваш e-mail">
+				</div>
+				<div class="input-wrap input-wrap--necessary">
+					<div class="input-label">Сообщение</div>
+					<textarea placeholder="Сообщение"></textarea>
+					<!-- <textarea placeholder="Сообщение"> -->
+				</div>
+				<div class="checkbox-item">
+					<input type="checkbox" id="agree1" name="agree">
+					<label for="agree1">
+						Я согласен с <a href="#" target="_blank">пользовательским соглашением</a>
+					</label>
+				</div>
+				<button type="submit" class="btn">Отправить</button>
+			</form>
+		</div>
 			
 		
 

@@ -540,6 +540,7 @@ font-size: 16px;
     margin-bottom: 40px;
 	.slick-track{
 		display: flex;
+		min-width: 100%;
 	}
 	.slick-list{
 		overflow: visible;
@@ -613,6 +614,10 @@ font-size: 16px;
 				background: #2C4295;
 	    	}
 	    }
+	}
+
+	&.noslide{
+		padding: 0;
 	}
 }
 // *{
