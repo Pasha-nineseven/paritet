@@ -3283,7 +3283,8 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  scroll-behavior: smooth; }
 
 *:focus {
   outline: none;
@@ -7140,14 +7141,17 @@ html .ui-button.ui-state-disabled:hover {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
 
 .deposit-top-add {
   width: 232px;
   min-width: 232px;
   right: 0;
   top: 0;
-  height: 100%;
   padding: 131px 23px 126px;
   background: rgba(255, 255, 255, 0.1); }
 
