@@ -582,7 +582,7 @@
 									<a href="#call" class="call-btn call-btn--order js-popup-inline">Заказать звонок</a>
 								</div>
 								<div class="call__item">
-									<a href="#" class="call-btn">Оставить отзыв</a>
+									<a href="#question" class="call-btn js-popup-inline">Оставить отзыв</a>
 								</div>
 							</div>
 						</div>
@@ -627,33 +627,69 @@
 
 		<!-- POPUP -->
 		<div id="call" class="popup dnone">
-			<h3>Заказать звонок</h3>
-			<form action="#" method="post">
+			<div class="order">
+				<h2>Заказать звонок</h2>
+				<p>
+					Укажите только ваш мобильный номер, и мы перезвоним в течение 15 минут. Вы главное трубку возьмите, чтобы мы не переживали
+				</p>
+				<form action="#" method="post">
+					<div class="order__title">
+						На какой номер вам перезвонить?
+					</div>
+					<div class="order-wrap">
+						<div class="order-wrap__txt">
+							<div class="order-pre">
+								+375
+							</div>
+							<input type="tel">
+						</div>
+						<input type="submit" value="Жду звонка">
+					</div>
+					<div class="checkbox-item">
+						<input type="checkbox" id="popup-checkbox1" name="checkbox" checked="">
+						<label for="popup-checkbox1">
+							Согласен(-на) с <a href="#" target="_blank">
+								условиями обработки</a> и использования личных данных
+						</label>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div id="question" class="popup dnone">
+			<div class="page-question">
+				<h2>Задайте нам вопрос</h2>
+				<p>
+					Укажите только ваш мобильный номер, и мы перезвоним в течение 15 минут
+				</p>
+				<div class="input-wrap">
+					<div class="input-label">Укажите ваше имя, отчество и фамилию</div>
+					<input type="text">
+				</div>	
+				<div class="input-wrap input-wrap--phone">
+					<div class="input-label">На какой номер вам перезвонить?</div>
+					<div class="input-wrap__txt">
+					<input type="tel">
+						<div class="order-pre">
+							+375
+						</div>
+					</div>
+				</div>	
 				<div class="input-wrap input-wrap--necessary">
-					<div class="input-label">Укажите имя</div>
-					<input type="text" placeholder="Имя">
-				</div>
-				<div class="input-wrap input-wrap--necessary">
-					<div class="input-label">Укажите телефон</div>
-					<input type="text" placeholder="Телефон">
-				</div>
-				<div class="input-wrap input-wrap--necessary">
-					<div class="input-label">Укажите email</div>
-					<input type="text" placeholder="Ваш e-mail">
-				</div>
-				<div class="input-wrap input-wrap--necessary">
-					<div class="input-label">Сообщение</div>
-					<textarea placeholder="Сообщение"></textarea>
-					<!-- <textarea placeholder="Сообщение"> -->
-				</div>
+					<div class="input-label">Укажите адрес электронной почты</div>
+					<input type="email">
+				</div>	
+				<div class="input-wrap">
+					<div class="input-label">Укажите адрес электронной почты</div>
+					<textarea></textarea>
+				</div>	
 				<div class="checkbox-item">
-					<input type="checkbox" id="agree1" name="agree">
-					<label for="agree1">
-						Я согласен с <a href="#" target="_blank">пользовательским соглашением</a>
+					<input type="checkbox" id="popup-checkbox2" name="checkbox2" checked="">
+					<label for="popup-checkbox2">
+						Согласен(-на) с условиями обработки и использования личных данных
 					</label>
 				</div>
-				<button type="submit" class="btn">Отправить</button>
-			</form>
+				<input type="submit" value="Подобрать кредит">
+			</div>
 		</div>
 			
 		

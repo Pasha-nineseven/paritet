@@ -4884,7 +4884,7 @@ span.breadcrumbs__item {
 .popup {
   max-width: 630px;
   min-width: 600px;
-  line-height: 1.3; }
+  overflow: hidden; }
   .popup h1 {
     font-family: 'golosbold';
     font-size: 40px;
@@ -4935,31 +4935,6 @@ span.breadcrumbs__item {
     height: auto;
     object-fit: cover;
     display: block; }
-  .popup input[type="text"],
-  .popup input[type="email"],
-  .popup input[type="password"],
-  .popup input[type="tel"] {
-    width: 100%;
-    display: inline-block;
-    vertical-align: middle;
-    color: #000;
-    background: #FFFFFF;
-    border: 2px solid #0083CA;
-    border-radius: 4px;
-    padding: 8px 15px;
-    font-size: 18px; }
-  .popup textarea {
-    width: 100%;
-    display: block;
-    vertical-align: middle;
-    color: #000;
-    background: #FFFFFF;
-    border: 2px solid #0083CA;
-    border-radius: 4px;
-    padding: 8px 15px;
-    resize: vertical;
-    min-height: 120px;
-    font-size: 18px; }
   .popup ol {
     margin: 0;
     margin-bottom: 30px;
@@ -5034,8 +5009,6 @@ span.breadcrumbs__item {
   .popup [type="submit"] {
     display: inline-block;
     border: 0; }
-  .popup .checkbox-item {
-    margin-bottom: 25px; }
   .popup strong {
     font-weight: normal;
     font-family: 'golosbold'; }
@@ -5083,15 +5056,45 @@ span.breadcrumbs__item {
   .popup .input-wrap--necessary:before {
     bottom: auto;
     top: 41px; }
+  .popup .page-question input[type="text"],
+  .popup .page-question input[type="email"],
+  .popup .page-question input[type="password"],
+  .popup .page-question input[type="tel"] {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    color: #000;
+    background: #FFFFFF;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    padding: 8px 24px;
+    font-size: 24px; }
+  .popup .page-question textarea {
+    width: 100%;
+    display: block;
+    vertical-align: middle;
+    color: #000;
+    background: #FFFFFF;
+    border: 2px solid #fff;
+    border-radius: 4px;
+    padding: 8px 24px;
+    resize: vertical;
+    min-height: 120px;
+    font-size: 24px; }
+  .popup .page-question .input-wrap__txt input[type="text"], .popup .page-question .input-wrap__txt input[type="tel"] {
+    padding-left: 85px; }
 
 .fancybox-content {
-  padding: 30px; }
+  padding: 0;
+  background: transparent; }
 
 .fancybox-container {
   z-index: 99; }
 
 .fancybox-slide--html .fancybox-close-small {
   padding: 0; }
+  .fancybox-slide--html .fancybox-close-small svg path {
+    fill: #fff; }
 
 .service-tabs .tabs {
   border: 0;
@@ -7546,6 +7549,8 @@ html .ui-button.ui-state-disabled:hover {
     color: #3DBAFE; }
   .size-slider__item.slick-current .size-slider__time:before {
     background: #3C54AE url(../img/svg/size-t-act.svg) 10px 1px no-repeat; }
+  .size-slider__item:only-child {
+    width: 100% !important; }
 
 .size-slider__inner {
   width: 100%;
@@ -10190,8 +10195,28 @@ ymaps[class*="-copyright"] {
   .top-card__title {
     font-size: 30px;
     margin-bottom: 20px; }
+  .page-question .input-wrap__txt input[type="text"],
+  .page-question .input-wrap__txt input[type="tel"] {
+    padding-left: 70px; }
   .popup {
-    min-width: 100%; } }
+    min-width: 100%; }
+    .popup .order-pre, .popup .input-wrap__txt .order-pre {
+      font-size: 20px;
+      top: 11px; }
+    .popup .workarea input[type="text"],
+    .popup .workarea input[type="email"],
+    .popup .workarea input[type="password"],
+    .popup .workarea input[type="tel"] {
+      font-size: 20px; }
+    .popup .order input[type="text"], .popup .order input[type="tel"] {
+      font-size: 20px;
+      padding-left: 65px; }
+  .popup .page-question .order-pre,
+  .popup .page-question .input-wrap__txt .order-pre {
+    top: 10px; }
+  .popup .page-question .input-wrap__txt input[type="text"], .popup .page-question .input-wrap__txt input[type="tel"] {
+    padding-left: 75px;
+    font-size: 20px; } }
 
 @media screen and (max-width: 700px) {
   .card__item {
@@ -10626,7 +10651,12 @@ ymaps[class*="-copyright"] {
     margin-right: 0; }
   .package__item {
     width: 100%;
-    padding-right: 0; } }
+    padding-right: 0; }
+  .page-question .input-wrap__txt input[type="text"],
+  .page-question .input-wrap__txt input[type="tel"] {
+    padding-left: 58px; }
+  .popup .page-question .input-wrap__txt input[type="text"], .popup .page-question .input-wrap__txt input[type="tel"] {
+    padding-left: 66px; } }
 
 @media screen and (max-width: 400px) {
   .app__title {

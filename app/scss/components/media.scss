@@ -1290,8 +1290,40 @@
 	    font-size: 30px;
 	    margin-bottom: 20px;
 	}
+	.page-question{
+		.input-wrap__txt input[type="text"],
+		.input-wrap__txt input[type="tel"] {
+		    padding-left: 70px;
+		}
+	}
 	.popup {
 	    min-width: 100%;
+	    
+	    .order-pre, .input-wrap__txt .order-pre {
+		    font-size: 20px;
+		    top: 11px;
+		}
+		.workarea input[type="text"],
+	    .workarea input[type="email"],
+	    .workarea input[type="password"],
+	    .workarea input[type="tel"]{
+	    	font-size: 20px;
+	    }
+	    .order input[type="text"], .order input[type="tel"]{
+	    	font-size: 20px;
+	    	padding-left: 65px;
+	    }
+	}
+	.popup .page-question{
+		.order-pre,
+		.input-wrap__txt .order-pre {
+		    top: 10px;
+		}
+	}
+	.popup .page-question .input-wrap__txt input[type="text"],
+	.popup .page-question .input-wrap__txt input[type="tel"] {
+	    padding-left: 75px;
+	    font-size: 20px;
 	}
 }
 
@@ -1819,6 +1851,16 @@
 	.package__item{
 		width: 100%;
 		padding-right: 0;
+	}
+	.page-question{
+		.input-wrap__txt input[type="text"],
+		.input-wrap__txt input[type="tel"] {
+		    padding-left: 58px;
+		}
+	}
+	.popup .page-question .input-wrap__txt input[type="text"],
+	.popup .page-question .input-wrap__txt input[type="tel"] {
+	    padding-left: 66px;
 	}
 }
 

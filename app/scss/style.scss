@@ -789,7 +789,8 @@ span.breadcrumbs__item{
 .popup{
 	max-width: 630px;
 	min-width: 600px;
-    line-height: 1.3;
+    // line-height: 1.3;
+    overflow: hidden;
     h1{
 		font-family: 'golosbold';
 		font-size: 40px;
@@ -849,33 +850,33 @@ span.breadcrumbs__item{
 		display: block;
 	}
 
-	input[type="text"],
-	input[type="email"],
-	input[type="password"],
-	input[type="tel"]{
-		width: 100%;
-		display: inline-block;
-		vertical-align: middle;
-		color: #000;
-		background: #FFFFFF;
-		border: 2px solid #0083CA;
-		border-radius: 4px;
-		padding:8px 15px;
-		font-size: 18px;
-	}
-	textarea{
-		width: 100%;
-		display: block;
-		vertical-align: middle;
-		color: #000;
-		background: #FFFFFF;
-		border: 2px solid #0083CA;
-		border-radius: 4px;
-		padding: 8px 15px;
-		resize:vertical;
-		min-height: 120px;
-		font-size: 18px;
-	}
+	// input[type="text"],
+	// input[type="email"],
+	// input[type="password"],
+	// input[type="tel"]{
+	// 	width: 100%;
+	// 	display: inline-block;
+	// 	vertical-align: middle;
+	// 	color: #000;
+	// 	background: #FFFFFF;
+	// 	border: 2px solid #0083CA;
+	// 	border-radius: 4px;
+	// 	padding:8px 15px;
+	// 	font-size: 18px;
+	// }
+	// textarea{
+	// 	width: 100%;
+	// 	display: block;
+	// 	vertical-align: middle;
+	// 	color: #000;
+	// 	background: #FFFFFF;
+	// 	border: 2px solid #0083CA;
+	// 	border-radius: 4px;
+	// 	padding: 8px 15px;
+	// 	resize:vertical;
+	// 	min-height: 120px;
+	// 	font-size: 18px;
+	// }
 
 	ol{
 		margin: 0;
@@ -970,9 +971,9 @@ span.breadcrumbs__item{
 		display: inline-block;
 		border: 0;
 	}
-	.checkbox-item {
-	    margin-bottom: 25px;
-	}
+	// .checkbox-item {
+	//     margin-bottom: 25px;
+	// }
 	strong{
 		font-weight: normal;
 		font-family: 'golosbold';
@@ -1031,16 +1032,56 @@ span.breadcrumbs__item{
 	    bottom: auto;
 	    top: 41px;
 	}
+
+	.page-question{
+		input[type="text"],
+		input[type="email"],
+		input[type="password"],
+		input[type="tel"]{
+			width: 100%;
+		    display: inline-block;
+		    vertical-align: middle;
+		    color: #000;
+		    background: #FFFFFF;
+		    border: 2px solid #fff;
+		    border-radius: 4px;
+		    padding: 8px 24px;
+		    font-size: 24px;
+		}
+		textarea{
+			width: 100%;
+		    display: block;
+		    vertical-align: middle;
+		    color: #000;
+		    background: #FFFFFF;
+		    border: 2px solid #fff;
+		    border-radius: 4px;
+		    padding: 8px 24px;
+		    resize: vertical;
+		    min-height: 120px;
+		    font-size: 24px;
+		}
+		.input-wrap__txt input[type="text"], .input-wrap__txt input[type="tel"] {
+		    padding-left: 85px;
+		}
+	}
 }
 
 .fancybox-content{
-	padding: 30px
+	// padding: 30px
+	padding: 0;
+	background: transparent;
 }
 .fancybox-container {
     z-index: 99;
 }
 .fancybox-slide--html .fancybox-close-small{
 	padding: 0;
+	svg{
+		path{
+			fill: #fff;
+		}
+	}
 }
 
 .service-tabs{

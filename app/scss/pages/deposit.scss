@@ -643,6 +643,9 @@ font-size: 16px;
 			}
 		}
 	}
+	&:only-child{
+		width: 100%!important;
+	}
 }
 
 .size-slider__inner{
