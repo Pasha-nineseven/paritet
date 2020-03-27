@@ -3380,42 +3380,42 @@ textarea, input {
     font-family: 'golosbold';
     font-size: 40px;
     margin: 0;
-    margin-bottom: 18px;
+    margin-bottom: 30px;
     font-weight: normal;
     line-height: 1.3; }
   .workarea h2 {
     font-family: 'golosbold';
     font-size: 32px;
     margin: 0;
-    margin-bottom: 18px;
+    margin-bottom: 30px;
     font-weight: normal;
     line-height: 1.3; }
   .workarea h3 {
     font-family: 'golosregular';
     font-size: 30px;
     margin: 0;
-    margin-bottom: 14px;
+    margin-bottom: 30px;
     font-weight: normal;
     line-height: 1.3; }
   .workarea h4 {
     font-family: 'golosbold';
     font-size: 24px;
     margin: 0;
-    margin-bottom: 14px;
+    margin-bottom: 30px;
     font-weight: normal;
     line-height: 1.3; }
   .workarea h5 {
     font-family: 'golosregular';
     font-size: 24px;
     margin: 0;
-    margin-bottom: 14px;
+    margin-bottom: 20px;
     font-weight: normal;
     line-height: 1.3; }
   .workarea h6 {
     font-family: 'golosbold';
     font-size: 18px;
     margin: 0;
-    margin-bottom: 14px;
+    margin-bottom: 20px;
     font-weight: normal;
     line-height: 1.3; }
   .workarea p {
@@ -5115,6 +5115,43 @@ span.breadcrumbs__item {
 
 .service-tabs .tab-content {
   padding-top: 30px; }
+
+.search__wrap {
+  position: relative;
+  padding-right: 140px; }
+  .search__wrap input[type="text"] {
+    border: 2px solid #2C4295; }
+  .search__wrap .btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 24px;
+    padding: 10px 16px; }
+
+.search__link {
+  font-family: 'golosregular';
+  font-size: 30px;
+  margin: 0;
+  margin-bottom: 15px;
+  font-weight: normal;
+  line-height: 1.3;
+  display: block; }
+
+.bid--salary .checkbox-item + .afbf_item_pole {
+  margin-top: 30px; }
+
+.btn.btn-border-white {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  -webkit-transition: all;
+  transition: all; }
+  .btn.btn-border-white:hover {
+    background: #0B4DCE;
+    border: 2px solid #0B4DCE; }
+  .btn.btn-border-white:active {
+    background: #2C4295;
+    border: 2px solid #2C4295; }
 
 .page-footer {
   -webkit-flex-shrink: 0;
@@ -7552,6 +7589,9 @@ html .ui-button.ui-state-disabled:hover {
   .size-slider__item:only-child {
     width: 100% !important; }
 
+.size-slider__text {
+  margin-top: 0 !important; }
+
 .size-slider__inner {
   width: 100%;
   height: 100%;
@@ -8972,12 +9012,17 @@ ymaps[class*="-copyright"] {
   color: #343532; }
 
 .package__price {
-  font-size: 64px;
-  line-height: 40px;
+  font-size: 54px;
+  line-height: 35px;
   margin-bottom: 20px; }
   .package__price span {
-    font-size: 24px;
-    font-family: 'golosregular'; }
+    font-size: 20px;
+    font-family: 'golosregular';
+    display: inline-block; }
+    .package__price span:first-child {
+      margin-right: 10px; }
+    .package__price span:last-child {
+      margin-left: 10px; }
 
 .package-list__item {
   padding-left: 23px;
@@ -9856,7 +9901,7 @@ ymaps[class*="-copyright"] {
   .page-header-search__link {
     position: absolute;
     top: -32px;
-    right: 63px; }
+    right: 20px; }
   .top-tel {
     margin-right: 70px; }
   .menu-mobile-link {
@@ -10216,7 +10261,12 @@ ymaps[class*="-copyright"] {
     top: 10px; }
   .popup .page-question .input-wrap__txt input[type="text"], .popup .page-question .input-wrap__txt input[type="tel"] {
     padding-left: 75px;
-    font-size: 20px; } }
+    font-size: 20px; }
+  .search__wrap .btn {
+    font-size: 18px; }
+  .search__link {
+    font-size: 24px;
+    line-height: 1.2; } }
 
 @media screen and (max-width: 700px) {
   .card__item {
@@ -10656,7 +10706,20 @@ ymaps[class*="-copyright"] {
   .page-question .input-wrap__txt input[type="tel"] {
     padding-left: 58px; }
   .popup .page-question .input-wrap__txt input[type="text"], .popup .page-question .input-wrap__txt input[type="tel"] {
-    padding-left: 66px; } }
+    padding-left: 66px; }
+  .search__wrap {
+    padding-right: 100px; }
+  .search__link {
+    font-size: 20px; }
+  .select__col:last-child {
+    width: 100%;
+    min-width: 100%; }
+  .size-payment .slider-count__add {
+    font-size: 18px; }
+  .size-payment #slider-count-input_month {
+    padding-right: 90px; }
+  .size-payment #slider-count-input_summa {
+    padding-right: 50px; } }
 
 @media screen and (max-width: 400px) {
   .app__title {

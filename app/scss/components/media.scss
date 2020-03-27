@@ -849,7 +849,7 @@
 	.page-header-search__link{
 		position: absolute;
 		top: -32px;
-		right: 63px;
+		right: 20px;
 	}
 	.top-tel{
 		margin-right: 70px
@@ -1325,6 +1325,19 @@
 	    padding-left: 75px;
 	    font-size: 20px;
 	}
+
+
+	.search__wrap{
+	    .btn{
+			font-size: 18px;
+	    }
+	}
+
+	.search__link{
+	    font-size: 24px;
+	    line-height: 1.2;
+	}
+
 }
 
 @media screen and (max-width: 700px){
@@ -1861,6 +1874,30 @@
 	.popup .page-question .input-wrap__txt input[type="text"],
 	.popup .page-question .input-wrap__txt input[type="tel"] {
 	    padding-left: 66px;
+	}
+
+	.search__wrap{
+		padding-right: 100px;
+	}
+
+	.search__link{
+	    font-size: 20px;
+	}
+	.select__col:last-child {
+	    width: 100%;
+	    min-width: 100%;
+	}
+	 
+	.size-payment{
+		.slider-count__add {
+	    	font-size: 18px;
+		}
+		#slider-count-input_month {
+		    padding-right: 90px;
+		}
+		#slider-count-input_summa {
+		    padding-right: 50px;
+		}
 	}
 }
 
