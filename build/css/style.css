@@ -5143,7 +5143,37 @@ span.breadcrumbs__item {
 .bid--salary .checkbox-item + .afbf_item_pole {
   margin-top: 30px; }
 
+.btn.btn-themes {
+  font-size: 18px;
+  line-height: 22px;
+  color: #343532;
+  background: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  -webkit-box-shadow: 0px 4px 12px rgba(36, 78, 162, 0.6), 0px 2px 4px rgba(25, 45, 120, 0.4);
+  box-shadow: 0px 4px 12px rgba(36, 78, 162, 0.6), 0px 2px 4px rgba(25, 45, 120, 0.4);
+  border-radius: 4px;
+  padding: 13px 23px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  .btn.btn-themes:hover:hover {
+    background: #0B4DCE;
+    border: 2px solid #0B4DCE; }
+  .btn.btn-themes:hover:active {
+    background: #2C4295;
+    border: 2px solid #2C4295; }
+
 .btn.btn-border-white {
+  font-size: 18px;
+  line-height: 22px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #343532;
+  -webkit-box-shadow: 0px 4px 12px rgba(36, 78, 162, 0.6), 0px 2px 4px rgba(25, 45, 120, 0.4);
+  box-shadow: 0px 4px 12px rgba(36, 78, 162, 0.6), 0px 2px 4px rgba(25, 45, 120, 0.4);
+  border-radius: 4px;
+  padding: 13px 23px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   background: transparent;
   border: 2px solid #fff;
   color: #fff;
