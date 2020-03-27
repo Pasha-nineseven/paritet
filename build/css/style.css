@@ -6592,7 +6592,9 @@ html .ui-button.ui-state-disabled:hover {
     max-height: 100%; }
 
 .index-offers-card__img {
-  margin-top: -30px; }
+  margin-top: -30px;
+  position: relative;
+  z-index: 4; }
 
 .index-offers-more__item {
   margin-bottom: 19px;
@@ -9444,7 +9446,9 @@ ymaps[class*="-copyright"] {
     padding-bottom: 40px; }
   .top-card__img {
     width: 350px;
-    min-width: 350px; } }
+    min-width: 350px; }
+  .index-offers-card__img {
+    margin-top: -10px; } }
 
 @media screen and (max-width: 1100px) {
   .page-header__link,
@@ -10764,7 +10768,9 @@ ymaps[class*="-copyright"] {
   .size-payment #slider-count-input_month {
     padding-right: 90px; }
   .size-payment #slider-count-input_summa {
-    padding-right: 50px; } }
+    padding-right: 50px; }
+  .index-offers-card {
+    height: 115px; } }
 
 @media screen and (max-width: 400px) {
   .app__title {
