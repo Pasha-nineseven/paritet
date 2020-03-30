@@ -627,6 +627,7 @@ font-size: 16px;
 .size-slider__item{
 	padding-right: 16px;
 	height: auto;
+	cursor: pointer;
 	&.slick-current{
 		.size-slider__inner{
 			background: #2C4295;

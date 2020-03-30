@@ -4610,7 +4610,7 @@ span.breadcrumbs__item {
   content: "*";
   display: inline-block;
   font-size: 24px;
-  color: #244EA2;
+  color: #fff;
   position: absolute;
   left: -19px;
   bottom: 5px; }
@@ -6638,8 +6638,6 @@ html .ui-button.ui-state-disabled:hover {
   -webkit-align-items: flex-end;
       -ms-flex-align: end;
           align-items: flex-end; }
-  .index-offers-more__item:last-child {
-    margin-bottom: 0; }
 
 .index-offers-more__txt {
   font-size: 24px;
@@ -7656,7 +7654,8 @@ html .ui-button.ui-state-disabled:hover {
 
 .size-slider__item {
   padding-right: 16px;
-  height: auto; }
+  height: auto;
+  cursor: pointer; }
   .size-slider__item.slick-current .size-slider__inner {
     background: #2C4295; }
   .size-slider__item.slick-current .size-slider__count {

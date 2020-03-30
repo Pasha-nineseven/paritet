@@ -495,6 +495,12 @@ $(document).ready(function() {
 			]
         });
 
+        $slider_size.on('click', '.size-slider__item', function (e){ 
+        	let slideClicked = $(e.currentTarget).attr("data-slick-index"); 
+        	console.log(slideClicked); 
+        	$slider_size.slick('slickGoTo', slideClicked);
+        });
+
 	};
 
 
