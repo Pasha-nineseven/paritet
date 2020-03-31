@@ -7651,6 +7651,8 @@ html .ui-button.ui-state-disabled:hover {
         background: #2C4295; }
   .size-slider.noslide {
     padding: 0; }
+    .size-slider.noslide .size-slider__item {
+      cursor: default; }
 
 .size-slider__item {
   padding-right: 16px;

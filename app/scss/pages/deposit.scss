@@ -618,6 +618,10 @@ font-size: 16px;
 
 	&.noslide{
 		padding: 0;
+		.size-slider__item{
+
+			cursor: default;
+		}
 	}
 }
 // *{
