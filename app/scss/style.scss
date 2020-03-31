@@ -1004,11 +1004,11 @@ span.breadcrumbs__item{
 		border-radius: 4px;
 		cursor: pointer;
 		z-index: 5;
-		border: 2px solid #0083CA;
+		border: 2px solid #2C4295;
 	}
 	input[type="checkbox"]:checked+ label:before{
-		background: #0083CA;
-		border: 2px solid #0083CA;
+		background: #2C4295;
+		border: 2px solid #2C4295;
 	}
 	input[type="checkbox"]:not(:checked) + label:after,
 	input[type="checkbox"]:checked + label:after {
@@ -1063,6 +1063,14 @@ span.breadcrumbs__item{
 		}
 		.input-wrap__txt input[type="text"], .input-wrap__txt input[type="tel"] {
 		    padding-left: 85px;
+		}
+		.radio-item input[type="radio"]:not(:checked) + label:before,
+		.radio-item input[type="radio"]:checked + label:before{
+			border: 2px solid #2C4295;
+		}
+		.radio-item input[type="radio"]:not(:checked) + label:after,
+		.radio-item input[type="radio"]:checked + label:after{
+			background: #2C4295;
 		}
 	}
 }
@@ -1197,6 +1205,71 @@ span.breadcrumbs__item{
 }
 
 
+.radio-item{
+	margin-bottom: 20px;
+	input[type="radio"]:not(:checked),
+	input[type="radio"]:checked{
+		position: absolute;
+		left: -9999px;
+	}
+	input[type="radio"]:not(:checked) + label,
+	input[type="radio"]:checked + label{
+		position: relative;
+		cursor: pointer;
+		padding-left: 32px;
+		display: inline-block;
+		line-height: 24px;
+	}
+
+	input[type="radio"]:not(:checked) + label:before,
+	input[type="radio"]:checked + label:before{
+		content: '';
+		position: absolute;
+		left: 0px;
+		top: -1px;
+		height: 24px;
+		width: 24px;
+		border-radius: 50%;
+		cursor: pointer;
+		z-index: 5;
+		border: 2px solid #2C4295;
+	}
+	input[type="radio"]:checked+ label:before{
+		//background: #2C4295;
+		border: 2px solid #2C4295;
+	}
+	input[type="radio"]:not(:checked) + label:after,
+	input[type="radio"]:checked + label:after {
+		content: '';
+		background: #2C4295;
+		width: 12px;
+		height: 12px;
+		display: inline-block;
+		position: absolute;
+		top: 5px;
+    	left: 6px;
+		z-index: 10;
+		border-radius: 50%;
+	}
+	input[type="radio"]:not(:checked) + label:after {
+	 	opacity: 0;
+	}
+	input[type="radio"]:checked + label:after {
+	    opacity: 1;
+	}
+}
+
+
+.page-question{
+	.radio-item input[type="radio"]:not(:checked) + label:before,
+	.radio-item input[type="radio"]:checked + label:before{
+		border: 2px solid #0083CA;
+	}
+	.radio-item input[type="radio"]:not(:checked) + label:after,
+	.radio-item input[type="radio"]:checked + label:after{
+		background: #0083CA;
+	}
+}
 
 @import "components/footer";
 

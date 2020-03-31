@@ -5034,10 +5034,10 @@ span.breadcrumbs__item {
     border-radius: 4px;
     cursor: pointer;
     z-index: 5;
-    border: 2px solid #0083CA; }
+    border: 2px solid #2C4295; }
   .popup input[type="checkbox"]:checked + label:before {
-    background: #0083CA;
-    border: 2px solid #0083CA; }
+    background: #2C4295;
+    border: 2px solid #2C4295; }
   .popup input[type="checkbox"]:not(:checked) + label:after,
   .popup input[type="checkbox"]:checked + label:after {
     content: '';
@@ -5083,6 +5083,12 @@ span.breadcrumbs__item {
     font-size: 24px; }
   .popup .page-question .input-wrap__txt input[type="text"], .popup .page-question .input-wrap__txt input[type="tel"] {
     padding-left: 85px; }
+  .popup .page-question .radio-item input[type="radio"]:not(:checked) + label:before,
+  .popup .page-question .radio-item input[type="radio"]:checked + label:before {
+    border: 2px solid #2C4295; }
+  .popup .page-question .radio-item input[type="radio"]:not(:checked) + label:after,
+  .popup .page-question .radio-item input[type="radio"]:checked + label:after {
+    background: #2C4295; }
 
 .fancybox-content {
   padding: 0;
@@ -5187,6 +5193,58 @@ span.breadcrumbs__item {
     background: #2C4295;
     border: 2px solid #2C4295;
     color: #fff; }
+
+.radio-item {
+  margin-bottom: 20px; }
+  .radio-item input[type="radio"]:not(:checked),
+  .radio-item input[type="radio"]:checked {
+    position: absolute;
+    left: -9999px; }
+  .radio-item input[type="radio"]:not(:checked) + label,
+  .radio-item input[type="radio"]:checked + label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 32px;
+    display: inline-block;
+    line-height: 24px; }
+  .radio-item input[type="radio"]:not(:checked) + label:before,
+  .radio-item input[type="radio"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: -1px;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 5;
+    border: 2px solid #2C4295; }
+  .radio-item input[type="radio"]:checked + label:before {
+    border: 2px solid #2C4295; }
+  .radio-item input[type="radio"]:not(:checked) + label:after,
+  .radio-item input[type="radio"]:checked + label:after {
+    content: '';
+    background: #2C4295;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    left: 6px;
+    z-index: 10;
+    border-radius: 50%; }
+  .radio-item input[type="radio"]:not(:checked) + label:after {
+    opacity: 0; }
+  .radio-item input[type="radio"]:checked + label:after {
+    opacity: 1; }
+
+.page-question .radio-item input[type="radio"]:not(:checked) + label:before,
+.page-question .radio-item input[type="radio"]:checked + label:before {
+  border: 2px solid #0083CA; }
+
+.page-question .radio-item input[type="radio"]:not(:checked) + label:after,
+.page-question .radio-item input[type="radio"]:checked + label:after {
+  background: #0083CA; }
 
 .page-footer {
   -webkit-flex-shrink: 0;
