@@ -3613,7 +3613,7 @@ textarea, input {
   background: #FFFFFF;
   font-size: 12px;
   border-bottom: 2px solid #F0F2F5;
-  z-index: 8;
+  z-index: 10;
   position: relative; }
 
 .top__wrap {
@@ -10346,7 +10346,9 @@ ymaps[class*="-copyright"] {
     font-size: 18px; }
   .search__link {
     font-size: 24px;
-    line-height: 1.2; } }
+    line-height: 1.2; }
+  .top {
+    z-index: 8; } }
 
 @media screen and (max-width: 700px) {
   .card__item {
