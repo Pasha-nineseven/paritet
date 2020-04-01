@@ -113,8 +113,13 @@ $(document).ready(function() {
 	//ACCORDEON
     $("body").on("click", ".accordeon__link", function(e){
         e.preventDefault();
-        $(this).parents('.accordeon__item').toggleClass('active');
-        $(this).next('.accordeon__info').slideToggle();
+        if ($('.package__item').length>0) {
+        	$('.accordeon__item').toggleClass('active');
+        	$('.accordeon__info').slideToggle();
+        } else{
+        	$(this).parents('.accordeon__item').toggleClass('active');
+        	$(this).next('.accordeon__info').slideToggle();
+        }
     });
 
 	//POPUP-VIDEO

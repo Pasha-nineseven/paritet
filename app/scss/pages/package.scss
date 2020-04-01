@@ -10,6 +10,39 @@
 .package__item{
 	padding-right: 16px;
 	width: 25%;
+	.accordeon {
+	    margin: 0;
+	}
+	.accordeon__item{
+		padding-left: 23px;
+		.package-list__item {
+		    margin-left: -23px;
+		}
+		&:before{
+			width: 16px;
+			height: 16px;
+			top: 11px;
+			background: url(../img/svg/plus-min.svg) center no-repeat;
+			background-size: contain;
+		}
+		&.active{
+			&:before{
+				background: url(../img/svg/minus-min.svg) center no-repeat;
+				background-size: contain;
+			}
+			.accordeon__link{
+				 font-family: 'golosbold';
+			}
+		}
+	}
+	.accordeon__link {
+	    font-size: 12px;
+	    padding: 10px 0px 10px 0;
+	}
+	.accordeon__info {
+	   padding: 20px 0 0 0;
+	    font-size: 12px;
+	}
 }
 .package__in{
 	width: 100%;
