@@ -5246,6 +5246,74 @@ span.breadcrumbs__item {
 .page-question .radio-item input[type="radio"]:checked + label:after {
   background: #0083CA; }
 
+.headline-fixed-buttons {
+  position: fixed;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* top: 55%; */
+  bottom: 30px;
+  right: -webkit-calc(50% - 710px);
+  right: calc(50% - 710px);
+  z-index: 99; }
+
+.btn-download {
+  background: #2C4295;
+  border-radius: 65px;
+  padding: 22px 20px;
+  width: 60px;
+  height: 60px;
+  -webkit-transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0.05s, top 0.75s cubic-bezier(0.22, 0.61, 0.36, 1) 0s, opacity 0.55s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0.05s, top 0.75s cubic-bezier(0.22, 0.61, 0.36, 1) 0s, opacity 0.55s cubic-bezier(0.22, 0.61, 0.36, 1) 0s; }
+  .btn-download:hover {
+    background: #0B4DCE;
+    width: 195px !important; }
+    .btn-download:hover span {
+      opacity: 1;
+      -webkit-transition: opacity .45s ease-in 0s;
+      transition: opacity .45s ease-in 0s; }
+  .btn-download i {
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: 50%;
+    margin-top: -13px;
+    right: 20px;
+    margin-top: -11px;
+    background: url(../img/svg/download.svg) no-repeat;
+    background-size: contain !important; }
+  .btn-download span {
+    font-size: 15px;
+    font-weight: 500;
+    color: #fff;
+    position: absolute;
+    right: 65px;
+    top: 20px;
+    opacity: 0;
+    white-space: nowrap;
+    -webkit-transition: none;
+    transition: none;
+    -webkit-backface-visibility: hidden; }
+
+.layout--noindent .page-tabs__wrap {
+  padding-left: 0 !important; }
+
+.layout--noindent .page-tabs {
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
+
+.layout--noindent .exchange-search .container-fluid,
+.layout--noindent .map-wrap .container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
+
 .page-footer {
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
@@ -9423,6 +9491,10 @@ ymaps[class*="-copyright"] {
       right: 0; }
     .index-info__slider .slick-prev {
       left: 0; } }
+
+@media screen and (max-width: 1450px) {
+  .headline-fixed-buttons {
+    right: 15px; } }
 
 @media screen and (max-width: 1320px) {
   .money {
