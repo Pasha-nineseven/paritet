@@ -1913,6 +1913,12 @@
 	.index-offers-card {
 	    height: 115px;
 	}
+	.top-slider__img{
+		display: none;
+	}
+	.top-slider__img-mobile{
+		display: block;
+	}
 }
 
 @media screen and (max-width: 400px){
@@ -1923,5 +1929,38 @@
 	    width: 130px;
 	    height: 140px;
 	}
-	
+	.courses-table th {
+	    font-size: 14px;
+	}
+	.exchange .courses-table td,
+	.courses-table td{
+	    font-size: 14px;
+	    padding-left: 1px;
+	    padding-right: 1px;
+	}
+	.courses-table .down:before,
+	.courses-table .up:before{
+		position: static;
+		vertical-align: middle;
+	}
+	.courses-table .down:before{
+		margin: -4px 1px 0 0;
+	}
+	.courses-table .up:before{
+		margin: 2px 1px 0 0;
+	}
+	.exchange .courses-table td{
+		text-align: left;
+	}
+	.exchange .courses-table th {
+    	text-align: left;
+	}
+	.menu-mobile-link{
+		margin-left: 15px;
+	}
+	.logo {
+	    width: 125px;
+	    height: 27px;
+	    background-size: contain;
+	}
 }
