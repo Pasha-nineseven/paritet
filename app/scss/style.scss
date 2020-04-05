@@ -491,6 +491,10 @@ span.breadcrumbs__item{
     .checkbox-item{
     	margin-bottom: 40px;
     }
+    .input-wrap--necessary:before{
+    	    color: #343532;
+    	opacity: 0.5;
+    }
 }
 .input-wrap{
 	margin-bottom: 24px;
@@ -1226,7 +1230,7 @@ span.breadcrumbs__item{
 		content: '';
 		position: absolute;
 		left: 0px;
-		top: -1px;
+		top: 0px;
 		height: 24px;
 		width: 24px;
 		border-radius: 50%;
@@ -1242,12 +1246,12 @@ span.breadcrumbs__item{
 	input[type="radio"]:checked + label:after {
 		content: '';
 		background: #2C4295;
-		width: 12px;
-		height: 12px;
+		width: 11px;
+		height: 11px;
 		display: inline-block;
 		position: absolute;
-		top: 5px;
-    	left: 6px;
+		top: 6px;
+    	left: 7px;
 		z-index: 10;
 		border-radius: 50%;
 	}
@@ -1293,7 +1297,7 @@ span.breadcrumbs__item{
     transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1) 0.05s,top 0.75s cubic-bezier(0.22, 0.61, 0.36, 1) 0s,opacity 0.55s cubic-bezier(0.22, 0.61, 0.36, 1) 0s;
 	&:hover{
 		background: #0B4DCE;
-		width: 195px!important;
+		width: 215px!important;
 		span{
 			opacity: 1;
 		    -webkit-transition: opacity .45s ease-in 0s;
@@ -1307,7 +1311,7 @@ span.breadcrumbs__item{
 		height: 21px;
 		position: absolute;
 		    top: 50%;
-    margin-top: -13px;
+    	margin-top: -13px;
 		right: 20px;
 		margin-top: -11px;
 		background: url(../img/svg/download.svg) no-repeat;

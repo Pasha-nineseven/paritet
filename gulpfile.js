@@ -36,6 +36,7 @@ gulp.task('scripts', function(){
         'app/libs/slick/slick.min.js',
         'app/libs/tooltip/tooltipster.bundle.min.js',
         'app/libs/formstyler/jquery.formstyler.min.js',
+        'app/libs/touchswipe/jquery.touchSwipe.js',
     ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())

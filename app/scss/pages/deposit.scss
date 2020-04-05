@@ -422,6 +422,11 @@
 .deposit-top{
 	position: relative;
 	color: #fff;
+	min-height: 480px;
+	.container-fluid,
+	.deposit-top__info{
+		min-height: 480px;
+	}
 	&:before{
 		content: "";
 		display: block;
@@ -446,7 +451,7 @@
 	top: 0;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center top;
 }
 
 .deposit-top__info{

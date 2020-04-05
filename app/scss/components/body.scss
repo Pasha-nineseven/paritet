@@ -60,6 +60,7 @@ body {
 	font-weight: normal;
 	display: flex;
   	flex-direction: column;
+  	min-width: 320px;
 }
 body.fixed {
     overflow: hidden;
