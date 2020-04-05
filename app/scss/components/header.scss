@@ -88,6 +88,7 @@
 	color: #2C4295;
 	    display: flex;
     align-items: center;
+    cursor: pointer;
 	&:hover{
 		color: $hover-color;
 	}

@@ -3692,7 +3692,8 @@ textarea, input {
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  cursor: pointer; }
   .top-area__toggle:hover {
     color: #0B4DCE; }
   .top-area__toggle:after {
@@ -4602,6 +4603,9 @@ span.breadcrumbs__item {
       background: #0B4DCE; }
   .page-question .checkbox-item {
     margin-bottom: 40px; }
+  .page-question .input-wrap--necessary:before {
+    color: #343532;
+    opacity: 0.5; }
 
 .input-wrap {
   margin-bottom: 24px;
@@ -5226,12 +5230,12 @@ span.breadcrumbs__item {
   .radio-item input[type="radio"]:checked + label:after {
     content: '';
     background: #2C4295;
-    width: 12px;
-    height: 12px;
+    width: 11px;
+    height: 11px;
     display: inline-block;
     position: absolute;
     top: 6px;
-    left: 6px;
+    left: 7px;
     z-index: 10;
     border-radius: 50%; }
   .radio-item input[type="radio"]:not(:checked) + label:after {
@@ -5746,7 +5750,8 @@ a.page-footer-menu__title {
   width: 100%;
   height: 100%;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-position: center; }
   .index-info__img:before {
     content: "";
     display: block;
@@ -5836,6 +5841,13 @@ a.page-footer-menu__title {
   right: -88px;
   background: #FFFFFF url(../img/svg/next.svg) center no-repeat; }
 
+.index-info__slider.noslide {
+  padding: 0 !important; }
+  .index-info__slider.noslide .slick-track {
+    width: 100% !important; }
+  .index-info__slider.noslide .index-info__item {
+    width: 100% !important; }
+
 .app {
   background: #F0F2F5;
   margin-left: -15px;
@@ -5923,7 +5935,8 @@ a.page-footer-menu__title {
 
 .index-links__txt {
   font-size: 18px;
-  line-height: 1.5; }
+  line-height: 1.5;
+  position: relative; }
 
 .index-links__icon {
   position: absolute;
@@ -6057,7 +6070,10 @@ a.page-footer-menu__title {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
-  display: inline-flex; }
+  display: inline-flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
 
 .tabs li,
 .exchange-tabs li,
@@ -6852,7 +6868,6 @@ html .ui-button.ui-state-disabled:hover {
   max-width: 700px;
   font-size: 40px;
   line-height: 48px;
-  text-transform: uppercase;
   color: #000000;
   margin-bottom: 24px;
   font-family: 'golosbold'; }
@@ -7197,6 +7212,19 @@ html .ui-button.ui-state-disabled:hover {
   display: none; }
   .index-offer-content.active {
     display: block; }
+
+.index-links__wrap.slick-initialized {
+  display: block;
+  padding-right: 40px; }
+  .index-links__wrap.slick-initialized .slick-list {
+    overflow: visible; }
+  .index-links__wrap.slick-initialized .slick-track {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .index-links__wrap.slick-initialized .index-links__item {
+    height: auto; }
 
 .news__item {
   border: 4px solid #F0F2F5;
@@ -7606,7 +7634,11 @@ html .ui-button.ui-state-disabled:hover {
 
 .deposit-top {
   position: relative;
-  color: #fff; }
+  color: #fff;
+  min-height: 480px; }
+  .deposit-top .container-fluid,
+  .deposit-top .deposit-top__info {
+    min-height: 480px; }
   .deposit-top:before {
     content: "";
     display: block;
@@ -8364,10 +8396,6 @@ html .ui-button.ui-state-disabled:hover {
 
 ymaps[class*="-copyright"] {
   display: none; }
-
-[class*="ymaps-2"][class*="-ground-pane"] {
-  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
-  -webkit-filter: grayscale(100%); }
 
 .map .tabs {
   border: 0;
@@ -10002,7 +10030,6 @@ ymaps[class*="-copyright"] {
     margin-bottom: 20px; }
   .deposit__txt {
     font-size: 16px;
-    line-height: 1.2;
     margin-bottom: 20px; }
   .top-card__img {
     width: 260px;
@@ -10515,7 +10542,29 @@ ymaps[class*="-copyright"] {
     font-size: 24px;
     line-height: 1.2; }
   .top {
-    z-index: 8; } }
+    z-index: 8; }
+  .index-info__in {
+    min-height: 250px; }
+  .index-links {
+    padding: 40px 0; }
+  .index-info {
+    padding: 40px 0; }
+  .issue__list.slick-initialized {
+    padding-right: 80px;
+    display: block; }
+    .issue__list.slick-initialized .issue__item {
+      margin-bottom: 0;
+      padding: 0 10px;
+      text-align: left; }
+    .issue__list.slick-initialized .slick-list {
+      overflow: visible; }
+    .issue__list.slick-initialized .issue__icon {
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; }
+    .issue__list.slick-initialized .issue__title {
+      font-size: 16px; } }
 
 @media screen and (max-width: 700px) {
   .card__item {
@@ -10611,7 +10660,12 @@ ymaps[class*="-copyright"] {
   .size-slider .slick-arrow {
     width: 60px;
     height: 45px;
-    border: 2px solid #F0F2F5; } }
+    border: 2px solid #F0F2F5; }
+  .deposit-top {
+    min-height: auto; }
+    .deposit-top .container-fluid,
+    .deposit-top .deposit-top__info {
+      min-height: auto; } }
 
 @media screen and (max-width: 600px) {
   .page-wrap {
