@@ -209,7 +209,8 @@ $(document).ready(function() {
 		$(".top-menu-mobile").swipe( {
 	        swipeLeft:leftSwipe,
 	        //swipeRight:rightSwipe,
-	        threshold:0
+	        threshold:0,
+	        excludedElements: ".top-menu-mobile__link,.top-menu-add__link"
 		});
 		function leftSwipe(event){
 		    $('.js-top__link--toggle').removeClass('act');

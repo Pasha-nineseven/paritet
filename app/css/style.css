@@ -6281,9 +6281,8 @@ a.page-footer-menu__title {
       width: 9px;
       height: 9px;
       background: url(../img/svg/up-arr.svg) no-repeat;
-      position: absolute;
-      left: -16px;
-      top: 4px; }
+      margin: 2px 1px 0 0;
+      vertical-align: middle; }
   .courses-table .down {
     position: relative; }
     .courses-table .down:before {
@@ -6292,9 +6291,8 @@ a.page-footer-menu__title {
       width: 9px;
       height: 9px;
       background: url(../img/svg/down-arr.svg) no-repeat;
-      position: absolute;
-      left: -18px;
-      top: 5px; }
+      margin: -4px 1px 0 0;
+      vertical-align: middle; }
 
 .courses-top {
   font-size: 12px;
