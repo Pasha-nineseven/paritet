@@ -327,6 +327,14 @@
 	.money__item .slider-count input[type="text"]{
 		padding-right: 54px;
 	}
+	.courses-table .up:before {
+	    left: -12px;
+	    top: 11px;
+	}
+	.courses-table .down:before {
+	    left: -12px;
+	    top: 8px;
+	}
 }
 
 @media screen and (max-width: 1024px){
@@ -1378,6 +1386,12 @@
 			}
 		}
 	}
+	// .exchange .courses-table td {
+	//     text-align: left;
+	// }
+	// .exchange .courses-table th {
+	//     text-align: left;
+	// }
 }	
 
 @media screen and (max-width: 700px){
@@ -1505,6 +1519,7 @@
 			min-height: auto;
 		}
 	}
+
 }
 
 @media screen and (max-width: 600px){
@@ -1955,6 +1970,17 @@
 	.top-slider__img-mobile{
 		display: block;
 	}
+	.courses-table th{
+		padding: 0 0px 8px;
+	}
+	.courses-table .down:before{
+		top: 3px;
+		left: -9px;
+	}
+	.courses-table .up:before {
+	    top: 7px;
+	    left: -9px;
+	}
 }
 
 @media screen and (max-width: 400px){
@@ -1974,22 +2000,25 @@
 	    padding-left: 1px;
 	    padding-right: 1px;
 	}
-	.courses-table .down:before,
-	.courses-table .up:before{
-		position: static;
-		vertical-align: middle;
-	}
-	.courses-table .down:before{
-		margin: -4px 1px 0 0;
-	}
-	.courses-table .up:before{
-		margin: 2px 1px 0 0;
-	}
-	.exchange .courses-table td{
-		text-align: left;
-	}
-	.exchange .courses-table th {
-    	text-align: left;
+	// .courses-table .down:before,
+	// .courses-table .up:before{
+	// 	position: static;
+	// 	vertical-align: middle;
+	// }
+	// .courses-table .down:before{
+	// 	margin: -4px 1px 0 0;
+	// }
+	// .courses-table .up:before{
+	// 	margin: 2px 1px 0 0;
+	// }
+	// .exchange .courses-table td{
+	// 	text-align: left;
+	// }
+	// .exchange .courses-table th {
+ //    	text-align: left;
+	// }
+	.exchange .courses-table .down:before {
+	    top: 4px;
 	}
 	.menu-mobile-link{
 		margin-left: 15px;

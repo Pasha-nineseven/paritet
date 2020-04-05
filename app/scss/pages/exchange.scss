@@ -131,6 +131,12 @@
 			text-align: left;
 		}
 	}
+	.courses-table .down:before {
+	    top: 6px;
+	}
+	.courses-table .up:before {
+	    top: 9px;
+	}
 }
 
 .exchange-search-inner{
