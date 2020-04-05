@@ -6281,8 +6281,9 @@ a.page-footer-menu__title {
       width: 9px;
       height: 9px;
       background: url(../img/svg/up-arr.svg) no-repeat;
-      margin: 2px 1px 0 0;
-      vertical-align: middle; }
+      position: absolute;
+      left: -18px;
+      top: 12px; }
   .courses-table .down {
     position: relative; }
     .courses-table .down:before {
@@ -6291,8 +6292,9 @@ a.page-footer-menu__title {
       width: 9px;
       height: 9px;
       background: url(../img/svg/down-arr.svg) no-repeat;
-      margin: -4px 1px 0 0;
-      vertical-align: middle; }
+      position: absolute;
+      left: -18px;
+      top: 10px; }
 
 .courses-top {
   font-size: 12px;
@@ -9064,6 +9066,12 @@ ymaps[class*="-copyright"] {
 .exchange .courses-table--conversion td {
   text-align: left; }
 
+.exchange .courses-table .down:before {
+  top: 6px; }
+
+.exchange .courses-table .up:before {
+  top: 9px; }
+
 .exchange-search-inner {
   width: 50%;
   display: -webkit-box;
@@ -9766,7 +9774,13 @@ ymaps[class*="-copyright"] {
   .money__item .slider-count__add {
     font-size: 20px; }
   .money__item .slider-count input[type="text"] {
-    padding-right: 54px; } }
+    padding-right: 54px; }
+  .courses-table .up:before {
+    left: -12px;
+    top: 11px; }
+  .courses-table .down:before {
+    left: -12px;
+    top: 8px; } }
 
 @media screen and (max-width: 1024px) {
   .content {
@@ -11026,7 +11040,15 @@ ymaps[class*="-copyright"] {
   .top-slider__img {
     display: none; }
   .top-slider__img-mobile {
-    display: block; } }
+    display: block; }
+  .courses-table th {
+    padding: 0 0px 8px; }
+  .courses-table .down:before {
+    top: 3px;
+    left: -9px; }
+  .courses-table .up:before {
+    top: 7px;
+    left: -9px; } }
 
 @media screen and (max-width: 400px) {
   .app__title {
@@ -11041,18 +11063,8 @@ ymaps[class*="-copyright"] {
     font-size: 14px;
     padding-left: 1px;
     padding-right: 1px; }
-  .courses-table .down:before,
-  .courses-table .up:before {
-    position: static;
-    vertical-align: middle; }
-  .courses-table .down:before {
-    margin: -4px 1px 0 0; }
-  .courses-table .up:before {
-    margin: 2px 1px 0 0; }
-  .exchange .courses-table td {
-    text-align: left; }
-  .exchange .courses-table th {
-    text-align: left; }
+  .exchange .courses-table .down:before {
+    top: 4px; }
   .menu-mobile-link {
     margin-left: 15px; }
   .logo {
