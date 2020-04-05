@@ -768,9 +768,8 @@
 			width: 9px;
 			height: 9px;
 			background: url(../img/svg/up-arr.svg) no-repeat;
-			position: absolute;
-			    left: -16px;
-    		top: 4px;
+			    margin: 2px 1px 0 0;
+			    vertical-align: middle;
 		}
 	}
 	.down{
@@ -781,9 +780,11 @@
 			width: 9px;
 			height: 9px;
 			background: url(../img/svg/down-arr.svg) no-repeat;
-			position: absolute;
-			    left: -18px;
-    		top: 5px;
+			    margin: -4px 1px 0 0;
+			    vertical-align: middle;
+			// position: absolute;
+			//     left: -18px;
+   //  		top: 5px;
 		}
 	}
 }
