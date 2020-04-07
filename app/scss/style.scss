@@ -1246,11 +1246,11 @@ span.breadcrumbs__item{
 	input[type="radio"]:checked + label:after {
 		content: '';
 		background: #2C4295;
-		width: 11px;
-		height: 11px;
+		width: 10px;
+		height: 10px;
 		display: inline-block;
 		position: absolute;
-		top: 6px;
+		top: 7px;
     	left: 7px;
 		z-index: 10;
 		border-radius: 50%;

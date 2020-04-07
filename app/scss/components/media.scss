@@ -1770,11 +1770,7 @@
 		flex-wrap:wrap;
 	}
 	.deposit__img {
-	    width: 100%;
-	    min-width: 100%;
-	    position: static;
-	    height: 200px;
-	        clip-path: polygon(44px 0, 100% 0, 100% 100%, 0 100%, 0 44px);
+	    display: none;
 	}
 	.deposit__info {
 	    padding: 20px;
@@ -1981,6 +1977,19 @@
 	    top: 7px;
 	    left: -9px;
 	}
+
+	.deposit__img{
+		display: none;
+	 }
+
+	.deposit__img--mobile{
+		width: 100%;
+	    min-width: 100%;
+	    position: static;
+	    height: 200px;
+	    clip-path: polygon(44px 0, 100% 0, 100% 100%, 0 100%, 0 44px);
+	    display: block;
+	 }
 }
 
 @media screen and (max-width: 400px){

@@ -3581,6 +3581,9 @@ textarea, input {
     opacity: 0; }
   .workarea input[type="checkbox"]:checked + label:after {
     opacity: 1; }
+  .workarea img {
+    max-width: 100%;
+    height: auto; }
 
 .page-header {
   padding: 14px 0;
@@ -5230,11 +5233,11 @@ span.breadcrumbs__item {
   .radio-item input[type="radio"]:checked + label:after {
     content: '';
     background: #2C4295;
-    width: 11px;
-    height: 11px;
+    width: 10px;
+    height: 10px;
     display: inline-block;
     position: absolute;
-    top: 6px;
+    top: 7px;
     left: 7px;
     z-index: 10;
     border-radius: 50%; }
@@ -8193,6 +8196,9 @@ html .ui-button.ui-state-disabled:hover {
   color: #000;
   font-size: 16px; }
 
+.deposit__img--mobile {
+  display: none; }
+
 .card {
   margin-bottom: 70px;
   padding-top: 50px; }
@@ -10888,12 +10894,7 @@ ymaps[class*="-copyright"] {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
   .deposit__img {
-    width: 100%;
-    min-width: 100%;
-    position: static;
-    height: 200px;
-    -webkit-clip-path: polygon(44px 0, 100% 0, 100% 100%, 0 100%, 0 44px);
-            clip-path: polygon(44px 0, 100% 0, 100% 100%, 0 100%, 0 44px); }
+    display: none; }
   .deposit__info {
     padding: 20px;
     margin-bottom: 20px; }
@@ -11048,7 +11049,17 @@ ymaps[class*="-copyright"] {
     left: -9px; }
   .courses-table .up:before {
     top: 7px;
-    left: -9px; } }
+    left: -9px; }
+  .deposit__img {
+    display: none; }
+  .deposit__img--mobile {
+    width: 100%;
+    min-width: 100%;
+    position: static;
+    height: 200px;
+    -webkit-clip-path: polygon(44px 0, 100% 0, 100% 100%, 0 100%, 0 44px);
+            clip-path: polygon(44px 0, 100% 0, 100% 100%, 0 100%, 0 44px);
+    display: block; } }
 
 @media screen and (max-width: 400px) {
   .app__title {
