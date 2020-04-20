@@ -5322,6 +5322,11 @@ span.breadcrumbs__item {
   padding-left: 0 !important;
   padding-right: 0 !important; }
 
+.ya-share2__list_direction_horizontal > .ya-share2__item {
+  padding-left: 0; }
+  .ya-share2__list_direction_horizontal > .ya-share2__item:before, .ya-share2__list_direction_horizontal > .ya-share2__item:after {
+    display: none; }
+
 .page-footer {
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;

@@ -1349,6 +1349,14 @@ span.breadcrumbs__item{
 	}
 }
 
+.ya-share2__list_direction_horizontal > .ya-share2__item{
+	padding-left: 0;
+	&:before,
+	&:after{
+		display: none;
+	}
+}
+
 @import "components/footer";
 
 @import "pages/index";
