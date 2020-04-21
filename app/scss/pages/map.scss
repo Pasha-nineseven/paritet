@@ -8,6 +8,9 @@ ymaps[class*="-copyright"] {
 // }
 
 .map{
+	.page-print{
+		    margin-top: -6px;
+	}
 	.tabs {
 		border:0;
 	    border-bottom: 2px solid #F0F2F5;

@@ -597,6 +597,11 @@
 	.bid--salary .bid-form__item {
 	    padding-right: 20px;
 	}
+
+	.page-tabs__toggle{
+		min-width: 100%;
+		margin-bottom: 20px;
+	}
 }
 
 @media screen and (max-width: 900px){
@@ -1385,6 +1390,9 @@
 			    font-size: 16px;
 			}
 		}
+	}
+	.map .page-print{
+		display: none;
 	}
 	// .exchange .courses-table td {
 	//     text-align: left;

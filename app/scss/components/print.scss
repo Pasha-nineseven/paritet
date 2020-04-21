@@ -1,0 +1,91 @@
+@media print {
+	.page-header,
+	.breadcrumbs,
+	.top,
+	.page-tabs,
+	.page-footer,
+	.map-change,
+	.map-change-block .map-change,
+	.map-wrap,
+	.paging,
+	.office-links,
+	.timetable-link,
+	.office-pattern,
+	.office-timetable,
+	#bx-panel{
+		display: none;
+	}
+	.layout--map .page-title h1 {
+	    padding-left: 0;
+	    font-size: 30px;
+	}
+	.page-title{
+		margin-bottom: 20px;
+	}
+	.layout--map .content{
+		padding-top: 20px;
+	}
+	.map .tab-content,
+	.map .tab-content.current {
+    	display: none;
+	}
+	.office-list,
+	#tab23{
+		display: block!important;
+		padding-bottom: 0;
+	}
+	.tab-content .office-list {
+	    padding-top: 0;
+	}
+	.office-wrap{
+		margin-bottom: 0;
+	}
+	.office-item--lg{
+		width: 50%;
+		padding-right: 15px;
+    	margin-bottom: 15px;
+	}
+	.office-list .container-fluid{
+		padding-left: 15px;
+	}
+	.office-item__info {
+	    padding: 10px;
+	}
+	.office-title {
+	    color: #000;
+	    font-size: 18px;
+	    margin-bottom: 7px;
+	}
+	.office-address {
+	    margin-bottom: 10px;
+	    padding-left: 0;
+	}
+	.office-address:before{
+		display: none;
+	}
+	.office-add__item {
+	    margin-right: 0;
+	    margin-bottom: 10px;
+	}
+	.map-wrap{
+		display: none!important;
+	}
+	#tab25{
+		display: block;
+	}
+	a:not([class]){
+		color: #000;
+	}
+	.office-add__item{
+		width: 100%;
+	}
+	#bx-panel{
+		display: none!important;
+	}
+	.office-wrap {
+	    font-size: 14px;
+	}
+	.office-add__top{
+		margin-bottom: 5px;
+	}
+}
