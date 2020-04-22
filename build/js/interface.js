@@ -5,6 +5,12 @@ $(document).ready(function() {
 		$("table").wrap("<div class='table-wrap'></div>");
 	}
 
+
+	//PRINT
+    $('.js-page-print').click(function(){
+        window.print();
+    });
+
 	//MAIN-SLIDER 
 	if ($('.top-slider').length>0) {
         var time = 5;
