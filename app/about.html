@@ -226,7 +226,7 @@
 								</h1>
 							</div>
 							<!-- CONTENT-PART -->
-				<!-- 			<div class="indent">
+							<div class="indent">
 								<time datetime="2020-09-30" class="page-date">
 									<span>30</span>
 									Сент.
@@ -462,42 +462,53 @@
 										<img src="img/content/img1.jpg" alt="">
 									</div>
 								</div>
-							</div>  -->
+							</div> 
+
+
+							<br>
+							<br>
 							<h2>О банке</h2>
-							<div class="default-slider">
-								<div class="default-slider__item">
-									<div class="default-slider__inner">
-										<a href="https://www.youtube.com/watch?v=NpEaa2P7qZI" class="default-slider__link js-play-btn" rel="gallery1">
-											<div class="default-slider__img" style="background-image: url(img/content/slide1.jpg);"></div>
-										</a>
+							<div class="default-slider-wrap">
+								<div class="default-slider">
+									<div class="default-slider__item">
+										<div class="default-slider__inner">
+											<a href="img/content/slide1.jpg" class="default-slider__link js-gallery" rel="gallery1" data-fancybox="images">
+												<div class="default-slider__img" style="background-image: url(img/content/slide1.jpg);"></div>
+												<div class="default-slider__caption">Заголовок 1</div>
+											</a>
+										</div>
 									</div>
-								</div>
-								<div class="default-slider__item">
-									<div class="default-slider__inner">
-										<a href="#" class="default-slider__link" rel="gallery1">
-											<div class="default-slider__img" style="background-image: url(img/content/slide2.jpg);"></div>
-										</a>
+									<div class="default-slider__item">
+										<div class="default-slider__inner">
+											<a href="https://www.youtube.com/watch?v=NpEaa2P7qZI" class="default-slider__link m-video js-gallery" rel="gallery1" data-fancybox="images">
+												<div class="default-slider__img" style="background-image: url(img/content/slide2.jpg);"></div>
+												<div class="default-slider__caption">Заголовок 2</div>
+											</a>
+										</div>
 									</div>
-								</div>
-								<div class="default-slider__item">
-									<div class="default-slider__inner">
-										<a href="#" class="default-slider__link" rel="gallery1">
-											<div class="default-slider__img" style="background-image: url(img/content/slide3.jpg);"></div>
-										</a>
+									<div class="default-slider__item">
+										<div class="default-slider__inner">
+											<a href="img/content/slide3.jpg" class="default-slider__link js-gallery" rel="gallery1" data-fancybox="images">
+												<div class="default-slider__img" style="background-image: url(img/content/slide3.jpg);"></div>
+												<div class="default-slider__caption">Заголовок 3</div>
+											</a>
+										</div>
 									</div>
-								</div>
-								<div class="default-slider__item">
-									<div class="default-slider__inner">
-										<a href="#" class="default-slider__link" rel="gallery1">
-											<div class="default-slider__img" style="background-image: url(img/content/slide4.jpg);"></div>
-										</a>
+									<div class="default-slider__item">
+										<div class="default-slider__inner">
+											<a href="img/content/slide4.jpg" class="default-slider__link js-gallery" rel="gallery1" data-fancybox="images">
+												<div class="default-slider__img" style="background-image: url(img/content/slide4.jpg);"></div>
+												<div class="default-slider__caption">Заголовок 4</div>
+											</a>
+										</div>
 									</div>
-								</div>
-								<div class="default-slider__item">
-									<div class="default-slider__inner">
-										<a href="#" class="default-slider__link" rel="gallery1">
-											<div class="default-slider__img" style="background-image: url(img/content/slide2.jpg);"></div>
-										</a>
+									<div class="default-slider__item">
+										<div class="default-slider__inner">
+											<a href="img/content/slide2.jpg" class="default-slider__link js-gallery" rel="gallery1" data-fancybox="images">
+												<div class="default-slider__img" style="background-image: url(img/content/slide2.jpg);"></div>
+												<div class="default-slider__caption">Заголовок 5</div>
+											</a>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -573,7 +584,22 @@
 							</p>
 
 							<div class="page-form">
-								
+								<div class="page-form__call">
+									<div class="page-form__title">Позвонить нам</div>
+									<div class="page-form__add">
+										Получите бесплатную консультацию
+									</div>
+									<a href="tel:171" class="callcenter">
+										Контакт центр <span>171</span>
+									</a>
+								</div>
+								<div class="page-form__order">
+									<div class="page-form__title">Заказать звонок</div>
+									<div class="page-form__add">
+										Оставьте номер телефона и мы вам перезвоним в течении 15 минут
+									</div>
+									<a href="#call" class="order-btn js-popup-inline">Оставить номер телефона</a>
+								</div>
 							</div>
 							<p>
 								При оформлении карты открывается счет в долларах США (основной счет) и дополнительные счета (субсчета) в евро и российских рублях. Счет в долларах США открывается в обязательном порядке, субсчета можно открыть по желанию, в том числе в течение срока действия карты.
@@ -693,6 +719,46 @@
 				</div>
 			</div>
 		</footer>
+
+
+		<!-- POPUP -->
+		<div id="call" class="popup dnone">
+			<div class="order">
+				<h2>Заказать звонок</h2>
+				<p>
+					Укажите только ваш мобильный номер, и мы перезвоним в течение 15 минут. Вы главное трубку возьмите, чтобы мы не переживали
+				</p>
+				<form action="#" method="post">
+					<div class="order__title">
+						На какой номер вам перезвонить?
+					</div>
+					<div class="order-wrap">
+						<div class="order-wrap__txt">
+							<div class="order-pre">
+								+375
+							</div>
+							<input type="tel">
+						</div>
+						<input type="submit" value="Жду звонка">
+					</div>
+					<div class="radio-item">
+						<input type="radio" id="radio33" name="e">
+						<label for="radio33">Радио 33</label>
+					</div>
+					<div class="radio-item">
+						<input type="radio" id="radio44" name="e" checked>
+						<label for="radio44">Радио 44</label>
+					</div>
+					<div class="checkbox-item">
+						<input type="checkbox" id="popup-checkbox1" name="checkbox" checked="">
+						<label for="popup-checkbox1">
+							Согласен(-на) с <a href="#" target="_blank">
+								условиями обработки</a> и использования личных данных
+						</label>
+					</div>
+				</form>
+			</div>
+		</div>
 			
 		
 

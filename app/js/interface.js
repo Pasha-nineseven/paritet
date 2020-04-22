@@ -134,7 +134,7 @@ $(document).ready(function() {
         transitionEffect: "slide", 
         animationEffect: "zoom-in-out", 
         infobar: false,
-         clickOutside : 'close',
+        clickOutside : 'close',
         buttons: [
             "close"
         ],
@@ -145,9 +145,42 @@ $(document).ready(function() {
         transitionEffect: "slide", 
         animationEffect: "zoom-in-out", 
         infobar: false,
+        smallBtn:false,
+        toolbar  : false,
         buttons: [
             "close"
         ],
+    });
+    //POPUP-GALLERY
+	$(".js-gallery").fancybox({
+        speed : 330,
+        transitionEffect: "slide", 
+        animationEffect: "zoom-in-out",
+        idleTime: false,
+        buttons: [
+            
+        ],
+        smallBtn: true,
+        image : {
+            protect : true,
+        },
+        infobar: false,
+        hash: false,
+        caption : function( instance, item ) {
+		    var caption = $(this).find('.default-slider__caption').text() || '';
+		    
+		    return ( caption.length ? '<div class="gallery-count"><span class="current" data-fancybox-index></span>/<span data-fancybox-count></span></div>' + '<div class="gallery-title">' + caption + '</div>' : '' );
+		},
+		beforeShow: function() {
+	        $('.caption--image').remove();
+	    },
+	    afterShow: function() {
+	        var caption = $(".fancybox-caption"),
+	            innerCaption = caption.clone().addClass('caption--image');
+
+	        $(".fancybox-slide--current .fancybox-content").append(innerCaption);
+	        caption.not('.caption--image').addClass('caption--bottom');
+	    }
     });
 
 
@@ -672,7 +705,7 @@ $(document).ready(function() {
 		var $slider_def = $('.default-slider');
 
         $slider_def.slick({
-            infinite: true,
+            infinite: false,
             dots: true,
             arrows:true,
             slidesToShow: 3,
@@ -691,6 +724,7 @@ $(document).ready(function() {
 			      settings: {
 			        slidesToShow: 1,
             		slidesToScroll: 1,
+            		arrows:false,
 			      }
 			    },
 			]
