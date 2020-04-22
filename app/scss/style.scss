@@ -1357,6 +1357,235 @@ span.breadcrumbs__item{
 	}
 }
 
+
+.default-slider{
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	.slick-list {
+	    margin: 0 -8px;
+	    padding-bottom: 20px;
+	}
+	.slick-track {
+	    display: flex;
+	    min-width: 100%;
+	}
+	.slick-arrow{
+		display: inline-block;
+		width: 59px;
+		height: 99px;
+		background: #FFFFFF;
+		/* Light blue grey */
+
+		border: 4px solid #F0F2F5;
+		padding: 0;
+		border-radius: 4px;
+		text-indent: -9999em;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 2;
+		transition: opacity 0.3s ease;
+		margin-top: -21px;
+		// &:hover{
+		// 	opacity: 0.7;
+		// }
+	}
+	.slick-prev{
+		left: -47px;
+		background: #FFFFFF url(../img/svg/prev.svg) center no-repeat;
+	}
+	.slick-next{
+		right: -47px;
+		background: #FFFFFF url(../img/svg/next.svg) center no-repeat;
+	}
+	.slick-dots{
+		margin-bottom: 0;
+		position: absolute;
+		bottom: 15px;
+		left: 0;
+		display: flex;
+		justify-content: flex-start;
+		li{
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			border: 2px solid #2C4295;
+			cursor: pointer;
+			padding: 0;
+			margin: 0 8px 0 0;
+			&:last-child{
+				margin-right: 0;
+			}
+			button{
+				display: none;
+			}
+			&:before,
+			&:after{
+				display: none;
+			}
+			&.slick-active{
+				background: #2C4295; 
+			}
+		}
+	}
+}
+.default-slider__item{
+    padding: 0 8px;
+    height: auto;
+}
+.default-slider__inner{
+	width: 100%;
+    height: 100%;
+}
+
+.default-slider__link{
+	display: block;
+	height: 275px;
+	position: relative;
+	transition: all 0.3s ease;
+	&:hover{
+		box-shadow: 0px 20px 15px -15px #BDC5D1;
+	}
+}
+.default-slider__img{
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.info-item{
+	margin-bottom: 20px;
+	//display: flex;
+	overflow: hidden;
+}
+.info-item__img{
+	max-width: calc(50% + 40px);
+	position: relative;
+	&:before{
+		content: '';
+	    position: absolute;
+	    
+	    top: 0;
+	    width: 0;
+	    height: 0;
+	    border-top: 75px solid #fff;
+	    border-right: 75px solid transparent;
+	    z-index: 1;
+	}
+	img{
+		max-width: 100%;
+		height: auto;
+		display: block;
+	}
+}
+
+.info-item--left{
+	.info-item__img{
+		//order:1;
+		float: left;
+		padding-right: 40px;
+   		margin-bottom: 20px;
+   		&:before{
+   			left: 0;
+   		}
+	}
+	.info-item__txt{
+		//order: 2;
+	}
+}
+
+.info-item--right{
+	.info-item__img{
+		//order:2;
+		float: right;
+		padding-left: 40px; 
+		margin-bottom: 20px;
+		&:before{
+			left: 40px;
+		}
+	}
+	.info-item__txt{
+		//order: 1;
+	}
+}
+.page-img--default{
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 30px;
+}
+
+.social-default{
+	display: flex;
+	margin-bottom: 30px;
+}
+.social-default__item{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 3px;
+	background: #2C4295;
+	margin-right: 7px;
+	width: 51px;
+	height: 51px;
+	transition: all 0.3s ease;
+	&:last-child{
+		margin-right: 0;
+	}
+	&.m-fb{
+		background: #2C4295 url(../img/svg/fb-def.svg) center no-repeat;
+		&:hover{
+			background: #0B4DCE url(../img/svg/fb-def.svg) center no-repeat;
+		}
+	}
+	&.m-vk{
+		background: #2C4295 url(../img/svg/vk-def.svg) center no-repeat;
+		&:hover{
+			background: #0B4DCE url(../img/svg/vk-def.svg) center no-repeat;
+		}
+	}
+	&.m-inst{
+		background: #2C4295 url(../img/svg/inst-def.svg) center no-repeat;
+		&:hover{
+			background: #0B4DCE url(../img/svg/inst-def.svg) center no-repeat;
+		}
+	}
+	&.m-you{
+		background: #2C4295 url(../img/svg/youtube-def.svg) center no-repeat;
+		&:hover{
+			background: #0B4DCE url(../img/svg/youtube-def.svg) center no-repeat;
+		}
+	}
+}
+
+.page-form{
+	color: #fff;
+	padding: 46px 64px;
+    color: #fff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0047B0), to(#6CC8E8));
+    background: linear-gradient(180deg, #0047B0 0%, #6CC8E8 100%);
+    position: relative;
+    margin-bottom: 30px;
+       box-shadow: 0 20px 17px -13px rgba(189, 197, 209, 0.75);
+	&:after {
+	    content: "";
+	    display: block;
+	    width: 382px;
+	    height: 407px;
+	    background: url(../img/content/pattern.png) no-repeat;
+	    background-size: contain;
+	    position: absolute;
+	    right: 0;
+	    bottom: 0;
+	}
+}
+
+
+
 @import "components/footer";
 
 @import "pages/index";
