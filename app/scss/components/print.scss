@@ -29,8 +29,13 @@
 	.map .tab-content.current {
     	display: none;
 	}
-	.office-list,
-	#tab23{
+	.map .tab-content.current{
+		display: block!important;
+	}
+	.map .tab-content.current .office-list{
+		display: block!important;
+	}
+	.office-list3{
 		display: block!important;
 		padding-bottom: 0;
 	}
@@ -69,9 +74,6 @@
 	}
 	.map-wrap{
 		display: none!important;
-	}
-	#tab25{
-		display: block;
 	}
 	a:not([class]){
 		color: #000;
