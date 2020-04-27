@@ -5,6 +5,20 @@ $(document).ready(function() {
 		$("table").wrap("<div class='table-wrap'></div>");
 	}
 
+	//SOCIALS
+	$("body").on("click", ".js-page-socials__toggle", function(e){
+        e.preventDefault();
+        $(this).toggleClass('active');
+        $('.page-socials__bg').fadeToggle();
+        $('.page-socials__list').toggleClass('active');
+    });
+    $("body").on("click", ".page-socials__bg", function(e){
+        e.preventDefault();
+        $('.page-socials__toggle').removeClass('active');
+        $('.page-socials__list').removeClass('active');
+        $('.page-socials__bg').fadeOut();
+    });
+
 
 	//PRINT
     $('.js-page-print').click(function(){
