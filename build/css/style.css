@@ -3374,55 +3374,55 @@ textarea, input {
 :focus:-ms-input-placeholder {
   color: transparent; }
 
-.workarea {
+.workarea, .popup-content {
   line-height: 1.5;
   overflow: hidden; }
-  .workarea h1 {
+  .workarea h1, .popup-content h1 {
     font-family: 'golosbold';
     font-size: 40px;
     margin: 0;
     margin-bottom: 30px;
     font-weight: normal;
     line-height: 1.3; }
-  .workarea h2 {
+  .workarea h2, .popup-content h2 {
     font-family: 'golosbold';
     font-size: 32px;
     margin: 0;
     margin-bottom: 30px;
     font-weight: normal;
     line-height: 1.3; }
-  .workarea h3 {
+  .workarea h3, .popup-content h3 {
     font-family: 'golosbold';
     font-size: 30px;
     margin: 0;
     margin-bottom: 30px;
     font-weight: normal;
     line-height: 1.3; }
-  .workarea h4 {
+  .workarea h4, .popup-content h4 {
     font-family: 'golosbold';
     font-size: 24px;
     margin: 0;
     margin-bottom: 30px;
     font-weight: normal;
     line-height: 1.3; }
-  .workarea h5 {
+  .workarea h5, .popup-content h5 {
     font-family: 'golosregular';
     font-size: 24px;
     margin: 0;
     margin-bottom: 20px;
     font-weight: normal;
     line-height: 1.3; }
-  .workarea h6 {
+  .workarea h6, .popup-content h6 {
     font-family: 'golosbold';
     font-size: 18px;
     margin: 0;
     margin-bottom: 20px;
     font-weight: normal;
     line-height: 1.3; }
-  .workarea p {
+  .workarea p, .popup-content p {
     margin: 0;
     margin-bottom: 20px; }
-  .workarea video {
+  .workarea video, .popup-content video {
     max-width: 100%;
     height: auto;
     object-fit: cover;
@@ -3430,7 +3430,10 @@ textarea, input {
   .workarea input[type="text"],
   .workarea input[type="email"],
   .workarea input[type="password"],
-  .workarea input[type="tel"] {
+  .workarea input[type="tel"], .popup-content input[type="text"],
+  .popup-content input[type="email"],
+  .popup-content input[type="password"],
+  .popup-content input[type="tel"] {
     width: 100%;
     display: inline-block;
     vertical-align: middle;
@@ -3440,7 +3443,7 @@ textarea, input {
     border-radius: 4px;
     padding: 8px 24px;
     font-size: 24px; }
-  .workarea textarea {
+  .workarea textarea, .popup-content textarea {
     width: 100%;
     display: block;
     vertical-align: middle;
@@ -3452,19 +3455,19 @@ textarea, input {
     resize: vertical;
     min-height: 120px;
     font-size: 24px; }
-  .workarea ol {
+  .workarea ol, .popup-content ol {
     margin: 0;
     margin-bottom: 30px;
     padding: 0;
     counter-reset: myCounter; }
-    .workarea ol li {
+    .workarea ol li, .popup-content ol li {
       list-style-type: none;
       padding-left: 30px;
       position: relative;
       margin-bottom: 17px; }
-      .workarea ol li:last-child {
+      .workarea ol li:last-child, .popup-content ol li:last-child {
         margin-bottom: 0; }
-      .workarea ol li:before {
+      .workarea ol li:before, .popup-content ol li:before {
         counter-increment: myCounter;
         content: counter(myCounter);
         position: absolute;
@@ -3472,7 +3475,7 @@ textarea, input {
         top: 0;
         color: #2C4295;
         z-index: 2; }
-      .workarea ol li:after {
+      .workarea ol li:after, .popup-content ol li:after {
         content: "";
         position: absolute;
         left: 6px;
@@ -3482,27 +3485,27 @@ textarea, input {
         background: #F0F2F5;
         display: inline-block;
         z-index: 1; }
-    .workarea ol ol {
+    .workarea ol ol, .popup-content ol ol {
       margin: 0;
       margin-bottom: 30px;
       padding: 13px 0 0;
       counter-reset: myCounter2; }
-      .workarea ol ol li {
+      .workarea ol ol li, .popup-content ol ol li {
         padding-left: 32px; }
-        .workarea ol ol li:before {
+        .workarea ol ol li:before, .popup-content ol ol li:before {
           left: -16px;
           counter-increment: myCounter2;
           content: counter(myCounter) "." counter(myCounter2); }
-  .workarea ul {
+  .workarea ul, .popup-content ul {
     margin: 0;
     margin-bottom: 30px;
     padding: 0; }
-    .workarea ul li {
+    .workarea ul li, .popup-content ul li {
       list-style-type: none;
       padding-left: 30px;
       position: relative;
       margin-bottom: 16px; }
-      .workarea ul li:before {
+      .workarea ul li:before, .popup-content ul li:before {
         content: "";
         position: absolute;
         left: 0px;
@@ -3511,7 +3514,7 @@ textarea, input {
         width: 13px;
         height: 3px;
         z-index: 2; }
-      .workarea ul li:after {
+      .workarea ul li:after, .popup-content ul li:after {
         content: "";
         position: absolute;
         left: 6px;
@@ -3521,38 +3524,41 @@ textarea, input {
         background: #F0F2F5;
         display: inline-block;
         z-index: 1; }
-    .workarea ul ul {
+    .workarea ul ul, .popup-content ul ul {
       padding-top: 13px; }
-  .workarea table {
+  .workarea table, .popup-content table {
     width: 100%;
     min-width: 800px;
     table-layout: fixed; }
-  .workarea td {
+  .workarea td, .popup-content td {
     padding: 17px 16px;
     text-align: right; }
-    .workarea td img {
+    .workarea td img, .popup-content td img {
       display: inline-block;
       vertical-align: middle; }
-    .workarea td:first-child {
+    .workarea td:first-child, .popup-content td:first-child {
       text-align: left; }
-  .workarea tr:nth-child(odd) {
+  .workarea tr:nth-child(odd), .popup-content tr:nth-child(odd) {
     background: #F0F2F5; }
-  .workarea strong {
+  .workarea strong, .popup-content strong {
     font-weight: normal;
     font-family: 'golosbold'; }
   .workarea input[type="checkbox"]:not(:checked),
-  .workarea input[type="checkbox"]:checked {
+  .workarea input[type="checkbox"]:checked, .popup-content input[type="checkbox"]:not(:checked),
+  .popup-content input[type="checkbox"]:checked {
     position: absolute;
     left: -9999px; }
   .workarea input[type="checkbox"]:not(:checked) + label,
-  .workarea input[type="checkbox"]:checked + label {
+  .workarea input[type="checkbox"]:checked + label, .popup-content input[type="checkbox"]:not(:checked) + label,
+  .popup-content input[type="checkbox"]:checked + label {
     position: relative;
     cursor: pointer;
     padding-left: 32px;
     display: inline-block;
     line-height: 24px; }
   .workarea input[type="checkbox"]:not(:checked) + label:before,
-  .workarea input[type="checkbox"]:checked + label:before {
+  .workarea input[type="checkbox"]:checked + label:before, .popup-content input[type="checkbox"]:not(:checked) + label:before,
+  .popup-content input[type="checkbox"]:checked + label:before {
     content: '';
     position: absolute;
     left: 0px;
@@ -3563,11 +3569,12 @@ textarea, input {
     cursor: pointer;
     z-index: 5;
     border: 2px solid #0083CA; }
-  .workarea input[type="checkbox"]:checked + label:before {
+  .workarea input[type="checkbox"]:checked + label:before, .popup-content input[type="checkbox"]:checked + label:before {
     background: #0083CA;
     border: 2px solid #0083CA; }
   .workarea input[type="checkbox"]:not(:checked) + label:after,
-  .workarea input[type="checkbox"]:checked + label:after {
+  .workarea input[type="checkbox"]:checked + label:after, .popup-content input[type="checkbox"]:not(:checked) + label:after,
+  .popup-content input[type="checkbox"]:checked + label:after {
     content: '';
     background: url("../img/svg/check.svg") center no-repeat;
     width: 17px;
@@ -3577,11 +3584,11 @@ textarea, input {
     top: 4px;
     left: 5px;
     z-index: 10; }
-  .workarea input[type="checkbox"]:not(:checked) + label:after {
+  .workarea input[type="checkbox"]:not(:checked) + label:after, .popup-content input[type="checkbox"]:not(:checked) + label:after {
     opacity: 0; }
-  .workarea input[type="checkbox"]:checked + label:after {
+  .workarea input[type="checkbox"]:checked + label:after, .popup-content input[type="checkbox"]:checked + label:after {
     opacity: 1; }
-  .workarea img {
+  .workarea img, .popup-content img {
     max-width: 100%;
     height: auto; }
 
@@ -4227,7 +4234,12 @@ textarea, input {
     background: #E5E5E5; }
 
 .layout--aside .content {
-  padding: 42px 20px 40px 80px; }
+  padding: 42px 20px 40px 80px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: hidden; }
   .layout--aside .content:after {
     content: "";
     display: block;
@@ -4615,9 +4627,22 @@ span.breadcrumbs__item {
     color: #343532;
     opacity: 0.5; }
 
+.phone-code {
+  position: absolute;
+  left: 11px;
+  bottom: 10px;
+  color: #000;
+  color: #343532;
+  font-size: 24px; }
+
 .input-wrap {
   margin-bottom: 24px;
   position: relative; }
+  .input-wrap.m-phone input[type="text"],
+  .input-wrap.m-phone input[type="email"],
+  .input-wrap.m-phone input[type="password"],
+  .input-wrap.m-phone input[type="tel"] {
+    padding-left: 68px; }
 
 .input-wrap--necessary:before {
   content: "*";
@@ -5111,7 +5136,8 @@ span.breadcrumbs__item {
   z-index: 99; }
 
 .fancybox-slide--html .fancybox-close-small {
-  padding: 0; }
+  padding: 0;
+  right: -1px; }
   .fancybox-slide--html .fancybox-close-small svg path {
     fill: #fff; }
 
@@ -5955,6 +5981,155 @@ span.breadcrumbs__item {
     opacity: 1;
     -webkit-transform: translate(0, 0);
     transform: translate(0, 0); } }
+
+.popup-content {
+  background: #fff;
+  overflow: hidden; }
+
+.popup--lg {
+  width: 1064px;
+  -webkit-box-shadow: 0px 4px 48px #343532;
+          box-shadow: 0px 4px 48px #343532;
+  border-radius: 4px;
+  overflow: hidden; }
+
+.popup-media {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .popup-media .play-btn {
+    width: 214px;
+    height: 222px;
+    background: url(../img/svg/play-popup.svg) no-repeat; }
+
+.popup-media__info {
+  width: 50%;
+  padding: 80px 48px; }
+  .popup-media__info.m-single {
+    width: 100%; }
+  .popup-media__info .index-offers__links {
+    position: static;
+    padding: 0;
+    padding-top: 50px; }
+
+.popup-media__view {
+  width: 50%;
+  position: relative; }
+
+.popup-media__img {
+  width: 100%;
+  height: 560px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.play-btn-popup {
+  display: inline-block;
+  width: 214px;
+  height: 222px;
+  background: url(../img/svg/play-popup.svg) no-repeat;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.popup-mefia__form {
+  background: -webkit-gradient(linear, left top, left bottom, from(#0047B0), to(#6CC8E8));
+  background: linear-gradient(180deg, #0047B0 0%, #6CC8E8 100%);
+  color: #fff;
+  padding: 80px 64px; }
+  .popup-mefia__form input[type="checkbox"]:not(:checked) + label,
+  .popup-mefia__form input[type="checkbox"]:checked + label,
+  .popup-mefia__form input[type="checkbox"]:not(:checked) + label,
+  .popup-mefia__form input[type="checkbox"]:checked + label {
+    line-height: 1.2;
+    color: #fff; }
+  .popup-mefia__form input[type="checkbox"]:not(:checked) + label:before {
+    border: 2px solid #fff; }
+  .popup-mefia__form input[type="checkbox"]:checked + label:before {
+    background: #fff;
+    border: 2px solid #fff; }
+  .popup-mefia__form input[type="checkbox"]:checked + label:after {
+    background: url(../img/svg/check-bl.svg) center no-repeat; }
+  .popup-mefia__form .btn {
+    background: #2C4295;
+    border-radius: 4px;
+    border: 0;
+    -webkit-box-shadow: 0px 16px 48px #0652C3;
+            box-shadow: 0px 16px 48px #0652C3;
+    margin-top: 40px;
+    padding: 12px 26px;
+    font-size: 18px; }
+    .popup-mefia__form .btn:hover {
+      background: #0B4DCE; }
+  .popup-mefia__form.m-grey {
+    background: #F0F2F5;
+    color: #343532; }
+    .popup-mefia__form.m-grey .btn {
+      -webkit-box-shadow: none;
+              box-shadow: none; }
+    .popup-mefia__form.m-grey input[type="checkbox"]:not(:checked) + label,
+    .popup-mefia__form.m-grey input[type="checkbox"]:checked + label,
+    .popup-mefia__form.m-grey input[type="checkbox"]:not(:checked) + label,
+    .popup-mefia__form.m-grey input[type="checkbox"]:checked + label {
+      color: #343532;
+      font-size: 18px; }
+    .popup-mefia__form.m-grey input[type="checkbox"]:not(:checked) + label:before {
+      border: 1px solid #D5D8DB;
+      background: #fff; }
+  .popup-mefia__form .checkbox-item {
+    margin-bottom: 16px; }
+  .popup-mefia__form .checkbox-wrap {
+    margin-bottom: 25px; }
+  .popup-mefia__form input[type="radio"]:not(:checked),
+  .popup-mefia__form input[type="radio"]:checked {
+    position: absolute;
+    left: -9999px; }
+  .popup-mefia__form input[type="radio"]:not(:checked) + label,
+  .popup-mefia__form input[type="radio"]:checked + label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 32px;
+    display: inline-block;
+    line-height: 24px;
+    font-size: 18px; }
+  .popup-mefia__form input[type="radio"]:not(:checked) + label:before,
+  .popup-mefia__form input[type="radio"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 5;
+    border: 2px solid #2C4295; }
+  .popup-mefia__form input[type="radio"]:checked + label:before {
+    border: 2px solid #2C4295; }
+  .popup-mefia__form input[type="radio"]:not(:checked) + label:after,
+  .popup-mefia__form input[type="radio"]:checked + label:after {
+    content: '';
+    background: #2C4295;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    z-index: 10;
+    border-radius: 50%; }
+  .popup-mefia__form input[type="radio"]:not(:checked) + label:after {
+    opacity: 0; }
+  .popup-mefia__form input[type="radio"]:checked + label:after {
+    opacity: 1; }
 
 .page-footer {
   -webkit-flex-shrink: 0;
@@ -10740,7 +10915,11 @@ ymaps[class*="-copyright"] {
   .page-form__call {
     margin-right: 20px; }
   .page-anchors__link {
-    padding: 5px 10px; } }
+    padding: 5px 10px; }
+  .popup--lg {
+    width: 100%; }
+  .popup-media__info {
+    padding: 35px; } }
 
 @media screen and (max-width: 900px) {
   .logo {
@@ -10866,17 +11045,17 @@ ymaps[class*="-copyright"] {
     left: -15px; }
   body {
     font-size: 16px; }
-  .workarea h1 {
+  .workarea h1, .popup-content h1 {
     font-size: 26px; }
-  .workarea h2 {
+  .workarea h2, .popup-content h2 {
     font-size: 24px; }
-  .workarea h3 {
+  .workarea h3, .popup-content h3 {
     font-size: 22px; }
-  .workarea h4 {
+  .workarea h4, .popup-content h4 {
     font-size: 20px; }
   .workarea h5 {
     font-size: 18px; }
-  .workarea h6 {
+  .workarea h6, .popup-content h6 {
     font-size: 18px; }
   .accordeon__link,
   .table-caption,
@@ -11389,7 +11568,21 @@ ymaps[class*="-copyright"] {
   .conditions__list {
     padding: 20px; }
   .conditions__info:before {
-    display: none; } }
+    display: none; }
+  .popup-media {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .popup-media__img {
+    height: 300px; }
+  .popup-media__info {
+    width: 100%; }
+  .popup-media .index-offers__links {
+    padding-top: 0; }
+  .popup-media__view {
+    width: 100%; }
+  .popup-mefia__form {
+    padding: 35px; } }
 
 @media screen and (max-width: 700px) {
   .card__item {
@@ -11901,7 +12094,20 @@ ymaps[class*="-copyright"] {
     .conditions__list ul li:before {
       left: -3px; }
   .conditions-wrap p {
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+  .popup-media__info {
+    padding: 35px 20px 20px; }
+  .popup-media .btn {
+    width: 100%;
+    margin-right: 0;
+    text-align: center; }
+  .popup-media .btn-more {
+    width: 100%;
+    text-align: center; }
+  .popup-mefia__form {
+    padding: 20px; }
+  .popup-mefia__form .btn {
+    margin-top: 20px; } }
 
 @media screen and (max-width: 400px) {
   .app__title {

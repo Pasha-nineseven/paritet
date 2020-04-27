@@ -633,6 +633,12 @@
 	.page-anchors__link {
 	    padding: 5px 10px;
 	}
+	.popup--lg {
+	    width: 100%;
+	}
+	.popup-media__info{
+		padding: 35px;
+	}
 }
 
 @media screen and (max-width: 900px){
@@ -795,22 +801,27 @@
 	body {
 	    font-size: 16px;
 	}
-	.workarea h1{
+	.workarea h1,
+	.popup-content h1{
 		font-size: 26px;
 	}
-	.workarea h2{
+	.workarea h2,
+	.popup-content h2{
 		font-size: 24px;
 	}
-	.workarea h3{
+	.workarea h3,
+	.popup-content h3{
 		font-size: 22px;
 	}
-	.workarea h4{
+	.workarea h4,
+	.popup-content h4{
 		font-size: 20px;
 	}
 	.workarea h5{
 		font-size: 18px;
 	}
-	.workarea h6{
+	.workarea h6,
+	.popup-content h6{
 		font-size: 18px;
 	}
 	.accordeon__link,
@@ -1485,6 +1496,24 @@
 	.conditions__info:before{
 		display: none;
 	}
+	.popup-media{
+		flex-wrap:wrap;
+	}
+	.popup-media__img {
+	    height: 300px;
+	}
+	.popup-media__info{
+		width: 100%;
+	}
+	.popup-media .index-offers__links{
+		padding-top: 0;
+	}
+	.popup-media__view{
+		width: 100%;
+	}
+	.popup-mefia__form{
+		padding: 35px;
+	}
 }	
 
 @media screen and (max-width: 700px){
@@ -2133,6 +2162,26 @@
 	}
 	.conditions-wrap p{
 		margin-bottom: 20px;
+	}
+	.popup-media__info {
+	    padding: 35px 20px 20px;
+	}
+	.popup-media{
+		.btn{
+			width: 100%;
+			margin-right: 0;
+			text-align: center;
+		}
+		.btn-more{
+			width: 100%;
+			text-align: center;
+		}
+	}
+	.popup-mefia__form{
+		padding: 20px;
+	}
+	.popup-mefia__form .btn{
+		margin-top: 20px;
 	}
 }
 

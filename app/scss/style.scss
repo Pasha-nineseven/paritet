@@ -68,6 +68,8 @@
 
 	.content{
 		padding: 42px 20px 40px 80px;
+		    flex: 1;
+    overflow: hidden;
 		&:after{
 			content: "";
 			display: block;
@@ -507,9 +509,25 @@ span.breadcrumbs__item{
     	opacity: 0.5;
     }
 }
+.phone-code{
+	position: absolute;
+    left: 11px;
+    bottom: 10px;
+    color: #000;
+    color: #343532;
+    font-size: 24px;
+}
 .input-wrap{
 	margin-bottom: 24px;
 	position: relative;
+	&.m-phone{
+		input[type="text"],
+		input[type="email"],
+		input[type="password"],
+		input[type="tel"]{
+			padding-left: 68px;
+		}
+	}
 }
 .input-wrap--necessary{
 	&:before{
@@ -1100,6 +1118,7 @@ span.breadcrumbs__item{
 }
 .fancybox-slide--html .fancybox-close-small{
 	padding: 0;
+	right: -1px;
 	svg{
 		path{
 			fill: #fff;
@@ -2005,6 +2024,176 @@ span.breadcrumbs__item{
         -webkit-transform: translate(0, 0);
         transform: translate(0, 0)
     }
+}
+
+
+
+
+.popup-content{
+	background: #fff;
+	overflow: hidden;
+}
+.popup--lg{
+	width: 1064px;
+	box-shadow: 0px 4px 48px #343532;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.popup-media{
+	display: flex;
+    align-items: center;
+    .play-btn{
+	    width: 214px;
+	    height: 222px;
+	    background: url(../img/svg/play-popup.svg) no-repeat;
+    }
+	
+
+}
+.popup-media__info{
+	width: 50%;
+	padding: 80px 48px;
+	&.m-single{
+		width: 100%;
+	}
+	.index-offers__links {
+	    position: static;
+	    padding: 0;
+	    padding-top: 50px;
+	}
+}
+.popup-media__view{
+	width: 50%;
+	position: relative;
+}
+.popup-media__img{
+	//position: absolute;
+	width: 100%;
+	height: 560px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.play-btn-popup{
+	display: inline-block;
+	width: 214px;
+	height: 222px;
+	    background: url(../img/svg/play-popup.svg) no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.popup-mefia__form{
+	background: linear-gradient(180deg, #0047B0 0%, #6CC8E8 100%);
+	color: #fff;
+	padding: 80px 64px;
+	input[type="checkbox"]:not(:checked) + label,
+	input[type="checkbox"]:checked + label,
+	input[type="checkbox"]:not(:checked) + label,
+	input[type="checkbox"]:checked + label {
+	    line-height: 1.2;
+	    color: #fff;
+	}
+	input[type="checkbox"]:not(:checked) + label:before {
+	    border: 2px solid #fff;
+	}
+	input[type="checkbox"]:checked + label:before {
+	    background: #fff;
+	    border: 2px solid #fff;
+	}
+	input[type="checkbox"]:checked + label:after{
+		    background: url(../img/svg/check-bl.svg) center no-repeat;
+	}
+	.btn{
+		background: #2C4295;
+		border-radius: 4px;
+		border: 0;
+		box-shadow: 0px 16px 48px #0652C3;
+		margin-top: 40px;
+		    padding: 12px 26px;
+    	font-size: 18px;
+    	&:hover{
+    		    background: #0B4DCE;
+    	}
+	}
+	&.m-grey{
+		background: #F0F2F5;
+		color: #343532;
+		.btn{
+			box-shadow:none;
+		}
+		input[type="checkbox"]:not(:checked) + label,
+		input[type="checkbox"]:checked + label,
+		input[type="checkbox"]:not(:checked) + label,
+		input[type="checkbox"]:checked + label {
+		    color: #343532;
+		    font-size: 18px;
+		}
+		input[type="checkbox"]:not(:checked) + label:before {
+		   border: 1px solid #D5D8DB;
+		   background: #fff;
+		}
+	}
+	.checkbox-item{
+		margin-bottom: 16px;
+	}
+	.checkbox-wrap{
+		margin-bottom: 25px;
+	}
+
+	input[type="radio"]:not(:checked),
+	input[type="radio"]:checked{
+		position: absolute;
+		left: -9999px;
+	}
+	input[type="radio"]:not(:checked) + label,
+	input[type="radio"]:checked + label{
+		position: relative;
+		cursor: pointer;
+		padding-left: 32px;
+		display: inline-block;
+		line-height: 24px;
+		font-size: 18px;
+	}
+
+	input[type="radio"]:not(:checked) + label:before,
+	input[type="radio"]:checked + label:before{
+		content: '';
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		height: 24px;
+		width: 24px;
+		border-radius: 50%;
+		cursor: pointer;
+		z-index: 5;
+		border: 2px solid #2C4295;
+	}
+	input[type="radio"]:checked+ label:before{
+		//background: #2C4295;
+		border: 2px solid #2C4295;
+	}
+	input[type="radio"]:not(:checked) + label:after,
+	input[type="radio"]:checked + label:after {
+		content: '';
+		background: #2C4295;
+		width: 10px;
+		height: 10px;
+		display: inline-block;
+		position: absolute;
+		top: 7px;
+    	left: 7px;
+		z-index: 10;
+		border-radius: 50%;
+	}
+	input[type="radio"]:not(:checked) + label:after {
+	 	opacity: 0;
+	}
+	input[type="radio"]:checked + label:after {
+	    opacity: 1;
+	}
 }
 
 @import "components/footer";

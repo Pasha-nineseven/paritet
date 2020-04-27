@@ -156,8 +156,9 @@ $(document).ready(function() {
         animationEffect: "zoom-in-out", 
         infobar: false,
         clickOutside : 'close',
+        smallBtn: true,
         buttons: [
-            "close"
+            
         ],
     });
     //POPUP-INLINE
@@ -166,10 +167,10 @@ $(document).ready(function() {
         transitionEffect: "slide", 
         animationEffect: "zoom-in-out", 
         infobar: false,
-        smallBtn:false,
         toolbar  : false,
+        smallBtn: true,
         buttons: [
-            "close"
+
         ],
     });
     //POPUP-GALLERY
