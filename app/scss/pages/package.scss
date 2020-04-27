@@ -4,8 +4,8 @@
 .package__list{
 	display: flex;
 	flex-wrap:wrap;
-	    margin-right: -141px;
-    margin-left: -110px;
+	   //  margin-right: -141px;
+    // margin-left: -110px;
 }
 .package__item{
 	padding-right: 16px;
@@ -22,6 +22,7 @@
 			width: 16px;
 			height: 16px;
 			top: 11px;
+			left: 0;
 			background: url(../img/svg/plus-min.svg) center no-repeat;
 			background-size: contain;
 		}
@@ -220,7 +221,107 @@
 }
 .package-slider-wrap{
 	padding: 64px 0; 
-	.container-fluid{
-		padding-left: 130px;
+
+	// .container-fluid{
+	// 	padding-left: 130px;
+	// }
+}
+
+.conditions-wrap{
+	background: #F0F2F5;
+	display: flex;
+	margin-bottom: 50px;
+	position: relative;
+	font-size: 20px;
+	p{
+		margin-bottom: 42px;
+	}
+	.btn-more {
+	        display: inline-block;
+    color: #2C4295;
+    border-radius: 4px;
+    border: 1px solid #2C4295;
+    padding: 11px 26px;
+    /* margin-bottom: 31px; */
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    font-size: 18px;
+	    &:hover {
+		    background: #0B4DCE;
+		    border: 1px solid #0B4DCE;
+		    color: #fff;
+		}
+	    &:active {
+		    background: #2C4295;
+		    border: 1px solid #2C4295;
+		    color: #fff;
+		}
+	}
+	.index-offers-more{
+		display: flex;
+		flex-wrap:wrap;
+		margin-bottom: 13px
+	}
+	.index-offers-more__item{
+		width: 50%;
+		    margin-bottom: 30px;
+	}
+}
+.conditions__info{
+	width: 721px;
+	min-width: 721px;
+	padding: 62px 69px 30px 83px;
+	position: relative;
+	background: linear-gradient(39.23deg, rgba(0, 0, 0, 0.09) -30.26%, rgba(226, 226, 226, 0) 66.72%);
+	overflow: hidden;
+	&:before{
+		content: '';
+	    position: absolute;
+	    left: 0;
+	    top: 0;
+	    width: 0;
+	    height: 0;
+	    border-top: 75px solid #fff;
+	    border-right: 75px solid transparent;
+	}
+	&:after{
+		content: "";
+		display: inline-block;
+		width: 420px;
+		height: 449px;
+		background: url(../img/content/pattern-gr.png) no-repeat;
+		position: absolute;
+		right: 0;
+		bottom: 0; 
+	}
+}
+.conditions__list{
+	flex:1;
+	padding: 62px 93px 30px 53px;
+	ul{
+		margin-bottom: 0;
+		li{
+			padding-left: 47px;
+		    position: relative;
+		    margin-bottom: 22px;
+		    line-height: 1.25;
+		    &:last-child{
+		    	margin-bottom: 0;
+		    }
+		    &:before{
+		    	width: 17px;
+		    	height: 14px;
+		    	background: url(../img/svg/check-li.svg);
+		    	left: 10px;
+    			top: 4px;
+		    }
+			span{
+				display: block;
+				color: #343532;
+				opacity: 0.5;
+				font-size: 12px;
+				    padding-top: 5px;
+			}
+		}
 	}
 }

@@ -75,6 +75,10 @@
 	    font-size: 40px;
 	    line-height: 20px;
 	}
+	.page-tabs{
+		padding-left: 15px;
+		padding-right: 15px; 
+	}
 }
 
 @media screen and (max-width: 1280px){
@@ -147,10 +151,6 @@
 	.page-tabs__in{
 		padding-left: 0;
 	}
-	.map-wrap .container-fluid,
-	.exchange-search .container-fluid{
-		padding-left: 15px;
-	}
 	.office-list .container-fluid{
 		padding-left: 15px;
 	}
@@ -205,7 +205,14 @@
 	.default-slider .slick-prev {
 	    left: 0;
 	}
-	
+	.conditions__info,
+	.conditions__list{
+		padding: 35px 40px;
+	}
+	.conditions__info {
+	    width: 50%;
+	    min-width: 50%;
+	}
 }
 
 @media screen and (max-width: 1100px){
@@ -341,6 +348,10 @@
 	.courses-table .down:before {
 	    left: -12px;
 	    top: 8px;
+	}
+	.conditions-wrap .index-offers-more__item {
+	    width: 100%;
+	    margin-bottom: 20px;
 	}
 }
 
@@ -565,10 +576,14 @@
 	    margin-bottom: 20px;
 	}
 	.deposit-top__info {
-	    width: calc(65% + 120px);
+	    width: calc(50% + 115px);
 	}
 	.deposit-top:before{
-		width: calc(65% + 115px);
+		width: calc(50% + 115px);
+	}
+	.deposit-top-add {
+	    width: 240px;
+	    min-width: 240px;
 	}
 	.page-slider{
 		padding: 0 40px;
@@ -614,6 +629,9 @@
 	}
 	.page-form__call {
 	    margin-right: 20px;
+	}
+	.page-anchors__link {
+	    padding: 5px 10px;
 	}
 }
 
@@ -713,6 +731,9 @@
 	    font-size: 16px;
 	    margin-bottom: 10px;
 	}
+	.page-anchors__link {
+	    font-size: 16px;
+	}
 }
 
 @media screen and (max-width: 800px){
@@ -733,6 +754,12 @@
 	}
 	.service{
 		padding-top: 0;
+	}
+	.deposit-top__info {
+	    width: calc(60% + 120px);
+	}
+	.deposit-top:before{
+		width: calc(60% + 115px);
 	}
 }
 
@@ -819,6 +846,7 @@
 	}
 	.accordeon__item:before{
 		top: 17px;
+		left: 0;
 	}
 	.bottom {
 	    font-size: 12px;
@@ -1429,6 +1457,34 @@
 	.default-slider-wrap{
 		overflow: hidden;
 	}
+	.layout--full .content {
+	    padding-top: 0;
+	}
+	.deposit-top-add__item {
+	    margin-bottom: 20px;
+	    padding-left: 30px;
+	    &:last-child{
+	    	margin-bottom: 0;
+	    }
+	    &:before{
+	    	width: 15px;
+	    	left: 0;
+	    }
+	}
+	.page-anchors{
+	    display: none;
+	}
+	.conditions-wrap {
+	    flex-wrap:wrap;
+	    font-size: 18px;
+	}
+	.conditions__info,
+	.conditions__list {
+	    padding: 20px;
+	}
+	.conditions__info:before{
+		display: none;
+	}
 }	
 
 @media screen and (max-width: 700px){
@@ -1539,10 +1595,6 @@
 	}
 	.size-payment-income__sum {
 	    font-size: 24px;
-	}
-	.size-slider {
-	    padding-left: 75px;
-	    padding-right: 50px;
 	}
 	.size-slider .slick-arrow {
 	    width: 60px;
@@ -2064,6 +2116,23 @@
 	}
 	.callcenter {
 	    font-size: 18px;
+	}
+	.conditions__info {
+	    width: 100%;
+	    min-width: 100%;
+	}
+	.conditions__list ul li {
+	    padding-left: 25px;
+	    margin-bottom: 15px;
+	    &:last-child{
+	    	margin-bottom: 0;
+	    }
+	    &:before{
+	    	    left: -3px;
+	    }
+	}
+	.conditions-wrap p{
+		margin-bottom: 20px;
 	}
 }
 
