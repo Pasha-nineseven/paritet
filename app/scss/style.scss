@@ -79,10 +79,10 @@
 			background: #fff;
 		}
 	}
-	// .page-wrap{
-	// 	flex-direction: row;
-	// 	width: auto;
-	// }
+	.page-wrap{
+		display: flex;
+    	position: relative;
+	}
 }
 .layout--full{
 	.content{
@@ -129,7 +129,7 @@
 
 
 .page-wrap{
-	display: flex;
+	//display: flex;
 	// flex-direction: column; 
 	// width: 100%;
 	position: relative;
@@ -174,8 +174,8 @@
 
 .content{
 	background: #fff;
-	flex:1;
-	overflow: hidden;
+	// flex:1;
+	// overflow: hidden;
 	//padding: 42px 125px 40px 110px;
 	padding: 42px 0 40px 0;
 	position: relative;
