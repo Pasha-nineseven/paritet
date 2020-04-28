@@ -651,6 +651,9 @@
 	.thank {
 	    font-size: 24px;
 	}
+	.page-subscription__wrap {
+	    padding: 25px 45px 30px;
+	}
 }
 
 @media screen and (max-width: 900px){
@@ -1529,6 +1532,15 @@
 	.vote-view, .vote-question{
 		width: 100%;
 	}
+	.page-subscription__wrap:before{
+		display: none;
+	}
+	.page-subscription__wrap {
+	    padding: 20px;
+	    h2{
+	    	font-size: 28px;
+	    }
+	}
 }	
 
 @media screen and (max-width: 700px){
@@ -2213,6 +2225,20 @@
 	}
 	.vote__item{
 		margin-bottom: 35px;
+	}
+	.page-subscription__form{
+		flex-wrap:wrap;
+	}
+	.page-subscription__input{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.page-subscription__submit{
+		padding-left: 0;
+		width: 100%;
+	}
+	.page-subscription__submit .btn{
+		width: 100%;
 	}
 }
 
