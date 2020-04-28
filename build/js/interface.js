@@ -977,5 +977,6 @@ $('body').append(
 		<li><a href="package.html">Package</a></li> \
 		<li><a href="zarplatnie_kartochki.html">Z_kartochki</a></li> \
 		<li><a href="zarpatniy_project.html">Z_project</a></li> \
+		<li><a href="vote.html">Vote</a></li> \
 	</ol> \
 </div>');
