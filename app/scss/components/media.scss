@@ -213,6 +213,9 @@
 	    width: 50%;
 	    min-width: 50%;
 	}
+	.index-offers-more__txt {
+	    font-size: 18px;
+	}
 }
 
 @media screen and (max-width: 1100px){
@@ -654,6 +657,12 @@
 	.page-subscription__wrap {
 	    padding: 25px 45px 30px;
 	}
+	.deposit__info {
+	    padding: 35px 513px 45px 35px;
+	}
+	.deposit__item .index-offers-more__item{
+		width: 50%;
+	}
 }
 
 @media screen and (max-width: 900px){
@@ -721,11 +730,11 @@
 	    }
 	}
 	.deposit__img {
-	    width: 210px;
-	    min-width: 210px;
+	    width: 340px;
+	    min-width: 340px;
 	}
 	.deposit__info{
-		padding-right: 240px;
+		padding-right: 350px;
 	}
 	.deposit__title {
 	    font-size: 24px;
@@ -1216,9 +1225,12 @@
 	.deposit__item{
 		margin-bottom: 20px;
 	}
+	.deposit__img {
+	    width: 300px;
+	    min-width: 300px;
+	}
 	.deposit__info {
-	    /* padding-right: 240px; */
-	    padding: 20px 240px 20px 20px;
+	    padding: 15px 320px 30px 15px;
 	}
 	.docs__title {
 	    font-size: 18px;
@@ -1541,6 +1553,10 @@
 	    	font-size: 28px;
 	    }
 	}
+	.deposit__item .index-offers-more__item{
+		width: 100%;
+		margin-bottom: 15px;
+	}
 }	
 
 @media screen and (max-width: 700px){
@@ -1558,11 +1574,11 @@
 
 @media screen and (max-width: 650px){
 	.index-offers__links .btn {
-	    padding: 6px 2px;
+	    padding: 6px 10px;
 	    font-size: 12px;
 	}
 	.index-offers__links .btn-more {
-	    padding: 4px 2px;
+	    padding: 4px 10px;
 	    font-size: 12px;
 	}
 	.issue__list{
@@ -1883,12 +1899,18 @@
 	    padding: 30px 0;
 	}
 	.index-offers__links .btn {
-	    padding: 6px 7px;
-	    font-size: 14px;
+	    margin-bottom: 15px;
+	    width: 100%;
+	    text-align: center;
+	    font-size: 16px;
+	    padding: 8px 7px;
+	    margin-right: 0;
 	}
 	.index-offers__links .btn-more {
-	    padding: 4px 7px;
-	    font-size: 14px;
+	        padding: 6px 10px;
+	    font-size: 16px;
+	    width: 100%;
+	    text-align: center;
 	}
 	.index-news__list,
 	.index-offers__top{
@@ -1940,12 +1962,6 @@
 	}
 	.index-offers-more{
 		margin-bottom: 20px;
-	}
-	.index-offers__links .btn{
-		margin-bottom: 10px;
-	}
-	.index-offers__links .btn-more{
-		margin-bottom: 10px;
 	}
 	.index-offers__info{
 		padding-bottom: 10px;
@@ -2131,9 +2147,19 @@
 		width: 100%;
 	    min-width: 100%;
 	    position: static;
-	    height: 200px;
+	    height: 267px;
 	    clip-path: polygon(44px 0, 100% 0, 100% 100%, 0 100%, 0 44px);
 	    display: block;
+	}
+	.deposit__title {
+	    font-size: 28px;
+	    line-height: 34px;
+	    margin-bottom: 15px;
+	}
+	.deposit__item .index-offers-more__item {
+	    margin-right: 0;
+	    width: 100%;
+	    margin-bottom: 20px;
 	}
 	.gallery-count {
 	    padding: 10px 15px;

@@ -1167,14 +1167,15 @@ html .ui-button.ui-state-disabled:hover {
 	width: 100%;
 	padding: 0 40px;
 	.btn{
-		    padding: 8px 16px;
-		    margin-right: 16px;
+		padding: 8px 25px;
+	    margin-right: 25px;
+	    border-radius: 0;
 	}
 	.btn-more{
 		color: #343532;
-    	padding: 6px 16px;
+    	padding: 6px 21px;
 	    border: 2px solid #2C4295;
-	    border-radius: 3px;
+	    // border-radius: 3px;
 	    font-size: 16px;
 	    display: inline-block;
 		&:hover{

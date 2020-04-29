@@ -220,314 +220,330 @@
 								<h1>Депозиты</h1>
 							</div>
 							<!-- CONTENT-PART -->
-							<div class="indent">
-								<div class="select">
-									<h2>Подобрать депозит</h2>
-									<form action="#" method="post">
-										<div class="select__wrap">
-											<div class="select__col">
-												<div class="select__item">
-													<div class="select__title">Валюта</div>
-													<div class="currency-radio">
-														<div class="currency-radio__item">
-															<input type="radio" id="rad1" name="radio" checked="">
-															<label for="rad1">byn</label>
-														</div>
-														<div class="currency-radio__item">
-															<input type="radio" id="rad2" name="radio">
-															<label for="rad2">usd</label>
-														</div>
-														<div class="currency-radio__item">
-															<input type="radio" id="rad3" name="radio">
-															<label for="rad3">eur</label>
-														</div>
-														<div class="currency-radio__item">
-															<input type="radio" id="rad4" name="radio">
-															<label for="rad4">rub</label>
-														</div>
+							<div class="select">
+								<h2>Подобрать депозит</h2>
+								<form action="#" method="post">
+									<div class="select__wrap">
+										<div class="select__col">
+											<div class="select__item">
+												<div class="select__title">Валюта</div>
+												<div class="currency-radio">
+													<div class="currency-radio__item">
+														<input type="radio" id="rad1" name="radio" checked="">
+														<label for="rad1">byn</label>
 													</div>
-												</div>
-												<div class="select__item">
-													<div class="select__title">Сумма депозита:</div>
-													<div class="slider-count">
-														<input type="text" id="slider-count-input" value="100" />
-														<div class="slider-count__add">BYN</div>
-														<div class="slider-count-slider"></div>
+													<div class="currency-radio__item">
+														<input type="radio" id="rad2" name="radio">
+														<label for="rad2">usd</label>
 													</div>
-													<div class="slider-count-val">
-														<div class="slider-count-val__item" data-sum="100">100 <span class="currency-val">BYN</span></div>
-														<div class="slider-count-val__item" data-sum="500000">500 000 <span class="currency-val">BYN</span></div>
+													<div class="currency-radio__item">
+														<input type="radio" id="rad3" name="radio">
+														<label for="rad3">eur</label>
 													</div>
-												</div>
-												<div class="select__item select__item--term">
-													<div class="select__title">Срок мин, месяц:</div>
-													<div class="slider-count">
-														<input type="text" id="slider-term-input" value="1" />
-														<div class="slider-count__add">мес.</div>
-														<div class="slider-term-slider"></div>
-													</div>
-													<div class="slider-count-val">
-														<div class="slider-count-val__item" data-month="1">1 мес.</div>
-														<div class="slider-count-val__item" data-month="36">36 мес.</div>
+													<div class="currency-radio__item">
+														<input type="radio" id="rad4" name="radio">
+														<label for="rad4">rub</label>
 													</div>
 												</div>
 											</div>
-											<div class="select__col">
-												<div class="select__item">
-													<div class="select__title">Ставка:</div>
-													<div class="checkbox-wrap">
-														<div class="checkbox-item">
-															<input type="checkbox" id="checkbox9" name="checkbox1234">
-															<label for="checkbox9">
-																Фиксированная
-															</label>
-														</div>
-														<div class="checkbox-item">
-															<input type="checkbox" id="checkbox10" name="checkbox1234">
-															<label for="checkbox10">
-																Плавающая
-															</label>
-														</div>
-													</div>
+											<div class="select__item">
+												<div class="select__title">Сумма депозита:</div>
+												<div class="slider-count">
+													<input type="text" id="slider-count-input" value="100" />
+													<div class="slider-count__add">BYN</div>
+													<div class="slider-count-slider"></div>
 												</div>
-												<div class="select__item">
-													<div class="select__title">Тип вклада:</div>
-													<div class="checkbox-wrap">
-														<div class="checkbox-item">
-															<input type="checkbox" id="checkbox11" name="checkbox1234">
-															<label for="checkbox11">
-																Отзывные
-															</label>
-														</div>
-														<div class="checkbox-item">
-															<input type="checkbox" id="checkbox12" name="checkbox1234">
-															<label for="checkbox12">
-																Безотзывные
-															</label>
-														</div>
-													</div>
+												<div class="slider-count-val">
+													<div class="slider-count-val__item" data-sum="100">100 <span class="currency-val">BYN</span></div>
+													<div class="slider-count-val__item" data-sum="500000">500 000 <span class="currency-val">BYN</span></div>
 												</div>
-												
-												<div class="select__item">
-													<div class="select__title">Дополнительные взносы:</div>
-													<div class="checkbox-wrap">
-														<div class="checkbox-item">
-															<input type="checkbox" id="checkbox13" name="checkbox1234">
-															<label for="checkbox13">
-																Фиксированная
-															</label>
-														</div>
-														<div class="checkbox-item">
-															<input type="checkbox" id="checkbox14" name="checkbox1234">
-															<label for="checkbox14">
-																Плавающая
-															</label>
-														</div>
-													</div>
+											</div>
+											<div class="select__item select__item--term">
+												<div class="select__title">Срок мин, месяц:</div>
+												<div class="slider-count">
+													<input type="text" id="slider-term-input" value="1" />
+													<div class="slider-count__add">мес.</div>
+													<div class="slider-term-slider"></div>
 												</div>
-												<input type="submit" value="Подобрать депозит">	
+												<div class="slider-count-val">
+													<div class="slider-count-val__item" data-month="1">1 мес.</div>
+													<div class="slider-count-val__item" data-month="36">36 мес.</div>
+												</div>
 											</div>
 										</div>
-									</form>
+										<div class="select__col">
+											<div class="select__item">
+												<div class="select__title">Ставка:</div>
+												<div class="checkbox-wrap">
+													<div class="checkbox-item">
+														<input type="checkbox" id="checkbox9" name="checkbox1234">
+														<label for="checkbox9">
+															Фиксированная
+														</label>
+													</div>
+													<div class="checkbox-item">
+														<input type="checkbox" id="checkbox10" name="checkbox1234">
+														<label for="checkbox10">
+															Плавающая
+														</label>
+													</div>
+												</div>
+											</div>
+											<div class="select__item">
+												<div class="select__title">Тип вклада:</div>
+												<div class="checkbox-wrap">
+													<div class="checkbox-item">
+														<input type="checkbox" id="checkbox11" name="checkbox1234">
+														<label for="checkbox11">
+															Отзывные
+														</label>
+													</div>
+													<div class="checkbox-item">
+														<input type="checkbox" id="checkbox12" name="checkbox1234">
+														<label for="checkbox12">
+															Безотзывные
+														</label>
+													</div>
+												</div>
+											</div>
+											
+											<div class="select__item">
+												<div class="select__title">Дополнительные взносы:</div>
+												<div class="checkbox-wrap">
+													<div class="checkbox-item">
+														<input type="checkbox" id="checkbox13" name="checkbox1234">
+														<label for="checkbox13">
+															Фиксированная
+														</label>
+													</div>
+													<div class="checkbox-item">
+														<input type="checkbox" id="checkbox14" name="checkbox1234">
+														<label for="checkbox14">
+															Плавающая
+														</label>
+													</div>
+												</div>
+											</div>
+											<input type="submit" value="Подобрать депозит">	
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="deposit">
+								<div class="deposit__item" id="test1">
+									<div class="deposit__info">
+										<div class="deposit__title">
+											Найди свой Клевер
+										</div>
+										<div class="deposit__txt">
+											Безотзывный банковский вклад в белорусских рублях для быстрого приумножения вашего капитала
+										</div>
+
+										<div class="index-offers-more">
+											<div class="index-offers-more__item">
+												<div class="index-offers-more__icon">
+													<img src="img/content/more1.png" alt="">
+												</div>
+												<div class="index-offers-more__txt">
+													<div class="index-offers-more__top">Минимальная сумма</div>
+													100 BYN
+												</div>
+											</div>
+											<div class="index-offers-more__item">
+												<div class="index-offers-more__icon">
+													<img src="img/content/more2.png" alt="">
+												</div>
+												<div class="index-offers-more__txt">
+													<div class="index-offers-more__top">Ставка</div>
+													до 10.5%
+												</div>
+											</div>
+											<div class="index-offers-more__item">
+												<div class="index-offers-more__icon">
+													<img src="img/content/more2.png" alt="">
+												</div>
+												<div class="index-offers-more__txt">
+													<div class="index-offers-more__top">Тип вклада</div>
+													Отзывной
+												</div>
+											</div>
+											<div class="index-offers-more__item">
+												<div class="index-offers-more__icon">
+													<img src="img/content/more3.png" alt="">
+												</div>
+												<div class="index-offers-more__txt">
+													<div class="index-offers-more__top">Срок депозита</div>
+													от 13 до 36 мес.
+												</div>
+											</div>
+											<div class="index-offers-more__item">
+												<div class="index-offers-more__icon">
+													<img src="img/content/more3.png" alt="">
+												</div>
+												<div class="index-offers-more__txt">
+													<div class="index-offers-more__top">Валюта кредита</div>
+													USD
+												</div>
+											</div>
+										</div>
+										<div class="index-offers__links">
+											<a href="#" class="btn">Открыть вклад</a>
+											<a href="#" class="btn-more">Подробнее</a>
+										</div>
+									</div>
+									<div class="deposit__img" style="background-image: url(img/content/slide1.jpg);"></div>
+									<div class="deposit__img--mobile" style="background-image: url(img/content/slide1-mob.jpg);"></div>
 								</div>
-								<div class="deposit">
-									<div class="deposit__item" id="test1">
-										<div class="deposit__info">
-											<div class="deposit__title">
-												Депозит «Найди свой Клевер»
-											</div>
-											<div class="deposit__txt">
-												Безотзывный банковский вклад в белорусских рублях для быстрого приумножения вашего капитала
-											</div>
+								<div class="deposit__item" id="test2">
+									<div class="deposit__info">
+										<div class="deposit__title">
+											Практичный вклад
+										</div>
+										<div class="deposit__txt">
+											Безотзывный банковский вклад в белорусских рублях для быстрого приумножения вашего капитала
+										</div>
 
-											<div class="index-offers-more">
-												<div class="index-offers-more__item">
-													<div class="index-offers-more__icon">
-														<img src="img/content/more1.png" alt="">
-													</div>
-													<div class="index-offers-more__txt">
-														<div class="index-offers-more__top">Минимальная сумма</div>
-														100 BYN
-													</div>
+										<div class="index-offers-more">
+											<div class="index-offers-more__item">
+												<div class="index-offers-more__icon">
+													<img src="img/content/more1.png" alt="">
 												</div>
-												<div class="index-offers-more__item">
-													<div class="index-offers-more__icon">
-														<img src="img/content/more2.png" alt="">
-													</div>
-													<div class="index-offers-more__txt">
-														<div class="index-offers-more__top">Ставка</div>
-														до 10.5%
-													</div>
-												</div>
-												<div class="index-offers-more__item">
-													<div class="index-offers-more__icon">
-														<img src="img/content/more3.png" alt="">
-													</div>
-													<div class="index-offers-more__txt">
-														<div class="index-offers-more__top">Срок депозита</div>
-														от 13 до 36 мес.
-													</div>
+												<div class="index-offers-more__txt">
+													<div class="index-offers-more__top">Ставка</div>
+													до 10.5%
 												</div>
 											</div>
-											<div class="index-offers__links">
-												<a href="#" class="btn">Открыть вклад</a>
-												<a href="#" class="btn-more">Подробнее</a>
+											<div class="index-offers-more__item">
+												<div class="index-offers-more__icon">
+													<img src="img/content/more2.png" alt="">
+												</div>
+												<div class="index-offers-more__txt">
+													<div class="index-offers-more__top">Срок депозита</div>
+													от 1 до 12 мес.
+												</div>
+											</div>
+											<div class="index-offers-more__item">
+												<div class="index-offers-more__icon">
+													<img src="img/content/more3.png" alt="">
+												</div>
+												<div class="index-offers-more__txt">
+													<div class="index-offers-more__top">Срок кредита</div>
+													до 50 000 BYN
+												</div>
 											</div>
 										</div>
-										<div class="deposit__img" style="background-image: url(img/content/slide1.jpg);"></div>
-										<div class="deposit__img--mobile" style="background-image: url(img/content/slide1-mob.jpg);"></div>
-									</div>
-									<div class="deposit__item" id="test2">
-										<div class="deposit__info">
-											<div class="deposit__title">
-												Практичный вклад
-											</div>
-											<div class="deposit__txt">
-												Безотзывный банковский вклад в белорусских рублях для быстрого приумножения вашего капитала
-											</div>
-
-											<div class="index-offers-more">
-												<div class="index-offers-more__item">
-													<div class="index-offers-more__icon">
-														<img src="img/content/more1.png" alt="">
-													</div>
-													<div class="index-offers-more__txt">
-														<div class="index-offers-more__top">Ставка</div>
-														до 10.5%
-													</div>
-												</div>
-												<div class="index-offers-more__item">
-													<div class="index-offers-more__icon">
-														<img src="img/content/more2.png" alt="">
-													</div>
-													<div class="index-offers-more__txt">
-														<div class="index-offers-more__top">Срок депозита</div>
-														от 1 до 12 мес.
-													</div>
-												</div>
-												<div class="index-offers-more__item">
-													<div class="index-offers-more__icon">
-														<img src="img/content/more3.png" alt="">
-													</div>
-													<div class="index-offers-more__txt">
-														<div class="index-offers-more__top">Срок кредита</div>
-														до 50 000 BYN
-													</div>
-												</div>
-											</div>
-											<div class="index-offers__links">
-												<a href="#" class="btn">Оформить кредит</a>
-												<a href="#" class="btn-more">Подробнее</a>
-											</div>
+										<div class="index-offers__links">
+											<a href="#" class="btn">Оформить кредит</a>
+											<a href="#" class="btn-more">Подробнее</a>
 										</div>
-										<div class="deposit__img" style="background-image: url(img/content/slide2.jpg);"></div>
-										<div class="deposit__img--mobile" style="background-image: url(img/content/slide2-mob.jpg);"></div>
 									</div>
-									<div class="deposit__item" id="test3">
-										<div class="deposit__info">
-											<div class="deposit__title">
-												Стабильный доход (безотзывный) вклад в белорусских рублях
-											</div>
-											<div class="deposit__txt">
-												Безотзывный банковский вклад в белорусских рублях для быстрого приумножения вашего капитала
-											</div>
-
-											<div class="index-offers-more">
-												<div class="index-offers-more__item">
-													<div class="index-offers-more__icon">
-														<img src="img/content/more1.png" alt="">
-													</div>
-													<div class="index-offers-more__txt">
-														<div class="index-offers-more__top">Минимальная сумма</div>
-														100 BYN
-													</div>
-												</div>
-												<div class="index-offers-more__item">
-													<div class="index-offers-more__icon">
-														<img src="img/content/more2.png" alt="">
-													</div>
-													<div class="index-offers-more__txt">
-														<div class="index-offers-more__top">Ставка</div>
-														до 10.5%
-													</div>
-												</div>
-												<div class="index-offers-more__item">
-													<div class="index-offers-more__icon">
-														<img src="img/content/more3.png" alt="">
-													</div>
-													<div class="index-offers-more__txt">
-														<div class="index-offers-more__top">Срок депозита</div>
-														от 13 до 36 мес.
-													</div>
-												</div>
-											</div>
-											<div class="index-offers__links">
-												<a href="#" class="btn">Открыть вклад</a>
-												<a href="#" class="btn-more">Подробнее</a>
-											</div>
-										</div>
-										<div class="deposit__img" style="background-image: url(img/content/slide3.jpg);"></div>
-										<div class="deposit__img--mobile" style="background-image: url(img/content/slide3-mob.jpg);"></div>
-									</div>
-									<div class="deposit__item" id="test4">
-										<div class="deposit__info">
-											<div class="deposit__title">
-												Депозит «Найди свой Клевер»
-											</div>
-											<div class="deposit__txt">
-												Безотзывный банковский вклад в белорусских рублях для быстрого приумножения вашего капитала
-											</div>
-
-											<div class="index-offers-more">
-												<div class="index-offers-more__item">
-													<div class="index-offers-more__icon">
-														<img src="img/content/more1.png" alt="">
-													</div>
-													<div class="index-offers-more__txt">
-														<div class="index-offers-more__top">Минимальная сумма</div>
-														100 BYN
-													</div>
-												</div>
-												<div class="index-offers-more__item">
-													<div class="index-offers-more__icon">
-														<img src="img/content/more2.png" alt="">
-													</div>
-													<div class="index-offers-more__txt">
-														<div class="index-offers-more__top">Ставка</div>
-														до 10.5%
-													</div>
-												</div>
-												<div class="index-offers-more__item">
-													<div class="index-offers-more__icon">
-														<img src="img/content/more3.png" alt="">
-													</div>
-													<div class="index-offers-more__txt">
-														<div class="index-offers-more__top">Срок депозита</div>
-														от 13 до 36 мес.
-													</div>
-												</div>
-											</div>
-											<div class="index-offers__links">
-												<a href="#" class="btn">Открыть вклад</a>
-												<a href="#" class="btn-more">Подробнее</a>
-											</div>
-										</div>
-										<div class="deposit__img" style="background-image: url(img/content/slide4.jpg);"></div>
-										<div class="deposit__img--mobile" style="background-image: url(img/content/slide4-mob.jpg);"></div>
-									</div>
+									<div class="deposit__img" style="background-image: url(img/content/slide2.jpg);"></div>
+									<div class="deposit__img--mobile" style="background-image: url(img/content/slide2-mob.jpg);"></div>
 								</div>
-								<div class="paging">
-									<div class="paging__wrap">
-										<div class="paging__inner">
-											<a href="#" class="paging__item">1</a>
-											<span class="paging__item active">2</span>
-											<a href="#" class="paging__item">3</a>
-											<a href="#" class="paging__item">4</a>
-											<a href="#" class="paging__item">...</a>
-											<a href="#" class="paging__item">10</a>
+								<div class="deposit__item" id="test3">
+									<div class="deposit__info">
+										<div class="deposit__title">
+											Стабильный доход (безотзывный) вклад в белорусских рублях
 										</div>
-										<a href="#" class="paging__next">Следующая страница</a>
+										<div class="deposit__txt">
+											Безотзывный банковский вклад в белорусских рублях для быстрого приумножения вашего капитала
+										</div>
+
+										<div class="index-offers-more">
+											<div class="index-offers-more__item">
+												<div class="index-offers-more__icon">
+													<img src="img/content/more1.png" alt="">
+												</div>
+												<div class="index-offers-more__txt">
+													<div class="index-offers-more__top">Минимальная сумма</div>
+													100 BYN
+												</div>
+											</div>
+											<div class="index-offers-more__item">
+												<div class="index-offers-more__icon">
+													<img src="img/content/more2.png" alt="">
+												</div>
+												<div class="index-offers-more__txt">
+													<div class="index-offers-more__top">Ставка</div>
+													до 10.5%
+												</div>
+											</div>
+											<div class="index-offers-more__item">
+												<div class="index-offers-more__icon">
+													<img src="img/content/more3.png" alt="">
+												</div>
+												<div class="index-offers-more__txt">
+													<div class="index-offers-more__top">Срок депозита</div>
+													от 13 до 36 мес.
+												</div>
+											</div>
+										</div>
+										<div class="index-offers__links">
+											<a href="#" class="btn">Открыть вклад</a>
+											<a href="#" class="btn-more">Подробнее</a>
+										</div>
 									</div>
+									<div class="deposit__img" style="background-image: url(img/content/slide3.jpg);"></div>
+									<div class="deposit__img--mobile" style="background-image: url(img/content/slide3-mob.jpg);"></div>
+								</div>
+								<div class="deposit__item" id="test4">
+									<div class="deposit__info">
+										<div class="deposit__title">
+											Депозит «Найди свой Клевер»
+										</div>
+										<div class="deposit__txt">
+											Безотзывный банковский вклад в белорусских рублях для быстрого приумножения вашего капитала
+										</div>
+
+										<div class="index-offers-more">
+											<div class="index-offers-more__item">
+												<div class="index-offers-more__icon">
+													<img src="img/content/more1.png" alt="">
+												</div>
+												<div class="index-offers-more__txt">
+													<div class="index-offers-more__top">Минимальная сумма</div>
+													100 BYN
+												</div>
+											</div>
+											<div class="index-offers-more__item">
+												<div class="index-offers-more__icon">
+													<img src="img/content/more2.png" alt="">
+												</div>
+												<div class="index-offers-more__txt">
+													<div class="index-offers-more__top">Ставка</div>
+													до 10.5%
+												</div>
+											</div>
+											<div class="index-offers-more__item">
+												<div class="index-offers-more__icon">
+													<img src="img/content/more3.png" alt="">
+												</div>
+												<div class="index-offers-more__txt">
+													<div class="index-offers-more__top">Срок депозита</div>
+													от 13 до 36 мес.
+												</div>
+											</div>
+										</div>
+										<div class="index-offers__links">
+											<a href="#" class="btn">Открыть вклад</a>
+											<a href="#" class="btn-more">Подробнее</a>
+										</div>
+									</div>
+									<div class="deposit__img" style="background-image: url(img/content/slide4.jpg);"></div>
+									<div class="deposit__img--mobile" style="background-image: url(img/content/slide4-mob.jpg);"></div>
+								</div>
+							</div>
+							<div class="paging">
+								<div class="paging__wrap">
+									<div class="paging__inner">
+										<a href="#" class="paging__item">1</a>
+										<span class="paging__item active">2</span>
+										<a href="#" class="paging__item">3</a>
+										<a href="#" class="paging__item">4</a>
+										<a href="#" class="paging__item">...</a>
+										<a href="#" class="paging__item">10</a>
+									</div>
+									<a href="#" class="paging__next">Следующая страница</a>
 								</div>
 							</div>
 							<!--end CONTENT-PART -->
