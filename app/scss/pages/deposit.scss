@@ -93,7 +93,7 @@
 
 .deposit__item{
 	display: flex;
-	margin-bottom: 56px;
+	margin-bottom: 75px;
 	background: #F0F2F5;
     // box-shadow: 0px 4px 48px #BDC5D1;
     box-shadow: 0 15px 25px -15px #BDC5D1;
@@ -104,15 +104,22 @@
     	padding: 0;
     }
     .index-offers-more{
-    	margin-bottom: 24px;
+    	margin-bottom: 15px;
     	display: flex;
     	flex-wrap:wrap;
     }
     .index-offers-more__item{
-    	margin-right: 25px;
+    	margin-right: 0;
+    	padding-right: 10px;
+    	width: 33.333%;
+    	align-items: flex-start;
     	&:last-child{
     		margin-right: 0;
     	}
+    }
+    .index-offers-more__icon{
+    	margin-top: 4px;
+    	min-width: 37px;
     }
     &.noimage{
     	.deposit__info{
@@ -126,8 +133,8 @@
 }
 
 .deposit__img{
-	width: 268px;
-	min-width: 268px;
+	width: 439px;
+	min-width: 439px;
 	height: 100%;
 	    clip-path: polygon(75px 0, 100% 0, 100% 100%, 0 100%, 0 75px);
 	    position: absolute;
@@ -135,12 +142,12 @@
     top: 0;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top center;
 
 }
 
 .deposit__info{
-	padding: 32px 325px 40px 40px;
+	    padding: 64px 446px 77px 79px;
 }
 .deposit__title{
 	color: #244EA2;
@@ -153,7 +160,7 @@
 .deposit__txt{
 	font-size: 18px;
 	line-height: 1.5;
-	margin-bottom: 24px;
+	margin-bottom: 25px;
 }
 
 
@@ -434,20 +441,23 @@
 		left: 0;
 		top: 0;
 		height: 100%;
-		width: calc(50% + 120px);
+		width: calc(50% + 240px);
 		background: linear-gradient(270deg, #2C4295 0%, #0083CA 100%);
-		opacity: 0.8;
+		// opacity: 0.8;
 		z-index: 1;
 		    clip-path: polygon(90% 0%, 0% 0%, 0% 100%, 100% 100%, 100% 100px);
 		    // clip-path: polygon(100px 0, 100% 0, 100% 100%, 0 100%, 0 100px);
+	}
+	.deposit-top__btn {
+	    margin-left: 0;
 	}
 }
 
 .deposit-top__img{
 	position: absolute;
-	width: 100%;
+	width: 50%;
 	height: 100%;
-	left: 0;
+	right: 0;
 	top: 0;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -455,8 +465,8 @@
 }
 
 .deposit-top__info{
-	    padding: 0 0 0 115px;
-	width: calc(50% + 120px);
+	    // padding: 0 0 0 115px;
+	width: calc(50% + 240px);
 	position: relative;
 	z-index: 2;
 	display: flex;
@@ -464,8 +474,8 @@
 }
 
 .deposit-top-add{
-	width: 232px;
-	min-width: 232px;
+	width: 310px;
+	min-width: 310px;
 	// position: absolute;
 	right: 0;
 	top: 0;
@@ -475,18 +485,30 @@
 }
 .deposit-top__main{
 	flex:1;
-	padding: 40px 10px 40px 0;
+	padding: 110px 10px 40px 0;
 	h2{
 		font-size: 40px;
 		line-height: 1.3;
-		    margin-bottom: 33px;
+		    margin-bottom: 20px;
 	}
 }
 
 .deposit-top-add__item{
-	margin-bottom: 26px;
+	margin-bottom: 40px;
     font-size: 24px;
     line-height: 1.2;
+    padding-left: 65px;
+    position: relative;
+    &:before{
+    	content: "";
+    	display: inline-block;
+    	width: 30px;
+		height: 1px;
+		background: #fff;
+		position: absolute;
+		left: 18px;
+    	top: 7px;
+    }
     &.m-salary{
     	font-size: 18px;
     }
@@ -500,11 +522,9 @@
 }
 
 .deposit-top__txt{
-font-size: 16px;
+    font-size: 16px;
     line-height: 1.3;
-    margin-bottom: 32px;
-    max-width: 330px;
-    padding-left: 10px;
+    margin-bottom: 37px;
 }
 .deposit-top__btn{
 	margin-left: 10px;
@@ -539,8 +559,8 @@ font-size: 16px;
 	}
 }
 .size-slider{
-    padding-left: 110px;
-    padding-right: 130px;
+    // padding-left: 110px;
+    // padding-right: 130px;
     padding-bottom: 35px;
     margin-bottom: 40px;
 	.slick-track{
@@ -548,7 +568,8 @@ font-size: 16px;
 		min-width: 100%;
 	}
 	.slick-list{
-		overflow: visible;
+		// overflow: visible;
+		margin: 0 -8px;
 		&:before{
 			content: "";
 			display: block;
@@ -577,21 +598,22 @@ font-size: 16px;
 		text-indent:-9999em;
 	}
 	.slick-prev{
-		top: 0;
-		left: 2px;
-		    background: #FFFFFF url(../img/svg/prev.svg) center no-repeat;
+		top: -70px;
+    	right: 103px;
+		background: #FFFFFF url(../img/svg/prev.svg) center no-repeat;
 	}
 	.slick-next{
-		top: 55px;
-		left: 2px;
+		    top: -70px;
+    	right: 0px;
 		    background: #FFFFFF url(../img/svg/next.svg) center no-repeat;
 	}
 	.slick-dots{
 		margin-bottom: 0;
 	    position: absolute;
-	    bottom: 0;
+	    bottom: 5px;
 	    display: flex;
-	        left: 110px;
+	    justify-content: flex-end;
+    	width: 100%;
 	    li{
 	    	padding: 0;
 	    	width: 10px;
@@ -634,7 +656,7 @@ font-size: 16px;
 // }
 
 .size-slider__item{
-	padding-right: 16px;
+	padding: 0 8px;
 	height: auto;
 	cursor: pointer;
 	&.slick-current{
@@ -771,8 +793,8 @@ font-size: 16px;
 .size-payment-income{
 	position: relative;
 	padding: 120px 53px 64px 64px;
-	width: 324px;
-	min-width: 324px;
+	width: 497px;
+	min-width: 497px;
 	&:before{
 		content: "";
 		display: block;

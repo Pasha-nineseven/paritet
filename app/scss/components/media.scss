@@ -75,6 +75,10 @@
 	    font-size: 40px;
 	    line-height: 20px;
 	}
+	.page-tabs{
+		padding-left: 15px;
+		padding-right: 15px; 
+	}
 }
 
 @media screen and (max-width: 1280px){
@@ -147,10 +151,6 @@
 	.page-tabs__in{
 		padding-left: 0;
 	}
-	.map-wrap .container-fluid,
-	.exchange-search .container-fluid{
-		padding-left: 15px;
-	}
 	.office-list .container-fluid{
 		padding-left: 15px;
 	}
@@ -205,7 +205,17 @@
 	.default-slider .slick-prev {
 	    left: 0;
 	}
-	
+	.conditions__info,
+	.conditions__list{
+		padding: 35px 40px;
+	}
+	.conditions__info {
+	    width: 50%;
+	    min-width: 50%;
+	}
+	.index-offers-more__txt {
+	    font-size: 18px;
+	}
 }
 
 @media screen and (max-width: 1100px){
@@ -341,6 +351,14 @@
 	.courses-table .down:before {
 	    left: -12px;
 	    top: 8px;
+	}
+	.conditions-wrap .index-offers-more__item {
+	    width: 100%;
+	    margin-bottom: 20px;
+	}
+	.vote-view,
+	.vote-question{
+	    padding: 20px 25px 50px;
 	}
 }
 
@@ -565,10 +583,14 @@
 	    margin-bottom: 20px;
 	}
 	.deposit-top__info {
-	    width: calc(65% + 120px);
+	    width: calc(50% + 115px);
 	}
 	.deposit-top:before{
-		width: calc(65% + 115px);
+		width: calc(50% + 115px);
+	}
+	.deposit-top-add {
+	    width: 240px;
+	    min-width: 240px;
 	}
 	.page-slider{
 		padding: 0 40px;
@@ -614,6 +636,32 @@
 	}
 	.page-form__call {
 	    margin-right: 20px;
+	}
+	.page-anchors__link {
+	    padding: 5px 10px;
+	}
+	.popup--lg {
+	    width: 100%;
+	}
+	.popup-media__info{
+		padding: 35px;
+	}
+	.vote__item h2 {
+	    font-size: 30px;
+	    text-transform: none;
+	    margin-bottom: 20px;
+	}
+	.thank {
+	    font-size: 24px;
+	}
+	.page-subscription__wrap {
+	    padding: 25px 45px 30px;
+	}
+	.deposit__info {
+	    padding: 35px 513px 45px 35px;
+	}
+	.deposit__item .index-offers-more__item{
+		width: 50%;
 	}
 }
 
@@ -682,11 +730,11 @@
 	    }
 	}
 	.deposit__img {
-	    width: 210px;
-	    min-width: 210px;
+	    width: 340px;
+	    min-width: 340px;
 	}
 	.deposit__info{
-		padding-right: 240px;
+		padding-right: 350px;
 	}
 	.deposit__title {
 	    font-size: 24px;
@@ -713,6 +761,9 @@
 	    font-size: 16px;
 	    margin-bottom: 10px;
 	}
+	.page-anchors__link {
+	    font-size: 16px;
+	}
 }
 
 @media screen and (max-width: 800px){
@@ -733,6 +784,12 @@
 	}
 	.service{
 		padding-top: 0;
+	}
+	.deposit-top__info {
+	    width: calc(60% + 120px);
+	}
+	.deposit-top:before{
+		width: calc(60% + 115px);
 	}
 }
 
@@ -768,22 +825,27 @@
 	body {
 	    font-size: 16px;
 	}
-	.workarea h1{
+	.workarea h1,
+	.popup-content h1{
 		font-size: 26px;
 	}
-	.workarea h2{
+	.workarea h2,
+	.popup-content h2{
 		font-size: 24px;
 	}
-	.workarea h3{
+	.workarea h3,
+	.popup-content h3{
 		font-size: 22px;
 	}
-	.workarea h4{
+	.workarea h4,
+	.popup-content h4{
 		font-size: 20px;
 	}
 	.workarea h5{
 		font-size: 18px;
 	}
-	.workarea h6{
+	.workarea h6,
+	.popup-content h6{
 		font-size: 18px;
 	}
 	.accordeon__link,
@@ -819,6 +881,7 @@
 	}
 	.accordeon__item:before{
 		top: 17px;
+		left: 0;
 	}
 	.bottom {
 	    font-size: 12px;
@@ -1162,9 +1225,12 @@
 	.deposit__item{
 		margin-bottom: 20px;
 	}
+	.deposit__img {
+	    width: 300px;
+	    min-width: 300px;
+	}
 	.deposit__info {
-	    /* padding-right: 240px; */
-	    padding: 20px 240px 20px 20px;
+	    padding: 15px 320px 30px 15px;
 	}
 	.docs__title {
 	    font-size: 18px;
@@ -1429,6 +1495,68 @@
 	.default-slider-wrap{
 		overflow: hidden;
 	}
+	.layout--full .content {
+	    padding-top: 0;
+	}
+	.deposit-top-add__item {
+	    margin-bottom: 20px;
+	    padding-left: 30px;
+	    &:last-child{
+	    	margin-bottom: 0;
+	    }
+	    &:before{
+	    	width: 15px;
+	    	left: 0;
+	    }
+	}
+	.page-anchors{
+	    display: none;
+	}
+	.conditions-wrap {
+	    flex-wrap:wrap;
+	    font-size: 18px;
+	}
+	.conditions__info,
+	.conditions__list {
+	    padding: 20px;
+	}
+	.conditions__info:before{
+		display: none;
+	}
+	.popup-media{
+		flex-wrap:wrap;
+	}
+	.popup-media__img {
+	    height: 300px;
+	}
+	.popup-media__info{
+		width: 100%;
+	}
+	.popup-media .index-offers__links{
+		padding-top: 0;
+	}
+	.popup-media__view{
+		width: 100%;
+	}
+	.popup-mefia__form{
+		padding: 35px;
+	}
+	.vote-view, .vote-question{
+		width: 100%;
+	}
+	.page-subscription__wrap:before{
+		display: none;
+	}
+	.page-subscription__wrap {
+	    padding: 20px;
+	    h2{
+	    	font-size: 28px;
+	    }
+	}
+	.deposit__item .index-offers-more__item{
+		width: 100%;
+		margin-bottom: 15px;
+	}
 }	
 
 @media screen and (max-width: 700px){
@@ -1446,11 +1574,11 @@
 
 @media screen and (max-width: 650px){
 	.index-offers__links .btn {
-	    padding: 6px 2px;
+	    padding: 6px 10px;
 	    font-size: 12px;
 	}
 	.index-offers__links .btn-more {
-	    padding: 4px 2px;
+	    padding: 4px 10px;
 	    font-size: 12px;
 	}
 	.issue__list{
@@ -1539,10 +1667,6 @@
 	}
 	.size-payment-income__sum {
 	    font-size: 24px;
-	}
-	.size-slider {
-	    padding-left: 75px;
-	    padding-right: 50px;
 	}
 	.size-slider .slick-arrow {
 	    width: 60px;
@@ -1775,12 +1899,18 @@
 	    padding: 30px 0;
 	}
 	.index-offers__links .btn {
-	    padding: 6px 7px;
-	    font-size: 14px;
+	    margin-bottom: 15px;
+	    width: 100%;
+	    text-align: center;
+	    font-size: 16px;
+	    padding: 8px 7px;
+	    margin-right: 0;
 	}
 	.index-offers__links .btn-more {
-	    padding: 4px 7px;
-	    font-size: 14px;
+	        padding: 6px 10px;
+	    font-size: 16px;
+	    width: 100%;
+	    text-align: center;
 	}
 	.index-news__list,
 	.index-offers__top{
@@ -1832,12 +1962,6 @@
 	}
 	.index-offers-more{
 		margin-bottom: 20px;
-	}
-	.index-offers__links .btn{
-		margin-bottom: 10px;
-	}
-	.index-offers__links .btn-more{
-		margin-bottom: 10px;
 	}
 	.index-offers__info{
 		padding-bottom: 10px;
@@ -2023,9 +2147,19 @@
 		width: 100%;
 	    min-width: 100%;
 	    position: static;
-	    height: 200px;
+	    height: 267px;
 	    clip-path: polygon(44px 0, 100% 0, 100% 100%, 0 100%, 0 44px);
 	    display: block;
+	}
+	.deposit__title {
+	    font-size: 28px;
+	    line-height: 34px;
+	    margin-bottom: 15px;
+	}
+	.deposit__item .index-offers-more__item {
+	    margin-right: 0;
+	    width: 100%;
+	    margin-bottom: 20px;
 	}
 	.gallery-count {
 	    padding: 10px 15px;
@@ -2064,6 +2198,73 @@
 	}
 	.callcenter {
 	    font-size: 18px;
+	}
+	.conditions__info {
+	    width: 100%;
+	    min-width: 100%;
+	}
+	.conditions__list ul li {
+	    padding-left: 25px;
+	    margin-bottom: 15px;
+	    &:last-child{
+	    	margin-bottom: 0;
+	    }
+	    &:before{
+	    	    left: -3px;
+	    }
+	}
+	.conditions-wrap p{
+		margin-bottom: 20px;
+	}
+	.popup-media__info {
+	    padding: 35px 20px 20px;
+	}
+	.popup-media{
+		.btn{
+			width: 100%;
+			margin-right: 0;
+			text-align: center;
+		}
+		.btn-more{
+			width: 100%;
+			text-align: center;
+		}
+	}
+	.popup-mefia__form{
+		padding: 20px;
+	}
+	.popup-mefia__form .btn{
+		margin-top: 20px;
+	}
+	.thank {
+	    font-size: 20px;
+	}
+	.vote-view, .vote-question {
+	    padding: 15px 15px 30px;
+	}
+	.vote-form input[type="checkbox"]:not(:checked) + label, .vote-form input[type="checkbox"]:checked + label, .vote-form input[type="checkbox"]:not(:checked) + label, .vote-form input[type="checkbox"]:checked + label,
+	.vote-form input[type="radio"]:not(:checked) + label, .vote-form input[type="radio"]:checked + label{
+		font-size: 16px;
+	}
+	.vote-form .checkbox-item, .vote-form .radio-item {
+	    margin-bottom: 20px;
+	}
+	.vote__item{
+		margin-bottom: 35px;
+	}
+	.page-subscription__form{
+		flex-wrap:wrap;
+	}
+	.page-subscription__input{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.page-subscription__submit{
+		padding-left: 0;
+		width: 100%;
+	}
+	.page-subscription__submit .btn{
+		width: 100%;
 	}
 }
 
