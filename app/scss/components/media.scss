@@ -1509,8 +1509,13 @@
 	    	left: 0;
 	    }
 	}
-	.page-anchors{
-	    display: none;
+	// .page-anchors{
+	//     display: none;
+	// }
+	.page-anchors__wrap{
+		white-space: nowrap;
+    	overflow: auto;
+    	    padding-bottom: 2px;
 	}
 	.conditions-wrap {
 	    flex-wrap:wrap;
