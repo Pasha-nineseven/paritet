@@ -3443,6 +3443,8 @@ textarea, input {
     border-radius: 4px;
     padding: 8px 24px;
     font-size: 24px; }
+  .workarea input[type="submit"], .popup-content input[type="submit"] {
+    border: 0; }
   .workarea textarea, .popup-content textarea {
     width: 100%;
     display: block;
@@ -6283,6 +6285,25 @@ span.breadcrumbs__item {
   border: 0;
   font-size: 18px;
   padding: 7px 17px; }
+
+.vote-form select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  background: url(../img/content/s-arrow-lg.png) no-repeat right center;
+  outline: 0;
+  border: 2px solid #D5D8DB;
+  width: 100%;
+  padding: 12px 24px;
+  color: #343532;
+  border-radius: 4px; }
+
+.vote-form input[type="text"] {
+  border: 2px solid #D5D8DB; }
+
+.vote-form textarea {
+  border: 2px solid #D5D8DB; }
 
 .thank {
   color: #244EA2;

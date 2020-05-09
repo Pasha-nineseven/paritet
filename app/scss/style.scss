@@ -2356,6 +2356,31 @@ span.breadcrumbs__item{
 		font-size: 18px;
 		padding: 7px 17px;
 	}
+
+	select{
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		background: url(../img/content/s-arrow-lg.png) no-repeat right center;
+		outline: 0;
+		border:2px solid #D5D8DB;
+		width: 100%;
+		// height: 100%;
+	    padding: 12px 24px;
+	    color: #343532;
+	    border-radius: 4px;
+	}
+	// label{
+	// 	margin-bottom: 8px;
+	// 	display: block;
+	// }
+	input[type="text"]{
+		border:2px solid #D5D8DB;
+	}
+	textarea{
+		border:2px solid #D5D8DB;
+	}
 }
 
 .thank{
