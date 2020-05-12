@@ -23,6 +23,8 @@
 	font-size: 16px;
 	display: flex;
 	justify-content: space-between;
+	// align-items: center;
+	    align-items: flex-end;
 }
 
 .bottom__info{
@@ -221,6 +223,7 @@ a.page-footer-menu__title{
 	width: 89px;
 	height: 27px;
 	background: url(../img/svg/97.svg) no-repeat;
+	background-size: contain;
 	margin-left: 5px; 
 }
 
@@ -251,5 +254,12 @@ a.page-footer-menu__title{
 		left: 8px;
     	top: -14px;
 		background: url(../img/svg/file_icon_b.svg) no-repeat;
+	}
+}
+
+.ssl{
+	padding: 0 20px;
+	img{
+		display: block;
 	}
 }

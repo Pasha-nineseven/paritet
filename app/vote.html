@@ -255,6 +255,43 @@
 												<input type="radio" id="vote-radio44" name="ttt" checked>
 												<label for="vote-radio44">На образование</label>
 											</div>
+											<h4>Пробный вопрос со списком</h4>
+											<div class="vote-form">
+												<div class="input-wrap">
+													<select name="vote_dropdown_2" false="">
+														<option value="">выберите значение</option>
+														<option value="5">Вариант ответа 1</option>
+														<option value="6">Вариант ответа 2</option>
+														<option value="7">Вариант ответа 3</option>
+													</select>
+												</div>
+											</div>
+											<h4>Пробный вопрос с мульти списком</h4>
+											<div class="vote-form">
+												<div class="input-wrap">
+													<select name="vote_multiselect_3[]" false="" multiple="multiple">
+														<option value="8">Вариант ответа 1</option>
+														<option value="9">Вариант ответа 2</option>
+														<option value="10">Вариант ответа 3</option>
+													</select>
+												</div>
+											</div>
+											<h4>Пробный вопрос</h4>
+											<div class="vote-form">
+												<div class="input-wrap">
+													<label>
+														Текстовое поле
+														<input type="text" name="vote_field_11" value="" size="10" false="">
+													</label>
+												</div>
+
+												<div class="input-wrap">
+													<label>
+														Textarea
+														<textarea name="vote_memo_12" false="" cols="10" rows="5"></textarea>
+													</label>
+												</div>
+											</div>
 											<input type="submit" class="btn" value="Ответить">
 										</div>
 									</div>
@@ -431,6 +468,9 @@
 				<div class="bottom">
 					<div class="copiright">
 						&copy; 2020 ОАО «Паритетбанк». УНП 100233809
+					</div>
+					<div class="ssl">
+						<img src="img/content/ssl.png" alt="">
 					</div>
 					<div class="bottom__info">
 						Информация на сайте носит справочный характер и не является публичной офертой

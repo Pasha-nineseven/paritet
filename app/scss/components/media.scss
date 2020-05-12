@@ -1509,8 +1509,13 @@
 	    	left: 0;
 	    }
 	}
-	.page-anchors{
-	    display: none;
+	// .page-anchors{
+	//     display: none;
+	// }
+	.page-anchors__wrap{
+		white-space: nowrap;
+    	overflow: auto;
+    	    padding-bottom: 2px;
 	}
 	.conditions-wrap {
 	    flex-wrap:wrap;
@@ -1556,6 +1561,13 @@
 	.deposit__item .index-offers-more__item{
 		width: 100%;
 		margin-bottom: 15px;
+	}
+	.ssl{
+		padding: 0;
+    	margin-bottom: 15px;
+	}
+	.develop{
+		margin-top: 0;
 	}
 }	
 
