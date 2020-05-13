@@ -818,6 +818,11 @@ $(document).ready(function() {
 	    });
 	}
 
+	$("body").on("click", ".js-awards__toggle", function(e){
+        e.preventDefault();
+        $(this).parents('.awards__view').toggleClass('active');
+    });
+
 
 	//SLIDER init
 	index__info__sliderInit();
@@ -978,5 +983,6 @@ $('body').append(
 		<li><a href="zarplatnie_kartochki.html">Z_kartochki</a></li> \
 		<li><a href="zarpatniy_project.html">Z_project</a></li> \
 		<li><a href="vote.html">Vote</a></li> \
+		<li><a href="awards.html">Awards</a></li> \
 	</ol> \
 </div>');

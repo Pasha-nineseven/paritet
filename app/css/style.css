@@ -6484,6 +6484,143 @@ span.breadcrumbs__item {
       -webkit-box-shadow: 0px 4px 12px rgba(11, 77, 206, 0.6), 0px 2px 4px rgba(44, 66, 149, 0.4);
       box-shadow: 0px 4px 12px rgba(11, 77, 206, 0.6), 0px 2px 4px rgba(44, 66, 149, 0.4); }
 
+.awards {
+  padding-top: 35px; }
+
+.awards__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .awards__item:last-child .awards__wrap:after {
+    display: none !important; }
+  .awards__item:nth-child(odd) {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+    .awards__item:nth-child(odd) .awards__wrap {
+      padding-right: 120px; }
+      .awards__item:nth-child(odd) .awards__wrap:after {
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 100%;
+        background: #F0F2F5;
+        position: absolute;
+        top: 8px;
+        left: -webkit-calc(100% - 10px);
+        left: calc(100% - 10px); }
+    .awards__item:nth-child(odd) .awards__year {
+      right: 0;
+      padding-right: 30px; }
+      .awards__item:nth-child(odd) .awards__year:after {
+        content: "";
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        background: #2C4295;
+        border: 3px solid #fff;
+        border-radius: 50%;
+        position: absolute;
+        right: -14px;
+        top: 9px;
+        z-index: 4; }
+  .awards__item:nth-child(even) {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+    .awards__item:nth-child(even) .awards__wrap {
+      padding-left: 120px; }
+      .awards__item:nth-child(even) .awards__wrap:after {
+        content: "";
+        display: inline-block;
+        width: 20px;
+        height: 100%;
+        background: #F0F2F5;
+        position: absolute;
+        top: 8px;
+        right: -webkit-calc(100% - 10px);
+        right: calc(100% - 10px); }
+    .awards__item:nth-child(even) .awards__year {
+      left: 0;
+      padding-left: 30px; }
+      .awards__item:nth-child(even) .awards__year:after {
+        content: "";
+        display: inline-block;
+        width: 28px;
+        height: 28px;
+        background: #2C4295;
+        border: 3px solid #fff;
+        border-radius: 50%;
+        position: absolute;
+        left: -14px;
+        top: 9px;
+        z-index: 4; }
+
+.awards__wrap {
+  width: 50%;
+  position: relative; }
+
+.awards__year {
+  position: absolute;
+  color: #2C4295;
+  font-size: 28px;
+  font-family: 'golosbold';
+  top: -8px; }
+
+.awards__toggle {
+  display: block;
+  font-family: 'golosbold';
+  font-size: 24px;
+  line-height: 1.3;
+  position: relative;
+  color: #000; }
+  .awards__toggle:before {
+    content: "";
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    background: url(../img/svg/plus.svg) center no-repeat;
+    position: absolute;
+    left: -60px;
+    top: 3px; }
+
+.awards__info {
+  display: none;
+  padding-top: 15px; }
+
+.awards-img {
+  padding-top: 17px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.awards-img__item {
+  margin-right: 23px; }
+  .awards-img__item:last-child {
+    margin-right: 0; }
+  .awards-img__item img {
+    display: block; }
+
+.awards__view {
+  background: #F0F2F5;
+  border: 4px solid #F0F2F5;
+  padding: 33px 42px 33px 90px; }
+  .awards__view.active {
+    background: #fff; }
+    .awards__view.active .awards__info {
+      display: block; }
+    .awards__view.active .awards__toggle:before {
+      background: url(../img/svg/minus.svg) center no-repeat; }
+  .awards__view + .awards__view {
+    margin-top: 23px; }
+
 .page-footer {
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
@@ -11308,7 +11445,39 @@ ymaps[class*="-copyright"] {
   .deposit__info {
     padding: 35px 513px 45px 35px; }
   .deposit__item .index-offers-more__item {
-    width: 50%; } }
+    width: 50%; }
+  .awards__item:nth-child(odd),
+  .awards__item:nth-child(even) {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+    .awards__item:nth-child(odd) .awards__wrap,
+    .awards__item:nth-child(even) .awards__wrap {
+      padding-right: 0;
+      padding-left: 135px;
+      width: 100%; }
+  .awards__item:nth-child(odd) .awards__year {
+    right: auto;
+    left: 0;
+    padding-right: 0;
+    padding-left: 30px; }
+    .awards__item:nth-child(odd) .awards__year:after {
+      right: auto;
+      left: -4px; }
+  .awards__item:nth-child(odd) .awards__wrap:after {
+    left: auto;
+    right: -webkit-calc(100% - 20px);
+    right: calc(100% - 20px); }
+  .awards__item:nth-child(even) .awards__wrap:after {
+    right: -webkit-calc(100% - 20px);
+    right: calc(100% - 20px); }
+  .awards__item:nth-child(even) .awards__year:after {
+    left: -4px; }
+  .awards__wrap {
+    padding-bottom: 70px; }
+  .awards__view {
+    padding: 28px 42px 28px 90px; } }
 
 @media screen and (max-width: 900px) {
   .logo {
@@ -12552,7 +12721,39 @@ ymaps[class*="-copyright"] {
     padding-left: 0;
     width: 100%; }
   .page-subscription__submit .btn {
-    width: 100%; } }
+    width: 100%; }
+  .awards__toggle {
+    font-size: 18px; }
+  .awards__item:nth-child(even) .awards__year,
+  .awards__item:nth-child(odd) .awards__year {
+    padding-left: 0;
+    margin-bottom: 5px;
+    position: static; }
+    .awards__item:nth-child(even) .awards__year:after,
+    .awards__item:nth-child(odd) .awards__year:after {
+      display: none; }
+  .awards__item:nth-child(odd) .awards__wrap,
+  .awards__item:nth-child(even) .awards__wrap {
+    padding-left: 0; }
+    .awards__item:nth-child(odd) .awards__wrap:after,
+    .awards__item:nth-child(even) .awards__wrap:after {
+      display: none; }
+  .awards__wrap {
+    padding-bottom: 28px; }
+  .awards__toggle:before {
+    width: 20px;
+    height: 20px;
+    background: url(../img/svg/plus.svg) center no-repeat;
+    background-size: contain;
+    left: -36px;
+    top: 1px; }
+  .awards__view.active .awards__toggle:before {
+    background: url(../img/svg/minus.svg) center no-repeat;
+    background-size: contain; }
+  .awards__view {
+    padding: 28px 42px 28px 55px; }
+  .awards {
+    padding-top: 0; } }
 
 @media screen and (max-width: 400px) {
   .app__title {
