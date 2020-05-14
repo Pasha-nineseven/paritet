@@ -6586,6 +6586,8 @@ span.breadcrumbs__item {
     position: absolute;
     left: -60px;
     top: 3px; }
+  .awards__toggle:hover {
+    color: #2C4295; }
 
 .awards__info {
   display: none;

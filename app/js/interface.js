@@ -820,7 +820,7 @@ $(document).ready(function() {
 
 	$("body").on("click", ".js-awards__toggle", function(e){
         e.preventDefault();
-        $(this).parents('.awards__view').toggleClass('active');
+        $(this).next('.awards__info').slideToggle(300);
     });
 
 
