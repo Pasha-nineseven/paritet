@@ -6616,8 +6616,6 @@ span.breadcrumbs__item {
   padding: 33px 42px 33px 90px; }
   .awards__view.active {
     background: #fff; }
-    .awards__view.active .awards__info {
-      display: block; }
     .awards__view.active .awards__toggle:before {
       background: url(../img/svg/minus.svg) center no-repeat; }
   .awards__view + .awards__view {

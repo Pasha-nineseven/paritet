@@ -2695,9 +2695,9 @@ span.breadcrumbs__item{
 	padding: 33px 42px 33px 90px;
 	&.active{
 		background: #fff;
-		.awards__info{
-			display: block;
-		}
+		// .awards__info{
+		// 	display: block;
+		// }
 		.awards__toggle{
 			&:before{
 				background: url(../img/svg/minus.svg) center no-repeat;
