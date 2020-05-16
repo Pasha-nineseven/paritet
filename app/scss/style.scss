@@ -2710,6 +2710,25 @@ span.breadcrumbs__item{
 }
 .tooltip_templates { display: none; }
 
+.page-tags{
+	display: flex;
+	flex-wrap:wrap;
+	margin-bottom: 10px;
+}
+.page-tag{
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	background: #fff;
+	font-size: 14px;
+	padding: 0 10px;
+	line-height: 30px; 
+	&:last-child{
+		margin-right: 0;
+	}
+}
+
 @import "components/footer";
 
 @import "pages/index";

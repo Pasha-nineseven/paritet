@@ -6624,6 +6624,28 @@ span.breadcrumbs__item {
 .tooltip_templates {
   display: none; }
 
+.page-tags {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-bottom: 10px; }
+
+.page-tag {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  background: #fff;
+  font-size: 14px;
+  padding: 0 10px;
+  line-height: 30px; }
+  .page-tag:last-child {
+    margin-right: 0; }
+
 .page-footer {
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
