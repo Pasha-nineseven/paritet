@@ -7,6 +7,7 @@ var cities = [
 		city: "Брест",
 		address: "Ленина, 1",
 		iconWay: 'img/content/m-label.png',
+		iconWayH: 'img/content/m-label-h.png',
 	},
 	{
 		id: 2,
@@ -14,6 +15,7 @@ var cities = [
 		city: "Брест",
 		address: "Ленина, 2",
 		iconWay: 'img/content/m-label.png',
+		iconWayH: 'img/content/m-label-h.png',
 	},
 	{
 		id: 3,
@@ -21,6 +23,7 @@ var cities = [
 		city: "Брест",
 		address: "Ленина, 3",
 		iconWay: 'img/content/m-label.png',
+		iconWayH: 'img/content/m-label-h.png',
 	},
 	{
 		id: 7,
@@ -28,6 +31,7 @@ var cities = [
 		city: "Минск",
 		address: "ул.Бурдейного, 35, пом.7",
 		iconWay: 'img/content/m-label.png',
+		iconWayH: 'img/content/m-label-h.png',
 	},
 	{
 		id: 8,
@@ -35,6 +39,7 @@ var cities = [
 		city: "Минск",
 		address: "ул.Октябрьская, 35, пом.7",
 		iconWay: 'img/content/m-label.png',
+		iconWayH: 'img/content/m-label-h.png',
 	},
 	{
 		id: 9,
@@ -42,6 +47,7 @@ var cities = [
 		city: "Минск",
 		address: "Ленина, 9",
 		iconWay: 'img/content/m-label.png',
+		iconWayH: 'img/content/m-label-h.png',
 	},
 	{
 		id: 10,
@@ -49,6 +55,7 @@ var cities = [
 		city: "Гродно",
 		address: "Ленина, 10",
 		iconWay: 'img/content/m-label.png',
+		iconWayH: 'img/content/m-label-h.png',
 	},
 	{
 		id: 11,
@@ -56,6 +63,7 @@ var cities = [
 		city: "Гродно",
 		address: "Ленина, 11",
 		iconWay: 'img/content/m-label.png',
+		iconWayH: 'img/content/m-label-h.png',
 	},
 	{
 		id: 12,
@@ -63,6 +71,7 @@ var cities = [
 		city: "Гродно",
 		address: "Ленина, 12",
 		iconWay: 'img/content/m-label.png',
+		iconWayH: 'img/content/m-label-h.png',
 	},
 	{
 		id: 13,
@@ -70,6 +79,7 @@ var cities = [
 		city: "Витебск",
 		address: "Ленина, 13",
 		iconWay: 'img/content/m-label.png',
+		iconWayH: 'img/content/m-label-h.png',
 	},
 	{
 		id: 14,
@@ -77,6 +87,7 @@ var cities = [
 		city: "Витебск",
 		address: "Ленина, 14",
 		iconWay: 'img/content/m-label.png',
+		iconWayH: 'img/content/m-label-h.png',
 	},
 	{
 		id: 15,
@@ -84,5 +95,6 @@ var cities = [
 		city: "Витебск",
 		address: "Ленина, 15",
 		iconWay: 'img/content/m-label.png',
+		iconWayH: 'img/content/m-label-h.png',
 	}
 ];

@@ -71,20 +71,23 @@ function initOffices() {
 
 		// Добавляем метку в кластер
 		cluster.add(placemark);
-
+		placemark.events.add('mouseenter', function (e) {
+			e.get('target').options.set(defaultOptions = {
+				iconImageHref: item.iconWayH,
+			});
+	    });
+	    placemark.events.add('mouseleave', function (e) {
+			e.get('target').options.set(defaultOptions = {
+				iconImageHref: item.iconWay,
+			});
+	    });
 	}
 
 	// Запрещаем зум скроллом
 	myMap.controls.add(new ymaps.control.ZoomControl({options: { position: { right: 10, top: 50 }}}));
     myMap.behaviors.disable('scrollZoom');
 
-    //Показать все метки на карте
-    //myMap.setBounds(myMap.geoObjects.getBounds());
 
-	// Запрещаем перетаскивание карты на телефоне(перетаскивание остается двумя пальцами)
-	// if ($(window).width() <= 767){
-	// 	myMap.behaviors.disable('drag');
-	// }
 
 
 	$('#js-toggle-map').on('change', function(){

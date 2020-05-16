@@ -565,7 +565,7 @@ span.breadcrumbs__item{
 }
 
 .accordeon{
-	margin: 0 -15px 30px; 
+	margin: 0 0 30px; 
 }
 
 
@@ -598,6 +598,11 @@ span.breadcrumbs__item{
 			background: url(../img/svg/a-minus.svg) center no-repeat;
 		}
 	}
+	&:hover{
+		.accordeon__link{
+			color: #0B4DCE;
+		}
+	}
 }
 
 .accordeon__link{
@@ -605,6 +610,7 @@ span.breadcrumbs__item{
 	color: #000;
 	display: block;
 	padding: 18px 78px 14px 0;
+	transition: color 0.3s ease;
 }
 
 .dnone{
@@ -797,18 +803,27 @@ span.breadcrumbs__item{
 		top: 50%;
 		transform: translateY(-50%);
 		z-index: 2;
-		transition: opacity 0.3s ease;
-		&:hover{
-			opacity: 0.7;
-		}
+		transition: all 0.3s ease;
 	}
 	.slick-prev{
 		left: -77px;
 		background: #FFFFFF url(../img/svg/prev.svg) center no-repeat;
+		&:hover{
+			background: #F0F2F5 url(../img/svg/prev-h.svg) center no-repeat;
+		}
+		&:active{
+			background: #E7EAEF url(../img/svg/prev-h.svg) center no-repeat;
+		}
 	}
 	.slick-next{
 		right: -77px;
 		background: #FFFFFF url(../img/svg/next.svg) center no-repeat;
+		&:hover{
+			background: #F0F2F5 url(../img/svg/next-h.svg) center no-repeat;
+		}
+		&:active{
+			background: #E7EAEF url(../img/svg/next-h.svg) center no-repeat;
+		}
 	}
 }
 
@@ -1415,7 +1430,7 @@ span.breadcrumbs__item{
 		top: 50%;
 		transform: translateY(-50%);
 		z-index: 2;
-		transition: opacity 0.3s ease;
+		transition: all 0.3s ease;
 		margin-top: -21px;
 		// &:hover{
 		// 	opacity: 0.7;
@@ -1424,10 +1439,22 @@ span.breadcrumbs__item{
 	.slick-prev{
 		left: -47px;
 		background: #FFFFFF url(../img/svg/prev.svg) center no-repeat;
+		&:hover{
+			background: #F0F2F5 url(../img/svg/prev-h.svg) center no-repeat;
+		}
+		&:active{
+			background: #E7EAEF url(../img/svg/prev-h.svg) center no-repeat;
+		}
 	}
 	.slick-next{
 		right: -47px;
 		background: #FFFFFF url(../img/svg/next.svg) center no-repeat;
+		&:hover{
+			background: #F0F2F5 url(../img/svg/next-h.svg) center no-repeat;
+		}
+		&:active{
+			background: #E7EAEF url(../img/svg/next-h.svg) center no-repeat;
+		}
 	}
 	.slick-dots{
 		margin-bottom: 0;
@@ -2731,6 +2758,8 @@ span.breadcrumbs__item{
 .tooltip-toggle{
 	cursor: pointer;
 }
+
+
 
 @import "components/footer";
 

@@ -161,6 +161,16 @@
 			
 		}
 	}
+	&:hover{
+		
+		.index-info__link{
+			.index-info__img{
+				&:before{
+					width: 100%;
+				}
+			}
+		}
+	}
 }
 
 .index-info__link{
@@ -174,6 +184,14 @@
 	}
 	&:first-child{
 		padding-top: 0;
+	}
+	&:hover{
+		.index-info__img{
+			&:before{
+				background: linear-gradient(180deg, #0652C3 0%, #343532 100%);
+				opacity: 0.7;
+			}
+		}
 	}
 }
 
@@ -203,6 +221,7 @@
 		top: 0;
 		background: linear-gradient(90deg, #0652C3 0%, #343532 100%);
 		opacity: 0.4;
+		// transition: opacity 0.3s ease, background 0.3s ease;
 	}
 }
 .index-info__title{
@@ -347,6 +366,10 @@
 }
 .app__link{
 	margin-right: 24px;
+	background: #343532;
+	border-radius: 4px;
+	padding: 11px 21px;
+	transition: background 0.3s ease;
 	&:last-child{
 		margin-right: 0;
 	}
@@ -354,6 +377,9 @@
 		display: block;
 		max-width: 100%;
 		// max-height: 100%;
+	}
+	&:hover{
+		background: #181817;
 	}
 }
 
@@ -369,6 +395,14 @@
 .index-links__item{
 	width: 25%;
 	padding-right: 16px;
+	&:hover{
+		.index-links__inner{
+			background: #E6EAEF;
+		}
+		.index-links__title{
+			color: #0B4DCE;
+		}
+	}
 }
 .index-links__inner{
 	display: block;
@@ -378,6 +412,7 @@
 	padding: 32px 32px 41px 32px;
 	position: relative;
 	color: #343532;
+	transition: background 0.3s ease;
 }
 
 .index-links__title{
@@ -385,6 +420,7 @@
 	font-size: 32px;
 	line-height: 38px;
 	margin-bottom: 16px;
+	transition: color 0.3s ease;
 }
 .index-links__txt{
 	font-size: 18px;
@@ -479,6 +515,16 @@
 	width: 50%;
 	border: 2px solid #F0F2F5;
     padding: 32px 35px;
+    .tab-link{
+    	&:hover{
+    		background: #fff;
+    	}
+    	&.current{
+    		&:hover{
+    			background: #2C4295;
+    		}
+    	}
+    }
 }
 .courses__item--covert{
 	background: #F0F2F5;
@@ -607,9 +653,9 @@
     cursor: pointer;
     margin-left: 8px;
     transition: all 0.3s ease;
-    // &:hover{
-    // 	background: $alternate-color;
-    // }
+    &:hover{
+    	background: #0B4DCE url(../img/svg/question-h.svg) center no-repeat;
+    }
 }
 
 .tooltip-content{
@@ -1141,6 +1187,17 @@ html .ui-button.ui-state-disabled:hover {
 .index-offers__item{
 	padding-right: 16px;
 	height: auto;
+	&:hover{
+		.index-offers__inner{
+			background: #E6EAEF;
+		}
+		.index-offers__img:before{
+			border-top-color: #E6EAEF;
+		}
+		.index-offers__title{
+		    color: #0B4DCE;
+		}
+	}
 }
 .index-offers__info{
 	position: relative;
@@ -1156,6 +1213,7 @@ html .ui-button.ui-state-disabled:hover {
 	display: flex;
 	flex-direction: column;
     justify-content: space-between;
+    transition: all 0.3s ease;
 }
 
 .index-offers__links{
@@ -1203,6 +1261,7 @@ html .ui-button.ui-state-disabled:hover {
 		border-top: 68px solid #F0F2F5;
 		border-right: 68px solid transparent;
 		z-index: 3;
+		transition: all 0.3s ease;
 	}
 }
 
@@ -1294,10 +1353,23 @@ html .ui-button.ui-state-disabled:hover {
 	.slick-prev{
 		left: -2px;
 		background: #FFFFFF url(../img/svg/prev.svg) center no-repeat;
+		transition: all 0.3s ease;
+		&:hover{
+			background: #F0F2F5 url(../img/svg/prev-h.svg) center no-repeat;
+		}
+		&:active{
+			background: #E7EAEF url(../img/svg/prev-h.svg) center no-repeat;
+		}
 	}
 	.slick-next{
 		right: -2px;
 		background: #FFFFFF url(../img/svg/next.svg) center no-repeat;
+		&:hover{
+			background: #F0F2F5 url(../img/svg/next-h.svg) center no-repeat;
+		}
+		&:active{
+			background: #E7EAEF url(../img/svg/next-h.svg) center no-repeat;
+		}
 	}
 	.slick-list{
 		overflow: visible; 
@@ -1456,17 +1528,19 @@ html .ui-button.ui-state-disabled:hover {
 	}
 }
 .main-next{
-	width: 51px;
+	width: 95px;
 	height: 51px;
 	display: inline-flex;
-	background: url(../img/svg/next-w.svg) center no-repeat;
+	background: transparent url(../img/svg/next-w.svg) center no-repeat;
+	background-position: 80px 13px;
 	cursor: pointer;
 	position: relative;
-	right: -17px;
+	right: 0;
+	transition: background 0.3s ease;
 	&:before{
 		content: "Далее";
 		position: absolute;
-		left: -47px;
+		left: 17px;
     	margin-top: -3px;
 		top: 50%;
 		transform: translateY(-50%);
@@ -1474,11 +1548,14 @@ html .ui-button.ui-state-disabled:hover {
 		font-size: 16px;
 		line-height: 19px;
 	}
-	// span{
-	// 	font-size: 16px;
-	// 	line-height: 19px;
-	// 	color: #fff;
-	// }
+	&:hover{
+		background: #0B4DCE url(../img/svg/next-w.svg) center no-repeat;
+		background-position: 80px 13px;
+	}
+	&:active{
+		background: #2C4295 url(../img/svg/next-w.svg) center no-repeat;
+		background-position: 80px 13px;
+	}
 }
 
 .top-slider-controls{

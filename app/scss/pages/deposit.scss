@@ -99,6 +99,7 @@
     box-shadow: 0 15px 25px -15px #BDC5D1;
     position: relative;
     overflow: hidden; 
+    transition: background 0.3s ease;
     .index-offers__links{
     	position: static;
     	padding: 0;
@@ -130,6 +131,12 @@
 		    padding: 0;
 		}
     }
+    &:hover{
+    	background: #E6EAEF;
+    	.deposit__title{
+			color: #0B4DCE;
+    	}
+    }
 }
 
 .deposit__img{
@@ -155,6 +162,7 @@
 	font-size: 32px;
 	line-height: 38px;
 	 font-family: 'golosbold';
+	 transition: color 0.3s ease;
 }
 
 .deposit__txt{
@@ -181,6 +189,7 @@
 	.deposit__info {
 	    padding: 32px 40px 317px 40px;
 	    background: #F0F2F5;
+	    transition: background 0.3s ease;
 	}
 	.deposit__item{
 		margin-bottom: 16px;
@@ -204,6 +213,14 @@
 		left: 0;
 		bottom: 255px;
 	}
+	.deposit__item{
+		&:hover{
+			.deposit__info{
+				background: #E6EAEF;
+			}
+		}
+	}
+	
 }
 
 
@@ -601,11 +618,25 @@
 		top: -70px;
     	right: 103px;
 		background: #FFFFFF url(../img/svg/prev.svg) center no-repeat;
+		transition: all 0.3s ease;
+		&:hover{
+			background: #F0F2F5 url(../img/svg/prev-h.svg) center no-repeat;
+		}
+		&:active{
+			background: #E7EAEF url(../img/svg/prev-h.svg) center no-repeat;
+		}
 	}
 	.slick-next{
-		    top: -70px;
-    	right: 0px;
-		    background: #FFFFFF url(../img/svg/next.svg) center no-repeat;
+		top: -70px;
+   		right: 0px;
+		background: #FFFFFF url(../img/svg/next.svg) center no-repeat;
+		transition: all 0.3s ease;
+		&:hover{
+			background: #F0F2F5 url(../img/svg/next-h.svg) center no-repeat;
+		}
+		&:active{
+			background: #E7EAEF url(../img/svg/next-h.svg) center no-repeat;
+		}
 	}
 	.slick-dots{
 		margin-bottom: 0;
@@ -677,6 +708,11 @@
 	}
 	&:only-child{
 		width: 100%!important;
+	}
+	&:hover{
+		.size-slider__inner{
+			background: #E6EAEF;
+		}
 	}
 }
 

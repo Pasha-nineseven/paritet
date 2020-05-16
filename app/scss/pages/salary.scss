@@ -45,10 +45,22 @@
 	.slick-prev{
 		left: -2px;
 		background: #FFFFFF url(../img/svg/prev.svg) center no-repeat;
+		&:hover{
+			background: #F0F2F5 url(../img/svg/prev-h.svg) center no-repeat;
+		}
+		&:active{
+			background: #E7EAEF url(../img/svg/prev-h.svg) center no-repeat;
+		}
 	}
 	.slick-next{
 		right: -2px;
 		background: #FFFFFF url(../img/svg/next.svg) center no-repeat;
+		&:hover{
+			background: #F0F2F5 url(../img/svg/next-h.svg) center no-repeat;
+		}
+		&:active{
+			background: #E7EAEF url(../img/svg/next-h.svg) center no-repeat;
+		}
 	}
 	.slick-list{
 		margin:0 -8px;

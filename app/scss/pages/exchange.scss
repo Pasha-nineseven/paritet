@@ -76,6 +76,11 @@
 			    top: 16px;
 			    background: url(../img/svg/branch.svg) no-repeat;
 			}
+			&:hover{
+				&:before{
+					background: url(../img/svg/branch-h.svg) no-repeat;
+				}
+			}
 		}
 	}
 	.table-wrap {
@@ -185,6 +190,9 @@
 	}
 	.tooltip {
 	    background: #F0F2F5 url(../img/svg/question.svg) center no-repeat;
+	    &:hover{
+	    	background: #0B4DCE url(../img/svg/question-h.svg) center no-repeat;
+	    }
 	}
 	&:hover {
 	    color: #0B4DCE;
