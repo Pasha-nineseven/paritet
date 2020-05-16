@@ -6646,6 +6646,9 @@ span.breadcrumbs__item {
   .page-tag:last-child {
     margin-right: 0; }
 
+.tooltip-toggle {
+  cursor: pointer; }
+
 .page-footer {
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
