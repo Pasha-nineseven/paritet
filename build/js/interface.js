@@ -460,6 +460,9 @@ $(document).ready(function() {
    			delay: 100,
 		});
 	};
+	$('.tooltip-toggle').tooltipster({
+	    contentCloning: true
+	});
 	//SLIDER OFFERS
 	if ($( ".index-offers__slider" ).length>0) {
 		var $slider_off = $('.index-offers__slider');

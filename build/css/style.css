@@ -6621,6 +6621,9 @@ span.breadcrumbs__item {
   .awards__view + .awards__view {
     margin-top: 23px; }
 
+.tooltip_templates {
+  display: none; }
+
 .page-footer {
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
@@ -7493,10 +7496,10 @@ a.page-footer-menu__title {
   max-width: 350px; }
 
 .tooltipster-sidetip .tooltipster-content {
-  font-size: 16px;
+  font-size: 14px;
   color: #333;
-  line-height: 1.3;
-  padding: 15px 20px; }
+  line-height: 1.2;
+  padding: 10px 15px; }
 
 .tooltipster-sidetip .tooltipster-arrow-background {
   border: 11px solid transparent;
