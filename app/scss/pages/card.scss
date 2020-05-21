@@ -42,7 +42,7 @@
 	    content: '';
 	    position: absolute;
 	        right: -5px;
-    top: -5px;
+    	top: -5px;
 	    width: 0;
 	    height: 0;
 	    border-top: 75px solid #fff;
@@ -58,6 +58,16 @@
 		background: #F0F2F5;
 		z-index: 3;
 		transform: rotate(-45deg);
+	}
+	&:hover{
+		.card__title{
+			color: #0B4DCE;
+		}
+		.index-offers__links{
+			.btn{
+				background: #0B4DCE;
+			}
+		}
 	}
 }
 
@@ -81,6 +91,7 @@
 	margin-bottom: 31px;
 	color: #244EA2;
 	font-family: 'golosbold';
+	transition: color 0.3s ease;
 }
 
 .card__txt{

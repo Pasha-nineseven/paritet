@@ -4,25 +4,42 @@
 		background: #F0F2F5;
 		margin-bottom: 24px;
 		padding-left: 85px;
+		transition: background 0.3s ease;
 		&:last-child{
 			margin-bottom: 0;
 		}
 		&.active{
 			background: #fff;
+			&:hover{
+				background: #fff;
+				&:before{
+					background: url(../img/svg/a-minus-h.svg) center no-repeat;
+				}
+			}
 		}
 		&:before{
 			left: 27px;
 			top: 29px;
 		}
+		&:hover{
+			background: #E6EAEF;
+			.accordeon__link{
+				color: #0B4DCE;
+			}
+			&:before{
+				background: url(../img/svg/a-plus-h.svg) center no-repeat;
+			}
+		}
 	}
 	.accordeon__link{
 		font-family: 'golosbold';
 		padding: 25px 78px 25px 0;
+
 	}
 	.accordeon__info {
 	    padding: 0px 25px 27px 0;
 	        position: relative;
-    top: -10px;
+    	top: -10px;
 	    font-size: 18px;
 	    line-height: 1.5;
 	}

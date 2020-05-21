@@ -74,6 +74,16 @@ function initOffices2() {
 
 		// Добавляем метку в кластер
 		cluster.add(placemark);
+		placemark.events.add('mouseenter', function (e) {
+			e.get('target').options.set(defaultOptions = {
+				iconImageHref: item.iconWayH,
+			});
+	    });
+	    placemark.events.add('mouseleave', function (e) {
+			e.get('target').options.set(defaultOptions = {
+				iconImageHref: item.iconWay,
+			});
+	    });
 
 	}
 

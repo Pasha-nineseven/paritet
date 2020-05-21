@@ -136,12 +136,19 @@ a.page-footer-menu__title{
 	display: flex;
 }
 .mobile__link{
-	margin-right: 16px;
+    margin-right: 16px;
+    background: #181817;
+    border-radius: 4px;
+    padding: 7px 17px;
+    transition: background 0.3s ease;
 	img{
 		display: block;
 	}
 	&:last-child{
 		margin-right: 0;
+	}
+	&:hover{
+		background: #0D0D0C;
 	}
 }
 
@@ -150,9 +157,8 @@ a.page-footer-menu__title{
 	display: flex;
 }
 .call__item{
-
     margin-right: 18px;
-  
+  	white-space: nowrap;
 	&:last-child{
 		margin-right: 0;
 	}
@@ -169,7 +175,12 @@ a.page-footer-menu__title{
 		width: 11px;
 		height: 21px;
 		background: url(../img/svg/call.svg) no-repeat;
-		    margin-right: 8px;
+		margin-right: 8px;
+	}
+	&:hover{
+		&:before{
+			background: url(../img/svg/call-h.svg) no-repeat;
+		}
 	}
 }
 .call-btn{
@@ -180,6 +191,7 @@ a.page-footer-menu__title{
 	border-radius: 4px;
 	padding: 7px 9px;
 	transition: all 0.3s ease;
+	white-space: nowrap;
 	&:hover{
 		background: #0B4DCE;
 		border:1px solid #0B4DCE;
@@ -217,6 +229,12 @@ a.page-footer-menu__title{
 	display: flex;
 	align-items:center;
 	margin-top: 17px;
+	&:hover{
+		.develop__link{
+			background: url(../img/svg/97-h.svg) no-repeat;
+			background-size: contain;
+		}
+	}
 }
 .develop__link{
 	display: inline-block;
@@ -245,6 +263,7 @@ a.page-footer-menu__title{
 	    padding: 12px 17px 12px 61px;
 	position: relative;
 	margin-top: 44px;
+	transition: background 0.3s ease;
 	&:before{
 		content: "";
 		display: inline-block;
@@ -254,6 +273,14 @@ a.page-footer-menu__title{
 		left: 8px;
     	top: -14px;
 		background: url(../img/svg/file_icon_b.svg) no-repeat;
+	}
+	&:hover{
+		background: #181817;
+		border: 1px solid #181817;
+	}
+	&:active{
+		background: #0D0D0C;
+		border: 1px solid #0D0D0C;
 	}
 }
 

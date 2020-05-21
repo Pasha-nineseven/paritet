@@ -460,6 +460,9 @@ $(document).ready(function() {
    			delay: 100,
 		});
 	};
+	$('.tooltip-toggle').tooltipster({
+	    contentCloning: true
+	});
 	//SLIDER OFFERS
 	if ($( ".index-offers__slider" ).length>0) {
 		var $slider_off = $('.index-offers__slider');
@@ -818,6 +821,12 @@ $(document).ready(function() {
 	    });
 	}
 
+	$("body").on("click", ".js-awards__toggle", function(e){
+        e.preventDefault();
+        $(this).next('.awards__info').slideToggle(300);
+        $(this).parents('.awards__view').toggleClass('active');
+    });
+
 
 	//SLIDER init
 	index__info__sliderInit();
@@ -978,5 +987,6 @@ $('body').append(
 		<li><a href="zarplatnie_kartochki.html">Z_kartochki</a></li> \
 		<li><a href="zarpatniy_project.html">Z_project</a></li> \
 		<li><a href="vote.html">Vote</a></li> \
+		<li><a href="awards.html">Awards</a></li> \
 	</ol> \
 </div>');

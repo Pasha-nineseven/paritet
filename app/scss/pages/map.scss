@@ -20,8 +20,10 @@ ymaps[class*="-copyright"] {
 	.tabs li{
 	    padding: 4px 15px!important;
 	    margin-bottom: -2px!important;
+	    transition: all 0.15s ease;
 	    &:hover{
 	    	color: #0B4DCE;
+	    	border-bottom: 2px solid #0083CA;
 	    }
 	}
 	.tabs li.current {
@@ -124,6 +126,11 @@ ymaps[class*="-copyright"] {
     		top: 10px;
 	    	background: url(../img/svg/place.svg) no-repeat;
 	    }
+	    &:hover{
+	    	&:before{
+	    		background: url(../img/svg/place-h.svg) no-repeat;
+	    	}
+	    }
 	}
 	.jq-selectbox__dropdown ul li{
 		padding-left: 47px;
@@ -178,6 +185,9 @@ ymaps[class*="-copyright"] {
     background: #fff!important;
     text-shadow:none;
     position: relative;
+    &:hover{
+		border: 1px solid #0B4DCE;
+    }
 }
 .jq-selectbox__select-text{
 	height: 100%;
@@ -189,7 +199,7 @@ ymaps[class*="-copyright"] {
 	background: #fff;
 }
 .jq-selectbox.focused .jq-selectbox__select {
-    border: 1px solid #e4e4e4;
+    border: 1px solid #0B4DCE;
 }
 
 
@@ -227,7 +237,7 @@ ymaps[class*="-copyright"] {
 
 
 .jq-selectbox__dropdown {
-        margin: -1px 0 0;
+    margin:0;
     border: 1px solid #e4e4e4;
     border-radius: 5px;
     font: inherit;
@@ -238,19 +248,20 @@ ymaps[class*="-copyright"] {
     ul{
     	margin: 0;
     	li{
+    		    padding: 3px 10px 3px;
 			padding-left: 12px;
 			margin-bottom: 0;
 			color: #333;
 			background: #fff;
 			transition:all 0.3s ease;
-			border-bottom: 1px solid #e4e4e4;
+			border-bottom: 0;
 			    white-space: normal;
 			&:before{
 				display: none;
 			}
 			&:hover{
 				background: #f5f5f5;
-				color: #333;
+				color: #0B4DCE;
 			}
     	}
     }
@@ -288,6 +299,7 @@ ymaps[class*="-copyright"] {
 		position: absolute;
 		    top: 13px;
     	left: 20px;
+    	z-index: 1;
 	}
 	input[type="text"],
 	input[type="search"]{
@@ -297,6 +309,17 @@ ymaps[class*="-copyright"] {
 		border-radius: 4px;
 		padding: 11px 30px 11px 70px;
 		box-sizing: border-box;
+		transition: all 0.3s ease;
+		opacity: 0.8;
+		&:hover{
+			border: 1px solid #0B4DCE;
+			opacity: 1;
+		}
+	}
+	&:hover{
+		&:before{
+			background: url(../img/svg/search_icon_h.svg) no-repeat;
+		}
 	}
 }
 
@@ -304,13 +327,24 @@ ymaps[class*="-copyright"] {
 
 .b-switch{
 	cursor: pointer;
+	&:hover{
+		.b-switch__block{
+
+	    	&:before{
+	    		background-color: #0B4DCE;
+	    	}
+		}
+    }
 }
 
 .b-switch__left, .b-switch__right {
     display: inline-block;
     vertical-align: middle;
         font-size: 16px;
-    //transition: all .1s ease .1s;
+    transition: color 0.3s ease;
+    &:hover{
+    	color: #0B4DCE;
+    }
 }
 .b-switch__block {
     position: relative;
@@ -341,6 +375,11 @@ ymaps[class*="-copyright"] {
 	    position: absolute;
 	    margin: .375rem;
 	    transition: all .1s ease .1s;
+    }
+    &:hover{
+    	&:before{
+    		background-color: #0B4DCE;
+    	}
     }
 }
 
