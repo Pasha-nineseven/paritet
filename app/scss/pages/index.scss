@@ -124,14 +124,14 @@
 	.index-info__link{
 		padding-bottom: 0;
 		padding-top: 0;
-		height: auto;
+		height: 100%;
 	}
 	.index-info__in{
 		padding: 170px 300px 56px 56px;
 
 	}
 	.index-info__img:before{
-		width: 50%;
+		width: 100%;
 	}
 	&:before {
 		content: '';
