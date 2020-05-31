@@ -2177,7 +2177,17 @@
 		}
 	}
 	.index-offers-card {
-	    height: 115px;
+	    height: 267px;
+	}
+	.index-offers-card:before {
+	    left: 15px;
+	    top: -12px;
+	    width: 4px;
+	    height: 65px;
+	}
+	.index-offers-card:after {
+	    border-top: 44px solid #F0F2F5;
+	    border-right: 44px solid transparent;
 	}
 	.top-slider__img{
 		display: none;
@@ -2208,6 +2218,18 @@
 	    height: 267px;
 	    clip-path: polygon(44px 0, 100% 0, 100% 100%, 0 100%, 0 44px);
 	    display: block;
+	}
+	.index__img--desktop{
+		display: none;
+	}
+	.index__img--mobile{
+		width: 100%;
+	    min-width: 100%;
+	    position: static;
+	    height: 267px;
+	    display: block;
+	    clip-path: polygon(44px 0, 100% 0, 100% 100%, 0 100%, 0 44px);
+	        margin-top: 20px;
 	}
 	.deposit__title {
 	    font-size: 28px;

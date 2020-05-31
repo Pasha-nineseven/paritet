@@ -8662,6 +8662,12 @@ html .ui-button.ui-state-disabled:hover {
   .index-links__wrap.slick-initialized .index-links__item {
     height: auto; }
 
+.index__img--mobile {
+  display: none;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
 .news__item {
   border: 4px solid #F0F2F5;
   margin-bottom: 40px;
@@ -12834,7 +12840,15 @@ ymaps[class*="-copyright"] {
   .size-payment #slider-count-input_summa {
     padding-right: 50px; }
   .index-offers-card {
-    height: 115px; }
+    height: 267px; }
+  .index-offers-card:before {
+    left: 15px;
+    top: -12px;
+    width: 4px;
+    height: 65px; }
+  .index-offers-card:after {
+    border-top: 44px solid #F0F2F5;
+    border-right: 44px solid transparent; }
   .top-slider__img {
     display: none; }
   .top-slider__img-mobile {
@@ -12857,6 +12871,17 @@ ymaps[class*="-copyright"] {
     -webkit-clip-path: polygon(44px 0, 100% 0, 100% 100%, 0 100%, 0 44px);
             clip-path: polygon(44px 0, 100% 0, 100% 100%, 0 100%, 0 44px);
     display: block; }
+  .index__img--desktop {
+    display: none; }
+  .index__img--mobile {
+    width: 100%;
+    min-width: 100%;
+    position: static;
+    height: 267px;
+    display: block;
+    -webkit-clip-path: polygon(44px 0, 100% 0, 100% 100%, 0 100%, 0 44px);
+            clip-path: polygon(44px 0, 100% 0, 100% 100%, 0 100%, 0 44px);
+    margin-top: 20px; }
   .deposit__title {
     font-size: 28px;
     line-height: 34px;
