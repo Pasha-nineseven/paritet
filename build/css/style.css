@@ -8920,7 +8920,8 @@ html .ui-button.ui-state-disabled:hover {
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding-right: 40px; }
+  padding-right: 40px;
+  max-width: 500px; }
 
 .select__title {
   margin-bottom: 10px; }
