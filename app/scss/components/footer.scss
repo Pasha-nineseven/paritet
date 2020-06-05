@@ -59,13 +59,15 @@
 .page-footer-menu{
 	display: flex;
 	flex:1;
+	padding-right: 10px;
 }
 
 .page-footer-menu-contact{
-	width: 330px;
+	//width: 330px;
 }
 .page-footer-menu__item{
 	flex:1;
+	padding-right: 10px;
 }
 .page-footer-menu__title{
 	color: #fff;
@@ -83,7 +85,7 @@ a.page-footer-menu__title{
 
 
 .page-footer-menu-contact__item{
-	margin-bottom: 40px;
+	margin-bottom: 25px;
 	&:last-child{
 		margin-bottom: 0;
 	}
@@ -155,10 +157,12 @@ a.page-footer-menu__title{
 
 .call{
 	display: flex;
+	flex-wrap:wrap;
 }
 .call__item{
     margin-right: 18px;
-  	white-space: nowrap;
+    margin-bottom: 15px;
+  	// white-space: nowrap;
 	&:last-child{
 		margin-right: 0;
 	}

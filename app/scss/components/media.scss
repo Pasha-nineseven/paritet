@@ -865,7 +865,8 @@
 		font-size: 26px;
 	}
 	.workarea h2,
-	.popup-content h2{
+	.popup-content h2,
+	.popup-title{
 		font-size: 24px;
 	}
 	.workarea h3,
@@ -984,7 +985,7 @@
 		right: 20px;
 	}
 	.top-tel{
-		margin-right: 70px
+		margin-right: 25px
 	}
 	.menu-mobile-link{
 		display: inline-block;
@@ -1615,6 +1616,9 @@
 	}
 	.develop{
 		margin-top: 0;
+	}
+	.top__r{
+		margin-right: 55px;
 	}
 }	
 
@@ -2385,6 +2389,10 @@
 	}
 	.awards {
 	    padding-top: 0;
+	}
+	.page-footer-menu__item,
+	.page-footer-menu{
+		padding-right: 0;
 	}
 }
 
