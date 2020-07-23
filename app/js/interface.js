@@ -1,6 +1,21 @@
 $(document).ready(function() {
 	flexibility(document.documentElement);
 
+	var btn = $('#button');
+
+	$(window).scroll(function() {
+	  if ($(window).scrollTop() > 300) {
+	    btn.addClass('show');
+	  } else {
+	    btn.removeClass('show');
+	  }
+	});
+
+	btn.on('click', function(e) {
+	  e.preventDefault();
+	  $('html, body').animate({scrollTop:0}, '200');
+	});
+
 	if ($("table").length>0) {
 		$("table").wrap("<div class='table-wrap'></div>");
 	}

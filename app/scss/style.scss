@@ -2833,6 +2833,38 @@ span.breadcrumbs__item{
     font-size: 12px;
     line-height: 14px;
 }
+#button {
+	display: inline-block;
+	background: #2C4295 url(../img/svg/up.svg) center no-repeat;
+	background-size: 25px;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	transition: background-color .3s, 
+	opacity .5s, visibility .5s;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 1000;
+	cursor: pointer;
+	border-radius: 50%;
+  	&:hover{
+  		background: #0B4DCE url(../img/svg/up.svg) center no-repeat;
+  		background-size: 25px;
+  	}
+}
+#button:active {
+  background: #0B4DCE url(../img/svg/up.svg) center no-repeat;
+  background-size: 25px;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+
 
 @import "components/footer";
 
