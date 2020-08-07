@@ -71,8 +71,8 @@
 
 	.content{
 		padding: 42px 20px 40px 80px;
-		    flex: 1;
-    overflow: hidden;
+		flex: 1;
+    	overflow: hidden;
 		&:after{
 			content: "";
 			display: block;
@@ -87,6 +87,23 @@
 	.page-wrap{
 		display: flex;
     	position: relative;
+	}
+
+	.deposit__item{
+		.index-offers-more__item {
+		    width: 50%;
+		}
+	}
+
+	.deposit__info {
+	    padding: 35px 513px 45px 35px;
+	}
+	.index-offers-more__txt {
+	    font-size: 16px;
+	    line-height: 18px;
+	}
+	.index-offers__links {
+	    bottom: 20px;
 	}
 }
 .layout--full{
@@ -159,6 +176,9 @@
 	font-size: 24px;
 	line-height: 1.3;
 	margin-bottom: 25px;
+	h2{
+		margin-bottom: 0;
+	}
 }
 .page-aside__item{
 	margin-bottom: 18px;
@@ -166,6 +186,9 @@
 	line-height: 1.2;
 	&:last-child{
 		margin-bottom: 0;
+	}
+	&.m-second{
+		padding-left: 30px;
 	}
 }
 

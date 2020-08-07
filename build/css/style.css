@@ -4262,6 +4262,19 @@ textarea, input {
   display: flex;
   position: relative; }
 
+.layout--aside .deposit__item .index-offers-more__item {
+  width: 50%; }
+
+.layout--aside .deposit__info {
+  padding: 35px 513px 45px 35px; }
+
+.layout--aside .index-offers-more__txt {
+  font-size: 16px;
+  line-height: 18px; }
+
+.layout--aside .index-offers__links {
+  bottom: 20px; }
+
 .layout--full .content {
   padding-left: 0;
   padding-right: 0; }
@@ -4313,6 +4326,8 @@ textarea, input {
   font-size: 24px;
   line-height: 1.3;
   margin-bottom: 25px; }
+  .page-aside__title h2 {
+    margin-bottom: 0; }
 
 .page-aside__item {
   margin-bottom: 18px;
@@ -4320,6 +4335,8 @@ textarea, input {
   line-height: 1.2; }
   .page-aside__item:last-child {
     margin-bottom: 0; }
+  .page-aside__item.m-second {
+    padding-left: 30px; }
 
 .page-aside__link {
   color: #2C4295;
@@ -11450,7 +11467,12 @@ ymaps[class*="-copyright"] {
     width: 50%;
     min-width: 50%; }
   .index-offers-more__txt {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .layout--aside .deposit__img {
+    width: 340px;
+    min-width: 340px; }
+  .layout--aside .deposit__info {
+    padding-right: 350px; } }
 
 @media screen and (max-width: 1100px) {
   .page-header__link,
@@ -11813,7 +11835,12 @@ ymaps[class*="-copyright"] {
   .awards__wrap {
     padding-bottom: 70px; }
   .awards__view {
-    padding: 28px 42px 28px 90px; } }
+    padding: 28px 42px 28px 90px; }
+  .layout--aside .deposit__info {
+    padding: 15px 270px 30px 15px; }
+  .layout--aside .deposit__img {
+    width: 260px;
+    min-width: 260px; } }
 
 @media screen and (max-width: 992px) {
   .vacancies__item {
@@ -12823,7 +12850,13 @@ ymaps[class*="-copyright"] {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap; }
   .select__col:first-child {
-    padding-right: 0; }
+    padding-right: 0;
+    display: block;
+    max-width: 100%; }
+  .currency-radio input[type="radio"]:not(:checked) + label,
+  .currency-radio input[type="radio"]:checked + label {
+    font-size: 15px;
+    padding: 3px 11px; }
   .deposit__item {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -13141,7 +13174,14 @@ ymaps[class*="-copyright"] {
   .page-title.m-composite .jq-selectbox {
     margin: 20px 0 0 0;
     min-width: inherit;
-    width: 100%; } }
+    width: 100%; }
+  .layout--aside .deposit__info {
+    padding: 20px;
+    margin-bottom: 20px; }
+  .layout--aside .deposit__item .index-offers-more__item {
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 20px; } }
 
 @media screen and (max-width: 400px) {
   .app__title {

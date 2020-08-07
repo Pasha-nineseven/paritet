@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>test</title>
+		<!-- <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" /> -->
+		<link href="css/libs.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<!--LAYOUT-->
+		<div class="layout layout--aside layout--grey">
+			<div class="top">
+				<div class="container-fluid">
+					<div class="top__wrap">
+						<nav class="top__nav">
+							<a href="#" class="top__link js-top__link--toggle">Частным лицам</a>
+							<a href="#" class="top__link">Для бизнеса</a>
+							<a href="#" class="top__link active">О банке</a>
+						</nav>
+						<div class="top__r">
+							<div class="top-area">
+								<a href="#" class="top-area__toggle js-top-area__toggle">Минск и Минская область</a>
+								<div class="top-area__list">
+									<a href="#" class="top-area__link">Брест и Брестская область</a>
+									<a href="#" class="top-area__link">Витебск и Витебская область</a>
+									<a href="#" class="top-area__link">Гродно и Гродненская область</a>
+									<a href="#" class="top-area__link">Могилев и Могилевская область</a>
+									<a href="#" class="top-area__link">Гомель и Гомельская область</a>
+								</div>
+							</div>
+							<div class="top-offices">
+								<a href="#" class="top-offices__link">Офисы и банкоматы</a>
+							</div>
+							<a href="tel:171" class="top-tel">171</a>
+							<a href="#" class="top-lang">Бел</a>
+							<a href="#" class="top-version"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="menu-mobile__bg"></div>
+			<div class="menu-mobile__bg-sec"></div>
+			<div class="top-menu-mobile">
+				<div class="top-menu__scroll">
+					<div class="top-menu-mobile__list">
+						<a href="#" class="top-menu-mobile__link unactive">Частным лицам</a>
+						<a href="#" class="top-menu-mobile__link">Для бизнеса</a>
+						<a href="#" class="top-menu-mobile__link">О банке</a>
+					</div>
+					
+					<div class="top-menu-add">
+						<a href="#" class="top-menu-add__link js-top-menu-add__more">Минск и минская область</a>
+						<div class="top-menu-more-list">
+							<a href="#" class="top-menu-add__link">Брест и Брестская область</a>
+							<a href="#" class="top-menu-add__link">Витебск и Витебская область</a>
+							<a href="#" class="top-menu-add__link">Гродно и Гродненская область</a>
+							<a href="#" class="top-menu-add__link">Могилев и Могилевская область</a>
+							<a href="#" class="top-menu-add__link">Гомель и Гомельская область</a>
+						</div>
+						<a href="#" class="top-menu-add__link">Офисы и банкоматы</a>
+						<a href="#" class="top-menu-add__link">Бел</a>
+					</div>
+				</div>
+			</div>
+			<div class="top-menu">
+				<a href="#" class="top-menu__close js-top-menu__close"></a>
+				<div class="top-menu__scroll">
+					<div class="top-menu__list">
+						<div class="top-menu__item">
+							<a href="#" class="top-menu__link active">О банке</a>
+						</div>
+						<div class="top-menu__item">
+							<a href="#" class="top-menu__link top-menu__link--submenu js-top-menu__link--submenu"  data-label="korp">Корпоративное управление</a>
+						</div>
+						<div class="top-menu__item">
+							<a href="#" class="top-menu__link">Новости</a>
+						</div>
+						<div class="top-menu__item">
+							<a href="#" class="top-menu__link">Раскрытие информации</a>
+						</div>
+						<div class="top-menu__item">
+							<a href="#" class="top-menu__link top-menu__link--submenu js-top-menu__link--submenu" data-label="finance">Финансовая отчетность</a>
+						</div>
+						<div class="top-menu__item">
+							<a href="#" class="top-menu__link">Вакансии</a>
+						</div>
+						<div class="top-menu__item">
+							<a href="#" class="top-menu__link top-menu__link--submenu js-top-menu__link--submenu" data-label="zak">Закупки</a>
+						</div>
+						<div class="top-menu__item">
+							<a href="#" class="top-menu__link">Награды</a>
+						</div>
+					</div>
+					<div class="top-menu-add">
+						<a href="#" class="top-menu-add__link js-top-menu-add__more">Минск и минская область</a>
+						<div class="top-menu-more-list">
+							<a href="#" class="top-menu-add__link">Брест и Брестская область</a>
+							<a href="#" class="top-menu-add__link">Витебск и Витебская область</a>
+							<a href="#" class="top-menu-add__link">Гродно и Гродненская область</a>
+							<a href="#" class="top-menu-add__link">Могилев и Могилевская область</a>
+							<a href="#" class="top-menu-add__link">Гомель и Гомельская область</a>
+						</div>
+						<a href="#" class="top-menu-add__link">Офисы и банкоматы</a>
+						<a href="#" class="top-menu-add__link">Бел</a>
+					</div>
+				</div>
+				<div class="second-level">
+					<div class="second-level__in">
+						<div id="korp" class="second-level__item dnone">
+							<a href="#" class="back-level js-back-level"></a>
+							<div class="second-level__title">Корпоративное упраление</div>
+							<a href="#" class="second-level__link">
+								Item1
+							</a>
+							<a href="#" class="second-level__link">
+								Item2
+							</a>
+							<a href="#" class="second-level__link">
+								Item3
+							</a>
+						</div>
+						<div id="finance" class="second-level__item dnone">
+							<a href="#" class="back-level js-back-level"></a>
+							<div class="second-level__title">Финансовая отчетность</div>
+							<a href="#" class="second-level__link">
+								Квартальная финансовая отчетность
+							</a>
+							<a href="#" class="second-level__link">
+								Годовая финансовая отчетность
+							</a>
+							<a href="#" class="second-level__link">
+								Нормативы безопасного функционирования банковского холдинга
+							</a>
+						</div>
+						<div id="zak" class="second-level__item dnone">
+							<a href="#" class="back-level js-back-level"></a>
+							<div class="second-level__title">Закупки</div>
+							<a href="#" class="second-level__link">
+								Item1
+							</a>
+							<a href="#" class="second-level__link">
+								Item2
+							</a>
+							<a href="#" class="second-level__link">
+								Item3
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<header class="page-header">
+				<div class="container-fluid">
+					<div class="page-header__wrap">
+						<a href="#" class="logo"></a>
+						<div class="page-header__r">
+							<nav class="page-header__nav">
+								<span class="page-header__link active">О банке</span>
+								<a href="#" class="page-header__link">Реквизиты</a>
+								<a href="#" class="page-header__link">Корпоративное управление</a>
+							</nav>
+							<div class="page-header-more">
+								<a href="#" class="page-header-more__link js-page-header-more__link">Еще</a>
+								<div class="page-header-more__list">
+									<div class="page-header-more__container">
+										<a href="#" class="page-header-more__close js-page-header-more__close"></a>
+										<div class="page-header-more__wrap">
+											<a href="#" class="page-header-more__item">Рассрочка</a>
+											<span class="page-header-more__item active">Памятные монеты</span>
+											<a href="#" class="page-header-more__item">Международные переводы</a>
+											<a href="#" class="page-header-more__item">Обмен валют</a>
+											<a href="#" class="page-header-more__item">Оберег для важного</a>
+											<a href="#" class="page-header-more__item">Облигации</a>
+											<a href="#" class="page-header-more__item">Акции</a>
+											<a href="#" class="page-header-more__item">Проверка подлинности монет</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="page-header-search">
+								<a href="#" class="page-header-search__link js-page-header-search__link">
+									<span class="page-header-search__icon"></span>
+								</a>
+								<div class="page-header-search__toggle">
+									<div class="page-header-search__wrap">
+										<form action="#" method="post">
+											<input type="text">
+											<input type="submit">
+											<a href="#" class="page-header-search__close js-page-header-search__close"></a>
+										</form>
+									</div>
+								</div>
+							</div>
+							<a href="#" class="btn">Интернет-банк</a>
+							<a href="#" class="menu-mobile-link js-menu-mobile-link"></a>
+						</div>
+					</div>
+				</div>
+			</header>
+			<main class="page-content workarea">
+				<div class="breadcrumbs">
+					<div class="container-fluid">
+						<div class="breadcrumbs__wrap">
+							<a href="#" class="breadcrumbs__item">Главная</a>
+							<span class="breadcrumbs__item">Депозиты</span>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid">
+					<div class="page-wrap">
+						<aside class="page-aside">
+							<div class="page-aside__title">
+								<h2>
+									Финансовая отчетность
+								</h2>
+							</div>
+							<div class="page-aside__item">
+								<a href="#" class="page-aside__link">
+									Краткосрочные вклады (депозиты)
+								</a>
+							</div>
+							<div class="page-aside__item">
+								<span>
+									Безотзывные вклады (депозиты)
+								</span>
+							</div>
+							<div class="page-aside__item m-second">
+								<a href="#" class="page-aside__link">
+									Безотзывные вклады (депозиты) в BYN
+								</a>
+							</div>
+							<div class="page-aside__item m-second">
+								<a href="#" class="page-aside__link">
+									Безотзывные вклады (депозиты) в валюте
+								</a>
+							</div>
+							<div class="page-aside__title">
+								<h2>
+									Отзывные вклады (депозиты)
+								</h2>
+							</div>
+							<div class="page-aside__item">
+								<a href="#" class="page-aside__link">
+									Краткосрочные вклады (депозиты)
+								</a>
+							</div>
+							<div class="page-aside__item">
+								<span>
+									Безотзывные вклады (депозиты)
+								</span>
+							</div>
+							<div class="page-aside__item m-second">
+								<a href="#" class="page-aside__link">
+									Безотзывные вклады (депозиты) в BYN
+								</a>
+							</div>
+							<div class="page-aside__item m-second">
+								<a href="#" class="page-aside__link">
+									Безотзывные вклады (депозиты) в валюте
+								</a>
+							</div>
+						</aside>
+						
+						<div class="content">
+							<div class="page-title">
+								<h1>
+									Депозиты
+								</h1>
+							</div>
+							<!-- CONTENT-PART -->
+							<div class="select">
+								<h2>Подобрать депозит</h2>
+								<form action="#" method="post">
+									<div class="select__wrap">
+										<div class="select__col">
+											<div class="select__item">
+												<div class="select__title">Валюта</div>
+												<div class="currency-radio">
+													<div class="currency-radio__item">
+														<input type="radio" id="rad1" name="radio" checked="">
+														<label for="rad1">byn</label>
+													</div>
+													<div class="currency-radio__item">
+														<input type="radio" id="rad2" name="radio">
+														<label for="rad2">usd</label>
+													</div>
+													<div class="currency-radio__item">
+														<input type="radio" id="rad3" name="radio">
+														<label for="rad3">eur</label>
+													</div>
+													<div class="currency-radio__item">
+														<input type="radio" id="rad4" name="radio">
+														<label for="rad4">rub</label>
+													</div>
+												</div>
+											</div>
+											<div class="select__item">
+												<div class="select__title">Сумма депозита:</div>
+												<div class="slider-count">
+													<input type="text" id="slider-count-input" value="100" />
+													<div class="slider-count__add">BYN</div>
+													<div class="slider-count-slider"></div>
+												</div>
+												<div class="slider-count-val">
+													<div class="slider-count-val__item" data-sum="100">100 <span class="currency-val">BYN</span></div>
+													<div class="slider-count-val__item" data-sum="500000">500 000 <span class="currency-val">BYN</span></div>
+												</div>
+											</div>
+											<div class="select__item select__item--term">
+												<div class="select__title">Срок мин, месяц:</div>
+												<div class="slider-count">
+													<input type="text" id="slider-term-input" value="1" />
+													<div class="slider-count__add">мес.</div>
+													<div class="slider-term-slider"></div>
+												</div>
+												<div class="slider-count-val">
+													<div class="slider-count-val__item" data-month="1">1 мес.</div>
+													<div class="slider-count-val__item" data-month="36">36 мес.</div>
+												</div>
+											</div>
+										</div>
+										<div class="select__col">
+											<div class="select__item">
+												<div class="select__title">Ставка:</div>
+												<div class="checkbox-wrap">
+													<div class="checkbox-item">
+														<input type="checkbox" id="checkbox9" name="checkbox1234">
+														<label for="checkbox9">
+															Фиксированная
+														</label>
+													</div>
+													<div class="checkbox-item">
+														<input type="checkbox" id="checkbox10" name="checkbox1234">
+														<label for="checkbox10">
+															Плавающая
+														</label>
+													</div>
+												</div>
+											</div>
+											<div class="select__item">
+												<div class="select__title">Тип вклада:</div>
+												<div class="checkbox-wrap">
+													<div class="checkbox-item">
+														<input type="checkbox" id="checkbox11" name="checkbox1234">
+														<label for="checkbox11">
+															Отзывные
+														</label>
+													</div>
+													<div class="checkbox-item">
+														<input type="checkbox" id="checkbox12" name="checkbox1234">
+														<label for="checkbox12">
+															Безотзывные
+														</label>
+													</div>
+												</div>
+											</div>
+											
+											<div class="select__item">
+												<div class="select__title">Дополнительные взносы:</div>
+												<div class="checkbox-wrap">
+													<div class="checkbox-item">
+														<input type="checkbox" id="checkbox13" name="checkbox1234">
+														<label for="checkbox13">
+															Фиксированная
+														</label>
+													</div>
+													<div class="checkbox-item">
+														<input type="checkbox" id="checkbox14" name="checkbox1234">
+														<label for="checkbox14">
+															Плавающая
+														</label>
+													</div>
+												</div>
+											</div>
+											<input type="submit" value="Подобрать депозит">	
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="deposit">
+								<div class="deposit__item" id="test1">
+									<div class="deposit__info">
+										<div class="page-tags">
+											<span class="page-tag">Бел.рубль</span>
+											<span class="page-tag">Безотзывной</span>
+										</div>
+										<a href="#">
+											<div class="deposit__title">
+												Найди свой Клевер
+											</div>
+										</a>
+										<div class="deposit__txt">
+											Безотзывный банковский вклад в белорусских рублях для быстрого приумножения вашего капитала
+										</div>
+
+										<div class="index-offers-more">
+											<div class="index-offers-more__item">
+												<div class="index-offers-more__icon">
+													<img src="img/content/more1.png" alt="">
+												</div>
+												<div class="index-offers-more__txt">
+													<div class="index-offers-more__top">Минимальная сумма</div>
+													100 BYN
+												</div>
+											</div>
+											<div class="index-offers-more__item">
+												<div class="index-offers-more__icon">
+													<img src="img/content/more2.png" alt="">
+												</div>
+												<div class="index-offers-more__txt">
+													<div class="index-offers-more__top">Ставка</div>
+													до 10.5%
+												</div>
+											</div>
+											<div class="index-offers-more__item">
+												<div class="index-offers-more__icon">
+													<img src="img/content/more2.png" alt="">
+												</div>
+												<div class="index-offers-more__txt">
+													<div class="index-offers-more__top">Тип вклада</div>
+													Отзывной
+												</div>
+											</div>
+											<div class="index-offers-more__item">
+												<div class="index-offers-more__icon">
+													<img src="img/content/more3.png" alt="">
+												</div>
+												<div class="index-offers-more__txt">
+													<div class="index-offers-more__top">Срок депозита</div>
+													от 13 до 36 мес.
+												</div>
+											</div>
+											<div class="index-offers-more__item">
+												<div class="index-offers-more__icon">
+													<img src="img/content/more3.png" alt="">
+												</div>
+												<div class="index-offers-more__txt">
+													<div class="index-offers-more__top">Валюта кредита</div>
+													USD
+												</div>
+											</div>
+										</div>
+										<div class="index-offers__links">
+											<a href="#" class="btn">Открыть вклад</a>
+											<a href="#" class="btn-more">Подробнее</a>
+										</div>
+									</div>
+									<div class="deposit__img" style="background-image: url(img/content/slide1.jpg);"></div>
+									<div class="deposit__img--mobile" style="background-image: url(img/content/slide1-mob.jpg);"></div>
+								</div>
+								<div class="deposit__item" id="test2">
+									<div class="deposit__info">
+										<div class="page-tags">
+											<span class="page-tag">Бел.рубль</span>
+											<span class="page-tag">Безотзывной</span>
+										</div>
+										<a href="#">
+											<div class="deposit__title">
+												Найди свой Клевер
+											</div>
+										</a>
+										<div class="deposit__txt">
+											Безотзывный банковский вклад в белорусских рублях для быстрого приумножения вашего капитала
+										</div>
+
+										<div class="index-offers-more">
+											<div class="index-offers-more__item">
+												<div class="index-offers-more__icon">
+													<img src="img/content/more1.png" alt="">
+												</div>
+												<div class="index-offers-more__txt">
+													<div class="index-offers-more__top">Ставка</div>
+													до 10.5%
+												</div>
+											</div>
+											<div class="index-offers-more__item">
+												<div class="index-offers-more__icon">
+													<img src="img/content/more2.png" alt="">
+												</div>
+												<div class="index-offers-more__txt">
+													<div class="index-offers-more__top">Срок депозита</div>
+													от 1 до 12 мес.
+												</div>
+											</div>
+											<div class="index-offers-more__item">
+												<div class="index-offers-more__icon">
+													<img src="img/content/more3.png" alt="">
+												</div>
+												<div class="index-offers-more__txt">
+													<div class="index-offers-more__top">Срок кредита</div>
+													до 50 000 BYN
+												</div>
+											</div>
+										</div>
+										<div class="index-offers__links">
+											<a href="#" class="btn">Оформить кредит</a>
+											<a href="#" class="btn-more">Подробнее</a>
+										</div>
+									</div>
+									<div class="deposit__img" style="background-image: url(img/content/slide2.jpg);"></div>
+									<div class="deposit__img--mobile" style="background-image: url(img/content/slide2-mob.jpg);"></div>
+								</div>
+								<div class="deposit__item" id="test3">
+									<div class="deposit__info">
+										<div class="page-tags">
+											<span class="page-tag">Бел.рубль</span>
+											<span class="page-tag">Безотзывной</span>
+										</div>
+										<a href="#">
+											<div class="deposit__title">
+												Стабильный доход (безотзывный) вклад в белорусских рублях
+											</div>
+										</a>
+										<div class="deposit__txt">
+											Безотзывный банковский вклад в белорусских рублях для быстрого приумножения вашего капитала
+										</div>
+
+										<div class="index-offers-more">
+											<div class="index-offers-more__item">
+												<div class="index-offers-more__icon">
+													<img src="img/content/more1.png" alt="">
+												</div>
+												<div class="index-offers-more__txt">
+													<div class="index-offers-more__top">Минимальная сумма</div>
+													100 BYN
+												</div>
+											</div>
+											<div class="index-offers-more__item">
+												<div class="index-offers-more__icon">
+													<img src="img/content/more2.png" alt="">
+												</div>
+												<div class="index-offers-more__txt">
+													<div class="index-offers-more__top">Ставка</div>
+													до 10.5%
+												</div>
+											</div>
+											<div class="index-offers-more__item">
+												<div class="index-offers-more__icon">
+													<img src="img/content/more3.png" alt="">
+												</div>
+												<div class="index-offers-more__txt">
+													<div class="index-offers-more__top">Срок депозита</div>
+													от 13 до 36 мес.
+												</div>
+											</div>
+										</div>
+										<div class="index-offers__links">
+											<a href="#" class="btn">Открыть вклад</a>
+											<a href="#" class="btn-more">Подробнее</a>
+										</div>
+									</div>
+									<div class="deposit__img" style="background-image: url(img/content/slide3.jpg);"></div>
+									<div class="deposit__img--mobile" style="background-image: url(img/content/slide3-mob.jpg);"></div>
+								</div>
+								<div class="deposit__item" id="test4">
+									<div class="deposit__info">
+										<div class="page-tags">
+											<span class="page-tag">Бел.рубль</span>
+											<span class="page-tag">Безотзывной</span>
+										</div>
+										<a href="#">
+											<div class="deposit__title">
+												Стабильный доход (безотзывный) вклад в белорусских рублях
+											</div>
+										</a>
+										<div class="deposit__txt">
+											Безотзывный банковский вклад в белорусских рублях для быстрого приумножения вашего капитала
+										</div>
+
+										<div class="index-offers-more">
+											<div class="index-offers-more__item">
+												<div class="index-offers-more__icon">
+													<img src="img/content/more1.png" alt="">
+												</div>
+												<div class="index-offers-more__txt">
+													<div class="index-offers-more__top">Минимальная сумма</div>
+													100 BYN
+												</div>
+											</div>
+											<div class="index-offers-more__item">
+												<div class="index-offers-more__icon">
+													<img src="img/content/more2.png" alt="">
+												</div>
+												<div class="index-offers-more__txt">
+													<div class="index-offers-more__top">Ставка</div>
+													до 10.5%
+												</div>
+											</div>
+											<div class="index-offers-more__item">
+												<div class="index-offers-more__icon">
+													<img src="img/content/more3.png" alt="">
+												</div>
+												<div class="index-offers-more__txt">
+													<div class="index-offers-more__top">Срок депозита</div>
+													от 13 до 36 мес.
+												</div>
+											</div>
+										</div>
+										<div class="index-offers__links">
+											<a href="#" class="btn">Открыть вклад</a>
+											<a href="#" class="btn-more">Подробнее</a>
+										</div>
+									</div>
+									<div class="deposit__img" style="background-image: url(img/content/slide4.jpg);"></div>
+									<div class="deposit__img--mobile" style="background-image: url(img/content/slide4-mob.jpg);"></div>
+								</div>
+							</div>
+							<div class="paging">
+								<div class="paging__wrap">
+									<div class="paging__inner">
+										<a href="#" class="paging__item">1</a>
+										<span class="paging__item active">2</span>
+										<a href="#" class="paging__item">3</a>
+										<a href="#" class="paging__item">4</a>
+										<a href="#" class="paging__item">...</a>
+										<a href="#" class="paging__item">10</a>
+									</div>
+									<a href="#" class="paging__next">Следующая страница</a>
+								</div>
+							</div>
+							<!--end CONTENT-PART -->
+						</div>
+					</div>
+				</div>
+			</main>
+		</div><!-- END LAYOUT-->
+		<footer class="page-footer">
+			<div class="container-fluid">
+				<div class="page-footer__wrap">
+					<div class="page-footer-menu">
+						<div class="page-footer-menu__item">
+							<a href="#" class="page-footer-menu__title js-page-footer-menu__title">
+								Частным клиентам
+							</a>
+							<div class="page-footer-menu__list">
+								<a href="#" class="page-footer-menu__link">Карточки</a>
+								<a href="#" class="page-footer-menu__link">Кредиты</a>
+								<a href="#" class="page-footer-menu__link">Рассрочка </a>
+								<a href="#" class="page-footer-menu__link">Депозиты</a>
+								<a href="#" class="page-footer-menu__link">Страхование</a>
+								<a href="#" class="page-footer-menu__link">Обмен валют</a>
+								<a href="#" class="page-footer-menu__link">Акции</a>
+								<a href="#" class="page-footer-menu__link">Дополнительные услуги</a>
+								<a href="#" class="page-footer-menu__link">Облигации</a>
+							</div>
+						</div>
+						<div class="page-footer-menu__item">
+							<a href="#" class="page-footer-menu__title js-page-footer-menu__title">
+								О банке
+							</a>
+							<div class="page-footer-menu__list">
+								<a href="#" class="page-footer-menu__link">Новости</a>
+								<a href="#" class="page-footer-menu__link">Корпоративное управление</a>
+								<a href="#" class="page-footer-menu__link">Раскрытие информации</a>
+								<a href="#" class="page-footer-menu__link">Финансовая отчетность</a>
+								<a href="#" class="page-footer-menu__link">Вакансии</a>
+								<a href="#" class="page-footer-menu__link">Закупки</a>
+								<a href="#" class="page-footer-menu__link">Награды</a>
+								<a href="#" class="page-footer-menu__link">Реализация имущества</a>
+								<a href="#" class="page-footer-menu__link">Реквизиты</a>
+								<a href="#" class="page-footer-menu__link">Обязательная информация</a>
+								<a href="#" class="page-footer-menu__link">Личный прием</a>
+							</div>
+						</div>
+						<div class="page-footer-menu__item">
+							<a href="#" class="page-footer-menu__title">
+								Информация
+							</a>
+							<div class="page-footer-menu__list">
+								<a href="#" class="page-footer-menu__link">Реквизиты</a>
+								<a href="#" class="page-footer-menu__link">НБРБ </a>
+								<a href="#" class="page-footer-menu__link">Личный прием</a>
+								<a href="#" class="page-footer-menu__link">Раскрытие информации</a>
+								<a href="#" class="page-footer-menu__link">Офисы и банкоматы</a>
+							</div>
+						</div>
+					</div>
+					<div class="page-footer-menu-contact">
+						<div class="page-footer-menu-contact__item">
+							<div class="page-footer-menu__title">
+								Контакт центр
+							</div>
+							<div class="call">
+								<div class="call__item">
+									<a href="tel:171" class="call-link">171</a>
+								</div>
+								<div class="call__item">
+									<a href="#call" class="call-btn call-btn--order js-popup-inline">Заказать звонок</a>
+								</div>
+								<div class="call__item">
+									<a href="#question" class="call-btn js-popup-inline">Оставить отзыв</a>
+								</div>
+							</div>
+						</div>
+						<div class="page-footer-menu-contact__item">
+							<div class="page-footer-menu__title">
+								Мобильное приложение
+							</div>
+							<div class="mobile">
+								<a href="#" class="mobile__link m-app">
+									<img src="img/content/f-app.png" alt="">
+								</a>
+								<a href="#" class="mobile__link m-google">
+									<img src="img/content/f-google.png" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="page-footer-menu-contact__item">
+							<div class="page-footer-menu__title">
+								Мы в социальных сетях
+							</div>
+							<div class="socials">
+								<a href="#" class="socials__link fb"></a>
+								<a href="#" class="socials__link vk"></a>
+								<a href="#" class="socials__link inst"></a>
+								<a href="#" class="socials__link you"></a>
+							</div>
+							<a href="img/svg/logo.svg" class="bottom-download" download>Скачать сборник тарифов</a>
+						</div>	
+					
+					</div>
+				</div>
+				<div class="bottom">
+					<div class="copiright">
+						&copy; 2020 ОАО «Паритетбанк». УНП 100233809
+					</div>
+					<div class="ssl">
+						<img src="img/content/ssl.png" alt="">
+					</div>
+					<div class="bottom__info">
+						Информация на сайте носит справочный характер и не является публичной офертой
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Back to top button -->
+		<a id="button"></a>
+		
+		<div class="headline-fixed-buttons">
+			<a href="#test-form" class="btn-download">
+				<i></i>
+				<span>Оставить заявку</span>
+			</a>
+		</div>
+
+		<div class="page-socials">
+			<div class="page-socials__bg"></div>
+			<div class="page-socials__list">
+				<div class="page-socials__wrap">
+					<a href="#" class="page-socials__item">
+						<img src="img/svg/soc-fb.svg" alt="">
+					</a>
+					<a href="#" class="page-socials__item">
+						<img src="img/svg/soc-vk.png" alt="">
+					</a>
+					<a href="#" class="page-socials__item">
+						<img src="img/svg/soc-vb.png" alt="">
+					</a>
+					<a href="#" class="page-socials__item">
+						<img src="img/svg/soc-skype.svg" alt="">
+					</a>
+					<a href="#" class="page-socials__item">
+						<img src="img/svg/soc-inst.svg" alt="">
+					</a>
+					<a href="#" class="page-socials__item">
+						<img src="img/svg/soc-noname.svg" alt="">
+					</a>
+				</div>
+			</div>
+			<a href="#" class="page-socials__toggle js-page-socials__toggle"></a>
+		</div>
+
+		<!-- POPUP -->
+		<div id="call" class="popup dnone">
+			<div class="order">
+				<span class="popup-title">Заказать звонок</span>
+				<!-- <h2>Заказать звонок</h2> -->
+				<p>
+					Укажите только ваш мобильный номер, и мы перезвоним в течение 15 минут. Вы главное трубку возьмите, чтобы мы не переживали
+				</p>
+				<form action="#" method="post">
+					<div class="order__title">
+						На какой номер вам перезвонить?
+					</div>
+					<div class="order-wrap">
+						<div class="order-wrap__txt">
+							<div class="order-pre">
+								+375
+							</div>
+							<input type="tel">
+						</div>
+						<input type="submit" value="Жду звонка">
+					</div>
+					<div class="radio-item">
+						<input type="radio" id="radio33" name="e">
+						<label for="radio33">Радио 33</label>
+					</div>
+					<div class="radio-item">
+						<input type="radio" id="radio44" name="e" checked>
+						<label for="radio44">Радио 44</label>
+					</div>
+					<div class="checkbox-item">
+						<input type="checkbox" id="popup-checkbox1" name="checkbox" checked="">
+						<label for="popup-checkbox1">
+							Согласен(-на) с <a href="#" target="_blank">
+								условиями обработки</a> и использования личных данных
+						</label>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div id="question" class="popup dnone">
+			<div class="page-question">
+				<span class="popup-title">Задайте нам вопрос</span>
+				<!-- <h2>Задайте нам вопрос</h2> -->
+				<p>
+					Укажите только ваш мобильный номер, и мы перезвоним в течение 15 минут
+				</p>
+				<div class="input-wrap">
+					<div class="input-label">Укажите ваше имя, отчество и фамилию</div>
+					<input type="text">
+				</div>	
+				<div class="input-wrap input-wrap--phone">
+					<div class="input-label">На какой номер вам перезвонить?</div>
+					<div class="input-wrap__txt">
+					<input type="tel">
+						<div class="order-pre">
+							+375
+						</div>
+					</div>
+				</div>	
+				<div class="input-wrap input-wrap--necessary">
+					<div class="input-label">Укажите адрес электронной почты</div>
+					<input type="email">
+				</div>	
+				<div class="input-wrap">
+					<div class="input-label">Укажите адрес электронной почты</div>
+					<textarea></textarea>
+				</div>	
+				<div class="radio-item">
+					<input type="radio" id="radio333" name="e3">
+					<label for="radio333">Радио 333</label>
+				</div>
+				<div class="radio-item">
+					<input type="radio" id="radio444" name="e3" checked>
+					<label for="radio444">Радио 444</label>
+				</div>
+				<div class="checkbox-item">
+					<input type="checkbox" id="popup-checkbox2" name="checkbox2" checked="">
+					<label for="popup-checkbox2">
+						Согласен(-на) с условиями обработки и использования личных данных
+					</label>
+				</div>
+				<input type="submit" value="Подобрать кредит">
+			</div>
+		</div>
+			
+		
+
+		<script src="js/libs.min.js"></script>
+		<script src="js/interface.js"></script>
+	</body>
+</html>

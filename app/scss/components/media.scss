@@ -220,6 +220,15 @@
 	.index-offers-more__txt {
 	    font-size: 18px;
 	}
+	.layout--aside{
+		.deposit__img{
+			    width: 340px;
+    		min-width: 340px;
+		}
+		.deposit__info {
+		    padding-right: 350px;
+		}
+	}
 }
 
 @media screen and (max-width: 1100px){
@@ -701,6 +710,16 @@
 	}
 	.awards__view {
 	    padding: 28px 42px 28px 90px;
+	}
+
+	.layout--aside{
+		.deposit__info {
+		    padding: 15px 270px 30px 15px;
+		}
+	}
+	.layout--aside .deposit__img {
+	    width: 260px;
+	    min-width: 260px;
 	}
 }
 
@@ -2008,6 +2027,13 @@
 	}
 	.select__col:first-child {
 	    padding-right: 0;
+	        display: block;
+    	max-width: 100%;
+	}
+	.currency-radio input[type="radio"]:not(:checked) + label,
+	.currency-radio input[type="radio"]:checked + label {
+	    font-size: 15px;
+	    padding: 3px 11px;
 	}
 	.deposit__item{
 		flex-wrap:wrap;
@@ -2421,6 +2447,18 @@
 	    margin: 20px 0 0 0;
 	    min-width: inherit;
 	    width: 100%;
+	}
+	.layout--aside{
+
+		.deposit__info {
+		    padding: 20px;
+		    margin-bottom: 20px;
+		}
+		.deposit__item .index-offers-more__item {
+		    margin-right: 0;
+		    width: 100%;
+		    margin-bottom: 20px;
+		}
 	}
 }
 
