@@ -848,6 +848,13 @@ $(document).ready(function() {
 	slider_index_links_init();
 	slider_issue_init();
 
+
+
+	$("body").on("click", ".js-toggle", function(e){
+        e.preventDefault();
+        $(this).toggleClass('active');
+        $(this).next('.page-aside-row__list').slideToggle(250);
+    });
 });
 
 
