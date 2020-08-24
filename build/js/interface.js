@@ -851,9 +851,20 @@ $(document).ready(function() {
 
 
 	$("body").on("click", ".js-toggle", function(e){
-        e.preventDefault();
-        $(this).toggleClass('active');
-        $(this).next('.page-aside-row__list').slideToggle(250);
+
+        $('.page-aside-row__list').slideUp(250);
+	    $('.m-toggle').removeClass('active');
+
+        var count = $(this).data('count');
+
+        if(!count) {
+            $(this).data('count', 1);
+            e.preventDefault();
+            $(this).toggleClass('active');
+	        $(this).next('.page-aside-row__list').slideToggle(250);
+        } else{
+    		return true;
+        }
     });
 });
 
