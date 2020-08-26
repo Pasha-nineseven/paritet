@@ -851,20 +851,14 @@ $(document).ready(function() {
 
 
 	$("body").on("click", ".js-toggle", function(e){
+		if(!$(this).hasClass("active")){
+      		e.preventDefault();
+		    $(this).addClass('active');
+	        $(this).next('.page-aside-row__list').slideDown(250);
+		}
 
-        $('.page-aside-row__list').slideUp(250);
-	    $('.m-toggle').removeClass('active');
-
-        var count = $(this).data('count');
-
-        if(!count) {
-            $(this).data('count', 1);
-            e.preventDefault();
-            $(this).toggleClass('active');
-	        $(this).next('.page-aside-row__list').slideToggle(250);
-        } else{
-    		return true;
-        }
+		$(this).parents('.page-aside-row').siblings('.page-aside-row').find('.m-toggle').removeClass('active');
+        $(this).parents('.page-aside-row').siblings('.page-aside-row').find('.page-aside-row__list').slideUp(250);
     });
 });
 
