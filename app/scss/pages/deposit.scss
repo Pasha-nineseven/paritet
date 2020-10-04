@@ -102,6 +102,10 @@
 		left: -44px;
 		top: 0;
 	}
+	&.m-min{
+		font-size: 18px;
+		line-height: 1.5;
+	}
 }
 .docs__info{
 	font-size: 12px;
@@ -131,9 +135,9 @@
 		background: url(../img/svg/arrow-is.svg) no-repeat;
 		position: absolute;
 		top: 50%;
-		margin-top: -11px;
+		margin-top: -3px;
 		// left: calc(100% + 10px);
-		right: 92px;
+		right: 60px;
 	}
 	&:last-child{
 		&:after{
@@ -158,6 +162,20 @@
 .issue__txt{
 	font-size: 12px;
 	line-height: 1.2;
+	.docs__link {
+	    display: block;
+	    background: transparent;
+	    padding: 0px 0px 0px 45px;
+	    position: relative;
+	    height: auto;
+	}
+	.docs__title{
+		font-size: 16px;
+		line-height: 19px;
+		&:before{
+			top: 4px;
+		}
+	}
 }
 
 
@@ -805,3 +823,38 @@ line-height: 29px;
  .deposit__img--mobile{
 	display: none;
  }
+
+
+
+.issue__buttons{
+	padding-top: 15px;
+ 	.btn-more {
+	    display: inline-block;
+	    color: #2C4295;
+	    border-radius: 4px;
+	    border: 1px solid #2C4295;
+	    padding: 7px 23px;
+	    margin-bottom: 31px;
+	    transition: all 0.3s ease;
+	    font-size: 16px;
+	    &:hover{
+			background: #2C4295;
+			border: 1px solid #2C4295;
+			color: #fff;
+	    }
+	}
+	.btn{
+		margin-bottom: 16px;
+	}
+}
+
+.docs-small{
+	font-size: 12px;
+	line-height: 14px;
+	p{
+		margin-bottom: 17px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+}

@@ -1,0 +1,472 @@
+
+.layout--invoice{
+    .content{
+        padding-top: 0;
+    }
+    .issue{
+        h2{
+            font-size: 40px;
+        }
+    }
+    .issue__list{
+        margin-bottom: 15px;
+    }
+}
+.invoice{
+    position: relative;
+    color: #fff;
+    min-height: 480px;
+}
+.invoice__img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:0;
+    right: 0;
+    top: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    &:after{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: #343532;
+        opacity: 0.5;
+        position: absolute;
+        left:0;
+        right: 0;
+        top: 0;
+    }
+    &:before {
+        content: "";
+        display: block;
+        width: 382px;
+        height: 407px;
+        background: url(../img/content/pattern.png) no-repeat;
+        background-size: contain;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+.invoice__in{
+    padding: 110px 0 50px;
+    display: flex;
+    flex-wrap:wrap;
+}
+.invoice__pre{
+    width: 50%;
+    // padding-left: 110px;
+    h1{
+        font-size: 48px;
+        line-height: 1.4;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+}
+.invoice__info{
+    width: 50%;
+    padding-left: 85px;
+    padding-top: 15px;
+}
+.invoice__links{
+   padding-top: 24px;
+
+    .btn {
+        padding: 8px 24px;
+        border-radius: 4px;
+         margin-bottom: 20px;
+    }
+    .or{
+        margin: 0 16px;
+    }
+    .btn-more{
+        font-size: 16px;
+        border: 1px solid #3DBAFE;
+        border-radius: 4px;
+        padding: 7px 15px;
+        color: #fff;
+        display: inline-block;
+        transition: all 0.3s ease;
+        &:hover{
+            background: #0B4DCE;
+            color: #fff;
+            border: 1px solid #0B4DCE;
+        }
+    }
+}
+
+
+.invoice-top{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+    align-items: center;
+}
+.invoice-top__item{
+    font-size: 14px;
+    line-height: 1.2;
+    color: #3DBAFE;
+    font-family: 'golosbold';
+        display: flex;
+    align-items: center;
+    &:after{
+        content: "";
+        display: inline-block;
+        width: 3px;
+        height: 3px;
+        background: rgba(255,255,255,0.3);
+        border-radius: 50%;
+        margin: 0 20px;
+    }
+    &:last-child{
+        &:after{
+            display: none;
+        }
+    }
+}
+
+.invoice-txt{
+    font-size: 24px;
+    line-height: 1.3;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+.invoice-in{
+    max-width: 416px;
+}
+
+.invoice-list{
+    display: flex;
+    flex-wrap:wrap;
+    margin-right: - 16px;
+}
+.invoice-item{
+    max-width: 200px;
+    margin-right: 16px;
+
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+.invoice-item__top{
+    color: #3DBAFE;
+    font-size: 24px;
+    line-height: 1.3;
+    font-family: 'golosbold';
+    margin-bottom: 8px;
+}
+.invoice-item__txt{
+    font-size: 12px;
+    line-height: 1.2;
+    opacity: 0.7;
+}
+
+
+
+
+
+.who{
+    padding: 24px 0 56px;    
+    position: relative;
+    z-index: 2;
+}
+
+.who__list{
+    display: flex;
+    flex-wrap:wrap;
+    margin-right: -16px;
+}
+.who__item{
+    padding-right: 16px;
+    width: 50%;
+    position: relative;
+    &:first-child{
+        &:before{
+            content: "";
+            display: inline-block;
+            width: 317px;
+            height: 183px;
+            background: url(../img/svg/line1.svg) no-repeat;
+            position: absolute;
+            left: calc(100% - 245px);
+            top: 42px;
+        }
+    }
+    &:nth-child(2){
+        margin-top: 171px;
+        &:after{
+            content: "";
+            display: inline-block;
+            width: 183px;
+            height: 317px;
+            background: url(../img/svg/line3.svg) no-repeat;
+            position: absolute;
+            right: -70px;
+            top: calc(100% - 10px);
+        }
+    }
+    &:nth-child(3){
+        margin-top: -95px;
+        &:before{
+            content: "";
+            display: inline-block;
+            width: 4px;
+            height: 155px;
+            background: #F0F2F5;
+            position: absolute;
+            left: 70px;
+            bottom: calc(100% - 10px);
+        }
+        &:after{
+            content: "";
+            display: inline-block;
+            width: 183px;
+            height: 317px;
+            background: url(../img/svg/line2.svg) no-repeat;
+            position: absolute;
+            left: calc(100% - 110px);
+            top: -64px;
+        }
+    }
+}
+.who__in{
+    background: #fff;
+    width: 100%;
+    padding: 72px 54px 81px 54px;
+    box-shadow: 0px 50px 55px -35px #BDC5D1;
+    position: relative;
+    overflow: hidden; 
+    z-index: 2;
+    display: block;
+    color: #000;
+    &:after{
+        content: "";
+        display: inline-block;
+        width: 44px;
+        height: 23px;
+        background: url(../img/svg/i-arr.svg) no-repeat;
+        position: absolute;
+        bottom: 30px;
+        left: 55px;
+        transition: all .3s ease;
+    }
+    &:hover{
+        &:after{
+            left: 70px;
+        }
+    }
+}
+
+.who__num{
+    font-size: 274.824px;
+    line-height: 200px;
+    color: #F0F2F5;
+    position: absolute;
+    left: -12px;
+    top: -5px;
+    font-family: 'golosbold';
+    pointer-events: none;
+}
+.who__title{
+    position: relative;
+    z-index: 1;
+    font-size: 32px;
+    line-height: 1.3;
+    font-family: 'golosbold';
+    margin-bottom: 16px;
+    span{
+        color: #3DBAFE;
+    }
+}
+.who__txt{
+    position: relative;
+    z-index: 1;
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 416px;
+}
+.who__add{
+    max-width: 416px;
+    padding-top: 8px;
+    font-size: 12px;
+    line-height: 1.2;
+    border-top: 1px solid #F0F2F5; 
+    margin-top: 24px;
+    color: #343532;
+    opacity: 0.7;
+}
+
+
+
+
+
+
+
+.benfits-invoice{
+    background: #F0F2F5;
+    padding: 45px 0; 
+    position: relative;
+    margin-bottom: 32px;
+    &:before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        right: 100%;
+        top: 0;
+        background: #F0F2F5;
+         z-index: 2;
+    }
+    &:after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 100%;
+        top: 0;
+        background: #F0F2F5;
+        z-index: 2;
+    }
+    h2{
+        text-align: center;
+        font-size: 40px;
+    }
+}
+.benfits-invoice__wrap{
+    display: flex;
+        padding-top: 10px;
+}
+
+.benfits-invoice__list{
+    width: 416px;
+    display: flex;
+    flex-wrap:wrap;
+    padding-top: 25px;
+}
+.benfits-invoice__item{
+    width: 50%;
+    padding: 29px 10px;
+    &:first-child{
+        border-bottom: 2px solid #fff;
+        border-right: 2px solid #fff;
+    }
+    &:nth-child(2){
+        border-bottom: 2px solid #fff;
+    }
+    &:nth-child(3){
+        border-right: 2px solid #fff;
+    }
+}
+.benfits-invoice__pre{
+    flex:1;
+    padding-right: 124px;
+}
+.benfits-invoice__icon{
+    height: 51px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-bottom: 27px;
+    img{
+        display: block;
+        max-width: 100%;
+    }
+}
+.benfits-invoice__t{
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    font-family: 'golosbold';
+}
+.benfits-invoice-gen__item{
+    border-bottom: 2px solid #fff;
+    padding: 27px 5px 24px 5px;
+    display: flex;
+    align-items: flex-start;
+    &:last-child{
+        border-bottom: 0;
+        padding-bottom: 0;
+    }
+}
+.benfits-invoice-gen__icon{
+    width: 124px;
+    min-width: 124px;
+    display: flex;
+    justify-content: center;
+    margin-right: 76px;
+}
+.benfits-invoice-gen__title{
+    font-size: 32px;
+    line-height: 1.3;
+    font-family: 'golosbold';
+    margin-bottom: 16px;
+}
+.benfits-invoice-gen__txt{
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.docs{
+    .bid{
+        margin-top: 30px;
+        .tabs{
+            margin-bottom: 16px !important;
+            border-radius: 0;
+            border: 0;
+            padding: 0;
+            
+            white-space: nowrap;
+            overflow-x: auto;
+            flex-wrap: nowrap;
+            max-width: 100%;
+            position: relative;
+            &:after{
+                content: "";
+                display: block;
+                width: 100%;
+                height: 2px;
+                background: rgba(61,186,254,0.2);
+                left: 0;
+                bottom: 0;
+                position: absolute;
+            }
+            li{
+                background: transparent;
+                color: #3DBAFE;
+                font-size: 32px;
+                line-height: 1.3;
+                padding: 0!important;
+                
+                &:first-child{
+                    &:after{
+                        content: "/"!important;
+                        display: inline-block!important;
+                        font-size: 32px;
+                        color: #FFFFFF;
+                        opacity: 0.3;
+                        margin: 0 16px 0 8px;
+                        position: static;
+                        width: auto;
+                        height: auto;
+                        background: transparent;
+                        font-family: "golosregular", Arial, sans-serif;
+                        border-bottom: 2px solid rgba(61,186,254,0.2)!important;
+                    }
+                }
+                &.current{
+                    font-family: 'golosbold';
+                    color: #fff; 
+                    span{
+                        padding: 0 0 5px 0!important;
+                        display: inline-block;
+                        border-bottom: 2px solid rgba(61,186,254,1);
+                    }
+                }
+            }
+        }
+    }
+}

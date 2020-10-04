@@ -3463,6 +3463,10 @@ th {
   .workarea img, .popup-content img {
     max-width: 100%;
     height: auto; }
+  .workarea small, .popup-content small {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1.2; }
 
 * {
   -webkit-box-sizing: border-box;
