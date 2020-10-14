@@ -5934,6 +5934,10 @@ ymaps[class*="-copyright"] {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding-top: 10px; }
 
 .benfits-invoice__list {
@@ -5949,7 +5953,7 @@ ymaps[class*="-copyright"] {
 
 .benfits-invoice__item {
   width: 50%;
-  padding: 29px 10px; }
+  padding: 25px 10px; }
   .benfits-invoice__item:first-child {
     border-bottom: 2px solid #fff;
     border-right: 2px solid #fff; }
