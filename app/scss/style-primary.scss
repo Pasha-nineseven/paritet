@@ -23,7 +23,6 @@
     font-display: swap;
 }
 
-
 @import "components/vars";
 
 @import "bootstrap/normalize";
@@ -1869,4 +1868,8 @@ span.breadcrumbs__item{
 
 .dnone{
 	display: none;
+}
+
+.test{
+	background: #ccc;
 }

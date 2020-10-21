@@ -5789,3 +5789,6 @@ span.breadcrumbs__item {
 
 .dnone {
   display: none; }
+
+.test {
+  background: #ccc; }
