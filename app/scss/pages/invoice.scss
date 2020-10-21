@@ -420,10 +420,10 @@
             border: 0;
             padding: 0;
             
-            white-space: nowrap;
-            overflow-x: auto;
+            // white-space: nowrap;
+            // overflow-x: auto;
             flex-wrap: nowrap;
-            max-width: 100%;
+            // max-width: 100%;
             position: relative;
             &:after{
                 content: "";

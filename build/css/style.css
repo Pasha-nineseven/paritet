@@ -6039,12 +6039,9 @@ ymaps[class*="-copyright"] {
     border-radius: 0;
     border: 0;
     padding: 0;
-    white-space: nowrap;
-    overflow-x: auto;
     -webkit-flex-wrap: nowrap;
         -ms-flex-wrap: nowrap;
             flex-wrap: nowrap;
-    max-width: 100%;
     position: relative; }
     .docs .bid .tabs:after {
       content: "";
@@ -6655,7 +6652,16 @@ ymaps[class*="-copyright"] {
     padding-left: 20px;
     padding-top: 6px; }
   .issue__title {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .benfits-invoice__wrap {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .benfits-invoice__list {
+    width: 100%; }
+  .benfits-invoice__pre {
+    padding-right: 0;
+    width: 100%; } }
 
 @media screen and (max-width: 900px) {
   .logo {
@@ -6733,7 +6739,9 @@ ymaps[class*="-copyright"] {
     font-size: 16px;
     margin-bottom: 10px; }
   .page-anchors__link {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .docs .bid .tabs li, .docs .bid .tabs li:first-child:after {
+    font-size: 18px; } }
 
 @media screen and (max-width: 800px) {
   .office-item {
@@ -7266,7 +7274,6 @@ ymaps[class*="-copyright"] {
   .index-info {
     padding: 40px 0; }
   .issue__list.slick-initialized {
-    padding-right: 80px;
     display: block; }
     .issue__list.slick-initialized .issue__item {
       margin-bottom: 0;
@@ -7313,8 +7320,9 @@ ymaps[class*="-copyright"] {
       width: 15px;
       left: 0; }
   .page-anchors__wrap {
-    white-space: nowrap;
-    overflow: auto;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     padding-bottom: 2px; }
   .conditions-wrap {
     -webkit-flex-wrap: wrap;
@@ -7553,8 +7561,6 @@ ymaps[class*="-copyright"] {
     font-size: 14px;
     line-height: 1.3;
     text-align: center; }
-  .benfits-invoice__list {
-    width: 100%; }
   .benfits-invoice__t {
     font-size: 14px; }
   .docs .bid .tabs li,
@@ -8097,7 +8103,13 @@ ymaps[class*="-copyright"] {
   .layout--aside .deposit__item .index-offers-more__item {
     margin-right: 0;
     width: 100%;
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+  .docs .bid .tabs li:first-child {
+    white-space: nowrap; }
+  .docs .bid .tabs li:first-child:after {
+    margin: 0 5px 0 4px; }
+  .docs .bid .tabs li, .docs .bid .tabs li:first-child:after {
+    font-size: 16px; } }
 
 @media screen and (max-width: 400px) {
   .app__title {

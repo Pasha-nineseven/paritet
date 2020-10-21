@@ -945,7 +945,7 @@ function slider_index_links_init() {
 
 function slider_issue_init() {
     var $issue = $('.issue__list');
-    if($(window).width() < 768) {
+    if($(window).width() < 769) {
         $issue.not('.slick-initialized').slick({
             infinite: true,
             dots: false,
