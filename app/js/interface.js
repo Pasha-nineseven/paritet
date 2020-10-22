@@ -241,7 +241,7 @@ $(document).ready(function() {
 	    $("body").on("click", ".js-page-footer-menu__title", function(e){
 	        e.preventDefault();
 	        $(this).toggleClass('active');
-	        $(this).next('.page-footer-menu__list').slideToggle(150);
+	        $(this).parents('.page-footer-menu__item').find('.page-footer-menu__list').slideToggle(150);
 	    });
 	} else {
 
