@@ -185,6 +185,9 @@
     width: 50%;
     position: relative;
     &:first-child{
+        .who__in{
+            margin-bottom: 0;
+        }
         &:before{
             content: "";
             display: inline-block;
@@ -198,6 +201,7 @@
     }
     &:nth-child(2){
         margin-top: 171px;
+
         &:after{
             content: "";
             display: inline-block;
@@ -210,7 +214,7 @@
         }
     }
     &:nth-child(3){
-        margin-top: -95px;
+        margin-top: -165px;
         &:before{
             content: "";
             display: inline-block;
@@ -243,6 +247,7 @@
     z-index: 2;
     display: block;
     color: #000;
+    margin-bottom: 60px;
     &:after{
         content: "";
         display: inline-block;

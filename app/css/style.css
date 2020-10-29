@@ -5795,6 +5795,8 @@ ymaps[class*="-copyright"] {
   padding-right: 16px;
   width: 50%;
   position: relative; }
+  .who__item:first-child .who__in {
+    margin-bottom: 0; }
   .who__item:first-child:before {
     content: "";
     display: inline-block;
@@ -5818,7 +5820,7 @@ ymaps[class*="-copyright"] {
       top: -webkit-calc(100% - 10px);
       top: calc(100% - 10px); }
   .who__item:nth-child(3) {
-    margin-top: -95px; }
+    margin-top: -165px; }
     .who__item:nth-child(3):before {
       content: "";
       display: inline-block;
@@ -5850,7 +5852,8 @@ ymaps[class*="-copyright"] {
   overflow: hidden;
   z-index: 2;
   display: block;
-  color: #000; }
+  color: #000;
+  margin-bottom: 60px; }
   .who__in:after {
     content: "";
     display: inline-block;
@@ -7389,7 +7392,9 @@ ymaps[class*="-copyright"] {
   .who__item:nth-child(3) {
     margin-top: 0; }
   .layout--invoice .issue h2 {
-    font-size: 24px; } }
+    font-size: 24px; }
+  .who__in {
+    margin-bottom: 0; } }
 
 @media screen and (max-width: 700px) {
   .card__item {
