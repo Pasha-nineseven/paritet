@@ -476,3 +476,37 @@
         }
     }
 }
+
+.input-wrap--necessary{
+    position: relative;
+}
+
+.checkbox-wrap{
+    &.m-horiz{
+       display: flex;
+       flex-wrap:wrap; 
+           min-height: 56px;
+        align-items: center;
+       .checkbox-item {
+            width: auto;
+            padding-right: 25px;
+            &:last-child{
+                padding-right: 0;
+            }
+        }
+    }
+}
+
+// .input-wrap--necessary:before {
+//     content: "*";
+//     display: inline-block;
+//     font-size: 24px;
+//     color: #fff;
+//     position: absolute;
+//     left: -19px;
+//     bottom: auto;
+//     top: 50%;
+//     transform: translateY(-50%);
+//     line-height: 17px;
+//     height: 10px;
+// }

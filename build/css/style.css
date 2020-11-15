@@ -6082,6 +6082,28 @@ ymaps[class*="-copyright"] {
           display: inline-block;
           border-bottom: 2px solid #3dbafe; }
 
+.input-wrap--necessary {
+  position: relative; }
+
+.checkbox-wrap.m-horiz {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  min-height: 56px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .checkbox-wrap.m-horiz .checkbox-item {
+    width: auto;
+    padding-right: 25px; }
+    .checkbox-wrap.m-horiz .checkbox-item:last-child {
+      padding-right: 0; }
+
 @media screen and (max-width: 1480px) {
   .index-info__slider {
     padding: 0 80px; }
@@ -8114,7 +8136,11 @@ ymaps[class*="-copyright"] {
   .docs .bid .tabs li:first-child:after {
     margin: 0 5px 0 4px; }
   .docs .bid .tabs li, .docs .bid .tabs li:first-child:after {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .checkbox-wrap.m-horiz .checkbox-item {
+    padding-right: 10px; }
+    .checkbox-wrap.m-horiz .checkbox-item:last-child {
+      padding-right: 0; } }
 
 @media screen and (max-width: 400px) {
   .app__title {
