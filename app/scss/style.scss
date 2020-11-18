@@ -2231,7 +2231,11 @@
   visibility: visible;
 }
 
-
+.bid-form__title{
+	&:empty{
+		display: none;
+	}
+}
 
 @import "components/footer";
 

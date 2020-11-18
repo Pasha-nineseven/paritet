@@ -2020,6 +2020,9 @@
   opacity: 1;
   visibility: visible; }
 
+.bid-form__title:empty {
+  display: none; }
+
 .page-footer {
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;

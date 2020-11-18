@@ -593,7 +593,7 @@
 																		</select>
 																	</div>
 																</div>
-																<div class="bid-form__item input-wrap--necessary">
+																<!-- <div class="bid-form__item input-wrap--necessary">
 																	<div class="bid-form__title">Валюта счета</div>
 																	<div class="checkbox-wrap m-horiz">
 																		<div class="checkbox-item">
@@ -621,7 +621,61 @@
 																			</label>
 																		</div>
 																	</div>
+																</div> -->
+
+
+
+																<div id="afbf_currency_fidreserveaccount" class="input-wrap-fix afbf_item_pole is_filled required input-wrap--necessary bid-form__item">
+																   <!-- Тут задается название формы -->
+																   	<div class="bid-form__title">
+																      	Валюта счета 
+																   	</div>
+																   	<div class="checkbox-wrap m-horiz afbf_name-fix static_name">
+																   
+																	   	<input type="hidden" name="FIELDS[CURRENCY_FIDreserveAccount]" value=""><!-- Тут согласие данных -->
+																	   	<div class="checkbox-item afbf_checkbox-fix">
+																	      	<input id="CURRENCY_FIDreserveAccount_352" type="checkbox" name="FIELDS[CURRENCY_FIDreserveAccount][]" value="352">
+																	      	<label for="CURRENCY_FIDreserveAccount_352">
+																	      	<span data-tooltip-content="#agree_personal_info" class="tooltip-toggle tooltipstered">
+																	      		USD
+																	  		</span>
+																	      </label>
+																	   	</div>
+																	   	<!-- Тут согласие данных -->
+																	   	<div class="checkbox-item afbf_checkbox-fix">
+																	      	<input id="CURRENCY_FIDreserveAccount_353" type="checkbox" name="FIELDS[CURRENCY_FIDreserveAccount][]" value="353">
+																	      	<label for="CURRENCY_FIDreserveAccount_353">
+																	      	<span data-tooltip-content="#agree_personal_info" class="tooltip-toggle tooltipstered">
+																	      		EUR
+																	  		</span>
+																	      </label>
+																	   	</div>
+																	   	<!-- Тут согласие данных -->
+																	   	<div class="checkbox-item afbf_checkbox-fix">
+																		    <input id="CURRENCY_FIDreserveAccount_354" type="checkbox" name="FIELDS[CURRENCY_FIDreserveAccount][]" value="354">
+																		    <label for="CURRENCY_FIDreserveAccount_354">
+																			    <span data-tooltip-content="#agree_personal_info" class="tooltip-toggle tooltipstered">
+																				    BYN
+																				</span>
+																	      	</label>
+																	   	</div>
+																	   	<!-- Тут согласие данных -->
+																	   	<div class="checkbox-item afbf_checkbox-fix">
+																	      	<input id="CURRENCY_FIDreserveAccount_355" type="checkbox" name="FIELDS[CURRENCY_FIDreserveAccount][]" value="355">
+																	     	<label for="CURRENCY_FIDreserveAccount_355">
+																		      	<span data-tooltip-content="#agree_personal_info" class="tooltip-toggle tooltipstered">
+																			      	RUB
+																			  	</span>
+																	      	</label>
+																	   	</div>
+																   	</div>
+																 <!--   	<div class="afbf_error_text error-message error-msg">
+																	   Это поле обязательно для заполнения
+																	</div> -->
 																</div>
+
+
+
 																<div class="bid-form__item input-wrap--necessary">
 																	<div class="bid-form__title">Номер телефона</div>
 																	<input type="tel">
@@ -645,12 +699,26 @@
 																		</select>
 																	</div>
 																</div>
-																<div class="checkbox-item">
+																<!-- <div class="checkbox-item">
 																	<input type="checkbox" id="checkbox11" name="checkbox123456">
 																	<label for="checkbox11">
 																		Согласен(-на) с условиями обработки и использования личных данных
 																	</label>
-																</div>
+																</div> -->
+																<div id="afbf_consent_1_fidreserveaccount" class="input-wrap-fix afbf_item_pole is_filled required input-wrap--necessary checkbox-item">
+													            	<!-- Тут задается название формы -->
+														            <div class="bid-form__title"></div>
+                                                                    <input type="hidden" name="FIELDS[CONSENT_1_FIDreserveAccount]" value=""><!-- Тут согласие данных -->
+                                    								<div class="checkbox-wrap m-horiz checkbox-item afbf_checkbox-fix">
+								                                        <input id="CONSENT_1_FIDreserveAccount_375" type="checkbox" name="FIELDS[CONSENT_1_FIDreserveAccount][]" value="375" checked="checked">                                     
+								                                          	<label for="CONSENT_1_FIDreserveAccount_375">
+								                                              	<span data-tooltip-content="#agree_personal_info" class="tooltip-toggle tooltipstered">
+								                                                  	Согласен(-на) с условиями обработки и использования личных данных
+								                                                </span>
+								                                          	</label>
+                                                                    </div>
+                        										</div>
+													
 																<div class="bid-submit">
 																	<input type="submit" value="Зарезервировать счет">
 																</div>
