@@ -2023,6 +2023,9 @@
 .bid-form__title:empty {
   display: none; }
 
+.checkbox-wrap.m-horiz label {
+  margin-right: 20px; }
+
 .page-footer {
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;

@@ -2237,6 +2237,14 @@
 	}
 }
 
+
+.checkbox-wrap.m-horiz label{
+	margin-right: 20px;
+}
+// .checkbox-wrap.m-horiz label:last-child{
+// 	margin-right: 0;
+// }
+
 @import "components/footer";
 
 @import "pages/index";
