@@ -133,6 +133,15 @@ a.page-footer-menu__title{
 			    border: 2px solid rgba(255, 255, 255, 0);
 		}
 	}
+	&.ok{
+		background: url(../img/svg/ok.svg) center no-repeat;
+		background-size: 18px;
+		&:hover{
+			background: rgba(255, 255, 255, 0.1) url(../img/svg/ok.svg) center no-repeat; 
+			    border: 2px solid rgba(255, 255, 255, 0);
+			    background-size: 18px;
+		}
+	}
 }
 .mobile{
 	display: flex;

@@ -2160,6 +2160,13 @@ a.page-footer-menu__title {
     .socials__link.you:hover {
       background: rgba(255, 255, 255, 0.1) url(../img/svg/you.svg) center no-repeat;
       border: 2px solid rgba(255, 255, 255, 0); }
+  .socials__link.ok {
+    background: url(../img/svg/ok.svg) center no-repeat;
+    background-size: 18px; }
+    .socials__link.ok:hover {
+      background: rgba(255, 255, 255, 0.1) url(../img/svg/ok.svg) center no-repeat;
+      border: 2px solid rgba(255, 255, 255, 0);
+      background-size: 18px; }
 
 .mobile {
   display: -webkit-box;
