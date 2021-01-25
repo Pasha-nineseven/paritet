@@ -859,7 +859,46 @@ $(document).ready(function() {
 
 		$(this).parents('.page-aside-row').siblings('.page-aside-row').find('.m-toggle').removeClass('active');
         $(this).parents('.page-aside-row').siblings('.page-aside-row').find('.page-aside-row__list').slideUp(250);
-    });
+	});
+	
+
+	$("body").on("click", ".turbo-cards__img", function(e){
+        e.preventDefault();
+		let style= $(this).data("style");
+		$(".turbo-cards__img").removeClass('active');
+		$(this).addClass('active');
+		// console.log(style)
+		$('.turbo-cards').removeClass('m-red m-blue m-violet').addClass(style);
+		$('.turbo-view').addClass('dnone');
+		$('#'+style).removeClass('dnone');
+	});
+	
+	$("body").on("click", "#m-salary-btn", function(e){
+		e.preventDefault();
+		// $('#nocard').hide();
+		// $('#salary-card').slideDown(50);
+		$('.turbo-howto').addClass('active salary');
+	});
+	$("body").on("click", "#nocard-btn", function(e){
+		e.preventDefault();
+		
+		$('.turbo-howto').addClass('active nocard');
+	});
+	$("body").on("click", ".s-back-link", function(e){
+		e.preventDefault();
+		
+		// $('#salary-card').hide();
+		// $('#nocard').hide();
+		$('.turbo-howto').removeClass('active salary nocard');
+	});
+	
+
+	if ($(".turbo-bonus-img").length>0) {
+        $(".turbo-bonus-img").stick_in_parent({
+        	parent :  ".turbo-bonus-wrap " ,
+			offset_top: 120,
+        });
+    };
 });
 
 
@@ -880,18 +919,74 @@ $(function() {
 
 
 
-
 $(window).resize(function () {
 	index__info__sliderInit();
 	slider_index_links_init();
 	slider_issue_init();
 });
 
-// $(window).load(function(){
 
-// });
+//Доскролл до карточек
+$(function() {
+	if($('.turbo-cards').length>0){
+		$(window).scroll(function() {
+			activateTurboCards();
+		});
+	}
+});
+
+//cкролл бонусов
+$(function() {
+	if($('.turbo-bonus').length>0){
+		$(window).scroll(function() {
+			activateTurboBonus();
+			activateCardJump();
+		});
+	}
+});
+
+
 
 // functions
+function activateTurboCards(){
+	var $scrolled_item = $('.turbo-cards');
+
+	$scrolled_item.each(function(){
+		if( $(this).offset().top <= $(window).scrollTop()+$(window).height()/2 - $('.turbo-cards').innerHeight()/2) {
+			$(this).addClass('active');
+		}
+		else{
+			$(this).removeClass('active');
+		}
+	});
+}
+function activateTurboBonus(){
+	var $scrolled_item = $('.turbo-bonus-item');
+
+	$scrolled_item.each(function(){
+		if( $(this).offset().top <= $(window).scrollTop()+$(window).height()/2 - $('.turbo-bonus-item').innerHeight()/2) {
+			$(this).addClass('active');
+		}
+		else{
+			$(this).removeClass('active');
+		}
+	});
+}
+function activateCardJump(){
+	var $scrolled_item = $('.turbo-bonus .t-request');
+
+	$scrolled_item.each(function(){
+		if( $(this).offset().top <= $(window).scrollTop()+$(window).height()/2 - 100) {
+			$(this).addClass('active');
+			$('.turbo-bonus-img__pr').addClass('hidden');
+		}
+		else{
+			$(this).removeClass('active');
+			$('.turbo-bonus-img__pr').removeClass('hidden');
+		}
+	});
+}
+
 function index__info__sliderInit() {
     var $slider = $('.index-info__slider');
     if($(window).width() > 768) {
@@ -989,33 +1084,40 @@ $(function() {
 });
 
 
-// links pages
-/*
-$('body').append(
-	'<div style="position: fixed; z-index: 1005; bottom: 0; right: 0; background: #fff; border: solid 1px #828286; width: 200px;"> \
-		<a href="javascript:void(0);" style="float: right;background:#ccc; color:#000; padding: 5px 10px; text-decoration: none; font-size: 16px" onclick="$(this).parent().hide()">Close X</a> \
-	<style> \
-		#pages { padding: 10px 20px 0 50px; font-size: 18px; } \
-		#pages a { text-decoration: none; } \
-		#pages li { margin: 5px 0; } \
-	</style> \
-	<ol id="pages"> \
-		<li><a href="about.html">About</a></li> \
-		<li><a href="index.html">Index</a></li> \
-		<li><a href="test.html">Test</a></li> \
-		<li><a href="news.html">News</a></li> \
-		<li><a href="deposit_list_page_01.html">Deposit1</a></li> \
-		<li><a href="deposit_list_page_02.html">Deposit2</a></li> \
-		<li><a href="deposit_page.html">Deposit-page</a></li> \
-		<li><a href="card.html">Card</a></li> \
-		<li><a href="map-page.html">Map-page</a></li> \
-		<li><a href="statements.html">Statements</a></li> \
-		<li><a href="exchange.html">Exchange</a></li> \
-		<li><a href="package.html">Package</a></li> \
-		<li><a href="zarplatnie_kartochki.html">Z_kartochki</a></li> \
-		<li><a href="zarpatniy_project.html">Z_project</a></li> \
-		<li><a href="vote.html">Vote</a></li> \
-		<li><a href="awards.html">Awards</a></li> \
-	</ol> \
-</div>');
-*/
+
+// jQuery.fn.extend({
+//     // Modified and Updated by MLM
+//     // Origin: Davy8 (http://stackoverflow.com/a/5212193/796832)
+//     parentToAnimate: function(newParent, duration) {
+//         duration = duration || 'slow';
+        
+//         var $element = $(this);
+        
+//         newParent = $(newParent); // Allow passing in either a JQuery object or selector
+//         var oldOffset = $element.offset();
+//         $(this).appendTo(newParent);
+//         var newOffset = $element.offset();
+        
+//         var temp = $element.clone().appendTo('body');
+        
+//         temp.css({
+//             'position': 'absolute',
+//             'left': oldOffset.left,
+//             'top': oldOffset.top,
+//             'zIndex': 1000
+//         });
+        
+//         $element.hide();
+            
+//         temp.animate({
+//             'top': newOffset.top,
+//             'left': newOffset.left
+//         }, duration, function() {
+//             $element.show();
+//             temp.remove();
+//         });
+//     }
+// });
+
+
+// $('.turbo-cards__img.m-red').parentToAnimate('.turbo-view__img', 'slow');

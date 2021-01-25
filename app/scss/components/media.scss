@@ -102,6 +102,25 @@
 	.who__title{
 		font-size: 24px;
 	}
+	.turbo-cards__wrap{
+		margin-right: -30px;
+	}
+	.turbo-bonus-wrap {
+		max-width: 1020px;
+		margin: 0 auto 40px;
+	}
+	turbo-bonus-img.is_stuck{
+		left: 90px;
+	}
+	.turbo-bonus-img {
+		margin-left: -42px;
+	}
+	.t-request__icon {
+		transition: transform .1s ease, opacity .1s ease, -webkit-transform .1s ease;
+	}
+	.t-request.active .t-request__icon {
+		transition: transform .5s ease, opacity .1s ease, -webkit-transform .5s ease;
+	}
 }
 
 @media screen and (max-width: 1280px){
@@ -260,6 +279,33 @@
 	.benfits-invoice-gen__icon {
 	    margin-right: 20px;
 	}
+	.turbo-top__more {
+		right: -300px;
+	}
+	.turbo-cards__item {
+		padding: 0 16px;
+	}
+	.turbo-cards__wrap {
+		margin: 0 -8px;
+	}
+	.turbo-cards__img img{
+		max-width: 100%;
+	}
+	.turbo-cards__item {
+		transition: all .2s linear;
+		//padding-left: calc(50% - 170px);
+	}
+	.turbo-cards.active .turbo-cards__item {
+		width: 125px;
+		padding: 0 8px;
+	}
+	.turbo-bonus-item {
+		padding-left: calc(50% - 215px);
+	}
+	.turbo-bonus-info__img {
+		left: -160px;
+		width: 135px;
+	}
 }
 
 @media screen and (max-width: 1100px){
@@ -403,6 +449,43 @@
 	.vote-view,
 	.vote-question{
 	    padding: 20px 25px 50px;
+	}
+	.t-request .tabs li.current span,
+	.t-request .tabs li span{
+		font-size: 22px;
+	}
+	.t-request {
+		padding: 30px;
+	}
+	.t-request__in {
+		padding-left: 125px;
+		padding-right: 0;
+	}
+	.t-request__icon {
+		width: 210px;
+		left: -83px;
+		transform: translateY(-50%)!important;
+    	opacity: 1!important;
+	}
+	.turbo-bonus-img__mobile {
+		display: block;
+		margin-left: -108px;
+		width: 236px;
+	}
+	.turbo-bonus-img{
+		display: none;
+	}
+	.turbo-bonus-item {
+		padding-left: 0;
+		opacity: 1;
+		transform: translateY(0);
+		min-height: auto;
+	}
+	.turbo-bonus-info {
+		padding-left: 100px;
+	}
+	.turbo-bonus-info__img {
+		left: -60px;
 	}
 }
 
@@ -784,6 +867,127 @@
 	.docs .bid .tabs li,
 	.docs .bid .tabs li:first-child:after{
 		font-size: 24px;
+	}
+	.turbo-about__list{
+		margin-right: -20px;
+	}
+	.turbo-about__item {
+		padding-right: 20px;
+		width: 50%;
+		margin-bottom: 40px;
+	}
+	.turbo-about{
+		padding: 30px 0 0;
+	}
+	.turbo-top__more {
+		height: 80%;
+	}
+	.turbo-cards,
+	.turbo-cards-in,
+	.t-conditions,
+	.turbo-howto,
+	.turbo-app,
+	.transfer,
+	.turbo-bonus,
+	.knowledge,
+	.turbo-seo{
+		padding: 30px 0;
+	}
+	.turbo-cards-in-select__card {
+		width: 95px;
+		height: 56px;
+	}
+	.turbo-view__img {
+		padding-right: 70px;
+	}
+	.turbo-view__title {
+		font-size: 22px;
+		line-height: 30px;
+		margin-bottom: 30px;
+	}
+	.t-conditions__wrap{
+		flex-wrap:wrap;
+	}
+	.t-conditions__pre {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.knowledge-add {
+		padding-right: 0;
+	}
+	.knowledge .accordeon__link{
+		font-size: 22px;
+		padding: 20px 55px 20px 0;
+	}
+	.knowledge .accordeon__link:before{
+		top: 19px;
+		right: 10px;
+	}
+	.knowledge .accordeon__item .accordeon__info {
+		padding: 10px 80px 10px 35px;
+		top: 0px;
+	}
+	.turbo-bonus-img {
+		width: 300px;
+		min-width: 300px;
+		margin-right: 40px;
+	}
+	.turbo-howto__list{
+		margin-right: -20px;
+	}
+	.turbo-howto__item {
+		padding-right: 20px;
+		.turbo-btn{
+			font-size: 18px;
+			padding: 14px 15px;
+		}
+	}
+	.turbo-app-step-more__in {
+		padding: 20px 20px 40px;
+	}
+	.turbo-app-step-more__txt {
+		font-size: 18px;
+	}
+	.turbo-app-step__num{
+		left: -20px;
+	}
+	.transfer-info {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+	.transfer-txt {
+		font-size: 20px;
+		line-height: 1.3;
+		margin-bottom: 30px;
+		max-width: 100%;
+	}
+	.transfer-img {
+		flex: auto;
+		width: 100%;
+	}
+	.s-card-steps__pre {
+		font-size: 22px;
+		line-height: 30px;
+	}
+	.s-card-steps__in {
+		padding: 30px 40px 40px;
+	}
+	.s-card-steps__i{
+		font-size: 18px;
+		margin-bottom: 15px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	.turbo-howto.active .turbo-howto__img{
+		height: calc(100% + 80px);
+	}
+	.turbo-howto.active .turbo-howto__list {
+		padding: 60px 0;
+	}
+	.turbo-cards__item {
+		height: 155px;
 	}
 }
 
@@ -1771,6 +1975,258 @@
 	.who__in {
 	    margin-bottom: 0;
 	}
+	.turbo-about__title {
+		font-size: 20px;
+	}
+	.turbo-about__item .btn{
+		font-size: 16px;
+	}
+	.turbo-about__icon {
+		margin-bottom: 15px;
+		height: 100px;
+	}
+	.turbo-title {
+		margin-bottom: 30px!important;
+	}
+	.turbo-top {
+		padding: 45px 0 110px;
+	}
+	.turbo-top__btn,
+	.turbo-view__btn,
+	.turbo-btn,
+	.transfer .turbo-btn,
+	.inputs-complex-submit .turbo-btn,
+	.turbo-bonus-info .turbo-btn{
+		font-size: 18px;
+		padding: 18px 32px;
+	}
+	.turbo-top__more {
+		height: 90%;
+		right: -150px;
+	}
+	.turbo-top__in {
+		margin-bottom: 30px;
+	}
+	.turbo-top__icon {
+		width: 60px;
+		height: 60px;
+		padding: 15px;
+		img{
+			max-height: 100%;
+		}
+	}
+	.turbo-cards__wrap {
+		margin-right: 0;
+	}
+	.turbo-cards__item {
+		display: flex;
+    	justify-content: center;
+		width: 100%;
+		padding-right: 0;
+		margin-bottom: 20px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	.layout--turbo + .page-footer:after {
+		display: none;
+	}
+	.turbo-seo .turbo-title h2 {
+		font-size: 30px;
+	}
+	.knowledge .accordeon__link {
+		font-size: 20px;
+		padding: 15px 55px 15px 0;
+		text-transform: none;
+	}
+	.knowledge .accordeon__link:before {
+		top: 18px;
+		right: 10px;
+		background-size: contain;
+		width: 26px;
+		height: 26px;
+	}
+	.knowledge .accordeon__item .accordeon__info {
+		padding: 10px 55px 10px 25px;
+	}
+	.turbo-bonus-item {
+		margin-bottom: 40px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	.t-conditions__pre h2{
+		margin-bottom: 30px;
+	}
+	.turbo-howto__list {
+		margin-right: 0;
+	}
+	.turbo-howto__item {
+		padding-right: 0;
+		width: 100%;
+		margin-bottom: 30px;
+		margin-right: 0;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	.turbo-howto:before{
+		display: none;
+	}
+	.turbo-howto__img {
+		height: 200px;
+	}
+	.turbo-app-step-more__in .app__links{
+		padding-left: 0;
+	}
+	.turbo-app-step{
+		flex-wrap:wrap;
+	}
+	.turbo-app-step__item {
+		width: 100%;
+	}
+	.turbo-app-step-more__in:before,
+	.turbo-app-step-more__in:after,{
+		display: none;
+	}
+	.turbo-add {
+		font-size: 18px;
+	}
+	.turbo-app-step__img {
+		width: 200px;
+	}
+	.turbo-app-step__num {
+		left: 50%;
+		transform: translateX(-50%);
+		margin-left: -145px;
+		font-size: 205px;
+		top: 70px;
+		line-height: 160px;
+	}
+	.turbo-app-step-more__in {
+		padding: 20px 20px 60px;
+	}
+	.turbo-bonus-item{
+		flex-wrap:wrap;
+	}
+	.turbo-bonus-img{
+		width: 100%;
+		min-width: 100%;
+		margin-right: 0;
+		margin-bottom: 10px;
+		height: 200px;
+		img{
+			max-height: 100%;
+		}
+	}
+	.transfer-img{
+		height: 200px;
+		img{
+			max-height: 100%;
+		}
+	}
+	.capcha{
+		width: 100%;
+	}
+	.inputs-complex-submit .turbo-btn{
+		margin-right: 0;
+		&+.capcha{
+			margin-top: 20px;
+		}
+	}
+	.t-conditions-info{
+		font-size: 20px;
+	}
+	.s-card{
+		padding: 40px 0;
+	}
+	.s-card-back {
+		margin-bottom: 15px;
+	}
+	.s-card-pre {
+		font-size: 20px;
+		margin-bottom: 15px;
+	}
+	.s-card-steps__in {
+		flex-wrap: wrap;
+	}
+	.s-card-steps__item:first-child {
+		padding-right: 0;
+		margin-bottom: 30px;
+	}
+	.s-card-steps__item {
+		width: 100%;
+	}
+	.s-card-steps__i{
+		margin-bottom: 20px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	.s-card .t-request{
+		margin-bottom: 35px;
+	}
+	.s-card-steps__i .app__links {
+		margin-left: 0;
+		padding-left: 0;
+	}
+	.turbo-view__add {
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+	.turbo-view__title {
+		font-size: 18px;
+		line-height: 22px;
+	}
+	.t-conditions-info__item ul{
+		margin-bottom: 0;
+	}
+	.s-card-steps__aft {
+		font-size: 22px;
+		margin-bottom: 25px;
+	}
+	.s-card-steps__btn{
+		margin-bottom: 30px;
+	}
+	.inputs-complex{
+		margin-right: 0;
+		flex-wrap:wrap;
+	}
+	.inputs-complex .input-wrap {
+		padding-right: 0;
+		width: 100%;
+	}
+	.turbo-cards__item{
+		width: 125px;
+		height: 78px;
+		padding: 0 8px;
+	}
+	// .turbo-cards__img {
+	// 	width: 250px;
+	// }
+	.turbo-cards.active .turbo-cards__wrap{
+		transform: none;
+	}
+	.turbo-cards .turbo-cards__img {
+		border-radius: 5px;
+	}
+	.turbo-bonus-img__mobile {
+		margin-left: 0;
+		height: 250px;
+		img{
+			max-height: 100%;
+		}
+	}
+	.turbo-bonus-info {
+		padding-left: 0;
+		padding-top: 70px;
+	}
+	.turbo-bonus-info__img {
+		left: 0;
+		top: -20px;
+		width: 120px;
+		height: 120px;
+	}
 }	
 
 @media screen and (max-width: 700px){
@@ -2682,6 +3138,91 @@
 	    	padding-right: 0;
 	    }
 	}
+	.turbo-about__list {
+		margin-right: 0;
+	}
+	.turbo-about__item {
+		padding-right: 0;
+		width: 100%;
+	}
+	.turbo-top__more {
+		bottom: -50px;
+	}
+	.turbo-view__img {
+		padding-right: 0;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.turbo-view__info {
+		width: 100%;
+		padding-left: 0;
+	}
+	.turbo-view__btn{
+		font-size: 18px;
+    	padding: 18px 32px;
+	}
+	.knowledge-add__in {
+		padding: 20px;
+	}
+	.turbo-app-step-more__in .app__link{
+		margin-right: 0;
+	}
+	.t-request__icon{
+		display: none;
+	}
+	.t-request .tabs{
+		margin-bottom: 30px!important;
+	}
+	.t-request__in {
+		padding-left: 0;
+	}
+	.t-request .checkbox-item {
+		margin-bottom: 20px;
+		font-size: 16px;
+	}
+	.t-conditions-info__col {
+		font-size: 16px;
+	}
+	.t-conditions-info__top {
+		font-size: 24px;
+	}
+	.t-conditions-info__item {
+		margin-bottom: 30px;
+	}
+	.turbo-cards-in-select__item {
+		padding-right: 10px;
+		&:last-child{
+			padding-right: 0;
+		}
+	}
+	.s-card-steps__i .app__link,
+	.turbo-app-step-more__in .app__link{
+		display: flex;
+		justify-content: center;
+	}
+	.s-card-steps__in {
+		padding: 30px 25px;
+	}
+	.s-card-steps__num {
+		width: 45px;
+		min-width: 45px;
+		height: 45px;
+		font-size: 22px;
+		margin-right: 10px;
+	}
+	.s-card-steps__add {
+		margin-left: 55px;
+	}
+	.s-card-steps__in.m-modif {
+		padding-bottom: 115px;
+	}
+	.s-card .t-request {
+		padding-top: 40px;
+	}
+	.turbo-cards__wrap {
+		margin-bottom: 30px;
+	}
+	
 }
 
 @media screen and (max-width: 400px){
@@ -2701,23 +3242,6 @@
 	    padding-left: 1px;
 	    padding-right: 1px;
 	}
-	// .courses-table .down:before,
-	// .courses-table .up:before{
-	// 	position: static;
-	// 	vertical-align: middle;
-	// }
-	// .courses-table .down:before{
-	// 	margin: -4px 1px 0 0;
-	// }
-	// .courses-table .up:before{
-	// 	margin: 2px 1px 0 0;
-	// }
-	// .exchange .courses-table td{
-	// 	text-align: left;
-	// }
-	// .exchange .courses-table th {
- //    	text-align: left;
-	// }
 	.exchange .courses-table .down:before {
 	    top: 4px;
 	}

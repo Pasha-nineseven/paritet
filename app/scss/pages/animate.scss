@@ -1,0 +1,149 @@
+.turbo-cards{
+    &.active{
+        .turbo-view__img{
+            opacity: 1;
+            transform: translateY(0);
+            transition: all .3s ease 0.25s;
+        }
+        .turbo-cards__img{
+            &.active{
+                opacity: 0;
+                pointer-events: none;
+            }
+        }
+        &.m-red{
+            background: #F22828;
+            .turbo-cards-in__bg{
+                &.m-red{
+                    opacity: 0.6;
+                }
+            }
+            .turbo-cards__img{
+                &.m-red{
+                    opacity: 0;
+                    visibility: hidden;
+                }
+            }
+        }
+        &.m-blue{
+            background: linear-gradient(292.07deg, #0063A7 1.32%, #4EA8E6 98.29%);
+            .turbo-cards-in__bg{
+                &.m-blue{
+                    opacity: 0.6;
+                }
+            }
+        }
+        &.m-violet{
+            background: linear-gradient(292.07deg, #5A1D88 1.32%, #8847B8 98.29%);
+            .turbo-cards-in__bg{
+                &.m-violet{
+                    opacity: 0.6;
+                }
+            }
+        }
+        .turbo-title{
+            color: #fff;
+        }
+        .turbo-cards__wrap{
+            transform: translateY(-30px);
+        }
+        .turbo-cards__item{
+            width: 164px;
+            height: 78px;
+           
+            padding: 0 20px;
+        }
+        .turbo-cards__img{
+            border-radius: 5px;
+            img{
+                opacity: 0;
+            }
+        }
+
+
+        .turbo-cards-view{
+            // max-height: 9999px;
+            //transform: scale(1);
+            
+            opacity: 1;
+        }
+    }
+}
+
+
+.turbo-howto{
+    &.active{
+        background: #fff;
+        &:before{
+            opacity: 0;
+        }
+        .turbo-btn,
+        .turbo-title{
+            display: none;
+        }
+        .turbo-howto__list{
+            margin-right: 0;
+        }
+        .turbo-howto__item{
+            display: none;
+        }
+        .s-card-steps__in{
+            display: flex;
+        }
+        .turbo-howto__img{
+            position: absolute;
+            top: -40px;
+            // left: 50%;
+            transform: rotate(0);
+            width: 100%;
+            height: auto;
+            text-align: center;
+            transition: transform .1s linear;
+            //transform-origin: 110% -100%;
+            img{
+                display: inline-block;
+            }
+        }
+    }
+    &.salary{
+        .turbo-howto__item{
+            &.m-salary{
+                display: block;
+                padding: 0;
+                width: 100%;
+                margin: 0;
+
+            }
+        }
+        .t-salary{
+            display: block;
+        }
+    }
+    &.nocard{
+        .turbo-howto__item{
+            &.m-nocard{
+                display: block;
+                padding: 0;
+                width: 100%;
+                margin: 0;
+                .t-request{
+                   display: block; 
+                }
+            }
+        }
+        .t-nocard{
+            display: block;
+        }
+    }
+}
+
+
+.t-request{
+    &.active{
+        .t-request__icon{
+            transform: translateY(-50%);
+            opacity: 1;
+            transition: transform .5s ease, opacity .3s ease;
+        }
+    }
+}
