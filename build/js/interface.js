@@ -862,15 +862,21 @@ $(document).ready(function() {
 	});
 	
 
-	$("body").on("click", ".turbo-cards__img", function(e){
-        e.preventDefault();
+	$("body").on("click", ".active .turbo-cards__img", function(e){
+		e.preventDefault();
+		$('html').css('scroll-behavior','auto');
 		let style= $(this).data("style");
-		$(".turbo-cards__img").removeClass('active');
-		$(this).addClass('active');
-		// console.log(style)
-		$('.turbo-cards').removeClass('m-red m-blue m-violet').addClass(style);
-		$('.turbo-view').addClass('dnone');
-		$('#'+style).removeClass('dnone');
+		let $scrolled_item = $('.turbo-cards');
+		console.log(style);
+		if(style == "m-blue"){
+			$(window).scrollTop($scrolled_item.offset().top + 500);
+		}
+		if(style == "m-violet"){
+			$(window).scrollTop($scrolled_item.offset().top + 1000);
+		}
+		if(style == "m-red"){
+			$(window).scrollTop($scrolled_item.offset().top);
+		}
 	});
 	
 	$("body").on("click", "#m-salary-btn", function(e){
@@ -886,17 +892,26 @@ $(document).ready(function() {
 	});
 	$("body").on("click", ".s-back-link", function(e){
 		e.preventDefault();
-		
-		// $('#salary-card').hide();
-		// $('#nocard').hide();
 		$('.turbo-howto').removeClass('active salary nocard');
 	});
 	
 
-	if ($(".turbo-bonus-img").length>0) {
-        $(".turbo-bonus-img").stick_in_parent({
-        	parent :  ".turbo-bonus-wrap " ,
-			offset_top: 120,
+	if ($(".turbo-bonus").length>0) {
+		$(".turbo-bonus .turbo-title").stick_in_parent({
+        	parent :  ".turbo-bonus-wrap" ,
+			offset_top: 20,
+        });
+		$(".turbo-bonus-wrapper").stick_in_parent({
+        	parent :  ".turbo-bonus-col" ,
+			offset_top: 220,
+        });
+	};
+	
+
+	if ($(".turbo-cards").length>0) {
+		$(".turbo-cards__inner").stick_in_parent({
+        	parent :  ".turbo-cards" ,
+			offset_top: 0,
         });
     };
 });
@@ -926,7 +941,7 @@ $(window).resize(function () {
 });
 
 
-//Доскролл до карточек
+
 $(function() {
 	if($('.turbo-cards').length>0){
 		$(window).scroll(function() {
@@ -935,7 +950,7 @@ $(function() {
 	}
 });
 
-//cкролл бонусов
+
 $(function() {
 	if($('.turbo-bonus').length>0){
 		$(window).scroll(function() {
@@ -950,39 +965,82 @@ $(function() {
 // functions
 function activateTurboCards(){
 	var $scrolled_item = $('.turbo-cards');
+	//var allHeight = $('.turbo-cards').innerHeight();
 
 	$scrolled_item.each(function(){
-		if( $(this).offset().top <= $(window).scrollTop()+$(window).height()/2 - $('.turbo-cards').innerHeight()/2) {
-			$(this).addClass('active');
+		//1
+		if($(window).scrollTop() >= $(this).offset().top-300){
+			$(this).addClass('active m-red');
+			$('#m-red').removeClass('m-hidden');
 		}
 		else{
-			$(this).removeClass('active');
+			$(this).removeClass('active m-red m-blue m-violet');
+			$('#m-blue,#m-violet').addClass('m-hidden');
+			$('#m-red').removeClass('m-hidden');
+		}
+
+		//2
+		if($(window).scrollTop() >= $(this).offset().top + 500){
+			$(this).removeClass('m-red m-violet').addClass('m-blue');
+
+			$('#m-red,#m-violet').addClass('m-hidden');
+			$('#m-blue').removeClass('m-hidden');
+		} else{
+			$(this).removeClass('m-blue');
+			$('#m-blue').addClass('m-hidden')
+		}
+
+		//3
+		if($(window).scrollTop() >= $(this).offset().top + 1000){
+			$(this).removeClass('m-blue m-red').addClass('m-violet');
+
+			$('#m-blue,#m-red').addClass('m-hidden');
+			$('#m-violet').removeClass('m-hidden');
+			
+		} else{
+			$(this).removeClass('m-violet');
+			$('#m-violet').addClass('m-hidden')
 		}
 	});
 }
 function activateTurboBonus(){
-	var $scrolled_item = $('.turbo-bonus-item');
+	var $scrolled = $('.turbo-bonus');
+	var countI = $('.turbo-bonus-item').length;
+	//var sItem1 = ($('.turbo-bonus-col').innerHeight() / countI);
 
-	$scrolled_item.each(function(){
-		if( $(this).offset().top <= $(window).scrollTop()+$(window).height()/2 - $('.turbo-bonus-item').innerHeight()/2) {
-			$(this).addClass('active');
-		}
-		else{
-			$(this).removeClass('active');
-		}
-	});
+	//1
+	if($(window).scrollTop() >= $scrolled.offset().top) {
+		$('.bonus-first').addClass('active').removeClass('upScrolled');
+
+	} 
+	//2
+	if($(window).scrollTop() >= $scrolled.offset().top + 300){
+		$('.bonus-first').addClass('upScrolled');
+		$('.bonus-second').addClass('active').removeClass('upScrolled');
+	} else{
+		$('.bonus-second').removeClass('active')
+	}
+	//3
+	if($(window).scrollTop() >= $scrolled.offset().top + 700){
+		$('.bonus-second').addClass('upScrolled');
+		$('.bonus-third').addClass('active').removeClass('upScrolled');
+	} else{
+		$('.bonus-third').removeClass('active')
+	}
 }
 function activateCardJump(){
 	var $scrolled_item = $('.turbo-bonus .t-request');
 
 	$scrolled_item.each(function(){
-		if( $(this).offset().top <= $(window).scrollTop()+$(window).height()/2 - 100) {
+		if( $(this).offset().top <= $(window).scrollTop()+$(window).height()/2 + 30) {
 			$(this).addClass('active');
 			$('.turbo-bonus-img__pr').addClass('hidden');
+			$('.turbo-bonus .turbo-title').addClass('hidden');
 		}
 		else{
 			$(this).removeClass('active');
 			$('.turbo-bonus-img__pr').removeClass('hidden');
+			$('.turbo-bonus .turbo-title').removeClass('hidden');
 		}
 	});
 }
@@ -1083,41 +1141,3 @@ $(function() {
     
 });
 
-
-
-// jQuery.fn.extend({
-//     // Modified and Updated by MLM
-//     // Origin: Davy8 (http://stackoverflow.com/a/5212193/796832)
-//     parentToAnimate: function(newParent, duration) {
-//         duration = duration || 'slow';
-        
-//         var $element = $(this);
-        
-//         newParent = $(newParent); // Allow passing in either a JQuery object or selector
-//         var oldOffset = $element.offset();
-//         $(this).appendTo(newParent);
-//         var newOffset = $element.offset();
-        
-//         var temp = $element.clone().appendTo('body');
-        
-//         temp.css({
-//             'position': 'absolute',
-//             'left': oldOffset.left,
-//             'top': oldOffset.top,
-//             'zIndex': 1000
-//         });
-        
-//         $element.hide();
-            
-//         temp.animate({
-//             'top': newOffset.top,
-//             'left': newOffset.left
-//         }, duration, function() {
-//             $element.show();
-//             temp.remove();
-//         });
-//     }
-// });
-
-
-// $('.turbo-cards__img.m-red').parentToAnimate('.turbo-view__img', 'slow');

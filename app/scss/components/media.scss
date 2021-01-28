@@ -121,6 +121,12 @@
 	.t-request.active .t-request__icon {
 		transition: transform .5s ease, opacity .1s ease, -webkit-transform .5s ease;
 	}
+	.turbo-bonus-items-col {
+		margin-left: -340px;
+	}
+	.turbo-bonus-item {
+		padding-left: calc(50% - 175px);
+	}
 }
 
 @media screen and (max-width: 1280px){
@@ -471,6 +477,7 @@
 		display: block;
 		margin-left: -108px;
 		width: 236px;
+		min-width: 236px;
 	}
 	.turbo-bonus-img{
 		display: none;
@@ -486,6 +493,41 @@
 	}
 	.turbo-bonus-info__img {
 		left: -60px;
+	}
+	.turbo-bonus-item__inner,
+	.turbo-bonus-item{
+		position: static;
+	}
+	.turbo-bonus-wrapper{
+		position: static!important;
+		width: auto!important;
+	}
+	.turbo-bonus .turbo-title{
+		position: static!important;
+		width: auto!important;
+	}
+	.turbo-bonus-col {
+		min-height: initial;
+	}
+	.turbo-bonus-item.active.upScrolled {
+		opacity: 1;
+		transform: translateY(0);
+	}
+	.turbo-bonus-item__inner{
+		width: 100%;
+		display: flex;
+		align-items: center;
+	}
+	.is_stuck{
+		&+div{
+			display: none!important;
+		}
+	}
+	.turbo-bonus-items-col {
+		margin-left: 0;
+	}
+	.turbo-bonus-info {
+		max-width: 100%;
 	}
 }
 
@@ -882,8 +924,6 @@
 	.turbo-top__more {
 		height: 80%;
 	}
-	.turbo-cards,
-	.turbo-cards-in,
 	.t-conditions,
 	.turbo-howto,
 	.turbo-app,
@@ -936,10 +976,18 @@
 		margin-right: -20px;
 	}
 	.turbo-howto__item {
-		padding-right: 20px;
+		padding-left: 10px;
+		padding-right:0;
 		.turbo-btn{
-			font-size: 18px;
+			font-size: 16px;
 			padding: 14px 15px;
+		}
+	}
+	.turbo-howto__col{
+		&:last-child{
+			.turbo-howto__item{
+				padding-right: 10px;
+			}
 		}
 	}
 	.turbo-app-step-more__in {
@@ -988,6 +1036,12 @@
 	}
 	.turbo-cards__item {
 		height: 155px;
+	}
+	.turbo-howto__bg{
+		display: none;
+	}
+	.turbo-howto__wrap{
+		padding: 30px 0;
 	}
 }
 
@@ -2017,16 +2071,17 @@
 	}
 	.turbo-cards__wrap {
 		margin-right: 0;
+		min-height: 105px;
+		margin-bottom: 40px;
+	}
+	.turbo-cards__inner {
+		padding: 40px 0;
 	}
 	.turbo-cards__item {
 		display: flex;
     	justify-content: center;
 		width: 100%;
 		padding-right: 0;
-		margin-bottom: 20px;
-		&:last-child{
-			margin-bottom: 0;
-		}
 	}
 	.layout--turbo + .page-footer:after {
 		display: none;
@@ -2074,7 +2129,9 @@
 		display: none;
 	}
 	.turbo-howto__img {
-		height: 200px;
+		height: 130px;
+		top: 80px;
+		width: 205px;
 	}
 	.turbo-app-step-more__in .app__links{
 		padding-left: 0;
@@ -2226,6 +2283,26 @@
 		top: -20px;
 		width: 120px;
 		height: 120px;
+	}
+	.turbo-bonus-item__inner{
+		flex-wrap:wrap;
+	}
+	.turbo-howto-col-wrap{
+		flex-wrap:wrap;
+	}
+	.turbo-howto__col {
+		width: 100%;
+	}
+	.turbo-howto__item{
+		padding-left: 0;
+		padding-top: 225px;
+	}
+	.turbo-howto__col:last-child .turbo-howto__item {
+		padding-right: 0;
+	}
+	.turbo-howto__wrap .turbo-title{
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 }	
 
@@ -3222,7 +3299,49 @@
 	.turbo-cards__wrap {
 		margin-bottom: 30px;
 	}
-	
+	.turbo-cards{
+		min-height: auto;
+		height: auto;
+	}
+	.turbo-cards__inner{
+		height: auto;
+		position: static!important;
+	}
+	.turbo-cards__wrap{
+		display: none;
+	}
+	.turbo-cards-view{
+		opacity: 1;
+		
+	}
+	.turbo-view{
+		position: static;
+		margin-bottom: 30px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	.turbo-cards{
+		background: #fff!important;
+		border-bottom: 5px solid #F0F2F5;
+	}
+	.turbo-cards-in__bg{
+		display: none!important;
+	}
+	.turbo-view__img {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+	.turbo-view.m-hidden {
+		opacity: 1;
+		visibility: visible;
+	}
+	.turbo-view__info{
+		color: #000;
+	}
+	.turbo-cards .turbo-title{
+		color: #000!important;
+	}
 }
 
 @media screen and (max-width: 400px){
