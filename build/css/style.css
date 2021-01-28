@@ -6752,7 +6752,8 @@ ymaps[class*="-copyright"] {
   padding-left: 45px;
   padding-right: 45px;
   position: relative;
-  padding-top: 291px; }
+  padding-top: 291px;
+  z-index: 2; }
   .turbo-howto__item .turbo-btn {
     position: relative;
     z-index: 2; }
