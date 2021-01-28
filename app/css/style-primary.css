@@ -3404,7 +3404,7 @@ th {
     table-layout: fixed; }
   .workarea td, .popup-content td {
     padding: 17px 16px;
-    text-align: right; }
+    text-align: left; }
     .workarea td img, .popup-content td img {
       display: inline-block;
       vertical-align: middle; }
