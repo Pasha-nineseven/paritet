@@ -10,10 +10,6 @@
 
             .turbo-cards__img{
                 &.m-red{
-                    // opacity: 1;
-                    // transform: translateY(0);
-                    // pointer-events: none;
-                    // border: 0;
                     height: 19px;
                 }
             }
@@ -28,10 +24,6 @@
 
             .turbo-cards__img{
                 &.m-blue{
-                    // opacity: 1;
-                    // transform: translateY(0);
-                    // pointer-events: none;
-                    // border: 0;
                     height: 19px;
                 }
             }
@@ -46,10 +38,6 @@
 
             .turbo-cards__img{
                 &.m-violet{
-                    // opacity: 1;
-                    // transform: translateY(0);
-                    // pointer-events: none;
-                    // border: 0;
                     height: 19px;
                 }
             }
@@ -67,10 +55,10 @@
             border-top: 1px solid transparent;
             padding: 0;
             //transition: height .15s linear;
-            transition: all 0.5s linear .1s;
+            transition: all 0.5s ease .1s;
             img{
                 opacity: 0;
-                transition: opacity 0s linear;
+                transition: opacity 0s ease;
             }
         }
         .turbo-cards-view{
@@ -107,7 +95,7 @@
             width: 100%;
             height: auto;
             text-align: center;
-            transition: transform .5s linear;
+            transition: transform .5s ease;
             //transform-origin: 110% -100%;
             img{
                 display: inline-block;
@@ -168,7 +156,7 @@
 .turbo-bonus-item.active{
     &.upScrolled{
         opacity: 0;
-        transition: opacity 0s linear, transform .5s linear;
+        transition: opacity 0s ease, transform .5s ease;
         transform: translateY(-100px);
     }
 }

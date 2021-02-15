@@ -144,7 +144,7 @@
     position: relative;
     .turbo-title{
         margin-bottom: 20px;
-        transition: background .3s linear;
+        transition: background .3s ease;
     }
     &.m-red{
         background: #F22828;
@@ -156,7 +156,7 @@
     justify-content: center;
     align-items: center;
     margin: 0px -45px;
-    transition: transform .3s linear;
+    transition: transform .3s ease;
     margin-bottom: 40px;
     min-height: 220px;
 }
@@ -165,7 +165,7 @@
     padding: 0 45px;
     width: 33.333%;
     height: 218px;
-    transition: all .5s linear;
+    transition: all .8s ease;
     will-change: width, height, padding;
 }
 
@@ -198,7 +198,7 @@
         max-width: 100%;
         height: auto;
         max-height: 100%;
-        transition: opacity .6s linear .4s;
+        transition: opacity .6s linear .5s;
     }
 }
 
@@ -1281,16 +1281,11 @@
 }
 .turbo-bonus-wrapper{
     display: flex;
-    // &.is_stuck{
-    //     top: 220px!important;
-    // }
 }
 .turbo-bonus-item {
     position: absolute;
     width: 100%;
     top: 0;
-    // opacity: 1;
-    // transform: none
 }
 .turbo-bonus-item__inner{
     
@@ -1305,19 +1300,6 @@
     position: relative;
     transition: all .3s linear;
     position: relative;
-    // &:before{
-    //     content: "";
-    //     display: inline-block;
-    //     width: 192px;
-    //     height: 100%;
-    //     background: url(../img/svg/line.svg) center no-repeat;
-    //     position: absolute;
-    //     left: 50%;
-    //     transform: translateX(-50%);
-    //     top: 0;
-    //     margin-left: 50px;
-    //     transition: opacity .3s linear;
-    // }
     .turbo-title{
         margin-bottom: 20px;
         min-width: 100%;
@@ -1353,7 +1335,6 @@
     left: 0;
     top: 0;
     width: 100%;
-    //width: 50%;
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1388,5 +1369,27 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+
+.turbo-cards__arr{
+    display: inline-block;
+    width: 55px;
+    height: 30px;
+    background: url(../img/svg/t-arrow.svg) no-repeat;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 2;
+    animation: jump 1.5s infinite;
+}
+
+@keyframes jump {
+    0% {transform: translate(-50%, 0);}
+    50% {transform: translate(-50%, 20px);}
+    100% {transform: translate(-50%, 0);}
+}
+  
+
 
 @import "pages/animate";
