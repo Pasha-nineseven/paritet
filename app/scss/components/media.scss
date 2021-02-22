@@ -2105,7 +2105,7 @@
 		padding: 10px 55px 10px 25px;
 	}
 	.turbo-bonus-item {
-		margin-bottom: 40px;
+		margin-bottom: 65px;
 		&:last-child{
 			margin-bottom: 0;
 		}
@@ -2276,17 +2276,16 @@
 	}
 	.turbo-bonus-info {
 		padding-left: 0;
-		padding-top: 70px;
+		padding-top: 15px;
 	}
 	.turbo-bonus-info__img {
-		left: 0;
-		top: -20px;
-		width: 120px;
-		height: 120px;
+		position: static;
+		width: 60px;
+		height: 60px;
 	}
-	.turbo-bonus-item__inner{
-		flex-wrap:wrap;
-	}
+	// .turbo-bonus-item__inner{
+	// 	flex-wrap:wrap;
+	// }
 	.turbo-howto-col-wrap{
 		flex-wrap:wrap;
 	}
@@ -3344,6 +3343,32 @@
 	}
 	.turbo-cards__arr{
 		display: none;
+	}
+	.turbo-bonus-img__mobile {
+		width: 190px;
+		min-width: 190px;
+	}
+}
+
+
+@media screen and (max-width: 500px){
+	.turbo-bonus-item__inner{
+		flex-wrap:wrap;
+	}
+	.turbo-bonus-img__mobile {
+		margin-left: 0;
+		height: 250px;
+	}
+	.turbo-bonus-info {
+		padding-left: 0;
+		padding-top: 70px;
+	}
+	.turbo-bonus-info__img {
+		left: 0;
+		top: -20px;
+		width: 120px;
+		height: 120px;
+		position: absolute;
 	}
 }
 
