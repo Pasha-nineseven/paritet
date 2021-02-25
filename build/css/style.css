@@ -939,15 +939,6 @@
   max-width: -webkit-calc(50% + 40px);
   max-width: calc(50% + 40px);
   position: relative; }
-  .info-item__img:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    width: 0;
-    height: 0;
-    border-top: 75px solid #fff;
-    border-right: 75px solid transparent;
-    z-index: 1; }
   .info-item__img img {
     max-width: 100%;
     height: auto;

@@ -1140,17 +1140,6 @@
 .info-item__img{
 	max-width: calc(50% + 40px);
 	position: relative;
-	&:before{
-		content: '';
-	    position: absolute;
-	    
-	    top: 0;
-	    width: 0;
-	    height: 0;
-	    border-top: 75px solid #fff;
-	    border-right: 75px solid transparent;
-	    z-index: 1;
-	}
 	img{
 		max-width: 100%;
 		height: auto;
