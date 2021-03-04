@@ -2230,9 +2230,22 @@
 .checkbox-wrap.m-horiz label{
 	margin-right: 20px;
 }
-// .checkbox-wrap.m-horiz label:last-child{
-// 	margin-right: 0;
-// }
+.b-currency{
+	margin-bottom: 24px;
+    line-height: 1.5;
+    padding-left: 36px;
+    position: relative;
+	&:before{
+		content: "";
+		display: inline-block;
+		width: 21px;
+		height: 18px;
+		background: url(../img/svg/currency.svg) no-repeat;
+		position: absolute;
+		left: 3px;
+		top: 3px;
+	}
+}
 
 @import "components/footer";
 

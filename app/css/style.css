@@ -2017,6 +2017,21 @@
 .checkbox-wrap.m-horiz label {
   margin-right: 20px; }
 
+.b-currency {
+  margin-bottom: 24px;
+  line-height: 1.5;
+  padding-left: 36px;
+  position: relative; }
+  .b-currency:before {
+    content: "";
+    display: inline-block;
+    width: 21px;
+    height: 18px;
+    background: url(../img/svg/currency.svg) no-repeat;
+    position: absolute;
+    left: 3px;
+    top: 3px; }
+
 .page-footer {
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
@@ -4808,6 +4823,54 @@ ymaps[class*="-copyright"] {
 .timetable-list {
   padding-top: 15px;
   display: none; }
+
+.balloon {
+  display: none;
+  width: 100%;
+  position: absolute;
+  bottom: 3rem;
+  bottom: 5rem;
+  max-width: 59.61875rem;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%);
+  z-index: 5; }
+  .balloon.balloon--visible {
+    display: block; }
+  .balloon .balloon__inner .office-item {
+    background-color: #fff;
+    max-height: 520px;
+    overflow: auto; }
+
+.balloon__close {
+  cursor: pointer;
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  right: 2.25rem;
+  top: 1.25rem;
+  background: url(https://www.raiffeisen.ru/common/new/images/close-thin.svg) no-repeat 50%;
+  background-size: contain;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  z-index: 10; }
+
+.balloon-add {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.balloon-add__item {
+  margin-right: 20px; }
+  .balloon-add__item:last-child {
+    margin-right: 0; }
 
 .statements .accordeon__item {
   border: 4px solid #F0F2F5;
