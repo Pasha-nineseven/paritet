@@ -2032,6 +2032,25 @@
     left: 3px;
     top: 3px; }
 
+.size-payment .slider-count__add {
+  font-size: 24px;
+  top: 10px;
+  pointer-events: none;
+  position: static;
+  margin: 0 10px 0 -10px; }
+
+.size-payment .slider-count {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FFFFFF;
+  border-radius: 4px; }
+
 .page-footer {
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
@@ -9983,9 +10002,9 @@ ymaps[class*="-copyright"] {
   .size-payment .slider-count__add {
     font-size: 18px; }
   .size-payment #slider-count-input_month {
-    padding-right: 90px; }
+    padding-right: 10px; }
   .size-payment #slider-count-input_summa {
-    padding-right: 50px; }
+    padding-right: 10px; }
   .index-offers-card {
     height: 267px; }
   .index-offers-card:before {

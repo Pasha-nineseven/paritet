@@ -417,6 +417,41 @@ $(document).ready(function() {
 		});
 	};
 
+	 //SLIDER COUNT_summa
+	 if ($( ".slider-count-slider_summa" ).length>0) {
+		$( ".slider-count-slider_summa" ).slider({
+	    	animate: true,
+	        range: "min",
+	        value: 20000,
+	        min: 5000,
+	        max: 500000,
+	        step: 1,
+	        slide: function( event, ui ) {
+	            $( "#slider-count-input_summa" ).val( ui.value);
+	        },
+		});
+		$("#slider-count-input_summa").keyup(function() {
+		    $(".slider-count-slider_summa").slider("value" , $(this).val())
+		});
+	};
+	//SLIDER COUNT_month
+	if ($( ".slider-count-slider_month" ).length>0) {
+		$( ".slider-count-slider_month" ).slider({
+	    	animate: true,
+	        range: "min",
+	        value: 20,
+	        min: 1,
+	        max: 100,
+	        step: 1,
+	        slide: function( event, ui ) {
+	            $( "#slider-count-input_month" ).val( ui.value);
+	        },
+		});
+		$("#slider-count-input_month").keyup(function() {
+		    $(".slider-count-slider_month").slider("value" , $(this).val())
+		});
+	};
+
 
 
 	//SLIDER TERM

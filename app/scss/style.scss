@@ -2247,6 +2247,23 @@
 	}
 }
 
+.size-payment{
+	.slider-count__add {
+		font-size: 24px;
+		top: 10px;
+		pointer-events: none;
+		position: static;
+		margin: 0 10px 0 -10px;
+	}
+	.slider-count {
+		display: flex;
+		align-items: center;
+		background: #FFFFFF;
+		border-radius: 4px;
+	}
+}
+
+
 @import "components/footer";
 
 @import "pages/index";
