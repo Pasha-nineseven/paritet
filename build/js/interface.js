@@ -604,7 +604,8 @@ $(document).ready(function() {
 		var $slider_size = $('.size-slider');
 
 		$slider_size.on('init', function (event, slick, direction) {
-		    if (!($('.size-slider .slick-slide').length > 2)) {
+			// console.log($('.size-slider .slick-slide').length);
+		    if (!($('.size-slider .slick-slide').length > 4)) {
 		        // remove dots
 		        $('.slick-dots').hide();
 		        $('.size-slider').addClass('noslide');

@@ -459,9 +459,9 @@ ymaps[class*="-copyright"] {
 	font-family: 'golosbold';
 }
 .office-address{
-	margin-bottom: 24px;
+	margin-bottom: 20px;
 	line-height: 1.5;
-	    padding-left: 36px;
+	padding-left: 36px;
 	position: relative;
 	&:before{
 		content: "";
@@ -607,8 +607,11 @@ ymaps[class*="-copyright"] {
 }
 
 .balloon-add{
-	display: flex;
-	flex-wrap:wrap
+	.balloon &{
+		display: flex;
+		flex-wrap:wrap
+	}
+	
 }
 .balloon-add__item{
 	margin-right: 20px;
