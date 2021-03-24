@@ -1286,6 +1286,9 @@
     position: absolute;
     width: 100%;
     top: 0;
+    &.active{
+        z-index: 5;
+    }
 }
 .turbo-bonus-item__inner{
     

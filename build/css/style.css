@@ -7494,6 +7494,8 @@ ymaps[class*="-copyright"] {
   position: absolute;
   width: 100%;
   top: 0; }
+  .turbo-bonus-item.active {
+    z-index: 5; }
 
 .turbo-howto__wrap {
   display: -webkit-box;
