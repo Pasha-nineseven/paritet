@@ -3598,9 +3598,11 @@ textarea, input {
           align-items: center; }
 
 .logo {
-  width: 216px;
-  height: 51px;
-  background: url(../img/svg/logo.svg) no-repeat; }
+  width: 215px;
+  height: 57px;
+  background: url(../img/svg/30paritet_logo.svg) no-repeat;
+  background-size: cover;
+  margin: 0 0 0 -10px; }
 
 .top {
   background: #FFFFFF;
