@@ -418,8 +418,8 @@ $(document).ready(function() {
 	};
 
 	 //SLIDER COUNT_summa
-	 if ($( ".slider-count-slider_summa" ).length>0) {
-		$( ".slider-count-slider_summa" ).slider({
+	 if ($( ".slider-count-slider_summa-test" ).length>0) {
+		$( ".slider-count-slider_summa-test" ).slider({
 	    	animate: true,
 	        range: "min",
 	        value: 20000,
@@ -427,16 +427,16 @@ $(document).ready(function() {
 	        max: 500000,
 	        step: 1,
 	        slide: function( event, ui ) {
-	            $( "#slider-count-input_summa" ).val( ui.value);
+	            $( "#slider-count-input_summa-test" ).val( ui.value);
 	        },
 		});
-		$("#slider-count-input_summa").keyup(function() {
-		    $(".slider-count-slider_summa").slider("value" , $(this).val())
+		$("#slider-count-input_summa-test").keyup(function() {
+		    $(".slider-count-slider_summa-test").slider("value" , $(this).val())
 		});
 	};
 	//SLIDER COUNT_month
-	if ($( ".slider-count-slider_month" ).length>0) {
-		$( ".slider-count-slider_month" ).slider({
+	if ($( ".slider-count-slider_month-test" ).length>0) {
+		$( ".slider-count-slider_month-test" ).slider({
 	    	animate: true,
 	        range: "min",
 	        value: 20,
@@ -444,11 +444,11 @@ $(document).ready(function() {
 	        max: 100,
 	        step: 1,
 	        slide: function( event, ui ) {
-	            $( "#slider-count-input_month" ).val( ui.value);
+	            $( "#slider-count-input_month-test" ).val( ui.value);
 	        },
 		});
-		$("#slider-count-input_month").keyup(function() {
-		    $(".slider-count-slider_month").slider("value" , $(this).val())
+		$("#slider-count-input_month-test").keyup(function() {
+		    $(".slider-count-slider_month-test").slider("value" , $(this).val())
 		});
 	};
 
