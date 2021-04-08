@@ -38,6 +38,43 @@
 	.benfits-invoice-gen__title {
 	    font-size: 26px;
 	}
+	.banking-about__img{
+		margin-left: 0;
+		padding-right: 40px;
+		width: 50%;
+	}
+	.banking-about__info{
+		padding-left: 0;
+	}
+	.banking-about-top__inner{
+		padding-left: 0;
+	}
+	.b-accordeon-slider {
+		margin: 0 -100px 0;
+	}
+	.b-mobile-top-pre {
+		width: 404px;
+		height: 189px;
+	}
+	.b-mobile-top-pre__mask{
+		background-size: 100%;
+	}
+	.b-mobile-top__l{
+		margin-right: 100px;
+	}
+	.b-mobile-top-info__txt {
+		max-width: 210px;
+		font-size: 18px;
+	}
+	.b-deposit-toggle__item {
+		padding: 0 0px 0 35px;
+	}
+	.b-deposit-toggle__item.active {
+		padding: 15px 20px 20px 35px;
+	}
+	.b-deposit-toggle__item.active .b-deposit-toggle__top {
+		font-size: 36px;
+	}
 }
 
 @media screen and (max-width: 1320px){
@@ -146,6 +183,25 @@
 	    &:last-child{
 	    	margin-right: 0;
 	    }
+	}
+	.welcome-img{
+		width: 460px;
+		min-width: 460px;
+		height: 460px;
+		margin: 0 20px 0 -15px;
+	}
+	.welcome-img__inner {
+		margin: 0 0 -30px 0px;
+	}
+	.welcome-title,
+	.bank-mobile__title,
+	.online__title,
+	.banking-top__in,
+	.seo-title{
+		font-size: 48px;
+	}
+	.demo-in {
+		background-size: contain;
 	}
 }
 
@@ -311,6 +367,24 @@
 	.turbo-bonus-info__img {
 		left: -160px;
 		width: 135px;
+	}
+	.bank-mobile__top{
+		font-size: 30px;
+	}
+	.bank-mobile__icon {
+		width: 160px;
+	}
+	.bank-mobile__txt {
+		font-size: 16px;
+		line-height: 18px;
+		margin-bottom: 20px;
+	}
+	.banking .accordeon__link {
+		font-size: 30px;
+		padding: 16px 0 16px 48px;
+	}
+	.banking .accordeon__item:before{
+		top: 26px;
 	}
 }
 
@@ -528,6 +602,75 @@
 	}
 	.turbo-bonus-info {
 		max-width: 100%;
+	}
+	.b-accordeon-slider {
+		margin: 0;
+	}
+	.b-mobile-top__wrap .app-buttons {
+		flex-wrap: wrap;
+	}
+	.b-mobile-top__wrap .app-buttons__wrap {
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+	.b-mobile-top__wrap .app-buttons__wrap:last-child {
+		margin-bottom: 0;
+	}
+	.b-mobile-top__l {
+		margin-right: 0;
+		padding-bottom: 40px;
+		width: 50%;
+		position: relative;
+	}
+	.b-mobile-top__wrap{
+		padding-top: 70px;
+	}
+	.b-mobile-top__bg {
+		width: 100%;
+		height: 100%;
+		background-size: cover;
+		
+	}
+	.b-mobile-top__wrap {
+		padding-top: 20px;
+		margin-left: -20px;
+		padding-left: 20px;
+		margin-right: -20px;
+		padding-right: 20px;
+		position: relative;
+		&:before{
+			content: "";
+			display: block;
+			width: 100%;
+			height: 100%;
+			background: #f2f9ff;
+    		background: linear-gradient(135deg, #f2f9ff 45%, rgba(255, 255, 255, 0.1) 60%);
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+	}
+	.b-deposit-toggle__item.active .b-deposit-toggle__top {
+		font-size: 30px;
+		line-height: 1.2;
+	}
+	.b-deposit-toggle__item {
+		margin-bottom: 15px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	.b-deposit__phone {
+		width: 530px;
+		margin-left: -81px;
+		padding: 0;
+	}
+	.b-deposit-toggle__item.active {
+		padding: 15px 20px;
+	}
+	.b-deposit-toggle__item {
+		padding: 0 0px 0 10px;
 	}
 }
 
@@ -1043,6 +1186,16 @@
 	.turbo-howto__wrap{
 		padding: 30px 0;
 	}
+	.seo-title {
+		max-width: 100%;
+		padding-left: 0;
+	}
+	.seo-txt{
+		max-width: 100%;
+	}
+	.online__info {
+		padding-right: 30px;
+	}
 }
 
 @media screen and (max-width: 992px){
@@ -1072,6 +1225,29 @@
 	.benfits-invoice__pre {
 	    padding-right: 0;
 	    width: 100%;
+	}
+	.welcome-title,
+	.bank-mobile__title,
+	.online__title,
+	.banking-top__in,
+	.seo-title{
+		font-size: 36px;
+	}
+	.welcome-img {
+		width: 380px;
+		min-width: 380px;
+		height: 380px;
+	}
+	.bank-mobile__wrap {
+		margin: 0 0 30px 0;
+	}
+	.bank-mobile__item {
+		width: 100%;
+		padding: 0;
+		margin-bottom: 30px;
+		&:last-child{
+			margin-bottom: 0;
+		}
 	}
 }
 
@@ -1177,6 +1353,12 @@
 	}
 	.docs .bid .tabs li, .docs .bid .tabs li:first-child:after {
 	    font-size: 18px;
+	}
+	.b-deposit__phone {
+		width: 385px;
+		margin-bottom: -135px;
+    	margin-top: 0;
+		padding: 0px 0 0 0;
 	}
 }
 
@@ -2284,9 +2466,6 @@
 		width: 60px;
 		height: 60px;
 	}
-	// .turbo-bonus-item__inner{
-	// 	flex-wrap:wrap;
-	// }
 	.turbo-howto-col-wrap{
 		flex-wrap:wrap;
 	}
@@ -2304,6 +2483,290 @@
 		padding-left: 20px;
 		padding-right: 20px;
 	}
+	.welcome,
+	.bank-mobile,
+	.demo,
+	.online,
+	.banking,
+	.seo{
+		padding: 40px 0;
+	}
+	.b-deposit {
+		padding-top: 40px;
+		background: #fff;
+	}
+	.seo-txt {
+		font-size: 16px;
+		line-height: inherit;
+	}
+	.welcome__pre {
+		font-size: 18px;
+		line-height: inherit;
+		margin-bottom: 30px;
+	}
+	.welcome__aft{
+		font-size: 18px;
+		line-height: inherit;
+	}
+	.welcome-wrap{
+		flex-wrap:wrap;
+	}
+	.welcome-info {
+		flex: inherit;
+		width: 100%;
+	}
+	.welcome-img {
+		margin: 0 auto 30px;
+	}
+	.welcome-img__inner {
+		margin: 0 0 -20px 0px;
+	}
+	.bank-mobile__pre {
+		font-size: 24px;
+	}
+	.demo-top {
+		font-size: 24px;
+		margin: 0 auto 30px;
+	}
+	.bank-mobile__top {
+		font-size: 24px;
+	}
+	.app-buttons__link {
+		padding: 10px;
+		margin-right: 20px;
+	}
+	.app-buttons__info{
+		font-size: 18px;
+	}
+	.demo{
+		.app-buttons{
+			flex-wrap:wrap;
+		}
+		.app-buttons__wrap{
+			width: 100%;
+			&:last-child{
+				.app-buttons__link{
+					margin-bottom: 0;
+				}
+			}
+		}
+		.app-buttons__link{
+			margin: 0 auto 20px auto;
+			//width: 100%;
+			display: inline-flex;
+			justify-content: flex-start;
+		}
+	}
+	.online__wrap{
+		flex-wrap:wrap;
+	}
+	.online__info {
+		padding-right: 0;
+		width: 100%;
+	}
+	.online__img {
+		margin: 0 auto;
+	}
+	.online .app-buttons{
+		margin-top: 0;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+	.online:before {
+		left: 0;
+		background-size: contain;
+	}
+	.online .app-buttons__link{
+		min-width: 200px;
+	}
+	.online__info ul li {
+		font-size: 16px;
+		line-height: 18px;
+	}
+	.banking-about-top__inner {
+		font-size: 16px;
+		line-height: inherit;
+		max-width: 100%;
+	}
+	.banking-about__top {
+		font-size: 18px;
+		line-height: 20px;
+	}
+	.workarea .banking-about__item {
+		font-size: inherit;
+		line-height: inherit;
+		margin-bottom: inherit;
+	}
+	.banking-about__more{
+		font-size: 18px;
+	}
+	.banking-about__wrap {
+		margin-bottom: 40px;
+		flex-wrap: wrap;
+	}
+	.banking-about__img {
+		padding-right: 0;
+		width: 100%;
+		margin: -60px 0 30px 0px;
+	}
+	.banking-about-top {
+		padding: 40px 0 65px;
+	}
+	.banking-about-top__in {
+		padding-left: 0;
+	}
+	.workarea .banking-about__item:before {
+		top: 2px;
+	}
+	.workarea .banking-about__list {
+		margin-bottom: 20px;
+	}
+	.banking-about__info{
+		width: 100%;
+	}
+	.banking .accordeon__link {
+		font-size: 20px;
+		padding: 14px 0 14px 48px;
+	}
+	.banking .accordeon__item:before {
+		top: 17px;
+	}
+	.banking .accordeon__item ul{
+		margin-bottom: 0;
+	}
+	.banking .accordeon__info {
+		padding: 0;
+	}
+	.banking .accordeon__info {
+		font-size: inherit;
+		line-height: inherit;
+	}
+	.banking .accordeon__info h4 {
+		font-size: 18px;
+		margin-bottom: 15px;
+	}
+	.banking .accordeon{
+		margin-bottom: 30px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	.b-accordeon-slider {
+		margin: 0  0 20px;
+	}
+	.b-mobile-top__wrap{
+		flex-wrap:wrap;
+		padding-top: 0;
+	}
+	.b-mobile-top__wrap:before {
+		height: 500px;
+		background: linear-gradient(180deg, #f2f9ff 40%, rgba(255, 255, 255, 0) 85%);
+	}
+	.b-mobile-top__l{
+		width: 100%;
+	}
+	.b-mobile-top-info__item {
+		font-size: inherit;
+		line-height: inherit;
+	}
+	.b-mobile-top-info:before{
+		width: 103px;
+		left: 0px;
+		top: -13px;
+		height: calc(100% + 34px);
+	}
+	.b-mobile-top-info__txt{
+		max-width: 100%;
+		font-size: 18px;
+		line-height: 22px;
+		br{
+			display: none;
+		}
+	}
+	.b-mobile-top-info {
+		width: 100%;
+		padding-left: 10px;
+	}
+	.b-mobile-top-info__icon {
+		margin-right: 8px;
+		width: 36px;
+		min-width: 36px;
+		height: 36px;
+	}
+	.b-deposit__wrap{
+		flex-wrap:wrap;
+	}
+	.b-deposit__img {
+		margin-right: 0;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+	.b-deposit__phone {
+		width: auto;
+		margin-bottom: -190px;
+		margin-top: -30px;
+		margin-left: 0;
+		padding: 0;
+	}
+	.b-deposit-toggle__top{
+		font-size: 18px;
+	}
+	.b-deposit-toggle__item.active .b-deposit-toggle__top {
+		font-size: 24px;
+	}
+	.b-deposit-toggle__item{
+		order: 1;
+	}
+	.b-deposit-toggle__item.active {
+		padding: 15px;
+		background: #fff;
+		order: 0;
+	}
+	.b-deposit-toggle__item.active:before {
+		display: inline-block;
+		border: 5px solid #0f5fba;
+		left: 50%;
+		top: -4px;
+		transform: translate(0, -50%) rotate(45deg);
+		border-bottom: 0;
+		border-right: 0;
+	}
+	.b-deposit-toggle {
+		display: flex;
+		flex-direction: column;
+	}
+	.b-deposit-toggle__item:last-child {
+		margin-bottom: 15px;
+	}
+	.b-mobile-top__bg {
+		background-position: center;
+	}
+	.down-link{
+		font-size: 16px;
+		span{
+			border-bottom: 0!important;
+		}
+	}
+	.b-deposit-toggle{
+		display: none;
+	}
+	.b-deposit-select{
+		display: block;
+	}
+	.b-deposit-mobile{
+		display: block;
+	}
+	.b-deposit__wrap{
+		display: none;
+	}
+	.b-mobile-top__wrap .app-buttons__wrap {
+		width: auto;
+		margin-right: 10px;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
 }	
 
 @media screen and (max-width: 700px){
@@ -2318,7 +2781,12 @@
 		display: none;
 	}
 }
-
+@media screen and (max-width: 680px){
+	.b-mobile-top__wrap .app-buttons__wrap {
+		width: 100%;
+		margin-right: 0;
+	}
+}
 @media screen and (max-width: 650px){
 	.index-offers__links .btn {
 	    padding: 6px 10px;
@@ -3353,6 +3821,36 @@
 		border-bottom: 2px solid transparent;
 		margin-bottom: 0 !important;
 	}
+	.bank-mobile__in {
+		padding: 35px 70px 70px 15px;
+	}
+	.bank-mobile__btn {
+		font-size: 16px;
+		padding: 10px 20px;
+	}
+	.bank-mobile__txt{
+		padding-left: 28px;
+	}
+	.bank-mobile__txt:before{
+		width: 13px;
+	}
+	.online__img {
+		width: 100%;
+	}
+	.online .app-buttons {
+		transform: translate(-50%,-50%);
+		left: 50%;
+	}
+	.banking .accordeon__link {
+		font-size: 18px;
+		line-height: 20px;
+	}
+	.banking .accordeon__item:before {
+		top: 11px;
+	}
+	.b-accordeon-slider__img:after {
+		background-size: 40px 40px;
+	}
 }
 
 
@@ -3374,6 +3872,42 @@
 		width: 120px;
 		height: 120px;
 		position: absolute;
+	}
+	.welcome-img {
+		width: 300px;
+		min-width: 300px;
+		height: 300px;
+	}
+	.welcome-title, .bank-mobile__title, .online__title, .banking-top__in, .seo-title {
+		font-size: 24px;
+	}
+	.bank-mobile__pre,
+	.demo-top{
+		font-size: 18px;
+	}
+	.bank-mobile__top {
+		font-size: 18px;
+		margin-bottom: 15px;
+	}
+	.bank-mobile__icon {
+		width: 100px;
+	}
+	.bank-mobile__in {
+		padding: 55px 30px 55px 15px;
+	}
+	.b-mobile-top-pre {
+		width: 100%;
+		padding-right: 0;
+		height: auto;
+	}
+	.b-mobile-top-pre__mask{
+		max-width: 100%;
+		background-size: 100% 100%;
+		
+		transform: scale(1.02);
+	}
+	.b-mobile-top__wrap:before {
+		height: 100%;
 	}
 }
 
@@ -3407,6 +3941,15 @@
 	}
 }
 
+
+@media screen and (max-width: 370px){
+	.b-deposit-mobile-info-slider .slick-next {
+		right: 25px;
+	}
+	.b-deposit-mobile-info-slider .slick-prev {
+		left: 25px;
+	}
+}
 
 @media only screen and (min-device-width: 1366px) and (max-device-height: 1024px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape)  {
 	

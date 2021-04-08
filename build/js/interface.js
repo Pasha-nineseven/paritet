@@ -155,6 +155,11 @@ $(document).ready(function() {
 	//ACCORDEON
     $("body").on("click", ".accordeon__link", function(e){
         e.preventDefault();
+		if ($('.b-accordeon-slider').length>0){
+			setTimeout(function() {
+				$('.b-accordeon-slider').slick('setPosition'); 
+			}, 100);
+		}
         if ($('.package__item').length>0) {
         	$('.accordeon__item').toggleClass('active');
         	$('.accordeon__info').slideToggle();
@@ -950,6 +955,103 @@ $(document).ready(function() {
 			offset_top: 0,
         });
     };
+
+	$("body").on("click", ".b-deposit-toggle__item", function(e){
+		e.preventDefault();
+		$(".b-deposit-toggle__item").removeClass('active');
+		$(this).addClass('active');
+        var num = $(this).data('toggle');
+        $(".b-deposit-img-toggle").addClass('dnone');
+        $("#deposit_pic"+num).removeClass('dnone');
+	});
+	//DEFAULT SLIDER
+	if ($( ".b-accordeon-slider" ).length>0) {
+		var $slider_acc = $('.b-accordeon-slider');
+
+        $slider_acc.slick({
+            infinite: false,
+            dots: false,
+            arrows:true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            adaptiveHeight: false,
+            responsive: [
+			    {
+			      breakpoint: 1100,
+			      settings: {
+			        slidesToShow: 3,
+            		slidesToScroll: 1,
+			      }
+			    },
+			    {
+			      breakpoint: 650,
+			      settings: {
+			        slidesToShow: 2,
+            		slidesToScroll: 1,
+			      }
+			    },
+				{
+					breakpoint: 400,
+					settings: {
+					  slidesToShow: 1,
+					  slidesToScroll: 1,
+					}
+				  },
+			]
+        });
+
+		$("body").on("click", ".bank-mobile-more__link", function(e){
+			e.preventDefault();
+			$(this).parents('.bank-mobile').find('.bank-mobile__hidden').slideToggle();
+
+			var $el = $(this);
+    		$el.text($el.text() == "Еще" ? "Скрыть": "Еще");
+			$el.toggleClass('active');
+		});
+	};
+
+
+	//POPUP-GALLERY-BANK
+	$(".js-gallery-popup").fancybox({
+		speed : 330,
+		transitionEffect: "slide", 
+		animationEffect: "zoom-in-out",
+		idleTime: false,
+		buttons: [
+			
+		],
+		smallBtn: true,
+		image : {
+			protect : true,
+		},
+		infobar: false,
+		hash: false,
+	});
+	if ($( ".b-deposit-mobile" ).length>0) {
+		var $slider_img = $('.b-deposit-mobile-img-slider');
+		var $slider_info = $('.b-deposit-mobile-info-slider');
+
+        $slider_img.slick({
+            infinite: false,
+            dots: false,
+            arrows:false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            adaptiveHeight: false,
+			asNavFor: '.b-deposit-mobile-info-slider'
+        });
+
+		$slider_info.slick({
+            infinite: false,
+            dots: false,
+            arrows:true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            adaptiveHeight: false,
+			fade:true,
+			asNavFor: '.b-deposit-mobile-img-slider'
+        });
+	};
 });
 
 
