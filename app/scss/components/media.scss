@@ -203,6 +203,16 @@
 	.demo-in {
 		background-size: contain;
 	}
+	.klever-prizу-condition{
+		padding: 40px;
+	}
+	.calendar__date,
+	.calendar__year{
+		font-size: 30px;
+	}
+	.calendar__num {
+		font-size: 200px;
+	}
 }
 
 @media screen and (max-width: 1200px){
@@ -386,6 +396,9 @@
 	.banking .accordeon__item:before{
 		top: 26px;
 	}
+	.calendar-win__in{
+		padding: 60px;
+	}
 }
 
 @media screen and (max-width: 1100px){
@@ -413,10 +426,7 @@
 		width: 100%;
 	}
 	.app__link{
-		    max-width: calc(50% - 20px);
-		// padding-right: 10px;
-		// margin-right: 0;
-		// height: 40px;
+		max-width: calc(50% - 20px);
 	}
 	.index-links {
 	    padding: 40px 0 80px;
@@ -671,6 +681,19 @@
 	}
 	.b-deposit-toggle__item {
 		padding: 0 0px 0 10px;
+	}
+	.klever-prize__code span {
+		font-size: 40px;
+	}
+	.klever-prize__inner {
+		padding: 30px;
+	}
+	.calendar__num {
+		font-size: 120px;
+		left: 10px;
+	}
+	.calendar__item {
+		padding: 35px 25px 40px 65px;
 	}
 }
 
@@ -1196,6 +1219,56 @@
 	.online__info {
 		padding-right: 30px;
 	}
+
+	.klever-top {
+		padding: 60px 0;
+	}
+	.klever-top h1 {
+		font-size: 64px;
+		margin-bottom: 70px;
+	}
+	.k-request-link {
+		margin-left: 30px;
+		padding-left: 10px;
+		span{
+			font-size: 20px;
+		}
+	}
+	.k-request-link span:before {
+		margin-right: 8px;
+	}
+	.klever-prize__item {
+		padding-right: 40px;
+	}
+	.klever-prize__list{
+		margin-right: -40px;
+	}
+	.klever-prizу-condition__icon {
+		margin-right: 15px;
+	}
+	.klever-prize__inner {
+		padding: 30px 15px;
+	}
+	.klever-prize-view-link span {
+		font-size: 20px;
+		line-height: 1.2;
+	}
+	.give__item {
+		padding-right: 20px;
+		margin-bottom: 30px;
+	}
+	.give__list {
+		margin: 0 -20px -30px 0;
+	}
+	.give__info{
+		padding: 20px;
+	}
+	.give__top {
+		margin-bottom: 30px;
+	}
+	.request__link-btn {
+		top: 35px;
+	}
 }
 
 @media screen and (max-width: 992px){
@@ -1248,6 +1321,13 @@
 		&:last-child{
 			margin-bottom: 0;
 		}
+	}
+	.calendar-win__item {
+		padding-right: 20px;
+		margin-bottom: 25px;
+	}
+	.calendar-win__list {
+		margin: 0 -20px -25px 0;
 	}
 }
 
@@ -1360,6 +1440,46 @@
     	margin-top: 0;
 		padding: 0px 0 0 0;
 	}
+	.klever-prize__list{
+		margin-right: 0;
+		flex-wrap:wrap;
+	}
+	.klever-prize__item{
+		padding-right: 0;
+		width: 100%;
+		margin-bottom: 40px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	.klever-prize__wrap {
+		justify-content: center;
+	}
+	.klever-prizу-condition__item {
+		width: 33.333%;
+	}
+	.klever-prizу-condition__icon {
+		width: 57px;
+		min-width: 57px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	.klever-prizу-conditioncount-item{
+		font-size: 17px;
+	}
+	.klever-prizу-condition {
+		padding: 20px;
+	}
+	.klever-prizу-condition__title {
+		line-height: 1.1;
+	}
+	.calendar__date, .calendar__year {
+		font-size: 22px;
+	}
+	.calendar-win__in {
+		padding: 20px;
+	}
 }
 
 @media screen and (max-width: 800px){
@@ -1386,6 +1506,20 @@
 	}
 	.deposit-top:before{
 		width: calc(60% + 115px);
+	}
+	.klever-prizу-condition__icon{
+		width: 100%;
+		height: 60px;
+    	margin-right: 0;
+		margin-bottom: 20px;
+	}
+	.klever-prizу-condition__item{
+		display: block;
+	}
+	.klever-prizу-condition__info{
+		padding-top: 0;
+		text-align: center;
+		width: 100%;
 	}
 }
 
@@ -2767,6 +2901,91 @@
 			margin-right: 0;
 		}
 	}
+	.k-request-link span,
+	.klever-top-title__pre{
+		font-size: 18px;
+	}
+	.klever-prize__top {
+		margin-bottom: 20px;
+	}
+	.klever-prize-view-link span {
+		font-size: 18px;
+	}
+	.klever-prize,
+	.give,
+	.k-certifikate,
+	.request,
+	.klever-phone{
+		padding: 40px 0;
+	}
+	.klever-prize__pre,
+	.klever-prize__more,
+	.klever-prize-sum__item,
+	.give__pre,
+	.request__pre,
+	.request__aft{
+		font-size: 20px;
+	}
+	.k-questions{
+		padding-top: 40px;
+	}
+	.klever-prize__code span {
+		font-size: 30px;
+	}
+	.give__list {
+		margin: 0;
+		flex-wrap: wrap;
+	}
+	.give__item {
+		padding-right: 0;
+		width: 100%;
+		display: flex;
+    	justify-content: center;
+	}
+	.give__info:before {
+		bottom: 17px;
+	}
+	.request__top{
+		margin-bottom: 30px;
+	}
+	.request-form__item .m-code {
+		font-size: 18px;
+	}
+	.request-form__item input[type="text"].request-input-phone{
+		padding-left: 55px;
+	}
+	.k-questions .accordeon__link:before {
+		right: 5px;
+		top: 16px;
+	}
+	.k-questions .accordeon__link {
+		padding: 20px 70px 20px 0;
+	}
+	.k-questions .accordeon__item {
+		padding-left: 0;
+	}
+	.k-questions .accordeon__info{
+		font-size: inherit;
+	}
+	.klever-phone__top {
+		font-size: 20px;
+	}
+	.request__link-btn {
+		position: static;
+		margin: 20px auto 0;
+	}
+	.request__link-btn span {
+		font-size: 20px;
+	}
+	.calendar {
+		padding: 40px 0;
+	}
+	.calendar h2 {
+		margin-bottom: 35px;
+	}
+	.caledar-btn {
+		padding: 10px 5px;
+	}
 }	
 
 @media screen and (max-width: 700px){
@@ -2779,6 +2998,78 @@
 	}
 	.bid-select:after{
 		display: none;
+	}
+	.klever-prizу-condition{
+		flex-wrap:wrap;
+	}
+	.klever-prizу-condition__item {
+		width: 100%;
+		margin-bottom: 30px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	.klever-phone__icon {
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+	.klever-phone__wrp{
+		flex-wrap:wrap;
+	}
+	.klever-phone__info{
+		width: 100%;
+		max-width: 100%;
+	}
+	.klever-phone__icon:before{
+		display: none;
+	}
+	.calendar-win{
+		display: none!important;
+	}
+	.calendar__list {
+		width: 100%;
+		flex-wrap:wrap;
+	}
+	.calendar__item {
+		padding: 30px;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 20px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	.calendar__item.m-centered{
+		margin: 0 0 20px 0;
+	}
+	.calendar__roz{
+		margin-bottom: 0;
+	}
+	.calendar__time {
+		min-width: 135px;
+	}
+	.calendar__item:hover .calendar__bg{
+		height: 100%;
+	}
+	.caledar-btn{
+		opacity: 1;
+		visibility: visible;
+	}
+	.calendar-btn-wrap{
+		display: none;
+	}
+	.calendar__bg,
+	.calendar__item.active .calendar__bg{
+		height: 100%;
+	}
+	.calendar-winners-slider-mobile-wrap{
+		visibility: visible;
+		position: static;
+	}
+	.calendar__item:hover.m-winners .calendar__bg, .calendar__item.active.m-winners .calendar__bg {
+		height: 100%;
 	}
 }
 @media screen and (max-width: 680px){
@@ -2987,6 +3278,9 @@
 }
 
 @media screen and (max-width: 600px){
+	.klever-phone__icon__in{
+		font-size: 70px;
+	}
 	.page-wrap{
 		display: block;
 	}
@@ -3851,6 +4145,90 @@
 	.b-accordeon-slider__img:after {
 		background-size: 40px 40px;
 	}
+	.klever-prize-links{
+		flex-wrap:wrap;
+	}
+	.klever-prize-view-link{
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+	.klever-prize-rule-link{
+		width: 100%;
+		justify-content: center;
+	}
+	.klever-prizу-condition__icon{
+		height: auto;
+	}
+	.klever-prize__wrap{
+		flex-wrap:wrap;
+	}
+	.klever-prize-sum{
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+	.klever-prize__code {
+		width: 100%;
+	}
+	.klever-prize__code:before {
+		right: 50%;
+		bottom: auto;
+		top: -33px;
+		transform: translateX(50%) rotate(90deg);
+	}
+	.klever-prizу-conditioncount-item {
+		font-size: 20px;
+	}
+	.k-questions .accordeon__link{
+		padding-right: 50px;
+	}
+	.request-form__item input[type="text"], .request-form__item input[type="email"], .request-form__item input[type="password"], .request-form__item input[type="tel"]{
+		padding: 33px 10px 7px 11px;
+	}
+	.request-form__item.m-multiple{
+		margin-right: 0;
+		display: block;
+	}
+	.request-form__item .request-form__m {
+		padding-right: 0;
+		margin-bottom: 30px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	.request-form__item input[type="text"].request-input-phone{
+		width: 100%;
+	}
+	.request-form__submit{
+		padding-top: 0;
+		flex-wrap:wrap;
+	}
+	.request-btn-submit {
+		margin-right: 0;
+		padding: 15px 20px;
+		font-size: 18px;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.give-info {
+		position: static;
+		margin: 0;
+	}
+	.give__info{
+		position: absolute;
+		left: 0;
+		width: 100%;
+		bottom: 0;
+	}
+	.give__pr,
+	.give__title{
+		text-align: center;
+	}
+	.give__info:before {
+		bottom: auto;
+		left: 50%;
+		top: -33px;
+		transform: translateX(-50%) rotate(90deg);
+	}
 }
 
 
@@ -3912,6 +4290,9 @@
 }
 
 @media screen and (max-width: 400px){
+	.klever-phone__icon {
+		width: 100%;
+	}
 	.app__title{
 		margin-bottom: 20px;
 	}
@@ -3938,6 +4319,10 @@
 		width: 155px;
 		height: 45px;
 		margin: -10px 0 -14px -12px;
+	}
+	.calendar__date{
+		font-size: 20px;
+		//margin-left: 10px;
 	}
 }
 

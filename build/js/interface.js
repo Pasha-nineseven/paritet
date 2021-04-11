@@ -1008,6 +1008,7 @@ $(document).ready(function() {
     		$el.text($el.text() == "Еще" ? "Скрыть": "Еще");
 			$el.toggleClass('active');
 		});
+
 	};
 
 
@@ -1050,6 +1051,45 @@ $(document).ready(function() {
             adaptiveHeight: false,
 			fade:true,
 			asNavFor: '.b-deposit-mobile-img-slider'
+        });
+	};
+
+
+	$("body").on("click", ".caledar-btn", function(e){
+		e.preventDefault();
+
+		$(this).parents('.calendar__item').siblings('.calendar__item').removeClass('active').find('.caledar-btn').removeClass('active').find('span').text("Показать победителей");
+
+		var $el = $(this).find('span');
+		$(this).toggleClass('active');
+		$(this).parents('.calendar__item').toggleClass('active');
+
+		if ( $(this).is( ".active" ) ) {
+			console.log('active');
+			$el.text("Скрыть победителей");
+			$('.calendar-win').slideDown(300);
+		 
+		} else{
+			console.log('NOTactive');
+			$el.text("Показать победителей");
+			$('.calendar-win').slideUp(300);
+		}
+
+		var calendar = $(this).data('calendar');
+		$(".calendar-win__list").addClass('dnone');
+        $("#calendar"+calendar).removeClass('dnone');
+	});
+
+	if ($( ".calendar-winners-slider-mobile" ).length>0) {
+		var $slider_win = $('.calendar-winners-slider-mobile');
+
+        $slider_win.slick({
+            infinite: false,
+            dots: true,
+            arrows:false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            adaptiveHeight: false,
         });
 	};
 });
