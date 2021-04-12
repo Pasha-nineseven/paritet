@@ -1092,6 +1092,20 @@ $(document).ready(function() {
             adaptiveHeight: false,
         });
 	};
+
+
+	$("body").on("click", ".js-request-app-link", function(e){
+		e.preventDefault();
+
+		$('#request-app').hide();
+		$('#request-call').show();
+	});
+	$("body").on("click", ".js-request-call-link", function(e){
+		e.preventDefault();
+
+		$('#request-app').show();
+		$('#request-call').hide();
+	});
 });
 
 
