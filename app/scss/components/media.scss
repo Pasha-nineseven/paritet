@@ -31,6 +31,21 @@
 	}
 }
 
+@media screen and (max-width: 1400px){
+	.acquiring-tariff__wrap {
+		margin: 0;
+	}
+	.acquiring-tariff__item {
+		padding: 0 10px;
+	}
+	.acquiring-tariff-pay__btn {
+		padding: 10px 50px;
+	}
+	.acquiring-tariff-pay__button{
+		margin-left: 20px;
+	}
+}
+
 @media screen and (max-width: 1350px){
 	.benfits-invoice__pre {
 	    padding-right: 35px;
@@ -398,6 +413,61 @@
 	}
 	.calendar-win__in{
 		padding: 60px;
+	}
+	.acquiring-partners__img {
+		width: 430px;
+		min-width: 430px;
+		margin: 0 60px 0 -30px;
+		img{
+			max-width: 100%;
+		}
+		&:before {
+			width: 270px;
+			height: 270px;
+			top: 50%;
+			transform: translate(-50%,-50%);
+		}
+		&:after {
+			width: 95px;
+			height: 95px;
+			right: -23px;
+			top: 5px;
+		}
+	}
+	.acquiring-partners__link {
+		margin: 0 10px 10px 0;
+		padding: 15px;
+	}
+	.acquiring-services__wrap{
+		padding: 0;
+	}
+	.acquiring-connection__list:after {
+		width: calc(100% - 57px);
+		left: 57px;
+		top: 73px;
+		background-size: contain;
+	}
+	.acquiring-tariff-pay {
+		padding: 25px 20px;
+	}
+	.acquiring-tariff-count__inner,
+	.acquiring-tariff__pre{
+		padding: 20px 10px;
+	}
+	.acquiring-tariff-count__item{
+		font-size: 26px;
+	}
+	.acquiring-tariff__pre {
+		font-size: 18px;
+		width: 350px;
+		min-width: 350px;
+	}
+	.acq__img {
+		width: 500px;
+		min-width: 500px;
+	}
+	.acq-info {
+		padding: 40px 525px 40px 35px;
 	}
 }
 
@@ -1269,6 +1339,73 @@
 	.request__link-btn {
 		top: 35px;
 	}
+	.acquiring-top{
+		padding: 60px 0;
+	}
+	.acquiring-benefit__title,
+	.acquiring-connection__title{
+		font-size: 20px;
+	}
+	.acquiring-benefit__item {
+		padding-right: 20px;
+	}
+	.acquiring-benefit__list {
+		margin: 0 -20px 40px 0;
+	}
+	.acquiring-partners__img {
+		width: 360px;
+		min-width: 360px;
+		margin: 0 45px 0 -20px;
+	}
+	.acquiring-partners__title{
+		margin-bottom: 30px;
+	}
+	.acquiring-services__item:before {
+		width: 190px;
+		height: 190px;
+		margin-left: -10px;
+	}
+	.acquiring-services__icon {
+		height: 85px;
+		margin-bottom: 20px;
+		img{
+			max-height: 100%;
+		}
+	}
+	.acquiring-services__wrap{
+		margin-right: -20px;
+	}
+	.acquiring-services__item{
+		padding-right: 20px;
+	}
+	.acquiring-services__title{
+		font-size: 20px;
+	}
+	.acquiring-connection__list{
+		margin-right: -20px;
+	}
+	.acquiring-connection__item{
+		padding-right: 20px;
+		width: 33.3333%;
+	}
+	.acquiring-connection__num{
+		width: 70px;
+		height: 98px;
+		img{
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+	.acquiring-request-form {	
+		padding: 40px;
+	}
+	.acq__img {
+		width: 400px;
+		min-width: 400px;
+	}
+	.acq-info {
+		padding: 40px 425px 40px 35px;
+	}
 }
 
 @media screen and (max-width: 992px){
@@ -1479,6 +1616,52 @@
 	}
 	.calendar-win__in {
 		padding: 20px;
+	}
+	.acquiring-benefit__item {
+		width: 50%;
+		margin-bottom: 30px;
+	}
+	.acquiring-payment__list{
+		flex-wrap: wrap;
+	}
+	.acquiring-payment__item {
+		width: 190px;
+		height: 190px;
+		margin-bottom: 20px;
+	}
+	.acquiring-tariff__pre {
+		width: 280px;
+		min-width: 280px;
+	}
+	.acquiring-tariff-count__item.m-title{
+		font-size: 16px;
+	}
+	.acquiring-tariff-pay__count {
+		font-size: 26px;
+	}
+	.acquiring-tariff-pay__pre {
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+	.acquiring-tariff-pay__btn {
+		padding: 10px 30px;
+		font-size: 18px;
+	}
+	.acquiring-tariff-count__inner, .acquiring-tariff__pre{
+		padding: 10px;
+	}
+	.acq-title {
+		font-size: 24px;
+		margin-bottom: 20px;
+		max-width: 100%;
+	}
+	.acq__more{
+		font-size: inherit;
+	}
+	.acq-txt {
+		font-size: inherit;
+		margin-bottom: 20px;
+		max-width: 100%;
 	}
 }
 
@@ -2986,6 +3169,187 @@
 	.caledar-btn {
 		padding: 10px 5px;
 	}
+	.layout--acquiring + .page-footer::after {
+		border-top: 75px solid transparent;
+	}
+	.a-request-link,
+	.acquiring-benefit__link{
+		padding: 13px 26px;
+		font-size: 18px;
+	}
+	.acquiring-benefit,
+	.acquiring-seo,
+	.acquiring-docs,
+	.acquiring-partners,
+	.acquiring-services{
+		padding: 40px 0;
+	}
+	.acquiring-seo__txt,
+	.acquiring-benefit__txt{
+		font-size: inherit;
+	}
+	.acquiring-payment {
+		padding: 40px 0 10px;
+	}
+	.acquiring-partners__wrap{
+		flex-wrap: wrap;
+	}
+	.acquiring-partners__view{
+		flex:inherit;
+		width: 100%;
+	}
+	.acquiring-partners__img {
+		width: 300px;
+		min-width: 300px;
+		margin: 0 auto 30px auto;
+	}
+	.acquiring-partners__more{
+		font-size: inherit;
+	}
+	.acquiring-partners__link{
+		padding: 10px;
+	}
+	.acquiring-partners__list:after {
+		left: 58px;
+		top: -23px;
+	}
+	.acquiring-services__txt,
+	.acquiring-connection__txt{
+		font-size: inherit;
+	}
+	.acquiring-services__wrap{
+		flex-wrap:wrap;
+		margin-right: 0;
+	}
+	.acquiring-services__item {
+		padding-right: 0;
+		width: 100%;
+		max-width: 100%;
+		margin-bottom: 40px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	.acquiring-services__title{
+		margin-bottom: 12px;
+	}
+	.acquiring-services__item:before {
+		width: 155px;
+		height: 155px;
+		margin-left: 0;
+		top: -15px;
+	}
+	.acquiring-connection{
+		padding: 40px 0;
+	}
+	.acquiring-connection__list {
+		margin-right: 0;
+		flex-wrap: wrap;
+		margin-bottom: 105px;
+	}
+	.acquiring-connection__item {
+		padding-right: 0;
+		width: 100%;
+		max-width: 100%;
+		margin-bottom: 40px;
+		display: flex;
+		align-items: center;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	.acquiring-connection__top{
+		margin-bottom: 0;
+	}
+	.acquiring-connection__list:after{
+		display: none;
+	}
+	.acquiring-connection__title{
+		margin-bottom: 15px;
+	}
+	.acquiring-connection__icon{
+		top: 0;
+	}
+	.acquiring-connection h2 {
+		margin-bottom: 25px;
+	}
+	.acquiring-request-form__item .acquiring-request-form__m{
+		padding-right: 0;
+		width: 100%;
+		margin-bottom: 29px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	.acquiring-request-form__item.m-multiple{
+		margin-right: 0;
+		flex-wrap:wrap;
+	}
+	.acquiring-request-form__item label {
+		font-size: 16px;
+	}
+	.acquiring-request-btn-submit {
+		font-size: 18px;
+		padding: 15px 20px;
+	}
+	.acquiring-tariff {
+		padding: 40px 0;
+	}
+	.acquiring-tariff__item{
+		flex-wrap: wrap;
+		padding: 0;
+		&:first-child{
+			.acquiring-tariff-count{
+				display: none;
+			}
+			.acquiring-tariff__pre.m-title{
+				width: 100%;
+			}
+		}
+		&:last-child{
+			.acquiring-tariff__pre{
+				display: none;
+			}
+		}
+	}
+	.acquiring-tariff__pre.m-title h2 {
+		margin-bottom: 25px;
+		margin-top: 0;
+	}
+	.acquiring-tariff__pre{
+		width: 100%;
+	}
+	.acquiring-tariff-count{
+		flex:inherit;
+		width: 100%;
+	}
+	.acquiring-tariff-count__item:first-child:before{
+		display: none;
+	}
+	.acquiring-tariff-count__inner, .acquiring-tariff__pre {
+		padding: 20px 10px;
+	}
+	.acquiring-tariff-count__inner{
+		&:after{
+			content: attr(data-title);
+			display: block;
+			font-size: 14px;
+			font-family: 'golosregular';
+			line-height: 1.2;
+			color: #343532;
+		}
+	}
+	.acq__img {
+		width: 300px;
+		min-width: 300px;
+	}
+	.acq-info {
+		padding: 30px 325px 30px 20px;
+	}
+	.acq-top-links__item{
+		padding: 8px 7px;
+    	font-size: 16px;
+	}
 }	
 
 @media screen and (max-width: 700px){
@@ -3278,6 +3642,10 @@
 }
 
 @media screen and (max-width: 600px){
+	.acquiring-benefit h2 {
+		text-align: center;
+		margin-bottom: 25px;
+	}
 	.klever-phone__icon__in{
 		font-size: 70px;
 	}
@@ -4229,6 +4597,89 @@
 		top: -33px;
 		transform: translateX(-50%) rotate(90deg);
 	}
+	.acquiring-connection__item{
+		flex-wrap:wrap;
+		justify-content: center;
+	}
+	.acquiring-connection__top {
+		margin-bottom: 15px;
+	}
+	.acquiring-connection__info{
+		width: 100%;
+		text-align: center;
+	}
+	.acquiring-request-form__item input[type="text"], .acquiring-request-form__item input[type="email"], .acquiring-request-form__item input[type="password"], .acquiring-request-form__item input[type="tel"]{
+		font-size: 16px;
+	}
+	.acquiring-request-form__item{
+		::-webkit-input-placeholder {font-size: 16px;}
+		::-moz-placeholder          {font-size: 16px;}
+		:-moz-placeholder           {font-size: 16px;}
+		:-ms-input-placeholder      {font-size: 16px;}
+	}
+	.acquiring-request-form__submit {
+		margin-bottom: 20px;
+		padding-top: 0;
+		flex-wrap: wrap;
+	}
+	.acquiring-request-btn-submit{
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 29px;
+	}
+	.acquiring-request-form {
+		padding: 40px 20px;
+	}
+	.acquiring-request-form__item input[type="text"].request-input-phone, .acquiring-request-form__item input[type="email"].request-input-phone, .acquiring-request-form__item input[type="password"].request-input-phone, .acquiring-request-form__item input[type="tel"].request-input-phone{
+		width: 100%;
+	}
+	.acquiring-tariff-pay {
+		padding: 20px;
+		flex-wrap: wrap;
+	}
+	.acquiring-tariff-pay__sum{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.acquiring-tariff-pay__button {
+		margin-left: 0;
+	}
+	.acquiring-tariff-count{
+		flex-wrap:wrap;
+	}
+	.acquiring-tariff-count__item{
+		width: 100%;
+	}
+	.acquiring-tariff-count__inner, .acquiring-tariff__pre {
+		padding: 15px 10px;
+	}
+	.acquiring-docs__list{
+		margin-right: -20px;
+	}
+	.acquiring-docs__item {
+		padding-right: 20px;
+		width: 50%;
+		height: auto;
+		margin-bottom: 20px;
+	}
+	.acquiring-docs__txt {
+		font-size: 16px;
+	}
+	.acquiring-docs__link {
+		padding: 20px 20px 55px 20px;
+	}
+	.acquiring-request-form__item input[type="text"].acquiring-request-input-phone, .acquiring-request-form__item input[type="email"].acquiring-request-input-phone, .acquiring-request-form__item input[type="password"].acquiring-request-input-phone, .acquiring-request-form__item input[type="tel"].acquiring-request-input-phone {
+		width: 100%;
+	}
+	.acq-info {
+		padding: 20px;
+	}
+	.acq__img {
+		width: 100%;
+		min-width: 100%;
+		position: static;
+		height: 260px;
+	}
 }
 
 
@@ -4287,6 +4738,29 @@
 	.b-mobile-top__wrap:before {
 		height: 100%;
 	}
+	.acquiring-benefit__list {
+		margin: 0;
+	}
+	.acquiring-benefit__item {
+		width: 100%;
+		padding: 0;
+	}
+	.acq__img {
+		height: 190px;
+	}
+	
+}
+
+@media screen and (max-width: 450px){
+	.acquiring-payment__item {
+		width: 50%;
+		background-size: cover;
+		height: auto;
+		min-height: 178px;
+	}
+	.acquiring-payment__list{
+		padding-top: 20px;
+	}
 }
 
 @media screen and (max-width: 400px){
@@ -4323,6 +4797,13 @@
 	.calendar__date{
 		font-size: 20px;
 		//margin-left: 10px;
+	}
+	.acquiring-docs__list{
+		margin-right: 0;
+	}
+	.acquiring-docs__item {
+		padding-right: 0;
+		width: 100%;
 	}
 }
 

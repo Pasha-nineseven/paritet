@@ -1111,6 +1111,24 @@ $(document).ready(function() {
 		$(".request-input-phone").inputFilter(function(value) {
 			return /^-?\d*$/.test(value); });
 	}
+
+	if($(".acquiring-request-input-phone").length>0){
+		$(".acquiring-request-input-phone").inputFilter(function(value) {
+			return /^-?\d*$/.test(value); });
+	}
+	
+
+	if($('.acquiring-request-form').length>0){
+		var inputs = $('.acquiring-request-form__item input');
+		for (var i = 0; i < inputs.length; i++) {
+			var input = inputs[i];
+			input.addEventListener('input', function() {
+				if(this.value){
+					$(this).addClass('active');
+				} else $(this).removeClass('active');
+			});
+		}
+	}
 });
 
 
