@@ -3350,6 +3350,14 @@
 		padding: 8px 7px;
     	font-size: 16px;
 	}
+	.welcome-title{
+		&.m-desktop{
+			display: none;
+		}
+		&.m-mobile{
+			display: block;
+		}
+	}
 }	
 
 @media screen and (max-width: 700px){
@@ -4680,10 +4688,19 @@
 		position: static;
 		height: 260px;
 	}
+	.b-deposit-mobile-info-slider__title{
+		padding: 0 35px;
+		text-align: center;
+    	justify-content: center;
+	}
 }
 
 
 @media screen and (max-width: 500px){
+	body{
+		height: auto;
+    	overflow-x: hidden;
+	}
 	.turbo-bonus-item__inner{
 		flex-wrap:wrap;
 	}

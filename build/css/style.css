@@ -2157,6 +2157,10 @@ a.page-footer-menu__title {
   margin-bottom: 25px; }
   .page-footer-menu-contact__item:last-child {
     margin-bottom: 0; }
+  .page-footer-menu-contact__item .mobile {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
 
 .socials {
   display: -webkit-box;
@@ -7948,6 +7952,10 @@ ymaps[class*="-copyright"] {
   margin-bottom: 27px; }
   .welcome-title a {
     color: #007FC5; }
+  .welcome-title.m-desktop {
+    display: block; }
+  .welcome-title.m-mobile {
+    display: none; }
 
 .welcome__pre {
   font-size: 20px;
@@ -8710,10 +8718,6 @@ ymaps[class*="-copyright"] {
           align-items: center;
   font-family: 'golosbold';
   font-size: 20px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#1E3CAE), to(#007FC5));
-  background: linear-gradient(180deg, #1E3CAE 0%, #007FC5 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   color: #1E3CAE; }
   .down-link:before {
     content: "";
@@ -8787,17 +8791,10 @@ ymaps[class*="-copyright"] {
   display: none; }
 
 .b-deposit-mobile-img-slider {
-  margin: -45px 0 -170px -15px; }
+  margin: -55px 0 -250px -15px; }
 
 .b-deposit-mobile-img-slider__in {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  display: block; }
   .b-deposit-mobile-img-slider__in img {
     display: block;
     max-width: 100%; }
@@ -8844,10 +8841,6 @@ ymaps[class*="-copyright"] {
     border-right: 0; }
 
 .b-deposit-mobile-info-slider__title {
-  background: -webkit-gradient(linear, left top, left bottom, from(#1E3CAE), to(#007FC5));
-  background: linear-gradient(180deg, #1E3CAE 0%, #007FC5 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   color: #1E3CAE;
   font-size: 25px;
   line-height: 30px;
@@ -13747,7 +13740,11 @@ ymaps[class*="-copyright"] {
     padding: 30px 325px 30px 20px; }
   .acq-top-links__item {
     padding: 8px 7px;
-    font-size: 16px; } }
+    font-size: 16px; }
+  .welcome-title.m-desktop {
+    display: none; }
+  .welcome-title.m-mobile {
+    display: block; } }
 
 @media screen and (max-width: 700px) {
   .card__item {
@@ -14828,9 +14825,19 @@ ymaps[class*="-copyright"] {
     width: 100%;
     min-width: 100%;
     position: static;
-    height: 260px; } }
+    height: 260px; }
+  .b-deposit-mobile-info-slider__title {
+    padding: 0 35px;
+    text-align: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
 
 @media screen and (max-width: 500px) {
+  body {
+    height: auto;
+    overflow-x: hidden; }
   .turbo-bonus-item__inner {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;

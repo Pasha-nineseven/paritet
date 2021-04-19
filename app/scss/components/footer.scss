@@ -89,6 +89,9 @@ a.page-footer-menu__title{
 	&:last-child{
 		margin-bottom: 0;
 	}
+	.mobile {
+		flex-wrap: wrap;
+	}
 }
 
 .socials{

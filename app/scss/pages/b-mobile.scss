@@ -188,6 +188,12 @@
     a{
         color: #007FC5;
     }
+    &.m-desktop{
+        display: block;
+    }
+    &.m-mobile{
+        display: none;
+    }
 }
 .welcome__pre{
     font-size: 20px;
@@ -1047,9 +1053,9 @@
     // flex-wrap:wrap;
     font-family: 'golosbold';
     font-size: 20px;
-    background: linear-gradient(180deg, #1E3CAE 0%, #007FC5 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    // background: linear-gradient(180deg, #1E3CAE 0%, #007FC5 100%);
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
     color: #1E3CAE;
     &:before{
         content: "";
@@ -1142,11 +1148,10 @@
 }
 
 .b-deposit-mobile-img-slider{
-    margin: -45px 0 -170px -15px;
+    margin: -55px 0 -250px -15px;
 }
 .b-deposit-mobile-img-slider__in{
-    display: flex;
-    justify-content: center;
+    display: block;
     img{
         display: block;
         max-width: 100%;
@@ -1197,9 +1202,9 @@
     }
 }
 .b-deposit-mobile-info-slider__title{
-    background: linear-gradient(180deg, #1E3CAE 0%, #007FC5 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    // background: linear-gradient(180deg, #1E3CAE 0%, #007FC5 100%);
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
     color: #1E3CAE;
     font-size: 25px;
     line-height: 30px;
