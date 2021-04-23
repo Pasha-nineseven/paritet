@@ -7,7 +7,32 @@
             max-width: 1380px;
         }
     }
-    
+    .alx-feedb-error{
+        margin-top:0;
+    }
+    .afbf_error_block{
+        text-align: center;
+        .afbf_error_text{
+            font-size: 20px;
+            height: auto;
+            line-height: inherit;
+            margin: 20px 0;
+            padding: 0 20px;
+        }
+    }
+    .afbf_success_block._without-popup {
+        height: auto;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .afbf_success_block._without-popup .afbf_mess_ok {
+        text-align: center;
+        line-height: inherit;
+        .mess-fix{
+            margin: 20px 0;
+            padding: 0 20px;
+        }
+    }
 }
 .klever-top{
     padding: 121px 0 124px;
@@ -654,9 +679,13 @@
         box-shadow: 0px 3px 11px 0px #007282;
         padding: 33px 10px 7px 11px;
         font-size: 26px;
+        border:2px solid transparent;
         &.request-input-phone{
             padding-left: 77px;
             width: 264px;
+        }
+        &.m-error{
+            border:2px solid red;
         }
     }
     label{

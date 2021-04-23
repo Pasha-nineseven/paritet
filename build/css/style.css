@@ -8868,6 +8868,26 @@ ymaps[class*="-copyright"] {
     padding-bottom: 0; }
     .layout--klever .page-content .container-fluid {
       max-width: 1380px; }
+  .layout--klever .alx-feedb-error {
+    margin-top: 0; }
+  .layout--klever .afbf_error_block {
+    text-align: center; }
+    .layout--klever .afbf_error_block .afbf_error_text {
+      font-size: 20px;
+      height: auto;
+      line-height: inherit;
+      margin: 20px 0;
+      padding: 0 20px; }
+  .layout--klever .afbf_success_block._without-popup {
+    height: auto;
+    text-align: center;
+    margin-bottom: 0; }
+  .layout--klever .afbf_success_block._without-popup .afbf_mess_ok {
+    text-align: center;
+    line-height: inherit; }
+    .layout--klever .afbf_success_block._without-popup .afbf_mess_ok .mess-fix {
+      margin: 20px 0;
+      padding: 0 20px; }
 
 .klever-top {
   padding: 121px 0 124px;
@@ -9523,13 +9543,19 @@ ymaps[class*="-copyright"] {
     -webkit-box-shadow: 0px 3px 11px 0px #007282;
             box-shadow: 0px 3px 11px 0px #007282;
     padding: 33px 10px 7px 11px;
-    font-size: 26px; }
+    font-size: 26px;
+    border: 2px solid transparent; }
     .request-form__item input[type="text"].request-input-phone,
     .request-form__item input[type="email"].request-input-phone,
     .request-form__item input[type="password"].request-input-phone,
     .request-form__item input[type="tel"].request-input-phone {
       padding-left: 77px;
       width: 264px; }
+    .request-form__item input[type="text"].m-error,
+    .request-form__item input[type="email"].m-error,
+    .request-form__item input[type="password"].m-error,
+    .request-form__item input[type="tel"].m-error {
+      border: 2px solid red; }
   .request-form__item label {
     color: #fff;
     font-size: 13px;
