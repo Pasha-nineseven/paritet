@@ -233,11 +233,12 @@
     padding: 82px 0 55px;
 }
 .bank-mobile__title{
-    font-size: 72px;
-    line-height: 1.2;
-    font-family: 'golosbold';
-    text-align: center;
-    margin-bottom: 20px;
+    h1{
+        font-size: 72px;
+        line-height: 1.2;
+        text-align: center;
+        margin-bottom: 20px;
+    }
 }
 .bank-mobile__pre{
     font-size: 30px;

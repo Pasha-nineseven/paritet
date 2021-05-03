@@ -7987,10 +7987,9 @@ ymaps[class*="-copyright"] {
   background: #F2F9FF;
   padding: 82px 0 55px; }
 
-.bank-mobile__title {
+.bank-mobile__title h1 {
   font-size: 72px;
   line-height: 1.2;
-  font-family: 'golosbold';
   text-align: center;
   margin-bottom: 20px; }
 
@@ -11309,7 +11308,7 @@ ymaps[class*="-copyright"] {
   .welcome-img__inner {
     margin: 0 0 -30px 0px; }
   .welcome-title,
-  .bank-mobile__title,
+  .bank-mobile__title h1,
   .online__title,
   .banking-top__in,
   .seo-title {
@@ -12229,7 +12228,7 @@ ymaps[class*="-copyright"] {
     padding-right: 0;
     width: 100%; }
   .welcome-title,
-  .bank-mobile__title,
+  .bank-mobile__title h1,
   .online__title,
   .banking-top__in,
   .seo-title {
@@ -12386,9 +12385,10 @@ ymaps[class*="-copyright"] {
   .acquiring-payment__list {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
+            flex-wrap: wrap;
+    margin: 20px 0 0 0; }
   .acquiring-payment__item {
-    width: 190px;
+    width: 50%;
     height: 190px;
     margin-bottom: 20px; }
   .acquiring-tariff__pre {
@@ -13649,32 +13649,14 @@ ymaps[class*="-copyright"] {
   .acquiring-partners__more {
     font-size: inherit; }
   .acquiring-partners__link {
-    padding: 10px; }
+    padding: 8px;
+    font-size: 16px; }
   .acquiring-partners__list:after {
     left: 58px;
     top: -23px; }
   .acquiring-services__txt,
   .acquiring-connection__txt {
     font-size: inherit; }
-  .acquiring-services__wrap {
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-    margin-right: 0; }
-  .acquiring-services__item {
-    padding-right: 0;
-    width: 100%;
-    max-width: 100%;
-    margin-bottom: 40px; }
-    .acquiring-services__item:last-child {
-      margin-bottom: 0; }
-  .acquiring-services__title {
-    margin-bottom: 12px; }
-  .acquiring-services__item:before {
-    width: 155px;
-    height: 155px;
-    margin-left: 0;
-    top: -15px; }
   .acquiring-connection {
     padding: 40px 0; }
   .acquiring-connection__list {
@@ -13698,6 +13680,9 @@ ymaps[class*="-copyright"] {
             align-items: center; }
     .acquiring-connection__item:last-child {
       margin-bottom: 0; }
+  .acquiring-services__item:before {
+    width: 150px;
+    height: 150px; }
   .acquiring-connection__top {
     margin-bottom: 0; }
   .acquiring-connection__list:after {
@@ -13770,7 +13755,24 @@ ymaps[class*="-copyright"] {
   .welcome-title.m-desktop {
     display: none; }
   .welcome-title.m-mobile {
-    display: block; } }
+    display: block; }
+  .acquiring-partners__title,
+  .acquiring-partners__more,
+  .acquiring-request-form h3,
+  .acquiring-tariff__pre.m-title h2 {
+    text-align: center; }
+  .acquiring-partners__list {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .acquiring-partners__more {
+    max-width: 100%; }
+  .acquiring-docs__list {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; } }
 
 @media screen and (max-width: 700px) {
   .card__item {
@@ -14858,7 +14860,26 @@ ymaps[class*="-copyright"] {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
-            justify-content: center; } }
+            justify-content: center; }
+  .acquiring-services__wrap {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    margin-right: 0; }
+  .acquiring-services__item {
+    padding-right: 0;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 40px; }
+    .acquiring-services__item:last-child {
+      margin-bottom: 0; }
+  .acquiring-services__title {
+    margin-bottom: 12px; }
+  .acquiring-services__item:before {
+    width: 155px;
+    height: 155px;
+    margin-left: 0;
+    top: -15px; } }
 
 @media screen and (max-width: 500px) {
   body {
@@ -14884,7 +14905,7 @@ ymaps[class*="-copyright"] {
     width: 300px;
     min-width: 300px;
     height: 300px; }
-  .welcome-title, .bank-mobile__title, .online__title, .banking-top__in, .seo-title {
+  .welcome-title, .bank-mobile__title h1, .online__title, .banking-top__in, .seo-title {
     font-size: 24px; }
   .bank-mobile__pre,
   .demo-top {

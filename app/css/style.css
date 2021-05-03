@@ -7987,10 +7987,9 @@ ymaps[class*="-copyright"] {
   background: #F2F9FF;
   padding: 82px 0 55px; }
 
-.bank-mobile__title {
+.bank-mobile__title h1 {
   font-size: 72px;
   line-height: 1.2;
-  font-family: 'golosbold';
   text-align: center;
   margin-bottom: 20px; }
 
@@ -11309,7 +11308,7 @@ ymaps[class*="-copyright"] {
   .welcome-img__inner {
     margin: 0 0 -30px 0px; }
   .welcome-title,
-  .bank-mobile__title,
+  .bank-mobile__title h1,
   .online__title,
   .banking-top__in,
   .seo-title {
@@ -12229,7 +12228,7 @@ ymaps[class*="-copyright"] {
     padding-right: 0;
     width: 100%; }
   .welcome-title,
-  .bank-mobile__title,
+  .bank-mobile__title h1,
   .online__title,
   .banking-top__in,
   .seo-title {
@@ -14906,7 +14905,7 @@ ymaps[class*="-copyright"] {
     width: 300px;
     min-width: 300px;
     height: 300px; }
-  .welcome-title, .bank-mobile__title, .online__title, .banking-top__in, .seo-title {
+  .welcome-title, .bank-mobile__title h1, .online__title, .banking-top__in, .seo-title {
     font-size: 24px; }
   .bank-mobile__pre,
   .demo-top {
