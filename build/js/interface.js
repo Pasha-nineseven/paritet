@@ -160,13 +160,14 @@ $(document).ready(function() {
 				$('.b-accordeon-slider').slick('setPosition'); 
 			}, 100);
 		}
-        if ($('.package__item').length>0) {
-        	$('.accordeon__item').toggleClass('active');
-        	$('.accordeon__info').slideToggle();
-        } else{
+        // if ($('.package__item').length>0) {
+        // 	$('.accordeon__item').toggleClass('active');
+        // 	$('.accordeon__info').slideToggle();
+        // } else{
+
         	$(this).parents('.accordeon__item').toggleClass('active');
         	$(this).next('.accordeon__info').slideToggle();
-        }
+        //}
     });
 
 	//POPUP-VIDEO
