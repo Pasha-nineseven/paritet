@@ -9059,10 +9059,7 @@ ymaps[class*="-copyright"] {
     position: absolute; }
 
 .klever-prize-sum__list {
-  background: linear-gradient(100deg, #135DBA 0%, #38B7AD 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: #135DBA; }
+  color: #0384ca; }
 
 .klever-prize-sum__item {
   font-size: 24px;
@@ -9186,10 +9183,7 @@ ymaps[class*="-copyright"] {
   margin-bottom: 8px; }
 
 .klever-prizу-condition-count {
-  background: linear-gradient(100deg, #135DBA 0%, #38B7AD 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: #135DBA; }
+  color: #0384ca; }
 
 .klever-prizу-conditioncount-item {
   font-size: 24px;
@@ -9902,11 +9896,7 @@ ymaps[class*="-copyright"] {
   line-height: 1; }
 
 .calendar__time {
-  background: -webkit-gradient(linear, left top, left bottom, from(#135DBA), to(#38B7AD));
-  background: linear-gradient(180deg, #135DBA 0%, #38B7AD 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: #135DBA;
+  color: #0384ca;
   position: relative;
   z-index: 1;
   font-family: 'golosbold'; }
@@ -11168,6 +11158,21 @@ ymaps[class*="-copyright"] {
   .acq-top-links__item:hover {
     background: #0B4DCE;
     color: #fff; }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 0) {
+  .klever-prize-sum__list,
+  .klever-prizу-condition-count,
+  .calendar__time {
+    -webkit-text-fill-color: inherit; } }
+
+.klever-prize-sum__list:not(:root:root) {
+  -webkit-text-fill-color: inherit; }
+
+.klever-prizу-condition-count:not(:root:root) {
+  -webkit-text-fill-color: inherit; }
+
+.calendar__time:not(:root:root) {
+  -webkit-text-fill-color: inherit; }
 
 @media screen and (max-width: 1480px) {
   .index-info__slider {
@@ -14717,7 +14722,10 @@ ymaps[class*="-copyright"] {
         -ms-flex-pack: center;
             justify-content: center; }
   .klever-prizу-condition__icon {
-    height: auto; }
+    display: block;
+    text-align: center; }
+    .klever-prizу-condition__icon img {
+      display: inline-block; }
   .klever-prize__wrap {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
