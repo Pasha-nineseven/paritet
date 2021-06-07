@@ -919,6 +919,7 @@ span.breadcrumbs__item{
 
 .index-offers{
 	padding: 64px 0;
+	position: relative;
 	// .container-fluid{
 	// 	max-width: 100%;
 	// }
@@ -1677,6 +1678,11 @@ span.breadcrumbs__item{
 	    padding: 29px 40px 28px 28px;
 	display: block;
 	color: #343532;
+	&:hover{
+		.news__title{
+			color: #0B4DCE;
+		}
+	}
 }
 .news__title{
 	color: #2C4295;
@@ -1684,6 +1690,7 @@ span.breadcrumbs__item{
 	font-family: 'golosbold';
 	line-height: 1.3;
 	margin-bottom: 24px;
+	transition: color .3s ease;
 }
 
 .news__txt{

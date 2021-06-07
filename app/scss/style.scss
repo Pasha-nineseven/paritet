@@ -2276,7 +2276,13 @@
 		border-radius: 4px;
 	}
 }
-
+.top-card__img__in {
+    border-radius: 15px;
+	overflow: hidden;
+}
+.btn.btn-themes:hover:hover {
+    border: 1px solid #0B4DCE!important;
+}
 
 @import "components/footer";
 

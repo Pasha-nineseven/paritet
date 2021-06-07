@@ -154,6 +154,11 @@
 	    background: url(../img/svg/call.svg) no-repeat;
 	    margin-right: 8px;
 	}
+	&:hover{
+		&:before {
+			background: url(../img/svg/call-h.svg) no-repeat;
+		}
+	}
 }
 
 .top-lang{
@@ -170,6 +175,10 @@
 	width: 26px;
 	height: 15px;
 	background: url(../img/svg/eye.svg) no-repeat; 
+	transition: all .3s ease;
+	&:hover{
+		opacity: 0.6;
+	}
 }
 
 
@@ -344,6 +353,9 @@
 	height: 23px;
 	position: relative;
 	z-index: 2;
+	&:hover{
+		background: url(../img/svg/search-in.svg) no-repeat;
+	}
 }
 
 
