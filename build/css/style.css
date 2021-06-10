@@ -10919,7 +10919,8 @@ ymaps[class*="-copyright"] {
     .acquiring-request-form__item input[type="email"].acquiring-request-input-phone,
     .acquiring-request-form__item input[type="password"].acquiring-request-input-phone,
     .acquiring-request-form__item input[type="tel"].acquiring-request-input-phone {
-      width: 290px; }
+      width: 290px;
+      padding-left: 58px; }
     .acquiring-request-form__item input[type="text"]:focus + .input-label, .acquiring-request-form__item input[type="text"].active + .input-label,
     .acquiring-request-form__item input[type="email"]:focus + .input-label,
     .acquiring-request-form__item input[type="email"].active + .input-label,
@@ -10928,6 +10929,14 @@ ymaps[class*="-copyright"] {
     .acquiring-request-form__item input[type="tel"]:focus + .input-label,
     .acquiring-request-form__item input[type="tel"].active + .input-label {
       opacity: 0; }
+    .acquiring-request-form__item input[type="text"]:focus + .input-label + .m-code, .acquiring-request-form__item input[type="text"].active + .input-label + .m-code,
+    .acquiring-request-form__item input[type="email"]:focus + .input-label + .m-code,
+    .acquiring-request-form__item input[type="email"].active + .input-label + .m-code,
+    .acquiring-request-form__item input[type="password"]:focus + .input-label + .m-code,
+    .acquiring-request-form__item input[type="password"].active + .input-label + .m-code,
+    .acquiring-request-form__item input[type="tel"]:focus + .input-label + .m-code,
+    .acquiring-request-form__item input[type="tel"].active + .input-label + .m-code {
+      opacity: 1; }
   .acquiring-request-form__item label {
     color: #343532;
     font-size: 18px;
@@ -10987,31 +10996,35 @@ ymaps[class*="-copyright"] {
           -ms-flex: 1;
               flex: 1; }
   .acquiring-request-form__item .m-code {
-    font-size: 26px;
+    font-size: 18px;
     position: absolute;
-    bottom: 9px;
+    bottom: 22px;
     left: 13px;
-    color: #302F22; }
+    color: #302F22;
+    opacity: 0;
+    -webkit-transition: opacity .3s ease;
+    transition: opacity .3s ease;
+    font-weight: 600; }
   .acquiring-request-form__item ::-webkit-input-placeholder {
-    color: #C4C4C4;
+    color: transparent;
     font-size: 18px; }
   .acquiring-request-form__item ::-moz-placeholder {
-    color: #C4C4C4;
+    color: transparent;
     font-size: 18px; }
   .acquiring-request-form__item :-moz-placeholder {
-    color: #C4C4C4;
+    color: transparent;
     font-size: 18px; }
   .acquiring-request-form__item :-ms-input-placeholder {
-    color: #C4C4C4;
+    color: transparent;
     font-size: 18px; }
   .acquiring-request-form__item :focus::-webkit-input-placeholder {
-    color: transparent; }
+    color: #C4C4C4; }
   .acquiring-request-form__item :focus::-moz-placeholder {
-    color: transparent; }
+    color: #C4C4C4; }
   .acquiring-request-form__item :focus:-moz-placeholder {
-    color: transparent; }
+    color: #C4C4C4; }
   .acquiring-request-form__item :focus:-ms-input-placeholder {
-    color: transparent; }
+    color: #C4C4C4; }
 
 .acquiring-request-msg {
   font-size: 14px;
@@ -14904,7 +14917,12 @@ ymaps[class*="-copyright"] {
     width: 155px;
     height: 155px;
     margin-left: 0;
-    top: -15px; } }
+    top: -15px; }
+  .acquiring-request-form__item .m-code {
+    font-size: 16px;
+    bottom: 9px; }
+  .acquiring-request-form__item input[type="text"].acquiring-request-input-phone, .acquiring-request-form__item input[type="email"].acquiring-request-input-phone, .acquiring-request-form__item input[type="password"].acquiring-request-input-phone, .acquiring-request-form__item input[type="tel"].acquiring-request-input-phone {
+    padding-left: 52px; } }
 
 @media screen and (max-width: 500px) {
   body {

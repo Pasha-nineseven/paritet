@@ -4732,6 +4732,14 @@
 		margin-left: 0;
 		top: -15px;
 	}
+
+	.acquiring-request-form__item .m-code {
+		font-size: 16px;
+		bottom: 9px;
+	}
+	.acquiring-request-form__item input[type="text"].acquiring-request-input-phone, .acquiring-request-form__item input[type="email"].acquiring-request-input-phone, .acquiring-request-form__item input[type="password"].acquiring-request-input-phone, .acquiring-request-form__item input[type="tel"].acquiring-request-input-phone {
+		padding-left: 52px;
+	}
 }
 
 
