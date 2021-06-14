@@ -4635,6 +4635,7 @@
 	}
 	.acquiring-request-form__item input[type="text"], .acquiring-request-form__item input[type="email"], .acquiring-request-form__item input[type="password"], .acquiring-request-form__item input[type="tel"]{
 		font-size: 16px;
+		padding: 28px 21px 6px 21px;
 	}
 	.acquiring-request-form__item{
 		::-webkit-input-placeholder {font-size: 16px;}
@@ -4735,7 +4736,7 @@
 
 	.acquiring-request-form__item .m-code {
 		font-size: 16px;
-		bottom: 9px;
+		bottom: 7px;
 	}
 	.acquiring-request-form__item input[type="text"].acquiring-request-input-phone, .acquiring-request-form__item input[type="email"].acquiring-request-input-phone, .acquiring-request-form__item input[type="password"].acquiring-request-input-phone, .acquiring-request-form__item input[type="tel"].acquiring-request-input-phone {
 		padding-left: 52px;

@@ -670,21 +670,21 @@
     input[type="tel"]{
         border: 1px solid #D5D8DB;
         border-radius: 4px;
-        padding: 21px;
+        padding: 33px 21px 9px 21px;
         font-size: 18px;
         &.acquiring-request-input-phone{
             width: 290px;
             padding-left: 58px;
         }
-        &:focus,
-        &.active{
-            &+.input-label{
-                opacity: 0;
-            }
-            &+.input-label+.m-code{
-                opacity: 1;
-            }
-        }
+        // &:focus,
+        // &.active{
+        //     &+.input-label{
+        //         opacity: 0;
+        //     }
+        //     &+.input-label+.m-code{
+        //         opacity: 1;
+        //     }
+        // }
     }
     label{
         color: #343532;
@@ -724,10 +724,9 @@
     .input-label{
         position: absolute;
         left: 21px;
-        top: 50%;
-        transform: translateY(-50%);
+        top: 11px;
         color: #222222;
-        font-size: 18px;
+        font-size: 13px;
         margin: 0;
         pointer-events: none;
         transition: opacity .3s ease;
@@ -750,19 +749,19 @@
     .m-code{
         font-size: 18px;
         position: absolute;
-        bottom: 22px;
+        bottom: 10px;
         left: 13px;
         color: #302F22;
-        opacity: 0;
+        // opacity: 0;
         transition: opacity .3s ease;
         font-weight: 600;
     }
 
 
-    ::-webkit-input-placeholder {color:transparent; font-size: 18px;}
-    ::-moz-placeholder          {color:transparent;font-size: 18px;}
-    :-moz-placeholder           {color:transparent;font-size: 18px;}
-    :-ms-input-placeholder      {color:transparent;font-size: 18px;}
+    ::-webkit-input-placeholder {color:#C4C4C4; font-size: 18px;}
+    ::-moz-placeholder          {color:#C4C4C4;font-size: 18px;}
+    :-moz-placeholder           {color:#C4C4C4;font-size: 18px;}
+    :-ms-input-placeholder      {color:#C4C4C4;font-size: 18px;}
 
 
 

@@ -10914,7 +10914,7 @@ ymaps[class*="-copyright"] {
   .acquiring-request-form__item input[type="tel"] {
     border: 1px solid #D5D8DB;
     border-radius: 4px;
-    padding: 21px;
+    padding: 33px 21px 9px 21px;
     font-size: 18px; }
     .acquiring-request-form__item input[type="text"].acquiring-request-input-phone,
     .acquiring-request-form__item input[type="email"].acquiring-request-input-phone,
@@ -10922,22 +10922,6 @@ ymaps[class*="-copyright"] {
     .acquiring-request-form__item input[type="tel"].acquiring-request-input-phone {
       width: 290px;
       padding-left: 58px; }
-    .acquiring-request-form__item input[type="text"]:focus + .input-label, .acquiring-request-form__item input[type="text"].active + .input-label,
-    .acquiring-request-form__item input[type="email"]:focus + .input-label,
-    .acquiring-request-form__item input[type="email"].active + .input-label,
-    .acquiring-request-form__item input[type="password"]:focus + .input-label,
-    .acquiring-request-form__item input[type="password"].active + .input-label,
-    .acquiring-request-form__item input[type="tel"]:focus + .input-label,
-    .acquiring-request-form__item input[type="tel"].active + .input-label {
-      opacity: 0; }
-    .acquiring-request-form__item input[type="text"]:focus + .input-label + .m-code, .acquiring-request-form__item input[type="text"].active + .input-label + .m-code,
-    .acquiring-request-form__item input[type="email"]:focus + .input-label + .m-code,
-    .acquiring-request-form__item input[type="email"].active + .input-label + .m-code,
-    .acquiring-request-form__item input[type="password"]:focus + .input-label + .m-code,
-    .acquiring-request-form__item input[type="password"].active + .input-label + .m-code,
-    .acquiring-request-form__item input[type="tel"]:focus + .input-label + .m-code,
-    .acquiring-request-form__item input[type="tel"].active + .input-label + .m-code {
-      opacity: 1; }
   .acquiring-request-form__item label {
     color: #343532;
     font-size: 18px;
@@ -10970,12 +10954,9 @@ ymaps[class*="-copyright"] {
   .acquiring-request-form__item .input-label {
     position: absolute;
     left: 21px;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
+    top: 11px;
     color: #222222;
-    font-size: 18px;
+    font-size: 13px;
     margin: 0;
     pointer-events: none;
     -webkit-transition: opacity .3s ease;
@@ -10999,24 +10980,23 @@ ymaps[class*="-copyright"] {
   .acquiring-request-form__item .m-code {
     font-size: 18px;
     position: absolute;
-    bottom: 22px;
+    bottom: 10px;
     left: 13px;
     color: #302F22;
-    opacity: 0;
     -webkit-transition: opacity .3s ease;
     transition: opacity .3s ease;
     font-weight: 600; }
   .acquiring-request-form__item ::-webkit-input-placeholder {
-    color: transparent;
+    color: #C4C4C4;
     font-size: 18px; }
   .acquiring-request-form__item ::-moz-placeholder {
-    color: transparent;
+    color: #C4C4C4;
     font-size: 18px; }
   .acquiring-request-form__item :-moz-placeholder {
-    color: transparent;
+    color: #C4C4C4;
     font-size: 18px; }
   .acquiring-request-form__item :-ms-input-placeholder {
-    color: transparent;
+    color: #C4C4C4;
     font-size: 18px; }
   .acquiring-request-form__item :focus::-webkit-input-placeholder {
     color: #C4C4C4; }
@@ -14832,7 +14812,8 @@ ymaps[class*="-copyright"] {
     width: 100%;
     text-align: center; }
   .acquiring-request-form__item input[type="text"], .acquiring-request-form__item input[type="email"], .acquiring-request-form__item input[type="password"], .acquiring-request-form__item input[type="tel"] {
-    font-size: 16px; }
+    font-size: 16px;
+    padding: 28px 21px 6px 21px; }
   .acquiring-request-form__item ::-webkit-input-placeholder {
     font-size: 16px; }
   .acquiring-request-form__item ::-moz-placeholder {
@@ -14921,7 +14902,7 @@ ymaps[class*="-copyright"] {
     top: -15px; }
   .acquiring-request-form__item .m-code {
     font-size: 16px;
-    bottom: 9px; }
+    bottom: 7px; }
   .acquiring-request-form__item input[type="text"].acquiring-request-input-phone, .acquiring-request-form__item input[type="email"].acquiring-request-input-phone, .acquiring-request-form__item input[type="password"].acquiring-request-input-phone, .acquiring-request-form__item input[type="tel"].acquiring-request-input-phone {
     padding-left: 52px; } }
 
