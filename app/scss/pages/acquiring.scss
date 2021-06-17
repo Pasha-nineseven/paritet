@@ -65,8 +65,24 @@
     background: #F0F2F5;
     padding: 85px 0 98px;
     h2{
-        text-align: center;
-        margin-bottom: 43px;
+        text-align: left;
+        font-size: 32px;
+    }
+    h1{
+        font-size: 45px;
+        text-transform: uppercase;
+    }
+    ul{
+        li{
+            &:before{
+                left: 0px;
+                top: 10px;
+                background: #2C4295;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+            }
+        }
     }
 }
 .acquiring-seo__txt{
