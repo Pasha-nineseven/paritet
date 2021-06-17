@@ -10280,6 +10280,10 @@ ymaps[class*="-copyright"] {
     height: 6px;
     border-radius: 50%; }
 
+.acquiring-title h2 {
+  font-size: 45px;
+  text-transform: uppercase; }
+
 .acquiring-seo__txt {
   font-size: 18px;
   line-height: 1.2; }
