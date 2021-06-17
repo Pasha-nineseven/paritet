@@ -64,6 +64,13 @@
 .acquiring-seo{
     background: #F0F2F5;
     padding: 85px 0 98px;
+    .container-fluid{
+        >h2{
+            text-align: center;
+            font-size: 45px;
+            margin-bottom: 40px;
+        }
+    }
     h2{
         text-align: left;
         font-size: 32px;
